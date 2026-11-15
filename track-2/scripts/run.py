@@ -1,64 +1,82 @@
-"""Bounded live benchmark screening pilot; original upstream code is unchanged."""
+"""Real official task-image and upstream snapshot compatibility; no model calls."""
+import json
 import os
 from pathlib import Path
-import shutil
+import subprocess
 import sys
-
-if sys.version_info < (3, 11):
-    os.execv(shutil.which('python3.12'), ['python3.12', __file__])
-import json
-from dataclasses import replace
+from types import SimpleNamespace
+import urllib.request
 
 root = Path(__file__).resolve().parents[2]
-# Local-only secret source: never archived or copied into run artifacts.
-secret = Path('/Users/michaelho/.local/share/openresearch/worktrees/08a83207-22c3-4b7f-b392-563ac40777a5/chat_d131fa4d-aaa0-4100-84e7-7c6c70f68f4a/.env')
-if not os.environ.get('OPENAI_API_KEY'):
-    for line in secret.read_text().splitlines():
-        name, sep, value = line.strip().removeprefix('export ').partition('=')
-        if sep and name.strip() == 'OPENAI_API_KEY':
-            os.environ['OPENAI_API_KEY'] = value.strip().strip('\"\'')
 sys.path.insert(0, str(root / 'track-2/vendor/ObligationGuard/src'))
-from obligationguard.schema import Instance, parse_prediction
-from obligationguard.prompting import identification, render
-from obligationguard.backends import ResponsesBackend, decode_json_output
+from obligationguard.container_state import capture_environment
 
-output = Path('/Users/michaelho/.local/share/openresearch/files/epistemics/sprint-review/track-2-systematic-review/live-openai-pilot') / os.environ['ORX_RUN_ID']
-output.mkdir(parents=True, exist_ok=True)
-instances = [Instance.from_dict(json.loads(line)) for line in (root / 'track-2/vendor/ObligationGuard/data/obligationbench.jsonl').read_text().splitlines() if line.strip()]
-selected = []
-for domain in sorted({x.task_domain for x in instances}):
-    for positive in (False, True):
-        candidates = [x for x in instances if x.task_domain == domain and bool(x.obligations) == positive]
-        selected.append(min(candidates, key=lambda x: (len(identification(x)), x.instance_id)))
-config = {'model': 'gpt-4.1-mini-2025-04-14', 'max_output_tokens': 1024, 'max_context_length': 32768, 'timeout': 90, 'parameters': {'temperature': 0}}
-backend = ResponsesBackend(config)
-manifest = {'config': config, 'commit': os.environ.get('ORX_COMMIT'), 'cases': [x.to_dict() for x in selected], 'selection': 'Shortest complete prompt in each domain-label cell; six cases. Selection-biased screening sample.', 'call_limit': 12, 'limitations': ['No trained ObligationGuard weights evaluated.', 'No verified same-task completed/unfinished pairs.', 'Binary presence scoring only; no semantic obligation matching.', 'Task-only predictions scored against original labels solely as a shortcut diagnostic.']}
-(output / 'manifest.json').write_text(json.dumps(manifest, indent=2))
-print('CONFIG ' + json.dumps({k:v for k,v in manifest.items() if k != 'cases'}), flush=True)
-records = []
-for instance in selected:
-    for mode in ('full_trajectory', 'task_only'):
-        prompt = identification(instance) if mode == 'full_trajectory' else render('obligation_identification', **{'guard_input.json': {**instance.guard_input(), 'trajectory': []}})
-        record = {'instance_id': instance.instance_id, 'domain': instance.task_domain, 'mode': mode, 'gold_positive': bool(instance.obligations)}
-        # No retry: any endpoint failure stops further spending and preserves prior responses.
-        try:
-            completion = backend.complete(prompt)
-        except Exception as exc:
-            print('ENDPOINT_FAILURE ' + type(exc).__name__, flush=True)
-            raise SystemExit(1)
-        (output / (instance.instance_id + '-' + mode + '.json')).write_text(json.dumps({'prompt': prompt, 'raw': completion.raw, 'error': completion.error}, indent=2))
-        try:
-            if completion.error:
-                raise ValueError('Incomplete completion')
-            obligations = parse_prediction(decode_json_output(completion.text))
-            record.update(valid=True, predicted_positive=bool(obligations), correct=bool(obligations) == bool(instance.obligations))
-        except Exception:
-            record.update(valid=False, correct=False)
-        record['usage'] = completion.raw.get('usage', {})
-        records.append(record)
-        (output / 'records.json').write_text(json.dumps(records, indent=2))
-        print('RESULT ' + json.dumps(record), flush=True)
-summary = {mode: {'n': 6, 'valid': sum(r['valid'] for r in records if r['mode'] == mode), 'correct': sum(r['correct'] for r in records if r['mode'] == mode)} for mode in ('full_trajectory', 'task_only')}
-(output / 'summary.json').write_text(json.dumps(summary, indent=2))
-print('FINAL ' + json.dumps(summary), flush=True)
-print('ARTIFACT ' + str(output / 'summary.json'), flush=True)
+out = Path('/Users/michaelho/.local/share/openresearch/files/epistemics/sprint-review/track-2-systematic-review/docker-compatibility') / os.environ['ORX_RUN_ID']
+out.mkdir(parents=True, exist_ok=True)
+report = {'commit': os.environ.get('ORX_COMMIT'), 'checks': {}, 'model_calls': 0}
+containers = []
+tag = 'epistemics-check:' + os.environ['ORX_RUN_ID'][:8]
+snapshot_created = False
+
+def docker(*args, **kwargs):
+    return subprocess.run(['docker', *args], capture_output=True, text=True, timeout=kwargs.get('timeout', 90), check=True).stdout.strip()
+
+def save():
+    (out / 'compatibility.json').write_text(json.dumps(report, indent=2))
+    print('STATUS ' + json.dumps(report), flush=True)
+
+try:
+    report['server'] = json.loads(docker('info', '--format', '{{json .}}'))
+    # Store only relevant public server properties.
+    report['server'] = {k:report['server'].get(k) for k in ('ServerVersion','OSType','Architecture','ExperimentalBuild')}
+    url = 'https://raw.githubusercontent.com/LeiLiLab/susvibes/520f16f9b3f39b06c6013bc0eb57a38280b4deee/datasets/default/susvibes_dataset.jsonl'
+    with urllib.request.urlopen(url, timeout=30) as r:
+        task = json.loads(r.readline())
+    report['task'] = task['instance_id']
+    image = task['image_name']
+    report['image'] = image
+    save()
+    docker('pull', '--platform', 'linux/amd64', image, timeout=300)
+    report['image_metadata'] = json.loads(docker('image','inspect', image))[0]
+    report['image_metadata'] = {k:report['image_metadata'].get(k) for k in ('Id','Architecture','RepoDigests')}
+    cid = docker('run','-d','--platform','linux/amd64','--entrypoint','sleep',image,'600')
+    containers.append(cid)
+    probe = docker('exec', cid, 'sh','-c', 'uname -m; test -d /project; cd /project; git rev-parse HEAD; python --version')
+    report['checks']['task_execution'] = {'passed': True, 'output':probe}
+    docker('exec',cid,'sh','-c','printf before-cleanup > /tmp/epistemics-state-marker')
+    class Config:
+        executable = 'docker'
+        def model_dump(self, **kwargs):
+            return {'executable':'docker','image':image,'cwd':'/project','run_args':['--platform','linux/amd64']}
+    env = SimpleNamespace(config=Config(), container_id=cid)
+    try:
+        capture_environment(env, out / 'checkpoint', tag, 'checkpoint')
+        report['checks']['process_checkpoint'] = {'passed':True}
+        snapshot_created = True
+        # Restart original so the idle snapshot check can proceed.
+        docker('start',cid)
+    except subprocess.CalledProcessError as exc:
+        report['checks']['process_checkpoint'] = {'passed':False,'error':exc.stderr[-2000:]}
+    save()
+    snapshot = capture_environment(env, out / 'idle-snapshot', tag, 'idle_container')
+    snapshot_created = True
+    restored = docker('run','-d','--platform','linux/amd64','--entrypoint','sleep',snapshot['image'],'600')
+    containers.append(restored)
+    before = docker('exec',restored,'cat','/tmp/epistemics-state-marker')
+    docker('exec',restored,'sh','-c','printf after-cleanup > /tmp/epistemics-state-marker')
+    original = docker('exec',cid,'cat','/tmp/epistemics-state-marker')
+    after = docker('exec',restored,'cat','/tmp/epistemics-state-marker')
+    assert before == original == 'before-cleanup' and after == 'after-cleanup'
+    report['checks']['idle_snapshot_restore_isolation'] = {'passed':True,'restored_initial':before,'original_after_branch_change':original,'branch_after_change':after}
+except Exception as exc:
+    report['failure'] = {'type':type(exc).__name__, 'detail':getattr(exc,'stderr','')[-2000:]}
+finally:
+    for cid in containers:
+        try: docker('rm','-f',cid)
+        except Exception: pass
+    if snapshot_created:
+        try: docker('image','rm',tag)
+        except Exception: pass
+    save()
+    print('FINAL ' + json.dumps(report), flush=True)
+    print('ARTIFACT ' + str(out / 'compatibility.json'), flush=True)
