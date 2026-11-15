@@ -1,0 +1,36 @@
+[
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9570621/",
+    "key": "880b9c2acade7883",
+    "characters": 65259,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants",
+    "key": "bd79fda488172729",
+    "characters": 25359,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.genome.gov/about-genomics/fact-sheets/Comparative-Genomics-Fact-Sheet",
+    "key": "51fb3cea5dce5c49",
+    "characters": 14407,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/monoclonal-antibody",
+    "key": "22c85712926fa083",
+    "characters": 1328,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://lavierebelle.org/IMG/pdf/article_-_1969_-_eugene_p._odum_-_the_strategy_of_ecosystem_development.pdf",
+    "key": "fe50ab61b2556918",
+    "status": "failed",
+    "error": "HTTP Error 503: Service Unavailable"
+  }
+]

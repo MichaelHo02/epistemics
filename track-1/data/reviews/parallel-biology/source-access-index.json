@@ -1,0 +1,327 @@
+[
+  {
+    "url": "https://apcentral.collegeboard.org/media/pdf/ap-biology-teacher-lab-manual-effective-fall-2019.pdf",
+    "key": "0f5ae780941c9357",
+    "status": "failed",
+    "error": "<urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>"
+  },
+  {
+    "url": "https://b2b.sigmaaldrich.com/deepweb/assets/sigmaaldrich/product/documents/297/275/tt0010bul.pdf",
+    "key": "1e3d40e3bd7e7ff5",
+    "status": "failed",
+    "error": "The read operation timed out"
+  },
+  {
+    "url": "https://bio.libretexts.org/Bookshelves/Botany/The_Science_of_Plants_-_Understanding_Plants_and_How_They_Grow_(Michaels_et_al.)/06%253A_Cells_Tissues_and_Woody_Growth/6.01%253A_Plant_Cells_and_Tissues",
+    "key": "5318ef521cd652f2",
+    "characters": 26929,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://bio.libretexts.org/Bookshelves/Cell_and_Molecular_Biology/Biofundamentals_2e_(Klymkowsky_and_Cooper)/07:_The_Molecular_Nature_of_Heredity/7.00:_Introduction",
+    "key": "3e0810fa5b2aa461",
+    "characters": 23263,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/03:_The_Cellular_Basis_of_Life/3.17:_Chloroplasts",
+    "key": "6c3f5e17cc91758c",
+    "characters": 17691,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/04:_Cell_Metabolism/4.04:_Glycolysis",
+    "key": "8e1786fe4b356c68",
+    "characters": 15721,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/04:_Cell_Metabolism/4.06:_ATP_Synthase",
+    "key": "5c6733e771acf4eb",
+    "characters": 16851,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/04:_Cell_Metabolism/4.07:_Photosynthesis_-_Pathway_of_Carbon_Fixation",
+    "key": "3de112b51e495312",
+    "characters": 17943,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/07:_Cell_Division/7.06:_Sex_Chromosomes",
+    "key": "ac2fa9fcbe088bbd",
+    "characters": 24236,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/16:_The_Anatomy_and_Physiology_of_Plants/16.01:_Plant_Anatomy/16.1.03:_Stems",
+    "key": "9915c5841030e175",
+    "characters": 12527,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/16:_The_Anatomy_and_Physiology_of_Plants/16.03:_Reproduction_in_Plants/16.3C:_Fern_Life_Cycle",
+    "key": "9f5390a3a84e3df3",
+    "characters": 12899,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/18:_Evolution/18.06:_The_Hardy-Weinberg_Equilibrium",
+    "key": "29fd90cbe55bb97a",
+    "characters": 26415,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/19:_The_Diversity_of_Life/19.01:_Eukaryotic_Life/19.1.07:_Fungi",
+    "key": "ecf97ddfabe694dd",
+    "characters": 20477,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://biology.arizona.edu/cell_bio/problem_sets/membranes/04t.html",
+    "key": "2713b8d72fed99f7",
+    "characters": 1648,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://cdn.who.int/media/docs/default-source/wash-documents/water-safety-and-quality/toxic-cyanobacteria-2/toxic-cyanobacteria-ch3.pdf",
+    "key": "b97c598bd3b5f66a",
+    "characters": 123195,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://fenix.isa.ulisboa.pt/downloadFile/281547991157118/Sucessoes%202019.pdf",
+    "key": "1cd776ba059e4de5",
+    "characters": 15683,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://garfield.library.upenn.edu/classics1988/A1988P780600001.pdf",
+    "key": "4d1c112212176a70",
+    "characters": 7132,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://goldbook.iupac.org/terms/view/09680",
+    "key": "ef5fa8ee68b996ff",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://groups.molbiosci.northwestern.edu/holmgren/Glossary/Definitions/Def-I/incomplete_dominance.html",
+    "key": "808d5e0d255f79af",
+    "characters": 1110,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://humanorigins.si.edu/education/frequently-asked-questions",
+    "key": "d943181c67182090",
+    "characters": 15264,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12409785/",
+    "key": "b62e2ddaac6fb621",
+    "characters": 78888,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2740366/",
+    "key": "4a7ee20394b6125c",
+    "characters": 52284,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6028242/",
+    "key": "48084a2d9b49e169",
+    "characters": 45650,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6186196/",
+    "key": "1fe4e02a4a2c1416",
+    "characters": 116681,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2009/022352s000_PharmR.pdf",
+    "key": "68b45388cb316e05",
+    "characters": 131,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.adfg.alaska.gov/static/education/educators/curricula/alaskawildlifecurriculum/pdfs/alaskas_forests_wildlife_curriculum.pdf",
+    "key": "8b2c535777e253f3",
+    "characters": 889545,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.botanicgardens.org.au/discover-and-learn/watch-listen-read/plants-garden-changing-environment",
+    "key": "57e6d3a2cfe9a05a",
+    "characters": 13677,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-12-influenza.html",
+    "key": "74c162b7fca17f4d",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.genome.gov/Multimedia/Slides/TCGA1/TCGA1_Helman.pdf",
+    "key": "c236ba6773a8ebd2",
+    "characters": 3666,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.genome.gov/genetics-glossary/Allele",
+    "key": "1675edfba05f295e",
+    "characters": 2783,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.genome.gov/genetics-glossary/Centromere",
+    "key": "a3841a84afa8e685",
+    "characters": 3322,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.genome.gov/genetics-glossary/Crossing-Over",
+    "key": "7db7954ee2068d16",
+    "characters": 3315,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.genome.gov/genetics-glossary/Evolution",
+    "key": "8a97ff5c95b3ae91",
+    "characters": 3368,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.genome.gov/genetics-glossary/Genetic-Drift",
+    "key": "b0de8bd3a65077b3",
+    "characters": 2801,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.genome.gov/genetics-glossary/Missense-Mutation",
+    "key": "7d32716eb16d77c6",
+    "characters": 2474,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.genome.gov/genetics-glossary/Mutation",
+    "key": "80bbc553563b1ee7",
+    "characters": 3399,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.khanacademy.org/science/grade-11-biology-snc-aligned/x58c107ba92d3f0b2%3Aevolution-and-biodiversity-classification/x58c107ba92d3f0b2%3Aevidence-of-evolution/a/lines-of-evidence-for-evolution",
+    "key": "67e65d36f39355e3",
+    "characters": 305,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK26846/",
+    "key": "35ed6f882c470730",
+    "characters": 165,
+    "status": "downloaded_requires_reading",
+    "challenge": true
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK539845/",
+    "key": "ee9326b17348004c",
+    "characters": 165,
+    "status": "downloaded_requires_reading",
+    "challenge": true
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK9841/",
+    "key": "1622ae127801d197",
+    "characters": 165,
+    "status": "downloaded_requires_reading",
+    "challenge": true
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK9943/",
+    "key": "a34e570fe1333af9",
+    "characters": 165,
+    "status": "downloaded_requires_reading",
+    "challenge": true
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK537140/",
+    "key": "2d14f67855dc7f66",
+    "characters": 29155,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+    "key": "50fdb06c23b8b80e",
+    "characters": 6862,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.nobelprize.org/prizes/medicine/1935/spemann/lecture/",
+    "key": "190ee35ba7faa949",
+    "characters": 32327,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.nps.gov/subjects/fire/upload/benefits-of-fire.pdf",
+    "key": "8be02f352f87e56f",
+    "characters": 12410,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.uniprot.org/uniprotkb/P12931-1/entry",
+    "key": "e9c6fe1ff7985a2c",
+    "characters": 810,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www2.gov.bc.ca/assets/gov/environment/air-land-water/water/waterquality/water-quality-guidelines/approved-wqgs/dissolvedoxygen-tech.pdf",
+    "key": "55f19a3be26595d2",
+    "characters": 267532,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  }
+]

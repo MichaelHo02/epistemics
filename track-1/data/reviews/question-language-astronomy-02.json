@@ -1,0 +1,288 @@
+{
+  "scope": "Direct assistant comparison of original question and all four options in English, Chinese and Vietnamese. Does not approve source support, evidence translation, or model evaluation.",
+  "rows": [
+    {
+      "sample_id": "astronomy/test/73",
+      "reviewed_question_hash": "7e7db67a05ded315974269ffdaa3f9199aebd60e05f0a037a35d9c72c280166c",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Radiation-type question and all four proper-name alternatives preserved, including Hawking.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/133",
+      "reviewed_question_hash": "dc506fdbd2527fb795d40d91909db7f7306b57429e018b8f8cd71a042ce4b799",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Internal heat question, contraction and gravitational-to-thermal energy conversion preserved. Vietnamese optionB has awkward grammar but retains co lại, thế năng hấp dẫn and năng lượng nhiệt with the intended direction.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/66",
+      "reviewed_question_hash": "7f0a588b9a9e1fa426da178decc98e76d1b32a54c14144e023d196ca03881a7a",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "FiveAU, Europa, same Earth flux1380W/m2 and all brightness factors preserved; no squared-distance or ratio-order change introduced.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/130",
+      "reviewed_question_hash": "8de15c02ad845492b40ef0d0530f34753f3fe30e5d2d9180e3e4b6f8bfedf038",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Planet names, condensation/ice mechanism and all causal alternatives preserved. This is only language equivalence: scientific wording about blue methane clouds still needs source adjudication.",
+      "approved_for_experiment": false,
+      "separate_source_adjudication": "pending_material_premise_or_unique_answer_check"
+    },
+    {
+      "sample_id": "astronomy/test/46",
+      "reviewed_question_hash": "fce919d6a967dfba007c51b98080004c6d15b1c740f3c4b98851d0d3437619c9",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Earth age and distinction between layering, fossils, craters and radiometric rocks/meteorites preserved.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/12",
+      "reviewed_question_hash": "e9834e6b0dc1f810c64c0cc53620d10b4a583b13dfef59f11fc08f19286991dc",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Large Magellanic Cloud identification, dwarf satellite galaxy, and wrong alternative classes preserved; proper name translated rather than replaced.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/150",
+      "reviewed_question_hash": "dc955b3c34e9f32f03140aace0a9a2c1f413df0ee55165581859d1c267e699f7",
+      "question_language_review": "hold",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Vietnamese optionA renders cratered highlands using miệng núi lửa, literally volcanic craters, while English lunar cratered highlands does not impose volcanic origin. This can change the contrast with volcanic calderas in optionB. Hold for terminology adjudication or replacement; keyed impact-basin optionC is preserved.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/36",
+      "reviewed_question_hash": "4a4d8b29e6bb5dbc4310341c7899d184ea7134ccc439c6691712d50cb95b675c",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Ecliptic is left as a technical term in Vietnamese and rendered 黄道 in Chinese; annual apparent solar path and all alternatives preserve the intended contrasts.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/56",
+      "reviewed_question_hash": "262135a69873e55717458434b66b905565f43494f3364820e641003457e8587a",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "NOT negation preserved. Ganymede/Callisto/Europa/Dione correctly correspond to Chinese 木卫三/木卫四/木卫二/土卫四 and unchanged Vietnamese proper names.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/9",
+      "reviewed_question_hash": "9f5b6e1c944851495295a777c8ca032e70ca39624a9045d4232d183036ee66d1",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Material-source and gradual-orbital-debris versus atmospheric-disintegration distinctions preserved across all choices. Separate source adjudication is required because asteroid-parent meteor showers can make English optionA also true.",
+      "approved_for_experiment": false,
+      "separate_source_adjudication": "pending_material_premise_or_unique_answer_check"
+    },
+    {
+      "sample_id": "astronomy/test/82",
+      "reviewed_question_hash": "a97b823214c49801efa2a39139db350e54c140ac7892fa3ed68db26244e6b515",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Scientific stem, greenhouse-gas cause and chemical/fire alternatives preserve the target. Politician hot-air joke becomes empty/exaggerated rhetoric rather than retaining the English pun; record this stylistic loss as a limitation, not a scientific answer reversal.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/62",
+      "reviewed_question_hash": "b89ecde45acdda502a591a51394fe8de9b34d590f53cf0649cb2cab1499fd5f3",
+      "question_language_review": "hold",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Vietnamese optionsAandB replace blackbody spectrum with generic phổ bức xạ (radiation spectrum), omitting vật đen. This removes the continuum qualification and can make the distinction between a bare stellar spectrum and a spectrum plus hydrogen absorption less precise. Chinese preserves 黑体. Hold for replacement or expert terminology adjudication.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/147",
+      "reviewed_question_hash": "3977f06148bd31cb53388eb18858f50c0467a0c8aa07a53be6b0618428718d8a",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Surface temperature, approximation qualifier and all four Kelvin values preserved. Spacing beforeK has no semantic effect.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/98",
+      "reviewed_question_hash": "9ef9b4164ae63e47d5769217266f9f29e212a06a2931ac9750700b7180cf7085",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Rigid-disk rotation target and angular-period versus linear-velocity alternatives preserved. Chinese uses 磁盘 in optionA for disk, but in this explicit rotation context it remains a disk rather than a changed speed/period assertion.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/41",
+      "reviewed_question_hash": "4c34d1571bd341cdea15720c126f0bd9e5755ead75be53d40a1aa372648be9a1",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Galactic-center black-hole target and named alternatives preserved; SagittariusA* is rendered 人马座A*. Proper-name localization does not change identity.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/136",
+      "reviewed_question_hash": "a8873fa8047295940b0e9f0877a2f0548378add850bc3838642c810e8d20638f",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Pluto orbital-period question and all year values preserved. Vietnamese omits explicit approximately, but nearest listed duration remains the same and no exactness claim is added.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/148",
+      "reviewed_question_hash": "c950addcd079a829451ca860fb631d098f01924108ce1cb686180609f30ccd96",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Second-closest star/system question and AlphaCentauri exclusion context preserved. Proper names, including61Cygni andBarnard, maintain identities. All versions share the implicit exclusion of the Sun; source review is separate.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/5",
+      "reviewed_question_hash": "e416e4401520ccba15533851764d63b6f8bf8c3b97ae1a669fcda4f6aa472173",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Comet/Earth masses and radius, minimum-speed wording and every formula preserve symbols, factors, powers and operators. Language check does not approve the unstated unbound-comet model.",
+      "approved_for_experiment": false,
+      "separate_source_adjudication": "pending_material_premise_or_unique_answer_check"
+    },
+    {
+      "sample_id": "astronomy/test/96",
+      "reviewed_question_hash": "4983746a3f6c20201f249b268b7e6894068b9f5500e0f4b642d596e9b31567bd",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Mars moon-pair identities preserved; Phobos/Deimos map to Chinese 火卫一/火卫二. InventedTritos/Desmos distractor spellings remain distinguishable.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/68",
+      "reviewed_question_hash": "007748fbe01c321f6f0e0bdcc1cd655ece24e5db1b5f8588be60bf2f252cb43d",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "All-but-one/not-predict negation and equal terrestrial/jovian count preserved. Commas are missing in the small-body list in all versions but the asteroid,Kuiper-comet,Oort-cloud concepts remain identifiable.",
+      "approved_for_experiment": false
+    }
+  ]
+}

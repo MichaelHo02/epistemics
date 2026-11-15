@@ -1,0 +1,30 @@
+{
+  "proposed_by_subject": {
+    "high_school_physics": 30,
+    "conceptual_physics": 30,
+    "high_school_mathematics": 30
+  },
+  "approved_by_subject": {
+    "high_school_physics": 25,
+    "conceptual_physics": 24,
+    "high_school_mathematics": 22
+  },
+  "translation_needed_by_subject": {
+    "high_school_physics": 5,
+    "conceptual_physics": 6,
+    "high_school_mathematics": 8
+  },
+  "prior_approvals_reused_after_exact_hash_check": 41,
+  "highest_consumed_saved_reserve_rank": {
+    "high_school_physics": 41,
+    "conceptual_physics": 40,
+    "high_school_mathematics": 38
+  },
+  "all_90_question_objects_equal_original_or_saved_reserve": true,
+  "model_evaluation_calls": 0,
+  "api_key_tests": 0,
+  "new_service_translation_calls": 0,
+  "complete": false,
+  "blocker": "Supplemental translated evidence and final direct multilingual review needed; parent owns next step.",
+  "reviewer": "assistant_parallel_physics_math_review"
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK26846/",
+    "key": "ef6cdc4807be82bc",
+    "characters": 36278,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK539845/",
+    "key": "4f4ce2527c4a1d60",
+    "characters": 44709,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK9841/",
+    "key": "f990cb733e918a79",
+    "characters": 28231,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK9943/",
+    "key": "1ac387ef51b6c3f5",
+    "characters": 7565,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK10101/",
+    "key": "3835153ce4e396bc",
+    "characters": 67871,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://fire.biol.wwu.edu/hooper/odumscience1969.pdf",
+    "key": "58d47c0f63facd04",
+    "characters": 10,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.genome.gov/genetics-glossary/Meiosis",
+    "key": "a0b24367a72f62e5",
+    "characters": 3398,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.genome.gov/genetics-glossary/Monoclonal-Antibody",
+    "key": "a57761f543b8e6ee",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK26922/",
+    "key": "f4fd4a2c767dbb87",
+    "characters": 165,
+    "status": "downloaded_requires_reading",
+    "challenge": true
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK26922/",
+    "key": "dcb7b1018662f0ec",
+    "characters": 41763,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  }
+]

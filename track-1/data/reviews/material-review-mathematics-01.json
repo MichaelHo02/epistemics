@@ -1,0 +1,612 @@
+{
+  "scope": "All30mathematicsquestionfamilies: direct original-language comparison, independent answer derivation, and direct comparison of all three supporting-evidence passages. Partial study approval only; not full evaluator readiness.",
+  "rows": [
+    {
+      "sample_id": "high_school_mathematics/test/218",
+      "reviewed_question_hash": "694db0ab702ac3f7b221d7fd27988cb1d344021c4913c031555596ea309f53a5",
+      "reviewed_content_hash": "8ee11353616dd6bfab2d9393fdf68d81c34070bd3c9c38cfe02209e6dc48071a",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Equal-outcome majority problem and fractions preserved. Evidence explicitly includes independent equally likely trials and the odd-trial complement pairing. Textbook independence convention is recorded, not presented as following from equal marginals alone.",
+      "independent_calculation": "1/2",
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/191",
+      "reviewed_question_hash": "55c76792862d37e8607b55967fd2ed89bb21ba3a90f79b973b4f6fdce237d246",
+      "reviewed_content_hash": "e5708c6d8e2cb5188ac5d3653ab4ffd82e1ca63c09f5bd3b4acedd36cd81480f",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Vietnamese asks for odd coefficients rather than odd terms. Under the explicitly oddm,n premise these are mathematically equivalent: every m,n monomial is odd, so coefficient parity determines term parity. Evidence states exactly that equivalence.",
+      "independent_calculation": 4,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/70",
+      "reviewed_question_hash": "ee40f5b8b07cae3a266a5233fe1c727d04f2ba1fea91d05b2bb90a476b4c7397",
+      "reviewed_content_hash": "a49ccf36e02ab24d2298711efbd3872d88d9e07494a7a8f846e71b50fcd74eeb",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Four digits, positivity, odd-only restriction and all numeric alternatives preserved. Multiplication rule and repeat-permitted qualifier remain in both evidence translations.",
+      "independent_calculation": 625,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/94",
+      "reviewed_question_hash": "f71078fa43ca68a099d36690d0ce0012fab3dcb1c8358552675d708855d161ce",
+      "reviewed_content_hash": "18aa2f53c73699d40849dc0a78dc2bab14c34b03749bc3ba8c079242de44fec6",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Both interval endpoints, inequalities, positive-product condition and all fractions preserved. Evidence explicitly states independent uniform sampling, the usual textbook interpretation of randomly chosen interval values.",
+      "independent_calculation": "5/12",
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/223",
+      "reviewed_question_hash": "1da91b0fce406d22e903e559700fc3f320e455cd7fa262296fe39e33fc25449e",
+      "reviewed_content_hash": "b75b8e3af92e95f23dcc17fd617a7ba101f6d057ff99874c13ab6b3612f10272",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "All square-root terms, bounds5to29 and ceiling definition preserved. Evidence retains strict lower bound and inclusive upper bound in (k-1)^2<n<=k^2.",
+      "independent_calculation": 112,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/217",
+      "reviewed_question_hash": "a80cddc099ccda12f66c2dff77be9b7822ba5250a8388c8e6e9cc26232fb30ab",
+      "reviewed_content_hash": "0d3e6078ddf4e291911fa3099d6a9c00d177a60fe3cd93b6e5e397dcfa43d045",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Parametric components, y=4 condition, all tangent equations and derivative-ratio rule preserved. Nonzerodx/dt retained in both translated passages.",
+      "independent_calculation": {
+        "t": 2,
+        "x": 5,
+        "slope": 0.6931471805599453
+      },
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/243",
+      "reviewed_question_hash": "c253105465b0dd937c4620a3b12e132a4eb204787ef60bbfceb1ff034e954420",
+      "reviewed_content_hash": "00d5ddc304899512d8312fdefd0ccd091c410e4f00f717326727dc397ed77616",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Divisibility direction12is a multiple of the counted integers is preserved. Positive/negative pairing rule preserved; no inclusion of zero.",
+      "independent_calculation": 12,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/50",
+      "reviewed_question_hash": "6fc7ae5d1b2e9987c0716b2269b0f1308f7f72f11507f744ff3842457433f77f",
+      "reviewed_content_hash": "f99132ba42a906d6d5cdae2455e2e5d580848b8c4291f96fa239e68939855e45",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Repeated factor1/3five times, initial10 and all fraction choices preserved. Exponent/repetition rule translated faithfully.",
+      "independent_calculation": "1/243",
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/48",
+      "reviewed_question_hash": "7edd1a3c35f92737aee356163fa5d5f4a03af6fa8db22f1d111564988e5eb800",
+      "reviewed_content_hash": "303ad8ce74ae5c38e7676b766886394668089668e9ed93707d8a8428a5d3bbbf",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Equal piles, one-half of one-third of one pile, remaining66 and alternatives preserved. Chinese adds older brother and Vietnamese adds younger brother; age is irrelevant to the arithmetic. Evidence correctly gives N/12 donated, not N/6.",
+      "independent_calculation": 72,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/12",
+      "reviewed_question_hash": "f2fb5a178868741a0ddec0ea83a72fa39e65cfd9ad3fbc83c0fd2d497dc65ec9",
+      "reviewed_content_hash": "6a27f13b552156ddfa2088dda5206951199f64443dac5eabd2894000424711b0",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "edit_required",
+      "evidence_language_review": "faithful_to_draft_pending_english_edit",
+      "finding": "Question exponent87, +3, divisor7 and choices preserved. Translations follow current English, but English should explicitly say reduce the exponent using a verified cycle rather than ambiguously reduce a power by its cycle length.",
+      "independent_calculation": 4,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_mathematics/test/45",
+      "reviewed_question_hash": "7ae6c5d8e21c5a66014ebe6415960f408d3c44430a87dc87bbe8fed33348a330",
+      "reviewed_content_hash": "71fc5af0031278b12c3392b4a61bf70e94267cc274eff7ee6f42e1ce1ecfe62b",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Four balls of each color, sequential draws and all-draws-alternating condition preserved. Evidence retains uniform ordering and equiprobable color-position choices. No replacement is stated; drawing the objects out gives usual without-replacement interpretation.",
+      "independent_calculation": "1/35",
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/80",
+      "reviewed_question_hash": "ee4986f3d6b4803210a3900af6425c9fc0ef75f2c0a5f9cd1a1564abdb1ed1b6",
+      "reviewed_content_hash": "db672c0cf145d3db4ae65132163eb184b2dbb22b506679317e3b66ed88873155",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Inclusive consecutive list25through100 and every option preserved. Both evidence translations retain b-a+1 and inclusion of both endpoints.",
+      "independent_calculation": 76,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/173",
+      "reviewed_question_hash": "67c1daa2afd2af8b318d2a7508451ceffbd6edaf295aff125d5913b2e0336045",
+      "reviewed_content_hash": "a210a90b1a72a2a58525f0d997218db3a25e4b1ed422644543eeaa201fad91af",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "hold",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Vietnamese renders improper fraction as phân số không chính xác, meaning inaccurate/inexact fraction. Numeric quadratic and height are preserved, but requested answer-format meaning is changed; hold original question for replacement.",
+      "independent_calculation": "12/7",
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_mathematics/test/102",
+      "reviewed_question_hash": "37f705bc04906d85bfc1a637545e9d0ba2d1d3285aa61bd27b2d6c106a1c895d",
+      "reviewed_content_hash": "16953e8874b7711429c52737ac21f1d34b904a08178c90e8554c55288b654819",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "hold",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Vietnamese translates mathematical factor as generic yếu tố (factor/element), rather than a mathematical divisor term. The comma-separated number additionally retains English-style grouping. Hold terminology/numeric-reading uncertainty rather than repair the published question.",
+      "independent_calculation": 18107,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_mathematics/test/47",
+      "reviewed_question_hash": "9346d840f35a255433e7f1b53a0c33b97d054f144ad106b4e1351ad59af8cc5d",
+      "reviewed_content_hash": "edc9c124631ed6903ef91ed4ace61195291c9e685e782858be55fd498f570c8d",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Both radicands, signs, real-domain target and width choices preserved. Nonnegative, not strictlypositive, is retained in both evidence passages.",
+      "independent_calculation": 7,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/245",
+      "reviewed_question_hash": "b026dc128fb8d5dbadb43051bea98a92aa1284728e297ccd1e568d7d29720a99",
+      "reviewed_content_hash": "571006e3efd1609a8d3f0c4b5c7e0957d34790f7340ec29bfa54440a1bc85d6a",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Rose equation, first quadrant, vertical tangent and all angle values preserved. Vietnamese literal flower term is awkward but the defining equation and tangent condition fix the mathematical object. Evidence preserves x/y polar formulas, zero dx/dtheta and nonzero dy/dtheta.",
+      "independent_calculation": {
+        "theta": 0.467964727830663,
+        "dy_dtheta": 1.1048932109250373
+      },
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/162",
+      "reviewed_question_hash": "a18d265c3be99f7963d624dc0a6c9d273321953d8dcfae56da8961262269bb4c",
+      "reviewed_content_hash": "806642e1dc66826d20904e4dae620358709c94610ff937ee41485aba2c70fcb7",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Committee size5from15, distinct-combination interpretation and factorial rule preserved. Published3,003 is treated as grouped integer notation in this integer-count context; this formatting convention is a limitation, not an inferred data change.",
+      "independent_calculation": 3003,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/81",
+      "reviewed_question_hash": "45e14f79eecfb5e8d24b6dc751b3372fdc7194c50c691bd7c014d23aebae1f25",
+      "reviewed_content_hash": "2b7b2d3cdd8d9e74c6c426ddc6985af71c591441b14a40738c6ec0f23a101867",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "hold",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Vietnamese parenthetical definition says read forward and backward but omits same. The loanword palindrome remains, yet the supplied equality condition defining the task is lost. Hold for a clearer unchanged published replacement.",
+      "independent_calculation": 89,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_mathematics/test/56",
+      "reviewed_question_hash": "218290a207f7ebfd813b0aa607795fd90974c5b615e0413ae7be20d782350f19",
+      "reviewed_content_hash": "1e34325f273bb6e4f3a4a69d166632426ae226bd0434ff6a0bbbbaadce230112",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Logarithm base/argument, negative3/2 exponent and fractional alternatives preserved. Evidence retains positivity and base-not-one requirements.",
+      "independent_calculation": "1/49",
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/192",
+      "reviewed_question_hash": "e23fc0f041aaab1b2fc5cb34d671ccf7bcf4e150f2ba0cf233fcb18864ae9ebc",
+      "reviewed_content_hash": "7ef8c95c9044c59d3f6b5235c4d932ddbe98ad9cf617cb08308e3ca82bd2f02d",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "hold",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Vietnamese omits the explicit nearest-inch rounding instruction. The exact result is about6.84, whereas choices are whole integers. Hold because the missing rounding condition can change whether any option is exact.",
+      "independent_calculation": 6.840339565797883,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_mathematics/test/44",
+      "reviewed_question_hash": "e6dbe62d5a293d54c80dc55d5f3f98ebc014039f0c69fb3e31df8e26bef37fd8",
+      "reviewed_content_hash": "6cbee349bc9722c2f9187c19601759ce5d3cf702e688cae80fc2f47ef81add3e",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "hold",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Vietnamese changes the first distance from threefeet to three steps (ba bước), while subsequent increments remain twofeet and final feet unit is omitted. A step length is not supplied, so the arithmetic inputs are materially changed.",
+      "independent_calculation": 5200,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_mathematics/test/158",
+      "reviewed_question_hash": "404d3b5d5f8a2f18efab6de77e0696f4c31fa6df8ed5ef8b706ebd4faf0bc705",
+      "reviewed_content_hash": "499e41eef07978c4d6704b9c14a265c4fd9a6cb9ba498bd2a807751de36f4b41",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "edit_required",
+      "evidence_language_review": "faithful_to_draft_pending_english_edit",
+      "finding": "Question counts60/50, percentages30/40, out-of-town target and irrelevant5groups preserved. Current English evidence reuses subgroup for two different partitions and should be rewritten to identify each group and its inside/outside fraction clearly; translations inherit that ambiguity.",
+      "independent_calculation": 72.0,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_mathematics/test/28",
+      "reviewed_question_hash": "3bd5f96398552aecab6c2b94538fe449d8fc6ea96159718a07c2db63327b3c48",
+      "reviewed_content_hash": "bdd8311a475a05728e1a30e7134d1b4e28314dc874abe72db4bfb2a2e1c7ca9a",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Denominator square root, full radicand and every interval union preserved. Evidence retains strictlypositive radicand and zero-denominator exclusion in both languages.",
+      "independent_calculation": "x<-1 or x>4; endpoints excluded",
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/164",
+      "reviewed_question_hash": "18a9e26a6982a41d43fab565c1bdd39464b52b5b66f4e05831a525b9eb2b0c31",
+      "reviewed_content_hash": "56fea1f4c4d7753467977dc3e9c639bb521c51cf5da2045f821a924291edd6a5",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "All coefficients, parentheses, minus signs, equality and alternatives preserved. Distribute/combine-like-terms rule translated faithfully.",
+      "independent_calculation": 0,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/227",
+      "reviewed_question_hash": "d8ee14511f34f069fc4669f1720d1aac24e40a39fd3ddfff82a4da8c6b5ec4b6",
+      "reviewed_content_hash": "93b0bee4589bd23b02563eaa72ede54e57353bbc582a7911d2e7f00a76e15a33",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "All three region boundaries, exponential equation and y-axis of revolution preserved. Evidence translates horizontal disk cross-section and pi*x^2 without changing the integration direction.",
+      "independent_calculation": 0.5916162638061698,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/255",
+      "reviewed_question_hash": "bd59322beefa11ec23ec1c67261a7144be4ea1650e7630ebf9f41234dc57a1f4",
+      "reviewed_content_hash": "63c27c20bf7beecc1d7dd7bb3b038290dbdc693bba30d7860a2d8a55a5c065cb",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Invertibility, f(2)=f^-1(2)=4 and nested-function target preserved. Evidence retains correct composition direction and appropriate-domain qualifier.",
+      "independent_calculation": 2,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/38",
+      "reviewed_question_hash": "f75e1ee768607a77549d7b764fa8801a8fa388c1e1f3ecce429714d42782fef2",
+      "reviewed_content_hash": "5500afd4e056e10ba48ff0c37d46578eb576b04a8aed744dbc80d77fd31fd8cf",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Smallest positive common-multiple interpretation, three factors16/15/12 and all choices preserved. Evidence retains highest required prime powers, not smallest powers.",
+      "independent_calculation": 240,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/104",
+      "reviewed_question_hash": "ce5c13d9cfa3337c2b4042da00c9a4597ebff719e416218841d0c25b24589f4e",
+      "reviewed_content_hash": "a95c15a4c2c6755afd3bc6a3ccab1800ad8bafdc68f64c339941517db38b90a8",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "hold",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Explicit inclusive endpoint qualifier in English is absent from Vietnamese and Chinese. Vietnamese also calls each integer mỗi người (each person). Hold because choosing20..69versus21..68changes the sample space; no endpoint repair is made.",
+      "independent_calculation": "2500/52969",
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_mathematics/test/88",
+      "reviewed_question_hash": "2b9aa2e76106f6052ee75d364cd0f09e97a0d27df8db40465b4e12fa23d4a8a8",
+      "reviewed_content_hash": "eae07156f44e0a03fa18b143d9bd9ebd2274f292ed07ce3933d63daa81b89d5b",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "Shift right2, vertical factor2, initial0.1 and target10 preserved. Chinese says stretch2units but immediately clarifies everyycoordinate doubles, resolving the factor. Evidence retains f(x-h), not f(x+h), and multiplicative c.",
+      "independent_calculation": 3.2,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    },
+    {
+      "sample_id": "high_school_mathematics/test/21",
+      "reviewed_question_hash": "a7265aac872d2033b663691d775a307237a35ea30532996cdd39da2abc82f571",
+      "reviewed_content_hash": "f67ad3e3400e899fd0cd8c19752588f946c76ed2dcdedab23d6793dd5706cab9",
+      "reviewer": "assistant_mathematical_and_multilingual_review",
+      "review_date": "2026-11-15",
+      "question_language_review": "approved",
+      "english_evidence_review": "approved",
+      "evidence_language_review": "approved",
+      "finding": "First term2, multipliernegative2 and fifth-term index preserved. Evidence retains exponentn-1 in both languages.",
+      "independent_calculation": 32,
+      "support_type": "independent_mathematical_derivation",
+      "source_role": "background_rule_reference_not_a_published_solution",
+      "reuse_review": "approved_original_math_paraphrase_or_derivation",
+      "review_limitations": [
+        "Assistant review, not a blinded independent human bilingual review.",
+        "Ordinary textbook sampling and mathematical-notation conventions are retained where explicitly recorded."
+      ],
+      "approved_for_experiment": true
+    }
+  ]
+}

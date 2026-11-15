@@ -1,0 +1,13 @@
+{
+  "validation": "passed",
+  "checks": [
+    "60unique;30each",
+    "all60question_and_source_approved",
+    "exact_nested_originals_preserved",
+    "exact_content_and_question_digest_bindings",
+    "39trilingual_fourfield_approvals",
+    "21translation_ready_rows",
+    "contiguous_reserveprefix31through44bothsubjects"
+  ],
+  "candidate_hash": "a6490e0edf1b003e5dcb8bb0602eab16da3c652ad04699e258bf09f86ef01feb"
+}

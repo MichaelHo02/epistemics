@@ -1,0 +1,43 @@
+[
+  {
+    "url": "https://www.biology-pages.info/M/Monoclonals.html",
+    "key": "578a23751351162c",
+    "characters": 13884,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.biology-pages.info/B/B_Cells.html",
+    "key": "6f3a76f50d981035",
+    "characters": 0,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.genome.gov/genetics-glossary/Pleiotropy",
+    "key": "ab0fa1d2fabddb09",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://www.biology-pages.info/E/Evolution.html",
+    "key": "e8b60a864248c58c",
+    "characters": 13781,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK26955/",
+    "key": "7a4938c400bf4274",
+    "characters": 29378,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.biology-pages.info/C/Chloroplasts.html",
+    "key": "721f8d285fe61237",
+    "characters": 2262,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  }
+]

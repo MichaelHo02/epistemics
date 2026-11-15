@@ -61,3 +61,99 @@ step; changed English content requires a matching new translation. See
 Do not launch an OpenAI key test or a model evaluation during this preparation
 work. The existing OpenAI model setting remains unset; choosing the model is
 separate from making the data ready.
+
+
+## Direct multilingual review checkpoint (15 November 2026)
+
+The original questions and all four options have now been read side by side in
+English, Chinese and Vietnamese for 180 candidate families: astronomy,
+high-school mathematics, high-school physics, high-school computing,
+college computing and computer security. The supporting passages in all three
+languages have also been compared for the latter five subjects (150 families).
+Astronomy supporting-passage review remains unfinished. These counts describe
+assistant review, not an independent blinded human bilingual review.
+
+Detailed findings are versioned under `data/reviews/material-review-*-01.json`
+and `question-language-astronomy-*.json`. They bind the original question hashes
+and, for material reviews, the translated-content hashes. They distinguish
+question holds, evidence edits, unresolved terminology, source assumptions and
+actual final approvals. A language pass does not automatically approve a source.
+The separately recorded 22 mathematics and 19 physics families currently have complete
+material approval; the full 300-family dataset remains blocked from evaluation.
+
+New defects include changed convex/concave lens labels, flux translated as
+current, heads-and-tails translated as heads-and-heads, a stack translated as a
+haystack, and inconsistent code identifiers. A near duplicate physics family
+is also excluded. Further holds include ambiguous original questions; they are
+not all proven translation mistakes or wrong answer keys. Published question
+text and labels remain unchanged. The next candidate version must incorporate
+these findings in the saved within-subject reserve order before final readiness.
+
+The peer/instruction templates have been compared across the three languages.
+Participant labels now use the same neutral role, avoiding the Vietnamese
+in-group role previously introduced by the wording. The protocol review records
+its exact template hash and assistant-review limitation. Eight evaluator tests
+passed after the wording change. No OpenAI request or key test was made.
+
+Remaining direct multilingual subjects are conceptual physics, chemistry,
+high-school biology and college biology (120 families), followed by replacement
+review and final source adjudication. Existing draft translations can be reused
+only when their bound question, English passage and source remain unchanged.
+Changed English or new replacement passages need matching supplemental
+translations through the authorized dataset workflow.
+
+
+## Source adjudication follow-up
+
+The conceptual-physics comparison adds 30 families, bringing direct question
+language comparison to 210 families and three-language evidence comparison to 180.
+Three conceptual-physics questions have material terminology errors; two
+additional supporting passages need terminology edits. Their findings are in
+`data/reviews/material-review-conceptual-physics-01.json`. Chemistry and the two
+biology subjects remain to be compared (90 families).
+
+`material-review-physics-02.json` finalizes 19 of the 30 high-school-physics families
+using the cited primary rules and independent calculations. It supersedes the
+pending-support fields only for those 19 rows in review01. The remaining 11
+include four question-language holds, one near duplicate, and six cases requiring
+further source/assumption decisions. In particular, the liquid-mixture question's
+unqualified kinetic-energy wording was not automatically approved from a gas
+translational-energy rule.
+
+A fresh HTTP access attempt returned 403 for the Caltech lectures. Their displayed
+original equations were then read using the web reader. NASA and NIST source
+passages were read directly. Failed requests are not source verification. The
+review locators identify the actual equations/sections used, and distinguish
+those general rules from our own solutions to particular benchmark questions.
+
+The local evaluator readiness check now recognizes 41 reviewed families and 259
+pending families in candidate v2. It still refuses a full run. This check makes
+zero network calls, leaves the model unset, and does not change the production
+evaluation configuration to point at an unfinished candidate selection.
+
+
+## Parallel review handoff: all300English families
+
+The combined candidate version3has300unique published question families,
+30per subject, with all original English/Chinese/Vietnamese rows checked against
+the pinned upstream snapshot. There is no overlap with20development questions.
+Every English supporting passage has a source/answer/reuse review. The combined
+local readiness check recognizes213approved trilingual families;87need matching
+supplemental translations and review. No model evaluation has occurred.
+
+The final candidate hash is
+`b4b43ea7568d67ba1d57f7bf5bf25fbb59fff193d1015078f7af8442fddb7fe0`.
+The manifest records299upstream-CA questions and one manually assessed unannotated
+astronomy addition, `/135`. The eligibility amendment and skipped fallback `/85`
+are logged before outcomes in the experiment plan and replacement ledger.
+Do not describe this slice as entirely upstream-CA.
+
+The topic handoffs are under the four `data/reviews/parallel-*` folders and matching
+artifact folders. The supplemental87English passages are frozen separately in
+`global-mmlu-main/translation-input-v3`; their checksums and candidate hash are
+bound by the translation configuration. The earlier66-row input-v2was prepared
+but superseded before any service request, when biology completed its21rows.
+
+Only after the supplemental Chinese and Vietnamese passages have been reviewed
+can all300materials be finalized. The OpenAI model remains unset, and no key test
+or evaluation request is authorized in this preparation goal.

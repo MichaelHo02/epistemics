@@ -1,0 +1,145 @@
+{
+  "scope": "Direct assistant comparison of original question and all four options in English, Chinese and Vietnamese. Does not approve source support, evidence translation, or model evaluation.",
+  "rows": [
+    {
+      "sample_id": "astronomy/test/107",
+      "reviewed_question_hash": "4702b9c9372f50b2ff0f3d94493efae96bd813685026e42c5ecf828f50aaaa51",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Mass/weight comparison, quantities and option identities preserved; pound is retained as a unit in Vietnamese and converted to Chinese 磅.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/132",
+      "reviewed_question_hash": "256444f3a1a9b4b5bb91808cc19a9b3b27bc7fb8a41ffb692af9ccb4af2f5727",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Past climate question and geologic-liquid-water explanation preserved. Vietnamese optionB is awkward but retains the historical observation claim and does not change the keyed option.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/108",
+      "reviewed_question_hash": "0c3544ec0955079bc4975427aa9a4ff33568c6b195388b84e583475e81e32dc9",
+      "question_language_review": "hold",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Vietnamese optionB translates English too cool as Quá tuyệt (roughly too great/wonderful), losing the temperature meaning. The stem also varies corona terminology, but the temperature mistranslation is the material failure. Do not repair the published option silently.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/100",
+      "reviewed_question_hash": "0a4550bb502338571b9335ad6dfbb1ea6cf6612e02a46a692a106d810d26ca2c",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Rock height5cm, angle0.5degrees, distance query and all meter/foot alternatives preserved. Decimal comma in Vietnamese is an equivalent notation, not numeric corruption.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/102",
+      "reviewed_question_hash": "52b6d1e310f9d0220d9e0e32ea8c0d5edc677c375a5dffd02ee664765d3d3758",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Sunrise-to-sunrise solar day and all time alternatives preserved. Vietnamese explicitly repeats sunrise and Chinese says next sunrise; neither switches to sidereal rotation.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/19",
+      "reviewed_question_hash": "9544fc98e16a37866f3b0026c87f8f5f196a7e0db2a4589fb3cbb565052e2c56",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Hydrogen wavelength comparison486.1to485.9nm and toward/away alternatives preserved. No sign reversal or temperature/motion switch.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/99",
+      "reviewed_question_hash": "ef5b5cf74104d9d9c121cf3694f678f799a38e1d9315754c098e020149fc5436",
+      "question_language_review": "hold",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Chinese optionB renders Cygnus as 天琴座 (Lyra), instead of 天鹅座. This changes a named distractor even though the published keyed optionC remains Cassiopeia. Exclude for cross-language option inequivalence.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/42",
+      "reviewed_question_hash": "cc65f7eb51495bcbe523d618556aa970af9377449423db5344aeaf17747d1eac",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Mass/size question and gravitational-compression option preserved. Chinese optionD uses lower density for less compact; this is an acceptable rendering in the intended density comparison. Source/unique-answer adjudication is separate.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/105",
+      "reviewed_question_hash": "f2effdcb81882ddcb644b06145ab01a6454cdd9786eba7063cc4e0dcfee0d160",
+      "question_language_review": "hold",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Vietnamese keyed optionA translates Hydrogen as Thủy điện (hydroelectricity), not hydrogen/hiđrô. The stem also uses yếu tố for element. This directly corrupts the answer text and cannot be treated as equivalent.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/51",
+      "reviewed_question_hash": "fe673adb9f74def8d378675f0989082460608fb78eafb64190481f56b9092006",
+      "question_language_review": "approved",
+      "languages_compared": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "reviewer": "assistant_multilingual_review",
+      "review_date": "2026-11-15",
+      "finding": "Perihelion/aphelion order, .304/.456AU and every ratio preserved across all three languages.",
+      "approved_for_experiment": false
+    }
+  ]
+}

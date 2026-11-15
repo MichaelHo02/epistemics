@@ -1,0 +1,198 @@
+{
+  "review_date": "2026-11-15",
+  "reviewer": "assistant_parallel_physics_math_review",
+  "scope": "Sources newly adjudicated for six retained physics holds, conceptual-physics review and14replacement questions.41previously approved reviews are reused only after exact question/evidence hashes; their prior source-access record remains the basis, not an assertion all41sources were re-read today.",
+  "source_records": [
+    {
+      "url": "https://www.nasa.gov/blogs/quesst/2026/08/10/nasa-x-59-explainer-science-of-sonic-booms/",
+      "body_characters_received": 11954,
+      "access_method": "public_HTTP_HTML_read",
+      "source_review_note": "Read misconception paragraph: sonic-wave production is continuous during supersonic flight.",
+      "copyright_handling": "Own concise summary; no stored textbook passage quote."
+    },
+    {
+      "url": "https://www.nist.gov/how-do-you-measure-it/how-do-you-know-age-fossils-and-other-old-things",
+      "body_characters_received": 7445,
+      "access_method": "public_HTTP_HTML_read",
+      "source_review_note": "Read uranium-decay explanation and U238/U235 billion-year mineral ages /4.54billion-year Earth estimate.",
+      "copyright_handling": "Own concise summary; no stored textbook passage quote."
+    },
+    {
+      "url": "https://science.nasa.gov/ems/03_behaviors/",
+      "body_characters_received": 13653,
+      "access_method": "public_HTTP_HTML_read",
+      "source_review_note": "Read Absorption section: incident photons transfer energy into matter, with reflection contrast.",
+      "copyright_handling": "Own concise summary; no stored textbook passage quote."
+    },
+    {
+      "url": "https://science.nasa.gov/eclipses/types/",
+      "body_characters_received": 10919,
+      "access_method": "public_HTTP_HTML_read",
+      "source_review_note": "Read opening solar-eclipse definition: Moon passes between Sun/Earth, shadow falls on Earth.",
+      "copyright_handling": "Own concise summary; no stored textbook passage quote."
+    },
+    {
+      "url": "https://science.nasa.gov/sun/facts/",
+      "body_characters_received": 24476,
+      "access_method": "public_HTTP_HTML_read",
+      "source_review_note": "Initial broad local search matched navigation, so not counted alone. Subsequently read actual web body: introductory light/heat paragraph and Surface section, photospheric visible light and radiation escaping to space.",
+      "copyright_handling": "Own concise summary; no stored textbook passage quote."
+    },
+    {
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/free-fall-without-air-resistance/",
+      "body_characters_received": 4195,
+      "access_method": "public_HTTP_HTML_read",
+      "source_review_note": "Read sole gravity force and near-surface g9.8; own integrations recorded per family.",
+      "copyright_handling": "Own concise summary; no stored textbook passage quote."
+    },
+    {
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/17-3-sound-intensity",
+      "body_characters_received": 24073,
+      "access_method": "public_HTTP_HTML_read",
+      "source_review_note": "Read intensity proportional to pressure amplitude squared, logarithmic level, sound-pressure-level definition and hearing/loudness discussion. Replaces unsupported Feynman47 loudness citation; translation rebind remains pending.",
+      "copyright_handling": "Own concise summary; no stored textbook passage quote."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_21.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "21-1 oscillator generality;21-2 m*xddot=-kx. Nonlinear pendulum and collision analyses are own derivations, not a quoted solved problem.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_15.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "15-1 own-frame principle;15-4 clocks normal to own observer;Eq15.6 longitudinal contraction;15-6 simultaneity.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_47.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "47-1 longitudinal/transverse elastic waves;mechanical sound vs electromagnetic light. Does not establish logarithmic pressure level, hence loudness citation replaced.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/II_40.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "40-1 static-fluid pressure gradient, p=p0-rho*g*h and Eq40.1. Buoyancy application is own closed-surface integration.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_27.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "27-2 virtual images,plane limit,n=-1 mirror convention;water reciprocal index3/4 and Snell reference. Plane image and critical-angle calculations are own.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_49.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "49-1 fixed-end sine mode;kL=n*pi,omega=n*pi*c/L;second harmonic twice fundamental.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_04.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "4-2 reversible lifting/energy;4-3 Eq4.6 kinetic energy;4-4 elastic energy. Specific questions derived independently.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_07.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "7-1 inverse-square gravitation;7-2 conic orbit background. Pericenter after1%boost is own energy/radial-acceleration derivation.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/II_22.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "Resistor I=V/R;22-6 series impedance addition. Fixed-voltage lamp comparison is own textbook-model application.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/II_17.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "17-3 generator coil emf/torque and equal mechanical/electrical power;17-4 transformer coupling. Ideal transformer power balance derived from definition lossless.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_13.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "Work/potential relation and conservative gravitational closed-path discussion.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_09.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "Cartesian components Eqs9.5/9.9 and force/acceleration.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_33.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "33-1 transverse electric-field components and polarization orientations.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_30.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "30-2 regularly spaced sources,phase differences,grating maxima.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_29.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "Two-source path difference and maxima/null spacing. Small-angle fringe relation derived independently.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/I_18.html",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "18-2 zero total force and torque equilibrium conditions.",
+      "source_role": "background_or_rule_reference_not_published_question_solution",
+      "copyright_handling": "Own short factual explanations and derivations; no copied source prose."
+    },
+    {
+      "url": "https://ciaaw.org/atomic-weights.htm",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "Read table rows Z8O andZ10Ne; mass-number count is own derivation.",
+      "source_role": "background_or_rule_reference_not_published_question_solution"
+    },
+    {
+      "url": "https://dlmf.nist.gov/1.2",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "Read binomial coefficient/binomial theorem and vector norm/orthogonality definitions. Other arithmetic/convexity proofs are own formal derivations with this reference as background only.",
+      "source_role": "background_or_rule_reference_not_published_question_solution"
+    },
+    {
+      "url": "https://dlmf.nist.gov/27.2",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "Read Eq27.2.1 unique prime-power factorization; smallest square proof is own.",
+      "source_role": "background_or_rule_reference_not_published_question_solution"
+    },
+    {
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+      "access_method": "web_reader_original_source_displayed_text_and_equations",
+      "source_review_note": "Read second-law force/momentum relation; own elevator balance.",
+      "source_role": "background_or_rule_reference_not_published_question_solution"
+    }
+  ],
+  "limitations": [
+    "Source access is passage-level; no assertion every entire textbook chapter was read.",
+    "No failed fetch or mere indexed snippet was treated as verification.",
+    "LASP/NASA astronomy130 advisory is separate and read-only.",
+    "No new service-generated translations were requested by this delegate."
+  ]
+}

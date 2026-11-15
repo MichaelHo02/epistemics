@@ -1,0 +1,19 @@
+{
+  "status": "passed_integrity_checks_not_model_evaluation",
+  "proposed": 90,
+  "approved": 71,
+  "pending": 19,
+  "question_objects_byte_value_unchanged": true,
+  "exact_content_and_question_hashes_valid": true,
+  "approved_four_fields_exact": true,
+  "ordered_reserve_prefix_complete": true,
+  "original_question_option_gold_rewrites": 0,
+  "model_calls": 0,
+  "input_sha256": {
+    "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main/selection-v2/main-cases.jsonl": "2e8c80614963a31696e9f314f6fb9b9bba959d488cb04716a198feccd383da95",
+    "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main/selection-v2/evidence-candidates.jsonl": "2985e2444ffed758a60a029d1c624eff709ddb9f54dcf0e83eb484279f3211f7",
+    "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main/selection-v2/reviewed-physics-02.jsonl": "421f92bc938c8f204e32b8d0a7a4f0e919251b6a0a2b20286a1d5202b453d430",
+    "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main/selection-v2/reviewed-mathematics-01.jsonl": "9586f57662c12467593323d9e181c69ae24e21cc4febfd9053f3faa75cb0774a",
+    "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main/replacement-review-v1/reserve-cases.jsonl": "c5539b990dc4c9152879f691eaaf7d104196d0605cf7a103a402e97e6c603c7a"
+  }
+}
