@@ -1,0 +1,882 @@
+[
+  {
+    "sample_id": "astronomy/test/66",
+    "subject": "astronomy",
+    "question": "Jupiter's orbital distance is roughly 5 AU. How many times brighter would the Sun have to be for Europa to receive the same solar flux that we currently receive on Earth (1380W/m2)?",
+    "answer_code": "B",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "For fixed source luminosity, light flux decreases with the square of distance. Doubling the distance reduces flux to one quarter.",
+        "sample_id": "astronomy/test/66",
+        "source_url": "https://www.jpl.nasa.gov/edu/resources/lesson-plan/calculating-solar-power-in-space/",
+        "reviewed_content_hash": "978d164eac83b2566aece6727a0a073f0afad1ac39e6fda7293ee60e5d49e5c2",
+        "role": "known_support"
+      },
+      {
+        "text": "The Moon’s solar day, from one sunrise to the next at a typical surface location, lasts about 29.5 Earth days. Its approximately 27.3-day sidereal rotation is measured relative to distant stars instead.",
+        "sample_id": "astronomy/test/102",
+        "source_url": "https://science.nasa.gov/moon/moon-phases/",
+        "reviewed_content_hash": "7c645e6f60bd61aa0b7931048448222f713613994020047c65a002681178ea9d",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "The Sun’s visible surface, the photosphere, has a temperature of approximately 5,500 degrees Celsius.",
+        "sample_id": "astronomy/test/147",
+        "source_url": "https://science.nasa.gov/sun/facts/",
+        "reviewed_content_hash": "0a518bd1fc6dc6c361b2558cbc6345f1020ece203c3a131ee07b2fef28e42ba1",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Barnard’s Star is the next-nearest stellar system to the Sun after the Alpha Centauri three-star system.",
+        "sample_id": "astronomy/test/148",
+        "source_url": "https://science.nasa.gov/universe/exoplanets/discovery-alert-four-little-planets-one-big-step/",
+        "reviewed_content_hash": "7d2037399af41d7f8d6fac613619988f18b3778bb7482de8e66346af56b4ca48",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Motion toward an observer shifts a star’s spectral lines to shorter wavelengths; motion away shifts them to longer wavelengths.",
+        "sample_id": "astronomy/test/19",
+        "source_url": "https://science.nasa.gov/asset/webb/doppler-shift-of-a-stars-spectrum/",
+        "reviewed_content_hash": "bfff4000c8768b71e2f5639223fdf43eba7c7e11768c3e67a94ac9880625805f",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "high_school_biology/test/155",
+    "subject": "high_school_biology",
+    "question": "Photosynthesis requires",
+    "answer_code": "B",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "In oxygenic plant photosynthesis, light supplies energy, water supplies electrons, and carbon dioxide supplies carbon that is fixed into carbohydrates.",
+        "sample_id": "high_school_biology/test/155",
+        "source_url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/04:_Cell_Metabolism/4.07:_Photosynthesis_-_Pathway_of_Carbon_Fixation",
+        "reviewed_content_hash": "4df1a615b96087c906db086f3079f3243ce01a2d91558342d49450cf11ee4d37",
+        "role": "known_support"
+      },
+      {
+        "text": "Fermentation oxidizes NADH back to NAD+ while reducing an organic intermediate. This replenishes NAD+ for glycolysis when aerobic electron transport cannot do so.",
+        "sample_id": "high_school_biology/test/138",
+        "source_url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/04:_Cell_Metabolism/4.04:_Glycolysis",
+        "reviewed_content_hash": "3ec304e71c96dfefa382d7be733797e1680c6b970aed5400a41d7b55ad25c3ae",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Pure water in an open beaker has reference water potential zero. Dissolved solutes lower water potential; water moves into a cell whose total water potential is lower than that of its surroundings.",
+        "sample_id": "high_school_biology/test/142",
+        "source_url": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants",
+        "reviewed_content_hash": "2d5e18bcc343245a4748b09c7723b7ea8c2eef909e8cd3c10b33ef8724bf6c21",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Arteries carry blood away from the heart, while veins bring blood back toward the heart.",
+        "sample_id": "high_school_biology/test/185",
+        "source_url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+        "reviewed_content_hash": "0d5e473a9d05bdf7ee45a1f92333d837beecbcf3d2d14f45299dc69ad30f6329",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "ATP synthase uses the electrochemical gradient of protons across the inner mitochondrial membrane. Protons flowing through the enzyme toward the matrix supply the immediate energy for ATP synthesis.",
+        "sample_id": "high_school_biology/test/149",
+        "source_url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/04:_Cell_Metabolism/4.06:_ATP_Synthase",
+        "reviewed_content_hash": "91b32f7e63c0d99b62f32f33aa92f41c650d04f867473269d0620a80987f05c5",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "high_school_physics/test/61",
+    "subject": "high_school_physics",
+    "question": "Which of the following correctly describes the motion of a real object in free fall? Assume that the object experiences drag force proportional to speed and that it strikes the ground before reaching terminal sped.",
+    "answer_code": "B",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "A downward-falling object experiences gravity downward and drag upward. Its downward acceleration is the net downward force divided by mass and falls toward zero as drag grows.",
+        "sample_id": "high_school_physics/test/61",
+        "source_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/falling-object-with-air-resistance/",
+        "reviewed_content_hash": "e7606220aac3e860da1e1ae98a53269abcb5a5b3c0a392c49c2ea1d42dc3ae49",
+        "role": "known_support"
+      },
+      {
+        "text": "For a stationary object on a plane inclined at angle theta, the normal force balances the component of gravity perpendicular to the plane: mg cos(theta).",
+        "sample_id": "high_school_physics/test/29",
+        "source_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+        "reviewed_content_hash": "4278162ff75b11ed5de43d2c52d682f9771367c08ef47af1c4e35993bfdfe933",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "A scale reads the normal force. With upward positive, N-mg=ma; a reading below mg therefore means downward acceleration.",
+        "sample_id": "high_school_physics/test/33",
+        "source_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+        "reviewed_content_hash": "6ac2dd3ac871cbf2f74d256e92a5f173c93a8657104eadab3482127428460acd",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "In electrostatic equilibrium the field inside a metal is zero. Immediately outside a smooth conductor surface, the normal field is local surface-charge density divided by vacuum permittivity.",
+        "sample_id": "high_school_physics/test/2",
+        "source_url": "https://www.feynmanlectures.caltech.edu/II_05.html",
+        "reviewed_content_hash": "2a4130cf0744d742428cfe4e20715d70796ca69bf4eef12f32d572904d20532d",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "For coherent double slits in the small-angle far field, adjacent fringe spacing is approximately wavelength times screen distance divided by slit separation.",
+        "sample_id": "high_school_physics/test/101",
+        "source_url": "https://www.feynmanlectures.caltech.edu/I_29.html",
+        "reviewed_content_hash": "6eaaaebe1216c3df1dc2ba488c11b032bd21cf27713d866c96c8f6abac587a26",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "high_school_physics/test/72",
+    "subject": "high_school_physics",
+    "question": "A proton enters a solenoid. Upon entry, the proton is moving in a straight line along the axis of the solenoid. Which of the following is a correct description of the proton’s motion within the solenoid?",
+    "answer_code": "C",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "A magnetic force on a charged particle is q(v cross B). When velocity is parallel to the field, this cross product is zero.",
+        "sample_id": "high_school_physics/test/72",
+        "source_url": "https://www.feynmanlectures.caltech.edu/II_01.html",
+        "reviewed_content_hash": "7c7dc8df098bcc06eebf77668a8911c617496e0c9a25cbffa3a503a03ee311dd",
+        "role": "known_support"
+      },
+      {
+        "text": "In electrostatic equilibrium the field inside a metal is zero. Immediately outside a smooth conductor surface, the normal field is local surface-charge density divided by vacuum permittivity.",
+        "sample_id": "high_school_physics/test/2",
+        "source_url": "https://www.feynmanlectures.caltech.edu/II_05.html",
+        "reviewed_content_hash": "2a4130cf0744d742428cfe4e20715d70796ca69bf4eef12f32d572904d20532d",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "The magnetic part of the Lorentz force is q times the cross product of velocity and magnetic field. It is perpendicular to velocity and does no work.",
+        "sample_id": "high_school_physics/test/36",
+        "source_url": "https://www.feynmanlectures.caltech.edu/II_01.html",
+        "reviewed_content_hash": "76687463a529c093df6c8a5109752897dd3b922f9ae4d12a4aa0f7f4342f0a6f",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Coulomb’s force between fixed charges depends on the charges and their separation. The masses of the charged bodies do not appear in this electrostatic relation.",
+        "sample_id": "high_school_physics/test/84",
+        "source_url": "https://www.feynmanlectures.caltech.edu/II_04.html",
+        "reviewed_content_hash": "cdcfcceebafb668342bbd2f3b3e45b952c1db3d730c847c9ebffbc20adad92c5",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "A pendulum is an oscillator. With fixed gravitational acceleration and fixed release angle, its period scales with the square root of its length and not its mass.",
+        "sample_id": "high_school_physics/test/105",
+        "source_url": "https://www.feynmanlectures.caltech.edu/I_21.html",
+        "reviewed_content_hash": "7b0eda98f8ae7f1f1be1442e2ecaf573fcf690e39ede18fe72a282e95a52b1ec",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "astronomy/test/42",
+    "subject": "astronomy",
+    "question": "Why is Saturn almost as big as Jupiter despite its smaller mass?",
+    "answer_code": "A",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "Self-gravity compresses giant-planet material, increasing its density. A larger mass can therefore produce a much smaller proportional increase in radius than would occur if density stayed fixed.",
+        "sample_id": "astronomy/test/42",
+        "source_url": "https://lasp.colorado.edu/outerplanets/giantplanets_interiors.php",
+        "reviewed_content_hash": "1fdd6d773a88bd8d71fffba40c0face1d29074ec6512adc99daf3f8c4d1101a3",
+        "role": "known_support"
+      },
+      {
+        "text": "The ecliptic is the Sun’s apparent annual path on the celestial sphere. The corresponding ecliptic plane contains Earth’s orbit around the Sun.",
+        "sample_id": "astronomy/test/36",
+        "source_url": "https://www.nasa.gov/image-article/plane-of-ecliptic/",
+        "reviewed_content_hash": "51042d3e60b1e2aa9caef328a17c4e6505866c98c5a1928ac10bd2b16b20fde9",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "The two moons of Mars are Phobos and Deimos.",
+        "sample_id": "astronomy/test/96",
+        "source_url": "https://science.nasa.gov/mars/facts/",
+        "reviewed_content_hash": "d0ea198e343870b62fd97abe0d1007ec3b30950fdda8c450353e7114fa1c75b7",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Jupiter is still slowly contracting and emits more thermal energy than it receives from the Sun. Gravitational contraction converts gravitational potential energy into internal thermal energy.",
+        "sample_id": "astronomy/test/133",
+        "source_url": "https://lasp.colorado.edu/outerplanets/giantplanets_interiors.php",
+        "reviewed_content_hash": "17f09573eef2b7a34bfc78944262fd6c47e21c1fb7e9bfe54aef17acac19b2f1",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Radioactive isotope dating of minerals in terrestrial rocks and meteorites helps establish Earth’s age. Uranium isotopes provide clocks over billions of years.",
+        "sample_id": "astronomy/test/46",
+        "source_url": "https://www.nist.gov/how-do-you-measure-it/how-do-you-know-age-fossils-and-other-old-things",
+        "reviewed_content_hash": "c1c3a229d29715bf5d5cba2d00c39a2f0b01e093513c86e21309cddb2310e17e",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "high_school_mathematics/test/236",
+    "subject": "high_school_mathematics",
+    "question": "Eleven pencils cost as much as three pens. If seven pens cost $\\$ 9.24$, what is the cost, in cents, of one pencil?",
+    "answer_code": "C",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "For equal-price items, divide the total price by the item count. Equal total prices can then be used to relate the two unit prices.",
+        "sample_id": "high_school_mathematics/test/236",
+        "source_url": "https://dlmf.nist.gov/1.2",
+        "reviewed_content_hash": "04f6dc24cf9d876757b992df79d9ce6b19cd3d57bd657ef208d305b1be544c4b",
+        "role": "known_support"
+      },
+      {
+        "text": "For a positive integer k, ceil(sqrt(n)) equals k precisely when (k-1)^2 < n <= k^2.",
+        "sample_id": "high_school_mathematics/test/223",
+        "source_url": "https://dlmf.nist.gov/1.2",
+        "reviewed_content_hash": "b75b8e3af92e95f23dcc17fd617a7ba101f6d057ff99874c13ab6b3612f10272",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "A logarithmic equation log_b(x)=y is equivalent to b^y=x, with b positive and not equal to one.",
+        "sample_id": "high_school_mathematics/test/56",
+        "source_url": "https://dlmf.nist.gov/4.2",
+        "reviewed_content_hash": "1e34325f273bb6e4f3a4a69d166632426ae226bd0434ff6a0bbbbaadce230112",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "A line meets a parabola at exactly one real point when their difference is a quadratic with a repeated real root. Completing the square identifies the required constant.",
+        "sample_id": "high_school_mathematics/test/219",
+        "source_url": "https://dlmf.nist.gov/1.2",
+        "reviewed_content_hash": "d4d773e1cdf9ad12dc351623e636b89f98b0555e1724ce3a6cf511e5332531f9",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Rotating a horizontal strip of radius x around the y-axis gives disk cross-sectional area pi*x^2. Integrate these areas over the vertical interval.",
+        "sample_id": "high_school_mathematics/test/227",
+        "source_url": "https://dlmf.nist.gov/1.4",
+        "reviewed_content_hash": "93b0bee4589bd23b02563eaa72ede54e57353bbc582a7911d2e7f00a76e15a33",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "high_school_biology/test/128",
+    "subject": "high_school_biology",
+    "question": "Which of the following is correct about organisms that are the first to colonize a habitat undergoing ecological succession?",
+    "answer_code": "C",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "Pioneer organisms can alter a newly colonized environment, for example by changing substrate or adding organic matter. Under the facilitation model, those changes make establishment easier for later species.",
+        "sample_id": "high_school_biology/test/128",
+        "source_url": "https://fenix.isa.ulisboa.pt/downloadFile/281547991157118/Sucessoes%202019.pdf",
+        "reviewed_content_hash": "51e21b5b43b61dc38d6c7bc77489f3ce87d9483f205373fcd0110df36ff8c8cf",
+        "role": "known_support"
+      },
+      {
+        "text": "During meiosis, homologous chromosomes can exchange DNA. This crossing over produces new combinations of alleles in eggs or sperm.",
+        "sample_id": "high_school_biology/test/105",
+        "source_url": "https://www.genome.gov/genetics-glossary/Crossing-Over",
+        "reviewed_content_hash": "025f401133e0f14a9eae8053bd0fe008a7486bee0e0c795b88ad58c725b9b1cd",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Natural selection acts on the combined effects of an organism’s traits. When a single inherited variant has both beneficial and harmful effects, its overall advantage can allow the associated harmful effect to increase with it.",
+        "sample_id": "high_school_biology/test/11",
+        "source_url": "https://openstax.org/books/biology-2e/pages/19-3-adaptive-evolution",
+        "reviewed_content_hash": "4b26c1240629a896dde42d1aaae71104c3cdbadd4225a36281f3c07506569873",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Vaccination exposes the immune system to an antigen and can expand populations of lymphocytes whose receptors recognize that antigen. This increases the number of responsive cells rather than creating extra kinds of receptors on each cell.",
+        "sample_id": "high_school_biology/test/20",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4703725/",
+        "reviewed_content_hash": "bed2b402f544279b61d84f947d8ffef606dd867ab0eec258312fe93b7b3ae725",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Periodic fire in fire-adapted ecosystems can consume accumulated dead vegetation and other fuel. Without such fires, fuel can build up and contribute to more severe later fires.",
+        "sample_id": "high_school_biology/test/8",
+        "source_url": "https://www.nps.gov/subjects/fire/upload/benefits-of-fire.pdf",
+        "reviewed_content_hash": "bacf4cb3c3ce4fcf8d413f50be177e68629e09c355e34a951113866b5c32b0af",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "college_biology/test/101",
+    "subject": "college_biology",
+    "question": "How do cyanobacteria differ from green unicellular algae?",
+    "answer_code": "C",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "Cyanobacteria are prokaryotes and lack a membrane-enclosed nucleus. Green unicellular algae are eukaryotes with nuclei and other membrane-enclosed organelles.",
+        "sample_id": "college_biology/test/101",
+        "source_url": "https://cdn.who.int/media/docs/default-source/wash-documents/water-safety-and-quality/toxic-cyanobacteria-2/toxic-cyanobacteria-ch3.pdf",
+        "reviewed_content_hash": "420240d3d7e3c45b28d6efee2cf6ac5fdc929769df4d87b1b785de47b73a1b0a",
+        "role": "known_support"
+      },
+      {
+        "text": "Juxtamedullary nephrons have loops extending deeply into the renal medulla. Their participation in the medullary countercurrent system helps mammals produce urine more concentrated than body fluids.",
+        "sample_id": "college_biology/test/131",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6186196/",
+        "reviewed_content_hash": "cf7217ecaace3879ba688a101385b2bd2a1012b80a792b865887f40431d8dc3e",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Parenchyma are living ground-tissue cells used in storage and other basic plant functions. The central pith of a typical dicot stem is primarily parenchyma.",
+        "sample_id": "college_biology/test/23",
+        "source_url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/16:_The_Anatomy_and_Physiology_of_Plants/16.01:_Plant_Anatomy/16.1.03:_Stems",
+        "reviewed_content_hash": "ad342c41d7a01433b3a76c7137f48991dbd700d68c4a0df7a73e4e4439cb3877",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Water moves into a cell or grain when the surrounding solution has lower effective solute concentration than its interior. That inward osmotic flow can swell and rupture the structure rather than shrink it.",
+        "sample_id": "college_biology/test/89",
+        "source_url": "https://biology.arizona.edu/cell_bio/problem_sets/membranes/04t.html",
+        "reviewed_content_hash": "1958dad515f3026074adacbf6e3aa86fc8ea5a389d074215200f5355b40d1fe3",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Inositol 1,4,5-trisphosphate is an intracellular messenger that promotes the release of calcium ions from stores inside the endoplasmic reticulum into the cytoplasm.",
+        "sample_id": "college_biology/test/3",
+        "source_url": "https://www.ncbi.nlm.nih.gov/mesh/68015544",
+        "reviewed_content_hash": "563edc03631eaa86035b9b6cf0cbe2c417d778350c8bf6e2d93e14c677e8b8eb",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "college_biology/test/142",
+    "subject": "college_biology",
+    "question": "Which of the following characteristics is predicted for an early-successional plant community?",
+    "answer_code": "B",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "The classical ecosystem-development model predicts a high ratio of gross primary production to standing biomass early in succession, with less accumulated organic matter than in later stages.",
+        "sample_id": "college_biology/test/142",
+        "source_url": "https://fenix.isa.ulisboa.pt/downloadFile/281547991157118/Sucessoes%202019.pdf",
+        "reviewed_content_hash": "b8bdc66aa9e753dc44eb68a860881caf4f957dc5c77814f0a29e18aee2e5afa9",
+        "role": "known_support"
+      },
+      {
+        "text": "Water-conducting vessel elements undergo programmed cell death during maturation, leaving hollow, reinforced conduits. Functional sieve-tube members instead remain living despite losing their nuclei.",
+        "sample_id": "college_biology/test/67",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4880555/",
+        "reviewed_content_hash": "79ae3446c2c4ca6eeca0f5fb0ff8aacb54b0208f7a64fd3e09c7e04b625d47d1",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "A common model of early cell origins begins with self-replicating molecules enclosed by a lipid membrane. Nuclei and mitochondria are later features of eukaryotic cells.",
+        "sample_id": "college_biology/test/60",
+        "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK9943/",
+        "reviewed_content_hash": "43de083ffd753827b03dfa80cda2a6e5dfc9b2cbaaa3ce4ffb22fd501d266c2c",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Under ordinary environmental conditions, oxygen gas is much more abundant per unit volume in air than dissolved oxygen is in water. Water is denser, provides greater buoyant support, and resists movement more strongly.",
+        "sample_id": "college_biology/test/74",
+        "source_url": "https://www2.gov.bc.ca/assets/gov/environment/air-land-water/water/waterquality/water-quality-guidelines/approved-wqgs/dissolvedoxygen-tech.pdf",
+        "reviewed_content_hash": "69dd79a432204f5f3eb511bea562a908a83283d12dfb408223c3290d65c6c1f0",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Water moves into a cell or grain when the surrounding solution has lower effective solute concentration than its interior. That inward osmotic flow can swell and rupture the structure rather than shrink it.",
+        "sample_id": "college_biology/test/89",
+        "source_url": "https://biology.arizona.edu/cell_bio/problem_sets/membranes/04t.html",
+        "reviewed_content_hash": "1958dad515f3026074adacbf6e3aa86fc8ea5a389d074215200f5355b40d1fe3",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "conceptual_physics/test/98",
+    "subject": "conceptual_physics",
+    "question": "Lift a 100-N crate with an ideal pulley system by pulling a rope downward with 25 N of force. For every 1-m length of rope pulled down, the crate rises",
+    "answer_code": "A",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "An ideal pulley conserves mechanical work: input force times input distance equals output force times output distance.",
+        "sample_id": "conceptual_physics/test/98",
+        "source_url": "https://www.feynmanlectures.caltech.edu/I_04.html",
+        "reviewed_content_hash": "5c6df8baec8feefc88ccd18185cf54b9299c42bcab42690f896bf5574fdb9325",
+        "role": "known_support"
+      },
+      {
+        "text": "The proton count, called the atomic number, identifies an element. The mass number is the total count of protons and neutrons; removing nucleons reduces these counts accordingly.",
+        "sample_id": "conceptual_physics/test/102",
+        "source_url": "https://ciaaw.org/atomic-weights.htm",
+        "reviewed_content_hash": "da40048335d210f0ddb5694bdc7ad9300bc248f9c090b8f5334bd29d64db1000",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "When gravity is the only force near Earth, an object accelerates downward at g regardless of whether it was released from rest or given an initial velocity.",
+        "sample_id": "conceptual_physics/test/191",
+        "source_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/free-fall-without-air-resistance/",
+        "reviewed_content_hash": "59845a7fc60485f1551995822f0b7a0b21b2d7932d9470f270eb400a374f0ba6",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Long-lived radioactive isotopes in minerals provide clocks extending over billions of years and are used to date Earth’s early formation.",
+        "sample_id": "conceptual_physics/test/138",
+        "source_url": "https://www.nist.gov/how-do-you-measure-it/how-do-you-know-age-fossils-and-other-old-things",
+        "reviewed_content_hash": "e2b39b68a58016f30da33b0857ba91e7b994fcd761eebef2f025d97cc9fbe9ef",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "At the same temperature, a classical gas species has mean molecular speed proportional to the inverse square root of its molecular mass.",
+        "sample_id": "conceptual_physics/test/45",
+        "source_url": "https://www.feynmanlectures.caltech.edu/I_39.html",
+        "reviewed_content_hash": "04d3d6335a2589d48f9138ba14ddb81c47419295691bf51e1bedc0232b592f15",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "high_school_biology/test/223",
+    "subject": "high_school_biology",
+    "question": "A certain species of land snail exists as either a cream color or a solid brown color. Intermediate individuals are relatively rare. Which of the following terms best describes this?",
+    "answer_code": "D",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "Disruptive selection favors phenotypes near both extremes over intermediate phenotypes. Under that model, a population can contain two common extreme forms with relatively few intermediates.",
+        "sample_id": "high_school_biology/test/223",
+        "source_url": "https://www.biology-pages.info/E/Evolution.html",
+        "reviewed_content_hash": "4ee4a047694e467d54fb5974d57b9b4ef1b0022561847976cfaa44609b990cc0",
+        "role": "known_support"
+      },
+      {
+        "text": "Natural selection acts on the combined effects of an organism’s traits. When a single inherited variant has both beneficial and harmful effects, its overall advantage can allow the associated harmful effect to increase with it.",
+        "sample_id": "high_school_biology/test/11",
+        "source_url": "https://openstax.org/books/biology-2e/pages/19-3-adaptive-evolution",
+        "reviewed_content_hash": "4b26c1240629a896dde42d1aaae71104c3cdbadd4225a36281f3c07506569873",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "The Calvin cycle uses ATP and NADPH to reduce fixed carbon into carbohydrates. During this use, ATP becomes ADP and NADPH is oxidized back to NADP+.",
+        "sample_id": "high_school_biology/test/297",
+        "source_url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/04:_Cell_Metabolism/4.07:_Photosynthesis_-_Pathway_of_Carbon_Fixation",
+        "reviewed_content_hash": "7ecc94a4700e691642628fb0852fe36258c9b70ed48554e0c54e03f5175cf1ec",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Fermentation oxidizes NADH back to NAD+ while reducing an organic intermediate. This replenishes NAD+ for glycolysis when aerobic electron transport cannot do so.",
+        "sample_id": "high_school_biology/test/138",
+        "source_url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/04:_Cell_Metabolism/4.04:_Glycolysis",
+        "reviewed_content_hash": "3ec304e71c96dfefa382d7be733797e1680c6b970aed5400a41d7b55ad25c3ae",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Lamarck’s historical account associated inherited change with the experiences and acquired changes of parents. Expecting acquired cold tolerance to pass to descendants resembles that account.",
+        "sample_id": "high_school_biology/test/258",
+        "source_url": "https://bio.libretexts.org/Bookshelves/Cell_and_Molecular_Biology/Biofundamentals_2e_(Klymkowsky_and_Cooper)/07:_The_Molecular_Nature_of_Heredity/7.00:_Introduction",
+        "reviewed_content_hash": "5ec828e0f54fceb106fd2a193aa198d54e8d067ef5c72cbcd2d383e8ae62d3a7",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "college_biology/test/55",
+    "subject": "college_biology",
+    "question": "In an experiment, the first cleavage plane of an amphibian zygote was manipulated so that the gray crescent was contained in only one of the two blastomeres that result from the first cleavage. The two blastomeres were then separated. What is the expected fate of the blastomeres?",
+    "answer_code": "B",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "In classic amphibian embryo-separation experiments, a blastomere retaining the dorsal gray-crescent region can organize a complete smaller embryo. A separated blastomere lacking that region develops differently.",
+        "sample_id": "college_biology/test/55",
+        "source_url": "https://www.nobelprize.org/prizes/medicine/1935/spemann/lecture/",
+        "reviewed_content_hash": "8847434cd55083ac0274b6df093225366a12ef1d975e26cf4d6b5e3ced5f4f6a",
+        "role": "known_support"
+      },
+      {
+        "text": "The classical ecosystem-development model predicts a high ratio of gross primary production to standing biomass early in succession, with less accumulated organic matter than in later stages.",
+        "sample_id": "college_biology/test/142",
+        "source_url": "https://fenix.isa.ulisboa.pt/downloadFile/281547991157118/Sucessoes%202019.pdf",
+        "reviewed_content_hash": "b8bdc66aa9e753dc44eb68a860881caf4f957dc5c77814f0a29e18aee2e5afa9",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "In population genetics, evolutionary change is tracked as changes in allele frequencies across generations. A population maintaining the same allele frequencies across generations does not show that kind of evolutionary change.",
+        "sample_id": "college_biology/test/111",
+        "source_url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Biology_(Kimball)/18:_Evolution/18.06:_The_Hardy-Weinberg_Equilibrium",
+        "reviewed_content_hash": "1904b68ab35cf0e1ee3625af0420da14518aa345983374ff98102e933d981642",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Parathyroid hormone helps regulate the amount of calcium in the blood. When blood calcium is low, parathyroid glands release more hormone, helping restore calcium availability.",
+        "sample_id": "college_biology/test/82",
+        "source_url": "https://medlineplus.gov/lab-tests/parathyroid-hormone-pth-test/",
+        "reviewed_content_hash": "f1bb555b7d89f9f590c0ebb50e6d0d59c7bce9209d529f3859101dde41c38395",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Primary succession begins on a newly exposed substrate that lacks an established soil community, such as bare rock or glacial deposits. Secondary succession begins where a previous community has been disturbed but soil remains.",
+        "sample_id": "college_biology/test/25",
+        "source_url": "https://www.adfg.alaska.gov/static/education/educators/curricula/alaskawildlifecurriculum/pdfs/alaskas_forests_wildlife_curriculum.pdf",
+        "reviewed_content_hash": "6ed3bf02ced399a65e87f491507702b2b89b14277f241d24ef639964641a9cc4",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "high_school_physics/test/36",
+    "subject": "high_school_physics",
+    "question": "Traveling at an initial speed of 1.5 × 10^6 m/s, a proton enters a region of constant magnetic field of magnitude 1.5 T. If the proton's initial velocity vector makes an angle of 30° with the magnetic field, compute the proton's speed 4 s after entering the magnetic field.",
+    "answer_code": "C",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "The magnetic part of the Lorentz force is q times the cross product of velocity and magnetic field. It is perpendicular to velocity and does no work.",
+        "sample_id": "high_school_physics/test/36",
+        "source_url": "https://www.feynmanlectures.caltech.edu/II_01.html",
+        "reviewed_content_hash": "76687463a529c093df6c8a5109752897dd3b922f9ae4d12a4aa0f7f4342f0a6f",
+        "role": "known_support"
+      },
+      {
+        "text": "For a fixed ideal spring-mass oscillator, angular frequency is sqrt(k/m) and maximum speed is angular frequency times oscillation amplitude.",
+        "sample_id": "high_school_physics/test/58",
+        "source_url": "https://www.feynmanlectures.caltech.edu/I_21.html",
+        "reviewed_content_hash": "d9906b977485b11e8ef02af4eac529ed1458a5f8863d521f2ba994490841657a",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Static equilibrium requires zero net force and zero net torque. The absolute zero of potential energy is arbitrary and need not make total mechanical energy zero.",
+        "sample_id": "high_school_physics/test/124",
+        "source_url": "https://www.feynmanlectures.caltech.edu/I_18.html",
+        "reviewed_content_hash": "3b3bfc393b78779d3d4cdd55f367f8fc2653d77e57557f312edd5647147fe1c3",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "A pendulum is an oscillator. With fixed gravitational acceleration and fixed release angle, its period scales with the square root of its length and not its mass.",
+        "sample_id": "high_school_physics/test/105",
+        "source_url": "https://www.feynmanlectures.caltech.edu/I_21.html",
+        "reviewed_content_hash": "7b0eda98f8ae7f1f1be1442e2ecaf573fcf690e39ede18fe72a282e95a52b1ec",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "A magnetic force on a charged particle is q(v cross B). When velocity is parallel to the field, this cross product is zero.",
+        "sample_id": "high_school_physics/test/72",
+        "source_url": "https://www.feynmanlectures.caltech.edu/II_01.html",
+        "reviewed_content_hash": "7c7dc8df098bcc06eebf77668a8911c617496e0c9a25cbffa3a503a03ee311dd",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "astronomy/test/123",
+    "subject": "astronomy",
+    "question": "The sky is blue because",
+    "answer_code": "D",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "Air molecules scatter shorter visible wavelengths more strongly than longer visible wavelengths. More blue than red sunlight is scattered across the daytime sky.",
+        "sample_id": "astronomy/test/123",
+        "source_url": "https://spaceplace.nasa.gov/blue-sky/en/",
+        "reviewed_content_hash": "47a541d6fd376f785cb59caf94f634e5dbd47e0fc4f8a4a35b6c2ea384e57041",
+        "role": "known_support"
+      },
+      {
+        "text": "Hawking radiation is the proposed quantum process by which a black hole loses energy and can gradually evaporate.",
+        "sample_id": "astronomy/test/73",
+        "source_url": "https://science.nasa.gov/universe/10-questions-you-might-have-about-black-holes/",
+        "reviewed_content_hash": "c82f2f5d19fd0b8a5cf331ca4cca669e7e5f6b5d6770265718de1d49edb27f0f",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Jupiter’s Trojan asteroids occupy swarms near the stable L4 and L5 regions of its orbit, about 60 degrees ahead of and behind Jupiter.",
+        "sample_id": "astronomy/test/125",
+        "source_url": "https://www.nasa.gov/missions/how-were-the-trojan-asteroids-discovered-and-named/",
+        "reviewed_content_hash": "e0e6da17e0bb54199bb5fd72bce220a9f4b86252c002e1450d9cff9618e75e6f",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Tidal interaction transfers angular momentum from Earth’s rotation to the Moon’s orbit. The Moon slowly recedes while Earth’s rotation slows, lengthening Earth’s day.",
+        "sample_id": "astronomy/test/104",
+        "source_url": "https://science.nasa.gov/solar-system/moon/10-things-what-we-learn-about-earth-by-studying-the-moon/",
+        "reviewed_content_hash": "9af3778bf456436b2eefad2ce5fb5dc07747d7a7e34f5511f7a881c1503e2510",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Pluto completes one revolution around the Sun in approximately 248 Earth years.",
+        "sample_id": "astronomy/test/136",
+        "source_url": "https://starchild.gsfc.nasa.gov/docs/StarChild/solar_system_level1/pluto_facts.html",
+        "reviewed_content_hash": "c2e636bd9a54eedd6e648474afee9bbccc3042158a834091100a79aa5fc01048",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "high_school_chemistry/test/63",
+    "subject": "high_school_chemistry",
+    "question": "Solvents A and B form an ideal solution. Solvent A has a vapor pressure of 345 torr at room temperature. At the same temperature, solvent B has a vapor pressure of 213 torr. What is the vapor pressure of a mixture where the mole fraction of A is 0.285?",
+    "answer_code": "D",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "For an ideal mixture of two volatile liquids, the total vapor pressure is x_A P_A* + x_B P_B*, where the liquid mole fractions add to one.",
+        "sample_id": "high_school_chemistry/test/63",
+        "source_url": "https://www.chemguide.co.uk/physical/phaseeqia/idealpd.html",
+        "reviewed_content_hash": "3c2aa016105222a3c9018f655a7bf13dde63f09604ea8edb2f31e3e281180c14",
+        "role": "known_support"
+      },
+      {
+        "text": "Boiling separates molecules by overcoming intermolecular attractions. For liquid ammonia these include hydrogen bonding; boiling does not require breaking the covalent N-H bonds within each molecule.",
+        "sample_id": "high_school_chemistry/test/14",
+        "source_url": "https://www.chemguide.co.uk/atoms/bonding/hbond.html",
+        "reviewed_content_hash": "f467edf682472896dd5ff77447806f998051da39c6eb9b12e3fa09dfe26a9cce",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Sulfur tetrafluoride has four bonding pairs and one lone pair at sulfur, giving a seesaw molecular shape. By contrast, ideal BF3, PCl5, and CO2 have balanced arrangements of identical surrounding atoms.",
+        "sample_id": "high_school_chemistry/test/11",
+        "source_url": "https://www.chem.tamu.edu/rgroup/marcetta/chem362/lectures/Lectures%2010%20and%2011.pdf",
+        "reviewed_content_hash": "b190ab9b048f81aadf1579828e7585f277ba3274072cd0be2b934daa7e8ab5f3",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Silver chloride contains one chlorine atom for every silver atom. Its chlorine mass fraction is the chlorine molar mass divided by the sum of the silver and chlorine molar masses.",
+        "sample_id": "high_school_chemistry/test/167",
+        "source_url": "https://ciaaw.org/atomic-weights.htm",
+        "reviewed_content_hash": "8f61c64320f5943d1769b5acd7c0673e33a4da0fe7d12a911ce21944a5ba3d91",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Within a set of orbitals of equal energy, ground-state electrons occupy separate orbitals with parallel spins before pairing in one orbital.",
+        "sample_id": "high_school_chemistry/test/7",
+        "source_url": "https://www.chemguide.co.uk/atoms/properties/elstructs.html",
+        "reviewed_content_hash": "82d6f69439f1f463c09f67320cf68c55c2dcaae8708ca7ef97f3914f9a778035",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "college_computer_science/test/92",
+    "subject": "college_computer_science",
+    "question": "Let G = (V, E) be a connected, undirected graph, and let a and b be two distinct vertices in V. Let P_1 be the problem of finding a shortest simple path between a and b, and let P_2 be the problem of finding a longest simple path between a and b. Which of the following statements about P_1 and P_2 is true?",
+    "answer_code": "B",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "In an unweighted graph, breadth-first search finds a shortest path in polynomial time. A general longest simple path includes the Hamiltonian-path problem, and no general polynomial-time algorithm is known.",
+        "sample_id": "college_computer_science/test/92",
+        "source_url": "https://vjs.ac.vn/jcc/article/download/12935/382910/389571",
+        "reviewed_content_hash": "c4688cad6951d6eb51869ea8f49b75096103c3b3b2836be174a00014f130931b",
+        "role": "known_support"
+      },
+      {
+        "text": "Horizontal microinstructions expose control signals directly, allowing several compatible micro-operations in a cycle. Vertical microinstructions encode more of the control information and require decoding.",
+        "sample_id": "college_computer_science/test/51",
+        "source_url": "https://www.nrcmec.org/pdf/Course-Content/CSE/NR21/II-I/COA/COA-%20PPT.pdf",
+        "reviewed_content_hash": "17511afc6da06e84ca2b4488b150f8fc23867070f8908ce7f587d57aae4f0f56",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "A finite binary fraction is an integer divided by a power of two. A reduced rational fraction has a terminating binary expansion only when its denominator has no prime factors other than two.",
+        "sample_id": "college_computer_science/test/46",
+        "source_url": "https://docs.python.org/3/tutorial/floatingpoint.html",
+        "reviewed_content_hash": "3f6ed4144864df3c962b4f34fb16fbe54267833c06bb6f221f7644d70498103c",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Eight-bit signed magnitude and ones complement represent integers from -127 to 127. Eight-bit twos complement represents -128 to 127. A sum within the relevant range does not overflow that representation.",
+        "sample_id": "college_computer_science/test/49",
+        "source_url": "https://cwe.mitre.org/data/definitions/190.html",
+        "reviewed_content_hash": "1e8e967a24ab96742368dbb406aee80b4a8762c6bdd00760560610c3af66e9c8",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Conventional quicksort has quadratic worst-case running time when partitions are highly unbalanced. Its average running time is proportional to n log n under the usual input or pivot-randomness model.",
+        "sample_id": "college_computer_science/test/27",
+        "source_url": "https://xlinux.nist.gov/dads/HTML/quicksort.html",
+        "reviewed_content_hash": "dba5e5c6a3218b853a5c291b0e270cc202d6aefbe7d9c3c8c986fad9fa816e94",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "astronomy/test/103",
+    "subject": "astronomy",
+    "question": "The famous Drake equation attempts to answer the following question:",
+    "answer_code": "D",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "The Drake equation estimates the number of communicative civilizations in the Milky Way. It organizes the search for extraterrestrial intelligence rather than measuring the age or size of the universe.",
+        "sample_id": "astronomy/test/103",
+        "source_url": "https://www.seti.org/drake-equation-index",
+        "reviewed_content_hash": "4b829c4e3d177a94e90cef9cf288b1f7e1995b237407010161c198760d65efb0",
+        "role": "known_support"
+      },
+      {
+        "text": "In the usual ordering of electromagnetic bands from shorter to longer wavelengths, gamma rays come before X-rays, ultraviolet, visible light, infrared, and radio waves.",
+        "sample_id": "astronomy/test/135",
+        "source_url": "https://imagine.gsfc.nasa.gov/science/toolbox/emspectrum1.html",
+        "reviewed_content_hash": "7ae7aa35ac774055a24a412bb837afcb38c7bf54c6db10d715d50287b8e5609a",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "The Sun contains almost all the mass of the solar system. Hydrogen makes up about three quarters of the Sun’s mass, helium about one quarter, and all other elements together only a few percent. Helium is therefore the solar system’s second most abundant element.",
+        "sample_id": "astronomy/test/8",
+        "source_url": "https://openstax.org/books/astronomy-2e/pages/15-1-the-structure-and-composition-of-the-sun",
+        "reviewed_content_hash": "e43f463e92763e7ff15190ec51e70c25417b5ce70a526520be1dc7488ec3c26d",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Jupiter’s four Galilean satellites are Io, Europa, Ganymede and Callisto.",
+        "sample_id": "astronomy/test/56",
+        "source_url": "https://science.nasa.gov/jupiter/jupiter-facts/",
+        "reviewed_content_hash": "a0528a9c04a65177d4d3cb46447ffca40e9ced09f63010d6df0a89c5c1cdcbaf",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "The Large Magellanic Cloud is a small satellite galaxy associated with the Milky Way, containing stars, gas clouds, and active star-forming regions.",
+        "sample_id": "astronomy/test/12",
+        "source_url": "https://science.nasa.gov/universe/galaxies/large-magellanic-cloud/",
+        "reviewed_content_hash": "5d9d79ca605c6e0bbb51276ebd4af9b0a23171642ce4e9a806cfdaa1d91b7697",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "high_school_computer_science/test/26",
+    "subject": "high_school_computer_science",
+    "question": "Which of the following programs is most likely to benefit from the use of a heuristic?",
+    "answer_code": "C",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "A heuristic uses information about a problem to guide a search toward promising choices. Geographical estimates can guide a route search toward a destination and reduce exploration.",
+        "sample_id": "high_school_computer_science/test/26",
+        "source_url": "https://xlinux.nist.gov/dads/HTML/heuristic.html",
+        "reviewed_content_hash": "d6abeaceb1733291e46256f21ca0c086a4380e9e20d87f723daea3bd80c1dd7d",
+        "role": "known_support"
+      },
+      {
+        "text": "An expression may be syntactically valid yet raise an exception when executed. Python division by zero is an example of a runtime exception.",
+        "sample_id": "high_school_computer_science/test/93",
+        "source_url": "https://docs.python.org/3.9/tutorial/errors.html",
+        "reviewed_content_hash": "f510e81dccf3d0ceaa78a45ba1023e4c5b943ae94f1a0349a1ed5f2a10ebeadf",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Internet routing can exploit redundant paths to continue providing service despite failures of intermediate gateways or networks.",
+        "sample_id": "high_school_computer_science/test/61",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+        "reviewed_content_hash": "226c9ebedc197a7376003df0bebf337368feb23ea91ddf76baf228fe70054f1b",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "An IP packet contains a header and data. The header carries information needed to deliver the packet through the network.",
+        "sample_id": "high_school_computer_science/test/19",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+        "reviewed_content_hash": "a80431b306e35374e769b027cdc5d642198fcb054568c25988e5ae8736b61ee0",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "A Java static field belongs to the class rather than an individual instance. Instance fields hold separate state for each object.",
+        "sample_id": "high_school_computer_science/test/77",
+        "source_url": "https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html",
+        "reviewed_content_hash": "34e462e9f4018851a09d6779b68d480bfa19f9951232e17984f88181e3bb36f3",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "college_computer_science/test/72",
+    "subject": "college_computer_science",
+    "question": "Which of the following pairs of 8-bit, two's-complement numbers will result in overflow when the members of the pairs are added?",
+    "answer_code": "D",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "To decode an eight-bit twos-complement value, subtract 256 from its unsigned value when the top bit is one. Addition overflows when the mathematical sum falls outside -128 through 127.",
+        "sample_id": "college_computer_science/test/72",
+        "source_url": "https://cwe.mitre.org/data/definitions/190.html",
+        "reviewed_content_hash": "bea47a33f5f6a90dc060c5e41a376c2ce3c4b860d53bb61a5230fddf79ebd4e5",
+        "role": "known_support"
+      },
+      {
+        "text": "Each edge can reduce the number of connected components by at most one. A component on k vertices can hold at most k(k-1)/2 edges in a simple undirected graph.",
+        "sample_id": "college_computer_science/test/5",
+        "source_url": "https://dlmf.nist.gov/26.3",
+        "reviewed_content_hash": "dd4d235e9da6ed01920285ddf35e62b958df538d6ad727fd84c8bc845552279d",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "AND and OR preserve monotonicity, so expressions built from them alone cannot express NOT. Adding NOT to either AND or OR is functionally complete, and NAND alone can express all three operations.",
+        "sample_id": "college_computer_science/test/4",
+        "source_url": "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-exam-reference-sheet.pdf",
+        "reviewed_content_hash": "db912834a6c2f258c5d0275faaf3922baeabf5322189035a9261f2de21c2ad80",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "A conventional process has separate stack and heap regions. Procedure-call stack frames keep information such as local variables, arguments, and return state; the dynamically allocated heap is a separate area.",
+        "sample_id": "college_computer_science/test/34",
+        "source_url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf",
+        "reviewed_content_hash": "4c7370cc115c1f8e5732aa6b56d2cec78f0fea663b1fc4dbe1c1198ac5d1637d",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Finite-precision arithmetic can lose information during rounding. In general, changing parentheses changes which intermediate values are rounded, so floating-point addition is not associative.",
+        "sample_id": "college_computer_science/test/8",
+        "source_url": "https://docs.python.org/3/tutorial/floatingpoint.html",
+        "reviewed_content_hash": "15dad4404bafcae9f94a0b511563a2760d7c3ec439d2f3b0e78f256029c905ab",
+        "role": "other_case_passage"
+      }
+    ]
+  },
+  {
+    "sample_id": "high_school_computer_science/test/48",
+    "subject": "high_school_computer_science",
+    "question": "A programmer is deciding between using a linear or binary search to find a target value in a sorted list. Which of the following is true?",
+    "answer_code": "B",
+    "context_kind": "one known support plus four same-subject passages; distractor sufficiency unreviewed",
+    "documents": [
+      {
+        "text": "Binary search repeatedly halves the search interval in a sorted array and takes logarithmic time. A sequential scan can require examining the whole list.",
+        "sample_id": "high_school_computer_science/test/48",
+        "source_url": "https://xlinux.nist.gov/dads/HTML/binarySearch.html",
+        "reviewed_content_hash": "7c64e28c3c2861fd2ac917b72d80fd0a67b2463149986bfd23d4b3498d086a08",
+        "role": "known_support"
+      },
+      {
+        "text": "The string method isupper() is true when the string contains at least one cased character and every cased character is uppercase.",
+        "sample_id": "high_school_computer_science/test/15",
+        "source_url": "https://docs.python.org/3.9/library/stdtypes.html#str.isupper",
+        "reviewed_content_hash": "594712939cd5cf563e7e8d4cdb335d0b69bd9260176416cf8a5369af41fd960d",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "A high-level source program can be translated through compilation and assembly into machine instructions represented as bits. High-level notation generally makes the program easier for people to read.",
+        "sample_id": "high_school_computer_science/test/8",
+        "source_url": "https://gcc.gnu.org/onlinedocs/gcc/Overall-Options.html",
+        "reviewed_content_hash": "6e0c4dd850c04682e507b6ae5ba3a4cd4516d2ab6413c4a23838f91385af76ad",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "In a Python sequence slice s[i:j:k], k is the step. With positive step two and omitted bounds, selection begins at the start and takes every second element.",
+        "sample_id": "high_school_computer_science/test/92",
+        "source_url": "https://docs.python.org/3.9/library/stdtypes.html#common-sequence-operations",
+        "reviewed_content_hash": "5c63035c131a1525bbad3c7ebea73e4b1ddd04efd74bb6f8e881de1b28406905",
+        "role": "other_case_passage"
+      },
+      {
+        "text": "Internet hosts require network addresses for communication. DHCP supports automatic allocation of reusable network addresses to hosts.",
+        "sample_id": "high_school_computer_science/test/86",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+        "reviewed_content_hash": "54f6515b2f7cc627f718e8b2b93a5c0cd7684ce79d13564c6b791405e3d79547",
+        "role": "other_case_passage"
+      }
+    ]
+  }
+]

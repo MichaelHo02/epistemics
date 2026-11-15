@@ -22,6 +22,12 @@ def main():
     env_dir = root/".venv"
     venv.EnvBuilder(with_pip=True).create(env_dir)
     python = str(env_dir/"bin/python")
+    workflow = json.loads((root/"configs/pilot.json").read_text()).get("workflow", "responses")
+    if workflow == "filter_mechanism_screen":
+        subprocess.run([python, "-m", "pip", "install", "-r", str(root/"filter-screen/requirements.txt")], check=True)
+        subprocess.run([python, "-u", str(root/"filter-screen/check.py"),
+                        "--output", str(args.output_root/"filter-mechanism"/run_id)], check=True)
+        return
     subprocess.run([python, "-m", "pip", "install", "-r", str(root/"requirements.lock")], check=True)
     # Run directly from this immutable snapshot without sharing the worktree venv.
     env = dict(os.environ, PYTHONPATH=str(root/"src"), TRACK1_ENV_FILE=str(args.env_file))

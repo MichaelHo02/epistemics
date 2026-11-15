@@ -14,7 +14,7 @@
     "status": "pending",
     "reviewer": null
   },
-  "workflow": "openai_evaluation",
+  "workflow": "filter_mechanism_screen",
   "adaptive_data": {
     "seed_ids": [
       "closing-01",
