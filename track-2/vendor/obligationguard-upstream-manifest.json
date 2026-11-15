@@ -1,0 +1,818 @@
+{
+  "repository": "https://github.com/THU-Agent/ObligationGuard",
+  "revision": "58f644a25e801cb19dca961ba6df0b354c640551",
+  "source_archive_url": "https://codeload.github.com/THU-Agent/ObligationGuard/tar.gz/58f644a25e801cb19dca961ba6df0b354c640551",
+  "imported_file_count": 101,
+  "verified_against_complete_git_tree": true,
+  "exception": "Only .gitattributes is renamed to .gitattributes.upstream so foreign Git LFS filters do not apply. Every imported file matches the original upstream Git blob.",
+  "files": [
+    {
+      "upstream_path": ".gitattributes",
+      "imported_path": ".gitattributes.upstream",
+      "bytes": 209,
+      "sha256": "04baf6e2b47ef34f8baeab1750bb599cda9005473f1e68c867a0925d66904cab",
+      "git_blob_sha1": "7cebca389b10de280ea67a722b2ef0ef1ea18394",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": ".gitignore",
+      "imported_path": ".gitignore",
+      "bytes": 153,
+      "sha256": "be47f334de221e777adaa3d3ffa38911ed178863ab06d6960abaa705ec5abb70",
+      "git_blob_sha1": "c2685d5b8d7860a96cff037ac63cc8caba4625ce",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "FILE_CHECKSUMS.json",
+      "imported_path": "FILE_CHECKSUMS.json",
+      "bytes": 10775,
+      "sha256": "f5eb2b10570bf59ee41ecd0d0463471b8be28de7aa5fdfeae03a01dc59e1878c",
+      "git_blob_sha1": "bf91525abde65f2da216b6b527b678a55ff13c35",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "README.md",
+      "imported_path": "README.md",
+      "bytes": 8468,
+      "sha256": "1631e77b33c422c0f511e1ce80de096fcb57a48829024775deafd16f39b76550",
+      "git_blob_sha1": "c4252a93618182d24317dc418ef4b463603ee829",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "Supplementary_Materials.pdf",
+      "imported_path": "Supplementary_Materials.pdf",
+      "bytes": 3469177,
+      "sha256": "7daf91f76bddafe5614bdb09ab8473e01975b715d29459e02d642fffe3955604",
+      "git_blob_sha1": "df8024a1b12ed12f534129241940c2cba3cb37d1",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "configs/external_sources.json",
+      "imported_path": "configs/external_sources.json",
+      "bytes": 401,
+      "sha256": "d514d91a6d8f0f3d8bb610367471e91bb5fad66c2f971fc1f39371f6c9108afb",
+      "git_blob_sha1": "b0addccb1825c6f9922eb543a7ce4ecd49935780",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "configs/model_sources.json",
+      "imported_path": "configs/model_sources.json",
+      "bytes": 1517,
+      "sha256": "2b7f347d9e7f14b6ee07e83b89f28963e3c23e02c58749d23dba2a8630d2c10a",
+      "git_blob_sha1": "d481d58d9baba85edc4f8686f7623b7fe37ddcde",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "configs/models.json",
+      "imported_path": "configs/models.json",
+      "bytes": 5503,
+      "sha256": "eed0ca6ecf2f826dafa2299e4bb59b417ad62868b4f553a3ece451a4b18e7bb1",
+      "git_blob_sha1": "8e8d717938e36ad49576f7376581d96930506a68",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "configs/paper.toml",
+      "imported_path": "configs/paper.toml",
+      "bytes": 1142,
+      "sha256": "1b282db3c59474c195e207ff2da74ff66ccbd3bca3288c7c91477c5a11b5ea04",
+      "git_blob_sha1": "b68b659def1af4c1eb6ffe2eb94a41e624315369",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "configs/runtime.toml",
+      "imported_path": "configs/runtime.toml",
+      "bytes": 1868,
+      "sha256": "3ffd1204fc4c6069ce80d9f2633208f9fdca0339a1428cbb68a6ea4727cb4c24",
+      "git_blob_sha1": "cee789251c058ffcb4721d14b51adfe33416ea8e",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "configs/zero3.json",
+      "imported_path": "configs/zero3.json",
+      "bytes": 266,
+      "sha256": "a8c6b7e53e6e2a63d41f3c347e8c184101306ef7856d85b6b42c60e530f92b40",
+      "git_blob_sha1": "151e0b711e1ad3415603453de4f9e9899f2cb03d",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "data/01_positive/obligationbench_positive.jsonl",
+      "imported_path": "data/01_positive/obligationbench_positive.jsonl",
+      "bytes": 3664305,
+      "sha256": "2cf5e4fa9b5df98f7d956823d6b6edc2308a7fcc38d945c337fc26d9e07afd61",
+      "git_blob_sha1": "9265d6ac1947dfaaa41984b93137b82b1bee0f80",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "data/02_negative/obligationbench_negative.jsonl",
+      "imported_path": "data/02_negative/obligationbench_negative.jsonl",
+      "bytes": 4783338,
+      "sha256": "5aa6a0c6f7755acf89272c21374281edf439241108a3fc92d6e779052784fae5",
+      "git_blob_sha1": "92e92e2acdcc03745a610888679705c8b31383fa",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "data/benchmark_manifest.json",
+      "imported_path": "data/benchmark_manifest.json",
+      "bytes": 654,
+      "sha256": "7d66c2f995e8c47b7db6537b8f51ac172916b0b8bd10818a50e3f7d0adcff35c",
+      "git_blob_sha1": "314d0a8a8487df752e79fecf879f96ac03ee9ebc",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "data/manifest.json",
+      "imported_path": "data/manifest.json",
+      "bytes": 1243,
+      "sha256": "47eaf13b52881085ee7fc679928880143206243a7dec85beaa1e8647730849d3",
+      "git_blob_sha1": "ecb90b26eedd1a943f30ce1c8b7c013d35345eb8",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "data/obligationbench.jsonl",
+      "imported_path": "data/obligationbench.jsonl",
+      "bytes": 8447643,
+      "sha256": "9460a8ebb9004cc4366e17aea517e2fc6510a9b4c5bf190da95ffa1b138a0653",
+      "git_blob_sha1": "5f2123eec48c41ce5a8d7032312d79a7ffd14da4",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "data/split_ids.json",
+      "imported_path": "data/split_ids.json",
+      "bytes": 2016048,
+      "sha256": "ceca15195e54753ef2fd17c13c3dffb982cf6d625244f90fbb8f6cd8e555c496",
+      "git_blob_sha1": "a772f58086d9a3baee0bc6a58b4c527dd04a8860",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "data/train.jsonl",
+      "imported_path": "data/train.jsonl",
+      "bytes": 134,
+      "sha256": "b41a7d45ed29d70416240d1882a5fc093017fa702e3ee2e3c368e6b902c86c40",
+      "git_blob_sha1": "2af456eea4da7486ed981e0b14a36ca74326a3af",
+      "lfs_pointer": true
+    },
+    {
+      "upstream_path": "data/validation.jsonl",
+      "imported_path": "data/validation.jsonl",
+      "bytes": 6011345,
+      "sha256": "00247d49b4d49863045a8d15ce33506274c8e87f32a66e840775e76267c52ed8",
+      "git_blob_sha1": "fcb2bd08276e5521397810ffc10e2700230f4bc3",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "data/without_templates/manifest.json",
+      "imported_path": "data/without_templates/manifest.json",
+      "bytes": 1488,
+      "sha256": "a76b15b420d0158692da926c07a64718e0d6bef2d4f34660d10bf1acbfce46ee",
+      "git_blob_sha1": "98d4d80d141211578a11bd421517604b2e25e061",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "data/without_templates/source_manifest.json",
+      "imported_path": "data/without_templates/source_manifest.json",
+      "bytes": 277,
+      "sha256": "355cb6ded9602a2ea5f669d9f3f996bef5f5e95e024b1ca678a37b919fed49b0",
+      "git_blob_sha1": "79179e07c8ff046f1e185a44441984ef840ed9ca",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "data/without_templates/split_ids.json",
+      "imported_path": "data/without_templates/split_ids.json",
+      "bytes": 2016048,
+      "sha256": "f407c41cbd308447db0c32095652a70fd8a94ef37c264289779cb3c01a81951c",
+      "git_blob_sha1": "a135848b3d142b249df53e397de3e0bb274211db",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "data/without_templates/train.jsonl",
+      "imported_path": "data/without_templates/train.jsonl",
+      "bytes": 134,
+      "sha256": "7d5b2c2299198ebf2b4645ce6b0d5a0e10337d159ee2deb83d5e6945f00f9c49",
+      "git_blob_sha1": "1319435725dd6b7179b7c6baaaddeb353d495aa5",
+      "lfs_pointer": true
+    },
+    {
+      "upstream_path": "data/without_templates/train_42000.jsonl",
+      "imported_path": "data/without_templates/train_42000.jsonl",
+      "bytes": 134,
+      "sha256": "201526ce90b4b9d328b5179aff9ca3bc56734ee57f1dbca21b4e6609b5d7b5f2",
+      "git_blob_sha1": "18c506a2dc13f8641fe97391025afce3a2badc0e",
+      "lfs_pointer": true
+    },
+    {
+      "upstream_path": "data/without_templates/validation.jsonl",
+      "imported_path": "data/without_templates/validation.jsonl",
+      "bytes": 7891160,
+      "sha256": "ae49d2989d6501003d3dd6b200b76e39bc95b5c492a0e99bf3b5c477ec977468",
+      "git_blob_sha1": "7a68b724362a21e5eaf97c89d85321d6486bc970",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "docs/assets/benchmark-statistics.png",
+      "imported_path": "docs/assets/benchmark-statistics.png",
+      "bytes": 872234,
+      "sha256": "448c464cc10bbb129a3220fec8de58040fcb7d599b1b220af7781ff64da2ded9",
+      "git_blob_sha1": "dd0f1158e096b8f720a4f8f8a2cd7c52082fe705",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "docs/assets/motivation.png",
+      "imported_path": "docs/assets/motivation.png",
+      "bytes": 731974,
+      "sha256": "f1fd967f13a98a5d7945765b399f17f42e5a30d9819a5dbc12c32c010656097b",
+      "git_blob_sha1": "66f64edaddd3a5878b6449f6aee174efb0e433df",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "docs/assets/sources.json",
+      "imported_path": "docs/assets/sources.json",
+      "bytes": 481,
+      "sha256": "1b4b0176b5f6ab18b6e65992ae48adcb0918c704244de5a73519b380e6c97915",
+      "git_blob_sha1": "f7093f5547f0123dd71083a83eedb22b8715b27c",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "docs/commands.md",
+      "imported_path": "docs/commands.md",
+      "bytes": 3269,
+      "sha256": "0a4203b543acc9bee8a7ef4648d8cbb928f1533656bc5ed64d773007e93cfaf7",
+      "git_blob_sha1": "8e70501909e7233d3669e8b67cf362348727b973",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "docs/data_format.md",
+      "imported_path": "docs/data_format.md",
+      "bytes": 2745,
+      "sha256": "aa56819ee163d9c9bef225d4749288b9b3e91d8855afbb0c3a740d2e7390208c",
+      "git_blob_sha1": "86d176589681d5fb4c9d0878428a9d8fb033603e",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "docs/setup.md",
+      "imported_path": "docs/setup.md",
+      "bytes": 5213,
+      "sha256": "49a94497eae6388a7fc01df5755a701e84ae06d7b7f6aa1ade193805bc8eb9c4",
+      "git_blob_sha1": "fe30bda72458322fc3ce7685447dd3a691827416",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "imported_path": "pyproject.toml",
+      "bytes": 794,
+      "sha256": "9b82e133c0db4693d83b09a49d60c3d140f2134f12226543ad4dc8dc2eed5545",
+      "git_blob_sha1": "8e8189a489af2a01dcba304954e643519b9e2075",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "requirements-agent.txt",
+      "imported_path": "requirements-agent.txt",
+      "bytes": 124,
+      "sha256": "cbb68ccfce0899504c82528239bbb29200505754ab32ba969e2bba7473061c09",
+      "git_blob_sha1": "d86226dd5fcf8c1d7220ef83e874df33728004ea",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "requirements-audit.txt",
+      "imported_path": "requirements-audit.txt",
+      "bytes": 47,
+      "sha256": "fb2d526fd506baf8f69dbc0de7fe141b3230865dd9e8d598118760943a709ed4",
+      "git_blob_sha1": "5c43308bdb12045d515defb86906624b9d8fdddc",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "requirements-inference.txt",
+      "imported_path": "requirements-inference.txt",
+      "bytes": 34,
+      "sha256": "82712d489f46eb0fa1114a7e3c93968291ea15ad12eb941ba91ad4d40b144acf",
+      "git_blob_sha1": "d36b5ee8f12b444da6c581d944f0ba7a0e4fd086",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "requirements-train.txt",
+      "imported_path": "requirements-train.txt",
+      "bytes": 90,
+      "sha256": "858c4d713e913e991fad29ff73b7b193891d9a0e9fda9eb4d833ec1cb13e453c",
+      "git_blob_sha1": "8c43b331893399d8ba7044289e67b8f77e85a98c",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "scripts/check.bat",
+      "imported_path": "scripts/check.bat",
+      "bytes": 186,
+      "sha256": "26e7dd195616b2578457c753b2f98974b37e1db9086b9ac6f62ebbdc26bad47b",
+      "git_blob_sha1": "0256ff557ff431cc55bfd8efa75003195aa4f075",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "scripts/fetch_susvibes.py",
+      "imported_path": "scripts/fetch_susvibes.py",
+      "bytes": 1158,
+      "sha256": "96e87e707b56a738c5a6852b2f3228172ff20eadc81947f51c76e8d7892b81d8",
+      "git_blob_sha1": "e707fee8e64070be5ad289ccee1284231eef7c5d",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "scripts/package_release.py",
+      "imported_path": "scripts/package_release.py",
+      "bytes": 5463,
+      "sha256": "4f7aa5792f76e1a1f6935828ac2bf52b31c49610c0724860b147664c7383acb4",
+      "git_blob_sha1": "570765a83d96970c1db45dac87d105e5d5886a16",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "scripts/run_all.bat",
+      "imported_path": "scripts/run_all.bat",
+      "bytes": 383,
+      "sha256": "1f84dcc646108c7f4f2adad76e5d2e8d3fcfd9a026c3c28628a7b13055101ef1",
+      "git_blob_sha1": "8c8455f884485f1c170f0bc514f6da9ee37f8bd1",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "scripts/run_all.sh",
+      "imported_path": "scripts/run_all.sh",
+      "bytes": 541,
+      "sha256": "2de9de92639fdda5b1f209ba8462f7f078a108a712f28bd6be5d35cc48778441",
+      "git_blob_sha1": "9b31fe7fc388d100bc88f54da5d3e65a9382d218",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "scripts/setup_inference.sh",
+      "imported_path": "scripts/setup_inference.sh",
+      "bytes": 534,
+      "sha256": "1b78569f6c0ddb07655a4519d1171524b37834af2e8b201c2155c40057f99dba",
+      "git_blob_sha1": "111a30c32c16bea21c43494346000823aa527dbd",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "scripts/setup_train.sh",
+      "imported_path": "scripts/setup_train.sh",
+      "bytes": 571,
+      "sha256": "ece93b63c729e3921dd485530659db6fb875b7b8b468ca65b602b1516e5591fa",
+      "git_blob_sha1": "4d03ffadffa4c61fb89ff9d21651327082d704cd",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "scripts/test.bat",
+      "imported_path": "scripts/test.bat",
+      "bytes": 136,
+      "sha256": "92420e5b7b4b3be8340a4aaa15bc529ca4d73042a000e1c7b5f6412e2741434d",
+      "git_blob_sha1": "26deb329480b1ae94122f9deaf5511c9bf9e0248",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/__init__.py",
+      "imported_path": "src/obligationguard/__init__.py",
+      "bytes": 92,
+      "sha256": "1aa39f3e440ce104f8c019356c7caa72cb9260494c8f1da6951a04019eb686a0",
+      "git_blob_sha1": "6c6d4c7a9dd53a3f4929de95267aa6ecd9e092a9",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/__main__.py",
+      "imported_path": "src/obligationguard/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "git_blob_sha1": "eb53e2f31b2f703ad32ef64b8a41faa3e7d18e08",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/ablations.py",
+      "imported_path": "src/obligationguard/ablations.py",
+      "bytes": 1283,
+      "sha256": "bf204e2fdc09b0a6ca4cf5a04872d368fb8e50ec2bd28108ec15a71f8546bc1f",
+      "git_blob_sha1": "47156958984a5a4419d09ad0f6e17ce507a2d522",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/analysis.py",
+      "imported_path": "src/obligationguard/analysis.py",
+      "bytes": 4829,
+      "sha256": "b88972843ab73bf8c67107451568b814b8410e5ccf9ee6258844bf347caf3bfa",
+      "git_blob_sha1": "6333b66ca477e4619821cd3fe117dae992a25148",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/backends.py",
+      "imported_path": "src/obligationguard/backends.py",
+      "bytes": 12768,
+      "sha256": "7ff97c1bcb0c4865a6f4a56d31bd30ff0e2e8c1823b11a99ffa50612f76a943a",
+      "git_blob_sha1": "11d959a03e7b2416b024f9fb0a46db9dfd93ecad",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/benchmark.py",
+      "imported_path": "src/obligationguard/benchmark.py",
+      "bytes": 3926,
+      "sha256": "67be3994a88983367d325a1da3886c4d10b1cd177ced2e3da7c9fdccd6c8994d",
+      "git_blob_sha1": "8ab419391acab0693b194705420793c2788e96de",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/catalog.py",
+      "imported_path": "src/obligationguard/catalog.py",
+      "bytes": 417,
+      "sha256": "652844bfbb9b771e964dd6dfc02ec554ef80c56b8fa6f628f03fdd738a0c559e",
+      "git_blob_sha1": "49c9d2f802fff8bd48eae91ef06c42e2fa67e323",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/cli.py",
+      "imported_path": "src/obligationguard/cli.py",
+      "bytes": 7925,
+      "sha256": "7bcad7c6c3eb111738b44a0925cb7229403edb5e4a310e859383f6f92eaa7012",
+      "git_blob_sha1": "d1fb521d48b8ecc2732e2ba0196d830f3b1c0c78",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/config.py",
+      "imported_path": "src/obligationguard/config.py",
+      "bytes": 5326,
+      "sha256": "ef3d1659c3d9a22b75cd419601ca93c7cd5c7f6151aab0e267ceef3d4b3da3cb",
+      "git_blob_sha1": "af3b5f22e81bf4b77c402f1fb16ab1873eac7863",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/container_state.py",
+      "imported_path": "src/obligationguard/container_state.py",
+      "bytes": 3003,
+      "sha256": "6c7c1d0171521f815629d9e8a2542d8dcd04ceb966bad5e42d45a08438241684",
+      "git_blob_sha1": "ed85f61f31390ef243f34ca69d19f533cade0a5b",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/datasets.py",
+      "imported_path": "src/obligationguard/datasets.py",
+      "bytes": 3484,
+      "sha256": "be03c243bb48b0ffc4d5ca17d1ffab4d0a5f6de61cde09befc6071550e21fd18",
+      "git_blob_sha1": "59bb74021de990f67767f4060979d8172865aaf3",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/direct_data.py",
+      "imported_path": "src/obligationguard/direct_data.py",
+      "bytes": 4958,
+      "sha256": "a6e72789628eefdfaf4b67eb3bc732cadcebcdd614373f4da2a5e5db20b8bdda",
+      "git_blob_sha1": "a699f89ecba35990b3c5be4ee87baea7caec520f",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/errors.py",
+      "imported_path": "src/obligationguard/errors.py",
+      "bytes": 281,
+      "sha256": "4480ef6a4f0afe22343f5d0249b39f8eb7ee3dbf1a2860294afdf8579b64624f",
+      "git_blob_sha1": "5677f44cd467b4c0800e33c449d0838e6a49b2bd",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/evaluation.py",
+      "imported_path": "src/obligationguard/evaluation.py",
+      "bytes": 5516,
+      "sha256": "3adb18d883da51d58f8995ff2007a892ff09c1e6450a2e4dcc85e39cfc702a63",
+      "git_blob_sha1": "196ac75973a7a208d857f09169326324629c6bcb",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/experiments.py",
+      "imported_path": "src/obligationguard/experiments.py",
+      "bytes": 10935,
+      "sha256": "b1114de3f8060243203aa2e5512579840eda76dbddea24cf91e86a49cff7a733",
+      "git_blob_sha1": "ce3dcc813cb19beec9088aa4350bfeac44c97246",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/guidance.py",
+      "imported_path": "src/obligationguard/guidance.py",
+      "bytes": 2343,
+      "sha256": "347cb2caca8ce68aaa15d2ad0b486bdd333a7e1ad331cd562f47bb4397aecc7c",
+      "git_blob_sha1": "71888907547f15e9b52e0c470106526ecf0071e4",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/identifiers.py",
+      "imported_path": "src/obligationguard/identifiers.py",
+      "bytes": 366,
+      "sha256": "d5d31ee360d8c3b09c9fbc2d6dc1e0e9962bc44f01b7159602e8f3a0b8a5f8bb",
+      "git_blob_sha1": "86ae698b2457973758912b6fe87423bfa107b1d5",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/io.py",
+      "imported_path": "src/obligationguard/io.py",
+      "bytes": 2237,
+      "sha256": "1312b9f990da01bc82561260680d0a45b5b2521ed0ac3a1f676870ab1505b551",
+      "git_blob_sha1": "27fae2ce99c582112850e87d6058ea395661788d",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/jobs.py",
+      "imported_path": "src/obligationguard/jobs.py",
+      "bytes": 5007,
+      "sha256": "1451b8801dc20dbe520c0498c54a571d00ddbf211498b2868db9f744fe71d31c",
+      "git_blob_sha1": "2940d3c6591390d8c3fb3a80c57eaa947929e770",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/matching.py",
+      "imported_path": "src/obligationguard/matching.py",
+      "bytes": 1164,
+      "sha256": "1d3057de665d251c5303ae838c3761860c6d7b532c6c9e1c866d22f6cc3fc9ec",
+      "git_blob_sha1": "98b58b5b214a52d13c9f423990b9e3cf26f7bb83",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/metrics.py",
+      "imported_path": "src/obligationguard/metrics.py",
+      "bytes": 1849,
+      "sha256": "680efe18edc79bdfd4c01e37e3be8a15bef861dddacd90007c8a4dad810255ec",
+      "git_blob_sha1": "f7bbbf3efd77a439e0e0596125e3e8a5aa04fa4e",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/mini_swe.py",
+      "imported_path": "src/obligationguard/mini_swe.py",
+      "bytes": 6234,
+      "sha256": "9f9cf09bfdd94664c1060d5f2d69867cfb4a66050e096e1bded7b001841462e9",
+      "git_blob_sha1": "5bfff3bf898e87b52a29b557a37cfaaf91b7bb56",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/pipeline.py",
+      "imported_path": "src/obligationguard/pipeline.py",
+      "bytes": 2045,
+      "sha256": "c1c6f75174059213c4ce66026d79d215f6a460c6578b51dd823c9347a3aa9b91",
+      "git_blob_sha1": "58814140bd3a2ea7474b089016cee77d99d9ca11",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/plots.py",
+      "imported_path": "src/obligationguard/plots.py",
+      "bytes": 3159,
+      "sha256": "cc07df35782e8d66608890461401fb4a9ca44b69a29723ed3ff5767a7591f049",
+      "git_blob_sha1": "c8b681bb6a7629427f69e995e4380ea91e105aa2",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/preliminary.py",
+      "imported_path": "src/obligationguard/preliminary.py",
+      "bytes": 1244,
+      "sha256": "0b48b4cf0c3442a6409934b972a49c73ae79a1d083ccdffe8aa6ead83d0c25fe",
+      "git_blob_sha1": "ac80fbdb6d2b48be03f082bd9523f78f5e5e0825",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prepare.py",
+      "imported_path": "src/obligationguard/prepare.py",
+      "bytes": 4641,
+      "sha256": "9fedd2339107275d2f34712eec1287216f037f9e376c5d18cb9b413f6ea49556",
+      "git_blob_sha1": "6dd9f3a44756336c55552257c6e10b24244e975f",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/privacy.py",
+      "imported_path": "src/obligationguard/privacy.py",
+      "bytes": 6345,
+      "sha256": "05661add6b3639670debd6a85574b848c43ef8d47a65cf8035a5dc6ba28ab6e0",
+      "git_blob_sha1": "9d44f30ebd9b70896d077d362114f8a2d900ce2e",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompting.py",
+      "imported_path": "src/obligationguard/prompting.py",
+      "bytes": 1441,
+      "sha256": "db7928f0a28368d168b3861579f0831a68fceba6c63adbc223f7491c28ba9881",
+      "git_blob_sha1": "bce4f4ca1bb25f4c216ec80b473337453ca8d134",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompts/creation_step_annotation.txt",
+      "imported_path": "src/obligationguard/prompts/creation_step_annotation.txt",
+      "bytes": 3592,
+      "sha256": "bb7743639d7c8dd742d1fc1fc7ff9f3ab0e9cefdbdd800ae7c55a1f66105a23e",
+      "git_blob_sha1": "a30873d7fd17fed00357c25b075b67cdf17e887b",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompts/direct_synthesis.txt",
+      "imported_path": "src/obligationguard/prompts/direct_synthesis.txt",
+      "bytes": 3706,
+      "sha256": "827dc6e7f4effa83bb7502e01b3cc0705dce21c824853639eba64dfcad012633",
+      "git_blob_sha1": "23ff6a0ce582a0d5f8fa8ab676fd24d859dc830e",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompts/obligation_feedback.txt",
+      "imported_path": "src/obligationguard/prompts/obligation_feedback.txt",
+      "bytes": 579,
+      "sha256": "d0d3d2404fafa53a4a54073b03565fa0cf328ae869593ebba61bd762c88a33bc",
+      "git_blob_sha1": "54e181cbfcd991713555f87f2347d09b1dfc2d9f",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompts/obligation_identification.txt",
+      "imported_path": "src/obligationguard/prompts/obligation_identification.txt",
+      "bytes": 3079,
+      "sha256": "6eecf80ecc6bbce7539ed6b1aeb9367eb916f74e04dd94f9dff643705bcb0b97",
+      "git_blob_sha1": "b19f20f31115ca1abeed386390340a5c25497d26",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompts/safety_failure_attribution.txt",
+      "imported_path": "src/obligationguard/prompts/safety_failure_attribution.txt",
+      "bytes": 2855,
+      "sha256": "f27429078d5dcfdb01be29853dfcac096199c8150092e00088f1005e44eed146",
+      "git_blob_sha1": "0d8ec07cfd172e496c677d8d30e01cc7636a536c",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompts/scenario_planning.txt",
+      "imported_path": "src/obligationguard/prompts/scenario_planning.txt",
+      "bytes": 4187,
+      "sha256": "1b059c74b03739d81d13d88af9573e03ca4895964644e35e05894dbfc1a6aebf",
+      "git_blob_sha1": "b6d85491b0fc39577f9bc128460db4bf10187efa",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompts/self_reminder.txt",
+      "imported_path": "src/obligationguard/prompts/self_reminder.txt",
+      "bytes": 481,
+      "sha256": "777533f8314d2632b031dd29e3f8f3dcaa482dd84964ba64b8644fecd54dd544",
+      "git_blob_sha1": "a2c3af936274ac1ee8a93a2d17a8beb0c8c5dfce",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompts/semantic_matching.txt",
+      "imported_path": "src/obligationguard/prompts/semantic_matching.txt",
+      "bytes": 2970,
+      "sha256": "6092a4b8f10254b3305c9225b7fd99c4fa6cee8f3c2cca5d65d94eeb077f39df",
+      "git_blob_sha1": "fb7d93a52093796ec14720355a67cecc3f1e24d4",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompts/sources.json",
+      "imported_path": "src/obligationguard/prompts/sources.json",
+      "bytes": 1921,
+      "sha256": "da030c907be3e730a3feba4dda08de40d075340a71a755172defcebb364b0429",
+      "git_blob_sha1": "545cd2752f3f38bdd7aec8938769dbfe80a4fcec",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompts/trajectory_annotation.txt",
+      "imported_path": "src/obligationguard/prompts/trajectory_annotation.txt",
+      "bytes": 4328,
+      "sha256": "5ad61eb6a76b1f9162fc67bc0011445e62317d345e83eaffb6f5a7fc30842db1",
+      "git_blob_sha1": "bd1b98441652018b935dc52bfc6bf38365ea09ca",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompts/trajectory_filtering.txt",
+      "imported_path": "src/obligationguard/prompts/trajectory_filtering.txt",
+      "bytes": 3097,
+      "sha256": "2e4e313fba1581382c08424836ef3374701dc654c9ff37da08321a9267bc9862",
+      "git_blob_sha1": "52eb7942bf03399dfd3ef2d69a42f4fe25c7553e",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/prompts/trajectory_synthesis.txt",
+      "imported_path": "src/obligationguard/prompts/trajectory_synthesis.txt",
+      "bytes": 4689,
+      "sha256": "471120d6e01651de34307cc77e82dcbcc9cce1f25d063d2f2cee4de61073ea6a",
+      "git_blob_sha1": "1c134e901b54e838bde1e0ad94f7605e887dbb31",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/rq4.py",
+      "imported_path": "src/obligationguard/rq4.py",
+      "bytes": 10493,
+      "sha256": "1716b13a01bcf2a8739ee5a69b2f9da07294d38e4f250437f8b9be095c4bf8e5",
+      "git_blob_sha1": "9b0fc4449fcee259772fd443b328bfc9ed8bd7c8",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/schema.py",
+      "imported_path": "src/obligationguard/schema.py",
+      "bytes": 6032,
+      "sha256": "51c98a04288c905da93bc97a7d9f3894cb344c8f3cb8b5a361610c3c6fab2633",
+      "git_blob_sha1": "1820e3dc3c63fc1132b6067ecf2048c1a968e2b4",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/serving.py",
+      "imported_path": "src/obligationguard/serving.py",
+      "bytes": 4148,
+      "sha256": "8ab4cce74b4b8aecf11433c49fcf8eaaf34859076827dd67808ba70d83a82484",
+      "git_blob_sha1": "b5b9366ebad4067412a4981ffcba507517a0255b",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/susvibes.py",
+      "imported_path": "src/obligationguard/susvibes.py",
+      "bytes": 3096,
+      "sha256": "69f759a6de187e8c0e683bb728294d2334637fbdbc9275b5fa7a5d54e464af92",
+      "git_blob_sha1": "be4bbd9855059a55ce613bede9063ec4bc409521",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/synthesis.py",
+      "imported_path": "src/obligationguard/synthesis.py",
+      "bytes": 2053,
+      "sha256": "49242590f5f9789ac97c15991b103c41109ed6996938468cc72540ba0389a8a1",
+      "git_blob_sha1": "754d8be8e860a8d4200674d83c5a63ca6478763c",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "src/obligationguard/training.py",
+      "imported_path": "src/obligationguard/training.py",
+      "bytes": 11962,
+      "sha256": "c80ef7cd1229c0b64540034d4603aa74a5bb49836b43ce3b3f14ab72994a0f1a",
+      "git_blob_sha1": "85743441a4a4a4b7efd50bf4b7bfc15688cc0a68",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "tests/test_data_and_prompts.py",
+      "imported_path": "tests/test_data_and_prompts.py",
+      "bytes": 6287,
+      "sha256": "ff38a38fde091e2d32cbe85f47b9ed05bc1111868446db79843b5404bd21b43d",
+      "git_blob_sha1": "ed1910d4184154055fd663433b09b241f2818fff",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "tests/test_direct_source.py",
+      "imported_path": "tests/test_direct_source.py",
+      "bytes": 3311,
+      "sha256": "b696c8215b2fc9cbca4dd8b945811dc74d3edf952af4bd1bb0ba32775de3c0a0",
+      "git_blob_sha1": "ee547864c3000716b0b1ed74831e21da2305447d",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "tests/test_evaluation_guidance.py",
+      "imported_path": "tests/test_evaluation_guidance.py",
+      "bytes": 7305,
+      "sha256": "1f1f5d3fbe68b1a2422e8e0f6cfb2b1e46e92ab3c4f0bb42d45558412018a510",
+      "git_blob_sha1": "a5c1f5fe55b119c18c98c9eb2428795c66ea3f7d",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "tests/test_incomplete_outputs.py",
+      "imported_path": "tests/test_incomplete_outputs.py",
+      "bytes": 3675,
+      "sha256": "c583ad2cbf528048674bcc5158b7e9958253458100bde71b368d24ad5e528a97",
+      "git_blob_sha1": "1ee3cb0f03cdf44390b8439a5edfa89af55428f0",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "tests/test_matching_metrics.py",
+      "imported_path": "tests/test_matching_metrics.py",
+      "bytes": 2908,
+      "sha256": "743a97a9a1272b306afc4f8fa6bcdf631972d656b26c8c8b748450f9e0160107",
+      "git_blob_sha1": "c4a952abc821cd92c9903ec15f4a9d56a2d137fd",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "tests/test_mini_resume.py",
+      "imported_path": "tests/test_mini_resume.py",
+      "bytes": 4045,
+      "sha256": "469fcf9a376a195b98552b2f84ef4d6851ebb9b6f712c48d0566c907cb5f5b5f",
+      "git_blob_sha1": "b096591fcd411061eac8a1062d100c28669b4e58",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "tests/test_pipeline_preflight.py",
+      "imported_path": "tests/test_pipeline_preflight.py",
+      "bytes": 3018,
+      "sha256": "055116192dad56d81049e023de845b773a9d96cd9e041d1bc2b16d44f16c032c",
+      "git_blob_sha1": "12ecabbefffbfd109a8bb5cfca53b9414aa97bf6",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "tests/test_positive_entry.py",
+      "imported_path": "tests/test_positive_entry.py",
+      "bytes": 7226,
+      "sha256": "c8d9d0d59f8bb62f2add910091f76d687160d4894568da3066f58778cc393d13",
+      "git_blob_sha1": "aec94bbd2d71a75f66e44bd7660ada0f65dff5f5",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "tests/test_preliminary_and_ablations.py",
+      "imported_path": "tests/test_preliminary_and_ablations.py",
+      "bytes": 1426,
+      "sha256": "91b3441dde1e6f0dc0c2ed44293e272b918a96db523c94d0420c3c0b32f09324",
+      "git_blob_sha1": "c0db6dce2edd8faf004cd00b50c31d45580293cc",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "tests/test_privacy_and_experiments.py",
+      "imported_path": "tests/test_privacy_and_experiments.py",
+      "bytes": 6698,
+      "sha256": "2a59d993631e24d0e55274a382c649418f1f4fddb85f64d6f7ce789d04f7d5be",
+      "git_blob_sha1": "7432df92092ff4fddd6eef9bf44c635225b43119",
+      "lfs_pointer": false
+    },
+    {
+      "upstream_path": "tests/test_synthesis_analysis.py",
+      "imported_path": "tests/test_synthesis_analysis.py",
+      "bytes": 2740,
+      "sha256": "5f4d80c2cffa088ec7e8456948eb5ff7a63b9c337a20ee148bbcff7d3ea34e87",
+      "git_blob_sha1": "9f628aef06e1ff4aafcb7a1b0fe75c0bb5f37406",
+      "lfs_pointer": false
+    }
+  ]
+}
