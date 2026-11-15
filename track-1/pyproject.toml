@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epistemics-track1-dataset"
+version = "0.1.0"
+description = "Controlled multilingual evidence and peer-advice dataset builder"
+requires-python = ">=3.9"
+dependencies = ["adaption==0.19.0", "python-dotenv==1.2.1"]
+
+[project.scripts]
+epistemics-dataset = "epistemics_dataset.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

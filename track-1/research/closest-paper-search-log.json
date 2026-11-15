@@ -1,0 +1,214 @@
+{
+  "date": "2026-11-15",
+  "scope": "Step 1 only; no dataset construction or experiment",
+  "difficulty": 8,
+  "followup_rounds": 2,
+  "searches": [
+    {
+      "method": "embedding",
+      "query": "Does switching between English and Chinese evidence change whether a language model accepts correct advice or misleading peer advice?",
+      "priority": "default",
+      "publication_window": null,
+      "results": [
+        {
+          "id": "2611.16694",
+          "title": "When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision Revision"
+        },
+        {
+          "id": "2610.37788",
+          "title": "Locating Sycophancy Across Training Stages in Open Language Models"
+        },
+        {
+          "id": "2610.34809",
+          "title": "Position Matters More Than Channel: Talking a Language Model Out of a Correct Answer"
+        },
+        {
+          "id": "2610.32144",
+          "title": "Disentangling Question, Response, and Verifier Languages in Multilingual P(True) Self-Evaluation"
+        },
+        {
+          "id": "2610.30696",
+          "title": "Disentangling Robustness and Sycophancy in Multilingual LLMs"
+        },
+        {
+          "id": "2610.17703",
+          "title": "Pushback in a Haystack: Language Models Respond to Factual Errors Ambiguously and Ineffectively"
+        },
+        {
+          "id": "2609.37616",
+          "title": "Authority Bias in Language Models: Source Deference and User Agreement Are Not Interchangeable"
+        },
+        {
+          "id": "2610.12788",
+          "title": "What Counts as Evidence? Epistemic Cue Utilization in Large Language Models"
+        }
+      ]
+    },
+    {
+      "method": "keyword",
+      "query": "cross-lingual knowledge conflict",
+      "priority": "default",
+      "publication_window": null,
+      "results": [
+        {
+          "id": "2608.pretraining-fails-cross-lingual-knowledge",
+          "title": "Why Pretraining Fails to Share Cross-Lingual Knowledge"
+        },
+        {
+          "id": "2611.10646",
+          "title": "On the Geometric Bottlenecks of Cross-Lingual Knowledge Editing"
+        },
+        {
+          "id": "2609.19291",
+          "title": "Why Pretraining Fails to Share Cross-Lingual Knowledge"
+        },
+        {
+          "id": "2606.24579",
+          "title": "Cross-Lingual Exploration for Parametric Knowledge"
+        },
+        {
+          "id": "2610.00606",
+          "title": "Where's Waldo? Query-language Preference under Cross-lingual Knowledge Disparities"
+        },
+        {
+          "id": "2610.38267",
+          "title": "Cross Lingual Abstractive Summarization for Marathi"
+        },
+        {
+          "id": "2609.37883",
+          "title": "Zero-shot Dependency Parsing with Unsupervised Cross-Lingual Bootstrapping"
+        },
+        {
+          "id": "2608.28645",
+          "title": "Cross Lingual Transfer in Tulu Legal Comprehension: Script-Dependent Improvement and RAG-Induced Knowledge Conflict"
+        }
+      ]
+    },
+    {
+      "method": "keyword",
+      "query": "multilingual conflicting evidence",
+      "priority": "default",
+      "publication_window": null,
+      "results": [
+        {
+          "id": "2611.09090",
+          "title": "MARS: Training Multilingual Search Agents for Retriever-Free Evidence Acquisition"
+        },
+        {
+          "id": "2610.19407",
+          "title": "Vision-Language Models Integrate Conflicting Evidence Like Biased Bayesian Observers"
+        },
+        {
+          "id": "2610.19432",
+          "title": "Recognition Is Not Grounding: Benchmarking Multilingual Financial Evidence Extraction"
+        },
+        {
+          "id": "2610.25822",
+          "title": "Conflicting History in Foundation Model Return Forecasts"
+        },
+        {
+          "id": "2610.40970",
+          "title": "Nedimo: An Evidence-Grounded Multilingual Pipeline for AI-Generated Sleep Stories"
+        },
+        {
+          "id": "2604.07123",
+          "title": "Language Bias under Conflicting Information in Multilingual LLMs"
+        },
+        {
+          "id": "2606.26437",
+          "title": "ConflictScore: Identifying and Measuring How Language Models Handle Conflicting Evidence"
+        },
+        {
+          "id": "2611.00692",
+          "title": "Multilingual TASU: Extending Text-Only Alignment to Multilingual Speech Recognition via Simulated CTC Posteriors"
+        }
+      ]
+    },
+    {
+      "method": "keyword",
+      "query": "Investigating the influence of language on sycophantic behavior",
+      "priority": "default",
+      "publication_window": null,
+      "results": [
+        {
+          "id": "2609.35822",
+          "title": "Tracing mechanisms of sycophantic agreement in language models"
+        },
+        {
+          "id": "2603.27664",
+          "title": "Investigating the Influence of Language on Sycophantic Behavior of Multilingual LLMs"
+        },
+        {
+          "id": "2611.16722",
+          "title": "Mind the Accuracy-Approval Gap: How Users Evaluate Sycophantic AI in Everyday Tasks"
+        },
+        {
+          "id": "2608.31079",
+          "title": "Sycophantic Agreement Transfers with Neutral Data via Contrastive Preference Optimization"
+        },
+        {
+          "id": "2606.21317",
+          "title": "Warning labels shift perceptions of sycophantic AI, but not its influence"
+        }
+      ]
+    },
+    {
+      "method": "keyword",
+      "query": "Faux polyglot",
+      "priority": "default",
+      "publication_window": null,
+      "results": [
+        {
+          "id": "2610.39224",
+          "title": "PyReprism: A Shared Lexical Foundation for Polyglot Code Analysis"
+        },
+        {
+          "id": "2608.25577",
+          "title": "PolyMemDB: A Polyglot Database System for AI Memory Management"
+        },
+        {
+          "id": "2604.16108",
+          "title": "Polyglot: Multilingual Style Preserving Speech-Driven Facial Animation"
+        },
+        {
+          "id": "2606.12495",
+          "title": "Missing-Token Prompted Reliability-Aware Fusion for Robust Polyglot Speaker Identification"
+        }
+      ]
+    },
+    {
+      "method": "keyword",
+      "query": "Linguistic nepotism",
+      "priority": "default",
+      "publication_window": null,
+      "results": [
+        {
+          "id": "2610.34215",
+          "title": "Synthetic linguistic data"
+        },
+        {
+          "id": "2604.09620",
+          "title": "LLM Nepotism in Organizational Governance"
+        },
+        {
+          "id": "2610.35254",
+          "title": "Style over Substance? Linguistic Bias in LLM-based Peer Review"
+        },
+        {
+          "id": "2610.27790",
+          "title": "Are Linguistic and Arithmetic Circuits Dissociated in LLMs?"
+        }
+      ]
+    }
+  ],
+  "reference_access": [
+    {
+      "url": "https://aclanthology.org/2025.naacl-long.411.pdf",
+      "status": "Original PDF methods read through web tool"
+    },
+    {
+      "url": "https://openreview.net/forum?id=MDfCV0UHSb",
+      "status": "Browser verification blocked full-text reading; no finding attributed to this paper"
+    }
+  ]
+}

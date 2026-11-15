@@ -1,6 +1,8 @@
 # Track 1 — Idea 1: Does the language of a source change whether AI follows the evidence?
 
-Status: saved research idea; not a final project choice. No experiment has been run.
+Status: saved research idea; no model experiment has been run.
+
+Implementation update (15 November 2026): the dataset pipeline now includes English, Simplified Chinese and Vietnamese. The four-condition table below records the original two-language proposal; the current implementation expands it to nine language pairs. See ../README.md and dataset-protocol.md. The initial synthetic cases are engineering fixtures, not a final factual-prior benchmark.
 
 ## Question
 

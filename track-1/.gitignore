@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.egg-info/
+.env
+.env.*
+!.env.example
+data/generated/
+data/reviewed/*.jsonl

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "languages": [
+    "en",
+    "zh",
+    "vi"
+  ],
+  "generation_model": "qwen3.5-397b",
+  "sdk_version": "0.19.0",
+  "peer_count": 3,
+  "seed_count": 20,
+  "description": "Synthetic closed-world pilot; Chinese is Simplified; standard Vietnamese with diacritics. Generator model is configurable and is not an evaluation-model choice.",
+  "shared_prompt_review": {
+    "status": "pending",
+    "reviewer": null
+  }
+}
