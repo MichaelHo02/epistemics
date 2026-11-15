@@ -1,0 +1,742 @@
+{
+  "review_date": "2026-11-15",
+  "reviewer": "assistant_source_check",
+  "rows": [
+    {
+      "sample_id": "astronomy/test/107",
+      "source_url": "https://science.nasa.gov/moon/facts/",
+      "passage_en": "Gravity at the lunar surface is about one-sixth of Earth’s. At a fixed location, gravitational weight increases in proportion to mass.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "The proportionality is a researcher application of weight = mass times local gravitational acceleration. Five Earth pounds corresponds to less mass than five kilograms.",
+      "source_locator": "surface gravity paragraph",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/132",
+      "source_url": "https://science.nasa.gov/mars/facts/",
+      "passage_en": "Ancient river valleys, deltas and lakebeds on Mars, along with minerals formed in liquid water, provide evidence of a wetter past.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Supports the geological-evidence option; do not use speculative modern seasonal-brine claims elsewhere on the page.",
+      "source_locator": "Water on Mars",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/19",
+      "source_url": "https://science.nasa.gov/asset/webb/doppler-shift-of-a-stars-spectrum/",
+      "passage_en": "Motion toward an observer shifts a star’s spectral lines to shorter wavelengths; motion away shifts them to longer wavelengths.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "485.9 nm is shorter than 486.1 nm.",
+      "source_locator": "description of blueshift and redshift",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/73",
+      "source_url": "https://science.nasa.gov/universe/10-questions-you-might-have-about-black-holes/",
+      "passage_en": "Hawking radiation is the proposed quantum process by which a black hole loses energy and can gradually evaporate.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Keep the theoretical qualification: this is not a claim of direct observational detection.",
+      "source_locator": "question 10: Can black holes get smaller?",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/133",
+      "source_url": "https://www.giss.nasa.gov/research/briefs/1995_allison_01/",
+      "passage_en": "Gravitational contraction contributes to Jupiter’s internal heating. Energy released inside the planet is transported upward by convection.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Historical NASA science brief supports the mechanism. Do not describe it as the sole source or a complete modern energy-budget model. Duplicate stem also occurs in astronomy/test/142.",
+      "source_locator": "paragraph beginning Now three GISS researchers",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/66",
+      "source_url": "https://www.jpl.nasa.gov/edu/resources/lesson-plan/calculating-solar-power-in-space/",
+      "passage_en": "For fixed source luminosity, light flux decreases with the square of distance. Doubling the distance reduces flux to one quarter.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Researcher calculation: at five times the distance, luminosity must increase by 5 squared to restore the flux.",
+      "source_locator": "steps 4–6",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/46",
+      "source_url": "https://www.nist.gov/how-do-you-measure-it/how-do-you-know-age-fossils-and-other-old-things",
+      "passage_en": "Radioactive isotope dating of minerals in terrestrial rocks and meteorites helps establish Earth’s age. Uranium isotopes provide clocks over billions of years.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Use long-lived isotopes for Earth’s formation age, not carbon-14.",
+      "source_locator": "paragraphs on uranium-238 and uranium-235",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/150",
+      "source_url": "https://science.nasa.gov/moon/facts/",
+      "passage_en": "The Moon’s dark maria are ancient impact basins subsequently filled by lava. Its lighter terrain is known as the highlands.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "The passage distinguishes impact basins from volcanic calderas.",
+      "source_locator": "Surface: light areas and maria",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/56",
+      "source_url": "https://science.nasa.gov/jupiter/jupiter-facts/",
+      "passage_en": "Jupiter’s four Galilean satellites are Io, Europa, Ganymede and Callisto.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "The list does not include Dione. Do not use changing total moon counts.",
+      "source_locator": "Moons",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/9",
+      "source_url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/",
+      "passage_en": "Meteor showers occur when Earth crosses trails of debris, usually shed by comets. Some showers instead have asteroid parent bodies.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Preserve the asteroid exception rather than claiming every shower comes from a comet.",
+      "source_locator": "Meteor Showers",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/82",
+      "source_url": "https://science.nasa.gov/climate-change/causes/",
+      "passage_en": "Human activities increase atmospheric greenhouse-gas concentrations. The strengthened greenhouse effect is the principal cause of the global warming observed since the mid-twentieth century.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Source explains fossil-fuel combustion, land clearing and heat trapping.",
+      "source_locator": "Increasing Greenhouse Gases Are Warming the Planet",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/147",
+      "source_url": "https://science.nasa.gov/sun/facts/",
+      "passage_en": "The Sun’s visible surface, the photosphere, has a temperature of approximately 5,500 degrees Celsius.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Researcher conversion: about 5,773 kelvin, closest to the offered 6,000 K.",
+      "source_locator": "Quick Facts: surface temperature",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/41",
+      "source_url": "https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/",
+      "passage_en": "Sagittarius A*, also called Sgr A*, is the supermassive black hole at the center of the Milky Way.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "",
+      "source_locator": "opening article paragraph",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/136",
+      "source_url": "https://starchild.gsfc.nasa.gov/docs/StarChild/solar_system_level1/pluto_facts.html",
+      "passage_en": "Pluto completes one revolution around the Sun in approximately 248 Earth years.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Closest offered approximation is 250 years.",
+      "source_locator": "Revolution Period table row",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/148",
+      "source_url": "https://science.nasa.gov/universe/exoplanets/discovery-alert-four-little-planets-one-big-step/",
+      "passage_en": "Barnard’s Star is the next-nearest stellar system to the Sun after the Alpha Centauri three-star system.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Compare stellar systems, excluding our own Sun; individual-star rankings differ.",
+      "source_locator": "The Discovery",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/96",
+      "source_url": "https://science.nasa.gov/mars/facts/",
+      "passage_en": "The two moons of Mars are Phobos and Deimos.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "",
+      "source_locator": "Moons",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/67",
+      "source_url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html",
+      "passage_en": "Java arrays use index zero for the first element. In a two-dimensional array, the first index selects a row.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Given max specifications are part of the question. Rows 2 and 3 have maxima 7 and 4, giving 7.",
+      "source_locator": "Arrays; index illustration",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/61",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+      "passage_en": "Internet routing can exploit redundant paths to continue providing service despite failures of intermediate gateways or networks.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "",
+      "source_locator": "section 1.1.2 architectural assumptions",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/63",
+      "source_url": "https://gcc.gnu.org/onlinedocs/gcc/Overall-Options.html",
+      "passage_en": "A compiler toolchain transforms source programs through compilation and assembly into object code; linking combines object code into an executable.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Compiler toolchains vary; among the offered options, translation rather than testing or version tracking is the intended role.",
+      "source_locator": "section 3.2 opening paragraph",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/95",
+      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-exam-reference-sheet.pdf",
+      "passage_en": "Assignment evaluates the expression on the right and stores the resulting value in the variable on the left. DISPLAY outputs the current value.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Researcher trace: r becomes 2, s becomes 3; previous assignments do not create permanent equality constraints.",
+      "source_locator": "PDF page 2: Assignment, Display, and Input",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/86",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+      "passage_en": "Internet hosts require network addresses for communication. DHCP supports automatic allocation of reusable network addresses to hosts.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "DHCP is one mechanism, not a claim that every connection must use DHCP.",
+      "source_locator": "Abstract",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/54",
+      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-exam-reference-sheet.pdf",
+      "passage_en": "A counter records how often an event occurs. REPEAT n TIMES executes its block n times; assignment updates the stored counter value.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Researcher derivation: four flips with equally many heads and tails require two heads.",
+      "source_locator": "PDF pages 2 and 4: Assignment and Iteration",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/76",
+      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-exam-reference-sheet.pdf",
+      "passage_en": "REPEAT UNTIL continues executing its block until the specified condition becomes true. A conditional RETURN selects the procedure’s returned value.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Researcher invariant: subtracting two preserves parity; positive even inputs reach zero and odd inputs reach minus one.",
+      "source_locator": "PDF page 4 Iteration and procedure RETURN explanation",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/98",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+      "passage_en": "Internet hosts implement a common protocol suite. Conformance to shared protocol standards enables interoperability across different implementations.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Manufacturer identity is not a protocol restriction.",
+      "source_locator": "Introduction; section 1.2.4 interoperability discussion",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/77",
+      "source_url": "https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html",
+      "passage_en": "A Java static field belongs to the class rather than an individual instance. Instance fields hold separate state for each object.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "The nextAvailableID counter must be shared across all insect instances.",
+      "source_locator": "Understanding Class Members and Class Variables",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/28",
+      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-exam-reference-sheet.pdf",
+      "passage_en": "A procedure call evaluates a named operation on its arguments. Sequential assignments pass the current result into the next operation.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Researcher proof uses the definitions supplied in the question: combine, sort and then remove duplicates preserves sorted union. The general reference alone does not supply the case-specific algorithm.",
+      "source_locator": "Assignment and procedure calls",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/87",
+      "source_url": "https://docs.oracle.com/javase/specs/jls/se25/html/jls-15.html#jls-15.24",
+      "passage_en": "For Boolean operands, an OR expression is true if either operand is true. Conditional OR can skip its right operand when the left is true.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "If a < c is true, the whole displayed expression is true irrespective of the other conjunct.",
+      "source_locator": "section 15.24",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/2",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+      "passage_en": "Internet communication carries application data in transport segments and IP packets, with receiving protocols reconstructing the delivered data.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "The passage is a protocol overview; retain the distinction between transport segmentation and IP fragmentation.",
+      "source_locator": "section 1.3.3 terminology and reassembly requirements",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/70",
+      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-exam-reference-sheet.pdf",
+      "passage_en": "REPEAT n TIMES executes its enclosed block n times. With nested loops, each outer iteration executes the complete inner loop.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "Researcher derivation: three outer iterations each add y, yielding 3y.",
+      "source_locator": "PDF page 4: Iteration",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/19",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+      "passage_en": "An IP packet contains a header and data. The header carries information needed to deliver the packet through the network.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "",
+      "source_locator": "section 1.3.3 Packet and IP Datagram definitions",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/94",
+      "source_url": "https://xlinux.nist.gov/dads/HTML/selectionSort.html",
+      "passage_en": "Selection sort repeatedly searches the remaining unsorted items to find the least one, then moves it to its final position.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "review_note": "For the standard full-scan implementation, comparisons total n(n-1)/2 regardless of initial order. Different swap-skipping implementations affect movement counts, so the question merits this qualification.",
+      "source_locator": "definition and implementation note",
+      "source_access": "read_online",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/119",
+      "evidence_status": "hold",
+      "issue_category": "notation",
+      "review_note": "The powers of ten appear flattened as 1013, 1010, 1014 and 1017 in the exported options. Intended scientific notation must be verified; do not silently change the published strings.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/142",
+      "evidence_status": "hold",
+      "issue_category": "duplicate",
+      "review_note": "Exact English question stem duplicates astronomy/test/133 with reordered options. Review as one question family; distinct IDs are not independent conceptual items.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/146",
+      "evidence_status": "hold",
+      "issue_category": "historical_context",
+      "review_note": "The largest-dish question lists Arecibo without a date. Arecibo’s 305-metre telescope collapsed in December 2020. The historical comparison and operating status need clarification, rather than assuming the key is wrong.",
+      "approved_for_experiment": false,
+      "source_url": "https://www.nsf.gov/news/media-toolkits/arecibo",
+      "source_locator": "December 2020 collapse of its 305-meter telescope paragraph"
+    },
+    {
+      "sample_id": "astronomy/test/118",
+      "evidence_status": "hold",
+      "issue_category": "historical_context",
+      "review_note": "The phrase most discoveries has no date and the offered choices omit transit searches. Verify the intended scope before treating the key as a timeless fact.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/63",
+      "evidence_status": "hold",
+      "issue_category": "scientific_qualification",
+      "review_note": "The question attributes Venus’s weak global magnetic field to slow rotation. Need an appropriate dynamo source that supports this specific causal claim, not just its rotation period.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/75",
+      "evidence_status": "hold",
+      "issue_category": "scientific_qualification",
+      "review_note": "The claim about which extant organisms most resemble the universal common ancestor needs an appropriate current phylogenetic source. Do not infer that modern organisms literally are the ancestor; this hold is about source support, not a demonstrated wrong key.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_biology/test/111",
+      "evidence_status": "hold",
+      "issue_category": "missing_context",
+      "review_note": "The question refers to a pedigree diagram. The imported question and options contain no pedigree or image field; answer cannot be independently checked from this record.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/183",
+      "evidence_status": "hold",
+      "issue_category": "missing_context",
+      "review_note": "Question contains only S(s) + O2(g) → SO2(g), with no instruction specifying what to decide. Do not infer a missing original prompt from the answer key.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/20",
+      "evidence_status": "hold",
+      "issue_category": "missing_context",
+      "review_note": "Question contains only S(s) + O2(g) → SO2(g), with no instruction specifying what to decide. Options do not repair the missing task.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/1",
+      "evidence_status": "hold",
+      "issue_category": "missing_context",
+      "review_note": "Question provides carbon radius and ionization energy but does not identify which comparison element or task the option pairs refer to.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/98",
+      "evidence_status": "hold",
+      "issue_category": "answer_review",
+      "review_note": "The options make broad claims about all bases and weak-base conductivity. Need expert/source adjudication; do not automatically accept or overwrite the key.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/30",
+      "evidence_status": "hold",
+      "issue_category": "multiple_answers_review",
+      "review_note": "Minimum potential energy and balanced attractive/repulsive forces can describe the same equilibrium bond length. Check whether options A and C are both defensible.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_computer_science/test/3",
+      "source_url": "https://pillow.readthedocs.io/en/stable/reference/ImageChops.html#PIL.ImageChops.invert",
+      "passage_en": "For an eight-bit image channel, inversion replaces value x with 255 minus x. Applying this transformation twice returns the original value.",
+      "passage_kind": "researcher_paraphrase",
+      "source_locator": "ImageChops.invert and MAX definition",
+      "evidence_status": "draft_supported",
+      "review_note": "The documentation supplies the inversion rule. Reversibility is a researcher derivation: 255-(255-x)=x, checked for all 256 channel values. This does not claim arbitrary file encodings or lossy compression are reversible.",
+      "approved_for_experiment": false,
+      "support_review": "draft_checked"
+    },
+    {
+      "sample_id": "high_school_computer_science/test/93",
+      "source_url": "https://docs.python.org/3.9/tutorial/errors.html",
+      "passage_en": "An expression may be syntactically valid yet raise an exception when executed. Python division by zero is an example of a runtime exception.",
+      "passage_kind": "researcher_paraphrase",
+      "source_locator": "section 8.2 Exceptions",
+      "evidence_status": "draft_supported",
+      "review_note": "Supports runtime detection when the divisor is supplied at runtime. The question does not specify a language, so retain this as an illustrative language example, not a universal claim about compiler optimizations.",
+      "approved_for_experiment": false,
+      "support_review": "draft_checked"
+    },
+    {
+      "sample_id": "high_school_biology/test/300",
+      "source_url": "https://www.genome.gov/genetics-glossary/Allele",
+      "passage_en": "At an autosomal genomic location, an offspring inherits an allele from each parent. Different inherited versions form a heterozygous pair; identical versions form a homozygous pair.",
+      "passage_kind": "researcher_paraphrase",
+      "source_locator": "Definition",
+      "source_access": "read_online",
+      "evidence_status": "draft_supported",
+      "review_note": "Researcher Mendelian calculation with the dominance stipulated by the question: Bb crossed with Bb gives BB, Bb, Bb, bb, producing a 3:1 phenotype ratio. No coat-color genetics is invented beyond the question’s stated model.",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_biology/test/43",
+      "source_url": "https://humanorigins.si.edu/education/frequently-asked-questions",
+      "passage_en": "Humans and chimpanzees evolved from a shared ape ancestor; humans did not evolve from chimpanzees alive today.",
+      "passage_kind": "researcher_paraphrase",
+      "source_locator": "How are humans and monkeys related?",
+      "source_access": "read_online",
+      "evidence_status": "draft_supported",
+      "review_note": "The Smithsonian identifies a common ancestor around six to eight million years ago. Shared ancestry explains corresponding sequence similarities; the genetic-similarity inference is researcher interpretation of that relationship. Near-duplicate question high_school_biology/test/294 is held.",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_biology/test/185",
+      "source_url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+      "passage_en": "Arteries carry blood away from the heart, while veins bring blood back toward the heart.",
+      "passage_kind": "researcher_paraphrase",
+      "source_locator": "opening blood-flow paragraph",
+      "source_access": "read_online",
+      "evidence_status": "draft_supported",
+      "review_note": "Direction relative to the heart defines the distinction; the definition does not require every artery to carry oxygen-rich blood.",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_biology/test/105",
+      "source_url": "https://www.genome.gov/genetics-glossary/Crossing-Over",
+      "passage_en": "During meiosis, homologous chromosomes can exchange DNA. This crossing over produces new combinations of alleles in eggs or sperm.",
+      "passage_kind": "researcher_paraphrase",
+      "source_locator": "Definition",
+      "source_access": "read_online",
+      "evidence_status": "draft_supported",
+      "review_note": "Supports allele shuffling as a major source of variation among offspring. The source does not quantify every source of human genomic variation; keep that limitation with the question’s broad wording.",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_biology/test/90",
+      "source_url": "https://www.genome.gov/genetics-glossary/Genetic-Drift",
+      "passage_en": "Genetic drift changes allele frequencies through random chance. Its effects can be especially pronounced in small populations.",
+      "passage_kind": "researcher_paraphrase",
+      "source_locator": "Definition",
+      "source_access": "read_online",
+      "evidence_status": "draft_supported",
+      "review_note": "The storm scenario is interpreted as chance survival in the published key. If fin length causally affects survival, selection is an alternative; the passage does not independently establish that the storm was random with respect to fin length.",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_biology/test/46",
+      "source_url": "https://www.genome.gov/genetics-glossary/Mutation",
+      "passage_en": "A mutation changes an organism’s DNA sequence. Mutations in germline cells can be inherited by offspring.",
+      "passage_kind": "researcher_paraphrase",
+      "source_locator": "Definition",
+      "source_access": "read_online",
+      "evidence_status": "draft_supported",
+      "review_note": "The researcher links a new inherited sequence variant to a new allele. Distinguish creating sequence variants from shuffling existing alleles.",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_biology/test/287",
+      "source_url": "https://www.genome.gov/genetics-glossary/Missense-Mutation",
+      "passage_en": "A missense mutation changes a DNA sequence so that a different amino acid is encoded at a particular protein position. Some such mutations alter protein function.",
+      "passage_kind": "researcher_paraphrase",
+      "source_locator": "Definition",
+      "source_access": "read_online",
+      "evidence_status": "draft_supported",
+      "review_note": "Amino-acid substitution differs from premature termination or a shifted reading frame. The question’s sickle-cell example is consistent with the missense category.",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_biology/test/305",
+      "source_url": "https://humanorigins.si.edu/education/frequently-asked-questions",
+      "passage_en": "Natural selection changes populations when existing heritable differences affect survival and the passing of traits to descendants.",
+      "passage_kind": "researcher_paraphrase",
+      "source_locator": "How does evolution work?",
+      "source_access": "read_online",
+      "evidence_status": "draft_supported",
+      "review_note": "The source describes a genetic variant giving its bearer an advantage, followed by differential transmission. Researcher inference: selection requires variation to act on; the variants are not created because they would be beneficial.",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_biology/test/178",
+      "source_url": "https://humanorigins.si.edu/education/frequently-asked-questions",
+      "passage_en": "Evolution by natural selection involves differences in survival and reproduction associated with inherited traits. A beneficial trait can become more frequent across generations.",
+      "passage_kind": "researcher_paraphrase",
+      "source_locator": "How does evolution work?",
+      "source_access": "read_online",
+      "evidence_status": "draft_supported",
+      "review_note": "Differential success is not the claim that less-adapted individuals never reproduce. This is a researcher interpretation of the probabilistic differential-survival account.",
+      "support_review": "draft_checked",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_biology/test/294",
+      "evidence_status": "hold",
+      "issue_category": "near_duplicate",
+      "review_note": "The human/chimpanzee DNA and recent-common-ancestor question closely repeats high_school_biology/test/43. The wording and options differ, so it is not an exact-text duplicate, but it should be treated as one underlying question family. The answer key is not alleged to be wrong.",
+      "approved_for_experiment": false
+    }
+  ],
+  "note": "Draft source support and triage only. No final approval, translations, replacements or model results.",
+  "resolved_triage": [
+    {
+      "sample_id": "high_school_physics/test/43",
+      "finding": "Initially flagged because collision phase is unspecified. Inspecting every option resolves this: option D explicitly says the outcome depends on the phase and matches the key. Not classified as a defective question. Formal source/evidence review is still pending."
+    }
+  ],
+  "question_language_checks": [
+    {
+      "sample_id": "astronomy/test/107",
+      "checked_languages": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "status": "draft_question_equivalence_checked",
+      "reviewer": "assistant",
+      "note": "Read original question and all four options in each language. No change of meaning that would change the intended choice was identified. This is an assistant check, not an independent bilingual review; evidence translation is still missing."
+    },
+    {
+      "sample_id": "astronomy/test/119",
+      "checked_languages": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "status": "draft_question_equivalence_checked",
+      "reviewer": "assistant",
+      "note": "Read original question and all four options in each language. No change of meaning that would change the intended choice was identified. This is an assistant check, not an independent bilingual review; evidence translation is still missing."
+    },
+    {
+      "sample_id": "astronomy/test/19",
+      "checked_languages": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "status": "draft_question_equivalence_checked",
+      "reviewer": "assistant",
+      "note": "Read original question and all four options in each language. No change of meaning that would change the intended choice was identified. This is an assistant check, not an independent bilingual review; evidence translation is still missing."
+    },
+    {
+      "sample_id": "astronomy/test/73",
+      "checked_languages": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "status": "draft_question_equivalence_checked",
+      "reviewer": "assistant",
+      "note": "Read original question and all four options in each language. No change of meaning that would change the intended choice was identified. This is an assistant check, not an independent bilingual review; evidence translation is still missing."
+    },
+    {
+      "sample_id": "astronomy/test/66",
+      "checked_languages": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "status": "draft_question_equivalence_checked",
+      "reviewer": "assistant",
+      "note": "Read original question and all four options in each language. No change of meaning that would change the intended choice was identified. This is an assistant check, not an independent bilingual review; evidence translation is still missing."
+    },
+    {
+      "sample_id": "astronomy/test/46",
+      "checked_languages": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "status": "draft_question_equivalence_checked",
+      "reviewer": "assistant",
+      "note": "Read original question and all four options in each language. No change of meaning that would change the intended choice was identified. This is an assistant check, not an independent bilingual review; evidence translation is still missing."
+    },
+    {
+      "sample_id": "astronomy/test/56",
+      "checked_languages": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "status": "draft_question_equivalence_checked",
+      "reviewer": "assistant",
+      "note": "Read original question and all four options in each language. No change of meaning that would change the intended choice was identified. This is an assistant check, not an independent bilingual review; evidence translation is still missing."
+    },
+    {
+      "sample_id": "astronomy/test/147",
+      "checked_languages": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "status": "draft_question_equivalence_checked",
+      "reviewer": "assistant",
+      "note": "Read original question and all four options in each language. No change of meaning that would change the intended choice was identified. This is an assistant check, not an independent bilingual review; evidence translation is still missing."
+    },
+    {
+      "sample_id": "astronomy/test/41",
+      "checked_languages": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "status": "draft_question_equivalence_checked",
+      "reviewer": "assistant",
+      "note": "Read original question and all four options in each language. No change of meaning that would change the intended choice was identified. This is an assistant check, not an independent bilingual review; evidence translation is still missing."
+    },
+    {
+      "sample_id": "astronomy/test/136",
+      "checked_languages": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "status": "draft_question_equivalence_checked",
+      "reviewer": "assistant",
+      "note": "Read original question and all four options in each language. No change of meaning that would change the intended choice was identified. This is an assistant check, not an independent bilingual review; evidence translation is still missing."
+    },
+    {
+      "sample_id": "astronomy/test/148",
+      "checked_languages": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "status": "draft_question_equivalence_checked",
+      "reviewer": "assistant",
+      "note": "Read original question and all four options in each language. No change of meaning that would change the intended choice was identified. This is an assistant check, not an independent bilingual review; evidence translation is still missing."
+    },
+    {
+      "sample_id": "astronomy/test/96",
+      "checked_languages": [
+        "en",
+        "zh",
+        "vi"
+      ],
+      "status": "draft_question_equivalence_checked",
+      "reviewer": "assistant",
+      "note": "Read original question and all four options in each language. No change of meaning that would change the intended choice was identified. This is an assistant check, not an independent bilingual review; evidence translation is still missing."
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "review_date": "2026-11-15",
+  "reviewer": "assistant_source_check",
+  "rows": [
+    {
+      "sample_id": "conceptual_physics/test/73",
+      "source_url": "https://science.nasa.gov/sun/facts/",
+      "source_locator": "solar light and energy discussion",
+      "passage_en": "The Sun transfers energy through space as electromagnetic radiation. Electromagnetic waves can travel across the near-vacuum between the Sun and Earth.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Conduction and convection require material transport or interactions in a medium, so they do not carry heat across interplanetary space. This is a researcher interpretation of solar radiation.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/58",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_47.html",
+      "source_locator": "equation 47.1",
+      "passage_en": "Sound pressure level increases with the logarithm of pressure amplitude. Greater amplitude ordinarily gives a louder sound when other listening conditions are fixed.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Loudness also depends on frequency and hearing, but amplitude is the closest of the offered basic wave properties.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/30",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_40.html",
+      "source_locator": "hydrostatic pressure relation preceding equation 40.1",
+      "passage_en": "A static liquid column supports a pressure difference rho*g*h, with rho its density and h the height difference.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "For the same pressure, a lower-density fluid requires a taller column. Water is much less dense than mercury; assume an evacuated barometer and adequate column height.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/172",
+      "source_url": "https://science.nasa.gov/ems/03_behaviors/",
+      "source_locator": "Reflection",
+      "passage_en": "The color of an illuminated object depends on the visible wavelengths it reflects toward the observer, while other wavelengths can be absorbed.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Under ordinary white illumination a red petal reflects red wavelengths. The statement is not about an object glowing by thermal emission.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/138",
+      "source_url": "https://www.nist.gov/how-do-you-measure-it/how-do-you-know-age-fossils-and-other-old-things",
+      "source_locator": "uranium dating and the 4.54-billion-year age estimate",
+      "passage_en": "Long-lived radioactive isotopes in minerals provide clocks extending over billions of years and are used to date Earth’s early formation.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher inference from ancient radiometric clocks: natural radioactivity predates modern medicine and industry and was present during Earth’s formation.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/65",
+      "source_url": "https://www.nasa.gov/blogs/quesst/2026/08/10/nasa-x-59-explainer-science-of-sonic-booms/",
+      "source_locator": "paragraph beginning The most common misconception",
+      "passage_en": "An aircraft traveling faster than sound continuously generates the pressure waves associated with a sonic boom; it is not just a single event when passing Mach one.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Supports supersonic flight rather than merely the instant of crossing the sound barrier.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/90",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_22.html",
+      "source_locator": "I=V/R and series impedance addition",
+      "passage_en": "For resistive components, current equals voltage divided by resistance. In a series circuit, the voltage drops add across the components.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher application: adding lamps in series increases total resistance and reduces current for a fixed-voltage source. Exclude current-regulated sources from this textbook idealization.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/48",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_47.html",
+      "source_locator": "longitudinal and transverse elastic-wave paragraph",
+      "passage_en": "In a longitudinal wave, the medium’s particles oscillate parallel to the direction in which the disturbance propagates.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "For transverse waves the motion instead is perpendicular.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/139",
+      "source_url": "https://science.nasa.gov/eclipses/types/",
+      "source_locator": "opening definition of a solar eclipse",
+      "passage_en": "A solar eclipse occurs when the Moon lies between the Sun and Earth and casts its shadow onto part of Earth.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/178",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_04.html",
+      "source_locator": "summary of gravitational potential energy",
+      "passage_en": "Near Earth’s surface, raising a mass through height h increases its gravitational potential energy by approximately m*g*h.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Assuming a steady lift, work is about 100*9.8*2=1960 J, closest to2000J; the four seconds would be relevant to power, not total lifting work.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/189",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_15.html",
+      "source_locator": "Lorentz-contraction equation 15.6",
+      "passage_en": "In special relativity, a moving object’s measured length contracts along its direction of relative motion by the factor sqrt(1-v^2/c^2).",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Use simultaneous length measurement in the observer frame; “appears” in the question is interpreted in this conventional sense, not a literal photograph with light-travel-time effects.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/137",
+      "source_url": "https://dlmf.nist.gov/1.2",
+      "source_locator": "vectors and scalar-product section; researcher norm derivation",
+      "passage_en": "Vector addition combines components. Perpendicular vectors with magnitudes a and b have resultant magnitude sqrt(a^2+b^2).",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher geometry: perpendicular3N and4N give5N; arbitrary angles give resultant magnitudes between1N and7N, excluding0 and8.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/145",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_22.html",
+      "source_locator": "I=V/R resistance relation",
+      "passage_en": "An electrical measuring device sensitive to current can also indicate a voltage when a known resistance relates the measured current and voltage through V=IR.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher calibration argument for a galvanometer and suitable resistances. It is not a claim of directly measuring arbitrary voltage with no circuit loading.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/2",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_27.html",
+      "source_locator": "Snell-law discussion and water’s refractive-index example",
+      "passage_en": "For light crossing a boundary, Snell’s law relates refractive indices and angles. Total internal reflection requires an incidence angle above the critical angle.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "With water index about4/3 and air about1, critical angle is arcsin(3/4), about48.6degrees. At20degrees, light can pass into the air. Partial reflection can occur as well.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/230",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_40.html",
+      "source_locator": "hydrostatic pressure relation; derived pressure-force integration",
+      "passage_en": "Hydrostatic pressure rises with depth. A flexible gas-filled container compresses as external pressure increases; displaced liquid volume controls its buoyancy.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher combination of hydrostatics, ideal-gas compression and Archimedes’ principle: an intact flexible balloon displaces less water deeper down, reducing its buoyant force. Assume no leak or rupture.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/191",
+      "source_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/free-fall-without-air-resistance/",
+      "source_locator": "Acceleration",
+      "passage_en": "When gravity is the only force near Earth, an object accelerates downward at g regardless of whether it was released from rest or given an initial velocity.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "After release the hand no longer exerts a force; throwing changes initial speed, not gravitational acceleration.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/49",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_13.html",
+      "source_locator": "work and potential-energy definitions",
+      "passage_en": "For an ideal conservative force, stored potential-energy change equals the work done against that force between the initial and final states.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Elastic and electrostatic energy can be present even while the objects are at rest. Assume negligible dissipative losses in storage.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/68",
+      "source_url": "https://science.nasa.gov/ems/03_behaviors/",
+      "source_locator": "Wave Behaviors and Reflection/Absorption",
+      "passage_en": "Incident light may be reflected, transmitted or absorbed by matter. Absorption transfers energy into the material rather than transmitting the incident beam through it.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "For an opaque material transmission is negligible; reflection and absorption account for the incident energy in the intended elementary model.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/208",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_49.html",
+      "source_locator": "string-mode discussion after fundamental lambda=2L",
+      "passage_en": "The second harmonic of an ideal periodic fundamental mode has twice the fundamental frequency.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The source explicitly describes the next string mode having twice the frequency.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/91",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_10.html",
+      "source_locator": "introduction contrasting conductors and insulators",
+      "passage_en": "A metal contains charges that can move in response to an electric field. These mobile charges are already part of the conducting material.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The mobile carriers in copper are electrons; a current source does not need to supply all electrons originally present in the wire. Carrier identification is a researcher elementary-material interpretation.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/135",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_09.html",
+      "source_locator": "summary component equations",
+      "passage_en": "Force and acceleration can be resolved into independent Cartesian components. If no horizontal force acts, horizontal acceleration is zero.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Under ideal projectile motion without drag, the horizontal component can stay constant while vertical velocity changes under gravity.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/127",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_33.html",
+      "source_locator": "opening paragraphs on electric-vector orientation",
+      "passage_en": "Polarization specifies the orientation of transverse oscillations. For light, the electric-field direction lies in a plane perpendicular to propagation.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "A purely longitudinal displacement has no analogous choice of perpendicular vibration plane.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/143",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_40.html",
+      "source_locator": "static-fluid pressure relation",
+      "passage_en": "At fixed fluid density and gravitational acceleration, hydrostatic pressure depends on vertical depth and the pressure at the surface.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The horizontal surface area does not enter p=p_surface+rho*g*h.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/106",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_04.html",
+      "source_locator": "summary kinetic-energy formula",
+      "passage_en": "For a fixed mass at nonrelativistic speeds, kinetic energy is one half of mass times speed squared.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Tripling speed multiplies kinetic energy by9. Since9is absent from A–C, the intended option is None of these.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/111",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_30.html",
+      "source_locator": "equation 30.7 and discussion of grating orders",
+      "passage_en": "A diffraction grating superposes waves from regularly spaced openings or rulings. Their relative phases produce constructive and destructive interference.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Grating maxima occur when successive wave contributions add in phase.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/102",
+      "source_url": "https://ciaaw.org/atomic-weights.htm",
+      "source_locator": "Z=8 oxygen and Z=10 neon rows",
+      "passage_en": "Atomic number counts protons and identifies the element. Removing two protons lowers atomic number by two; removing two protons and two neutrons lowers mass number by four.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Neon hasZ10; after removal Z8 andA16 correspond to oxygen-16. Atomic number comes from the CIAAW table; nucleon bookkeeping is researcher arithmetic.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/39",
+      "evidence_status": "hold",
+      "issue_category": "missing_material_qualification",
+      "review_note": "Electrons dominate thermal conduction in many metals, but thermal conduction in insulators is largely carried by lattice vibrations. The question does not specify a metal. Hold rather than treating the metal-specific answer as universal.",
+      "source_url": null,
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/99",
+      "evidence_status": "hold",
+      "issue_category": "underspecified_comparison",
+      "review_note": "Cooling rate alone does not determine specific heat without controlling mass, surface area, emissivity, airflow and evaporation. The intended sand/vegetation comparison may rely on unstated conditions. Prefer a clearer replacement.",
+      "source_url": null,
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/100",
+      "evidence_status": "hold",
+      "issue_category": "unspecified_spectral_density",
+      "review_note": "The location of a spectral peak depends on whether radiation is plotted per unit wavelength or per unit frequency. No curve or horizontal-axis convention is supplied. Prefer a question with an explicit convention.",
+      "source_url": null,
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "conceptual_physics/test/71",
+      "evidence_status": "hold",
+      "issue_category": "answer_key_conflict",
+      "review_note": "Key A says microscopic slush makes water more dense. IAPWS describes ice and ice-like local structure as less dense/open. The source supports a decrease in bulk density for an ice-water mixture, not an increase. Requires independent adjudication or replacement.",
+      "source_url": "https://iapws.org/faqs/faq1",
+      "approved_for_experiment": false
+    }
+  ],
+  "note": "Assumptions and researcher derivations are recorded. No question/key edits or final approvals."
+}

@@ -1,0 +1,316 @@
+{
+  "review_date": "2026-11-15",
+  "reviewer": "assistant_source_check",
+  "rows": [
+    {
+      "sample_id": "computer_security/test/56",
+      "source_url": "https://csrc.nist.gov/glossary/term/non_repudiation",
+      "source_locator": "definitions attributed to FIPS186-5 and SP800-60",
+      "passage_en": "Non-repudiation supplies evidence of a message’s origin so that a sender cannot successfully deny having sent it.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Cryptographic and procedural assumptions matter; it is distinct from confidentiality or mere delivery.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/1",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+      "source_locator": "section2.3 replay distinction and appendixC.5 unauthenticated connections",
+      "passage_en": "An authenticated TLS handshake binds the server identity to its key exchange. Ordinary post-handshake TLS traffic has record-integrity and replay protections.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Use the question’s fully established authenticated session. TLS1.3 early0-RTT data is a documented exception and not covered by the post-handshake claim. The lack of a client certificate does not remove server authentication.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/80",
+      "source_url": "https://csrc.nist.gov/glossary/term/buffer_overflow",
+      "source_locator": "buffer/data-holding-area definition",
+      "passage_en": "A buffer is a memory area used to hold data. Writing beyond its allocated capacity can overwrite neighboring information.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The NIST buffer-overflow definition identifies a buffer as a data-holding area. The passage avoids claiming every modern buffer abstraction is physically contiguous.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/7",
+      "source_url": "https://www.hyphanet.org/",
+      "source_locator": "homepage: The original Freenet and file/media-sharing paragraph",
+      "passage_en": "The original Freenet project, now named Hyphanet, provides privacy-respecting peer-to-peer publishing and communication, including file sharing.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Historical naming must be kept distinct from the newer project now using the Freenet name. The original project also offers friend-to-friend networking.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/64",
+      "source_url": "https://csrc.nist.gov/glossary/term/replay_attack",
+      "source_locator": "Definitions",
+      "passage_en": "A replay attack reuses a previously captured legitimate message to impersonate a party or trigger an unauthorized accepted action.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "A replay is not simply a normal response to a request.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/3",
+      "source_url": "https://csrc.nist.gov/glossary/term/confidentiality",
+      "source_locator": "Definitions",
+      "passage_en": "Confidentiality restricts access to information to authorized parties and protects it from unauthorized disclosure.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "In the question’s message-delivery setting the intended receiver must be able to understand the content. It does not mean a sender cannot understand their own message.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/32",
+      "source_url": "https://www.usenix.org/legacy/publications/library/proceedings/usenix04/tech/general/full_papers/krohn/krohn.pdf",
+      "source_locator": "PDF page7, section4.2; page6 inherited-descriptor setup",
+      "passage_en": "In OKWS, okd receives client requests and forwards their connection descriptors to services. Process creation can also pass already-open descriptors by inheritance.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The original dynamic forwarding path needs descriptor passing. Running an unprivileged dispatcher can still be arranged with inherited pre-opened descriptors. This is a researcher counterfactual about the paper’s architecture, not a general impossibility theorem for all redesigns.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/67",
+      "source_url": "https://csrc.nist.gov/glossary/term/penetration_testing",
+      "source_locator": "Definitions; researcher comparison of offered claims",
+      "passage_en": "Penetration testing attempts to demonstrate exploitable weaknesses under specified conditions. A demonstrated finding can be reproduced, but a clean test does not prove complete security.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The reference defines the testing method, not a quantified reproducibility rate. OptionA is the defensible benefit among alternatives claiming unjustified guarantees or unrelated neural-network convergence.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/71",
+      "source_url": "https://csrc.nist.gov/glossary/term/integrity",
+      "source_locator": "Definitions",
+      "passage_en": "Data integrity protects information against improper modification or destruction.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Keeping delivered data unchanged is an integrity requirement, distinct from restricting who can read it.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/66",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-153.pdf",
+      "source_locator": "section3 attacks and continuous-monitoring recommendations",
+      "passage_en": "Wireless-network security aims to prevent and detect unauthorized access, misuse and attacks involving wireless communications.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The prompt’s word anticipation is awkward. The intended category is security for wireless networks rather than wired networking.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/61",
+      "source_url": "https://cacr.uwaterloo.ca/hac/about/chap9.pdf",
+      "source_locator": "PDF page4, modification-detection-code classification",
+      "passage_en": "An unkeyed cryptographic hash can serve as a modification-detection code, providing a compact message representative for detecting changes with suitable additional mechanisms.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "This is established MDC terminology; not every arbitrary hash function or stand-alone digest provides authentication. Source text is not reproduced.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/46",
+      "source_url": "https://csrc.nist.gov/glossary/term/backdoor",
+      "source_locator": "Definitions",
+      "passage_en": "A backdoor is an undocumented route for accessing a computer system, potentially bypassing its intended security controls.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Backdoors are not inherently untraceable; do not repeat that overly strong adjective from the question as a general guarantee.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/21",
+      "source_url": "https://crypto.stanford.edu/~dabo/papers/ssl-timing.pdf",
+      "source_locator": "PDF pages11–12: RSA blinding defense",
+      "passage_en": "RSA blinding randomizes the ciphertext used for private-key operations, obscuring the relationship between an attacker’s chosen input and the operation’s timing.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The source specifies a fresh random blinding value for each operation. It is not merely adding an arbitrary delay or changing RSA primes.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/27",
+      "source_url": "https://csrc.nist.gov/glossary/term/public_key",
+      "source_locator": "public-key definition attributed to FIPS186-5",
+      "passage_en": "A digital signature generated with a private key is verified using the corresponding public key.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The public key must correspond to the purported signer. The receiver’s key is not used to verify the sender’s signature.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/45",
+      "source_url": "https://www.wireshark.org/docs/wsug_html_chunked/ChapterIntroduction.html",
+      "source_locator": "section1.1 and live-capture media section",
+      "passage_en": "Wireshark is a network packet analyzer that displays captured packets and supports multiple capture media.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The question identifies a traffic-analysis tool, not an authorization to capture any actual network. Wireless capture capabilities depend on adapter and operating-system support.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/2",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc4120.html",
+      "source_locator": "section3.2.3: local time, endtime and KRB_AP_ERR_TKT_EXPIRED",
+      "passage_en": "A Kerberos application server checks ticket validity using its local clock and the ticket’s start and end times, subject to allowed clock skew.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "This check rejects expired authentication, not necessarily an already-established application session. The stipulated24-hour policy is not independently asserted as current MIT policy.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/57",
+      "source_url": "https://csrc.nist.gov/glossary/term/application_proxy_gateway",
+      "source_locator": "definition from NISTSP800-41r1",
+      "passage_en": "An application-proxy firewall acts as an intermediary and uses upper-layer application information in deciding which communication to permit.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Application-layer filtering is the relevant distinction among the offered layers; a real gateway can also apply lower-layer controls.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/77",
+      "source_url": "https://csrc.nist.gov/glossary/term/buffer_overflow",
+      "source_locator": "Definitions",
+      "passage_en": "A buffer overflow places more data into a buffer than its allocated capacity, potentially overwriting other information or corrupting control flow.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "No payload, target or exploit is constructed in this study. Not all overflows successfully execute injected code.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/60",
+      "source_url": "https://csrc.nist.gov/glossary/term/buffer_overflow",
+      "source_locator": "Definitions; classic-stack-model derivation",
+      "passage_en": "Overwriting stack control data can redirect program execution. In the classic stack-overflow model, a saved return address can be replaced with another address.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The NIST definition supports code-control consequences; the return-address mechanism is a researcher explanation of the classic unprotected stack model. Modern defenses can prevent it.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/39",
+      "source_url": "https://www.snort.org/",
+      "source_locator": "What is Snort?",
+      "passage_en": "Snort applies rules to network traffic to detect suspicious activity and can generate intrusion alerts or operate inline to block packets.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "A current project description supports the intrusion-analysis function. It is not an endorsement or a test of the tool.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/38",
+      "source_url": "https://cacr.uwaterloo.ca/hac/about/chap9.pdf",
+      "source_locator": "keyed-hash/MAC classification; independent tag-space counting",
+      "passage_en": "A tag with b bits has at most 2^b possible values. Random guessing therefore has non-negligible success when b is a fixed very small constant.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher counting: a five-bit tag has32possibilities, so a uniform guess succeeds with probability1/32 under standard correctness. That is not negligible MAC-forgery security.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/9",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+      "source_locator": "appendixC.5: unauthenticated connections",
+      "passage_en": "A key-exchange connection without a mechanism authenticating the peer’s key is vulnerable to an active man-in-the-middle attacker.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Unauthenticated Diffie–Hellman does not establish who holds the exchanged key. The source explicitly warns against unauthenticated TLS key exchange without an external authentication mechanism.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/25",
+      "source_url": "https://support.torproject.org/about-tor/onion-services/what-is-a-dot-onion/",
+      "source_locator": "onion-service definition and access requirement",
+      "passage_en": "Tor onion services use special .onion addresses and are accessible through the Tor network rather than an ordinary direct browser connection.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "This is a concrete example of the special-access hidden-service category called the dark web; it is not a claim that all nonindexed pages require Tor.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/55",
+      "evidence_status": "hold",
+      "issue_category": "underspecified_taxonomy",
+      "review_note": "Types of scanning depends on the classification: port/network/vulnerability scans and active/passive scanning are different useful taxonomies. No framework is named, so a unique universal list is not established.",
+      "source_url": null,
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/53",
+      "evidence_status": "hold",
+      "issue_category": "answer_key_conflict",
+      "review_note": "FIPS46-3 explicitly defines each DES round subkey as48bits. The dataset key B is56, while optionC is48. Preserve original key but exclude/adjudicate instead of silently relabeling.",
+      "source_url": "https://csrc.nist.gov/files/pubs/fips/46-3/final/docs/fips46-3.pdf",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/10",
+      "evidence_status": "hold",
+      "issue_category": "answer_key_conflict",
+      "review_note": "MITRECWE190 defines overflow as a result outside the representable integer range, potentially wrapping to small/negative values. This matches optionA rather than keyD’s claim about no more space to hold integers. Exclude/adjudicate.",
+      "source_url": "https://cwe.mitre.org/data/definitions/190.html",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/13",
+      "evidence_status": "hold",
+      "issue_category": "multiple_answers_review",
+      "review_note": "AH lacks confidentiality in its standard use, but shared-key AH authentication also does not provide third-party non-repudiation. OptionsB andC may therefore both be defensible. Obtain a better specified item rather than forcing one answer.",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc4302.html",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/75",
+      "evidence_status": "hold",
+      "issue_category": "multiple_correct_options",
+      "review_note": "SYN scan does not complete a TCP connection, but ACK and Xmas probes also do not complete the ordinary handshake. The broad wording therefore does not isolate optionA. Prefer a replacement.",
+      "source_url": "https://nmap.org/book/scan-methods-ack-scan.html",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/76",
+      "evidence_status": "hold",
+      "issue_category": "overstrong_necessity_claim",
+      "review_note": "The paper supports high bank replacement costs, but also reports fewer than0.5percent of sites using rawIPaddresses. OptionB’s absolute necessity of registering domain names needs adjudication before accepting combined keyD.",
+      "source_url": "https://cseweb.ucsd.edu/~savage/papers/Oakland11.pdf",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "computer_security/test/78",
+      "evidence_status": "hold",
+      "issue_category": "historical_tool_name",
+      "review_note": "The purported tool name EtterPeak appears inconsistent with the historical network-analyzer name EtherPeek. The claim popular is also undated. Do not silently repair the published option. Prefer a replacement.",
+      "source_url": null,
+      "approved_for_experiment": false
+    }
+  ],
+  "note": "Background literature and standards only; no network scans or security experiments performed. No final data approvals."
+}

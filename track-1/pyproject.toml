@@ -9,6 +9,10 @@ description = "Controlled multilingual evidence and peer-advice dataset builder"
 requires-python = ">=3.9"
 dependencies = ["adaption==0.19.0", "python-dotenv==1.2.1"]
 
+[project.optional-dependencies]
+evaluation = ["openai==2.48.0"]
+data = ["pyarrow==17.0.0", "numpy==2.0.2"]
+
 [project.scripts]
 epistemics-dataset = "epistemics_dataset.cli:main"
 

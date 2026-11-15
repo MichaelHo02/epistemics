@@ -14,7 +14,7 @@
     "status": "pending",
     "reviewer": null
   },
-  "workflow": "adaptive_data",
+  "workflow": "published_data",
   "adaptive_data": {
     "seed_ids": [
       "closing-01",

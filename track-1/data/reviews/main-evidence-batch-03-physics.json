@@ -1,0 +1,328 @@
+{
+  "review_date": "2026-11-15",
+  "reviewer": "assistant_source_check",
+  "rows": [
+    {
+      "sample_id": "high_school_physics/test/134",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_39.html",
+      "source_locator": "equation 39.22",
+      "passage_en": "For a fixed number N of ideal-gas particles, pressure P, volume V and absolute temperature T satisfy PV = NkT.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher ratio: P_new/P_old=2/8=1/4.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/10",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_39.html",
+      "source_locator": "equation 39.22; sections on equilibrium and mean kinetic energy",
+      "passage_en": "The ideal-gas relation is PV = NkT. Gases at the same temperature have the same average translational kinetic energy per molecule.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Pressure depends on N as well as temperature and volume; identical containers do not specify equal molecule counts.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/17",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_27.html",
+      "source_locator": "mirror sign conventions following equation 27.3; plane-mirror limit",
+      "passage_en": "A plane mirror forms a virtual image the same perpendicular distance behind the mirror as the object is in front.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher application of the mirror equation with infinite radius: object-to-image separation is twice the object-to-mirror distance, giving 200 cm.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/107",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_18.html",
+      "source_locator": "kinematics of rotation preceding figure 18.1",
+      "passage_en": "Angular acceleration is the rate of change of angular velocity. A point at radius r sweeps arc length r times its angular displacement.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Integrate constant angular acceleration from rest: theta=alpha*t^2/2=16 rad and distance=0.1*16=1.6 m.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/39",
+      "source_url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "source_locator": "elementary charge row; electron sign is standard charge convention",
+      "passage_en": "The elementary electric charge has magnitude 1.602176634 × 10^-19 coulombs. An electron carries the negative of this charge.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "One coulomb divided by the elementary charge is about 6.24*10^18 electrons, nearest offered value 6.25*10^18.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/43",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_21.html",
+      "source_locator": "equations 21.2–21.6; researcher inelastic-collision derivation",
+      "passage_en": "A spring oscillator’s amplitude depends on both its displacement and velocity at a given instant. Its natural angular frequency satisfies omega^2 = k/m.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Using horizontal momentum conservation when an equal stationary mass sticks gives v_new=v/2 and omega_new=omega/sqrt(2). Thus A_new^2=x^2+v^2/(2*omega^2), so the effect depends on the collision phase.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/74",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_04.html",
+      "source_locator": "Maxwell equation 4.1 and Gauss-law discussion",
+      "passage_en": "Gauss’s law relates the total electric flux through a closed surface to enclosed charge divided by vacuum permittivity.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Symmetry is useful for calculating a field, but is not required for the law to hold.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/36",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_01.html",
+      "source_locator": "equation 1.2; researcher work-energy inference",
+      "passage_en": "The magnetic part of the Lorentz force is q times the cross product of velocity and magnetic field. It is perpendicular to velocity and does no work.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The field alone changes the direction, not the proton’s speed. The initial angle affects the path.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/41",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_27.html",
+      "source_locator": "equation 27.12; real and virtual image discussion",
+      "passage_en": "A converging lens can form a real image for an object outside its focal length and a virtual image for an object inside that focal length.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher classification from 1/s+1/s_prime=1/f and the real/virtual sign convention, assuming an ordinary convex lens in air.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/105",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_21.html",
+      "source_locator": "introductory pendulum discussion; researcher dynamics derivation",
+      "passage_en": "A pendulum is an oscillator. With fixed gravitational acceleration and fixed release angle, its period scales with the square root of its length and not its mass.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher dimensional reduction of the pendulum equation from Newton’s law; the familiar small-angle form is T=2*pi*sqrt(L/g). The scaling with length also holds at fixed finite amplitude.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/148",
+      "source_url": "https://science.nasa.gov/solar-system/orbits-and-keplers-laws/",
+      "source_locator": "Kepler’s Third Law",
+      "passage_en": "For planets orbiting the Sun, orbital period squared is proportional to orbital semimajor axis cubed. In Earth-year and au units, P^2 = a^3.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "For the stated 0.2-year approximation, a=(0.2^2)^(1/3)=0.342 au, closest to 1/3 au.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/78",
+      "source_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+      "source_locator": "Newton’s Second Law; researcher incline projection",
+      "passage_en": "Acceleration is net force divided by mass. For frictionless sliding down the same incline, the gravitational force along the slope is proportional to mass.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher projection: a=g*sin(theta), independent of mass and shape when the objects do not rotate.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/108",
+      "source_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/free-fall-without-air-resistance/",
+      "source_locator": "Acceleration; researcher component-wise integration",
+      "passage_en": "Without air resistance, an object near Earth has constant downward gravitational acceleration, independent of horizontal motion.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Integrating vertical acceleration from zero vertical speed gives h=g*t^2/2, hence about four seconds for 80 m.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/77",
+      "source_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+      "source_locator": "Newton’s second and third laws",
+      "passage_en": "During an interaction, the two bodies exert equal and opposite forces on one another. Each body’s acceleration is its force divided by its mass.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "If the truck is twice as massive, the car’s acceleration has twice the magnitude and the opposite direction.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/90",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_39.html",
+      "source_locator": "equation 39.22",
+      "passage_en": "For a fixed quantity of ideal gas at constant temperature, the product of pressure and volume remains constant.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher ratio: 1e5 Pa * 20/5=4e5 Pa.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/83",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_09.html",
+      "source_locator": "summary component equations F_x=m*d^2x/dt^2 and F_y=m*d^2y/dt^2",
+      "passage_en": "In ideal projectile motion near Earth, gravity provides a constant downward acceleration. The horizontal and vertical components obey their own force equations.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher integration: vertical speed decreases to zero on ascent and increases in magnitude on descent. Total speed at the apex is not zero when horizontal velocity is nonzero.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/137",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_49.html",
+      "source_locator": "string modes and lambda=2L for the fundamental",
+      "passage_en": "For a stretched string with fixed ends, a standing-wave mode fits an integer number of half-wavelengths into the string length.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "If the driving wavelength does not fit this condition, 60 Hz is not a normal-mode frequency.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/88",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_10.html",
+      "source_locator": "equations 10.1–10.2 and dielectric-constant discussion",
+      "passage_en": "The ideal parallel-plate capacitance is proportional to plate area and dielectric constant, and inversely proportional to plate separation.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "C=kappa*epsilon0*A/d: moving plates closer increases capacitance.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/2",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_05.html",
+      "source_locator": "equation 5.8",
+      "passage_en": "In electrostatic equilibrium the field inside a metal is zero. Immediately outside a smooth conductor surface, the normal field is local surface-charge density divided by vacuum permittivity.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The near-surface relation is local and does not require uniform charge distribution.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/72",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_01.html",
+      "source_locator": "Lorentz-force equation 1.2",
+      "passage_en": "A magnetic force on a charged particle is q(v cross B). When velocity is parallel to the field, this cross product is zero.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Assume the ideal interior field of a solenoid is axial and there is no electric field; the proton continues at constant velocity.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/115",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_01.html",
+      "source_locator": "equation 1.2 and SI unit definitions",
+      "passage_en": "From the magnetic force relation F=qvB for perpendicular motion, a tesla has dimensions N/(A m), because a coulomb equals an ampere-second.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Dimensional derivation: N/(A*m)=kg/(C*s)=J/(A*m^2). A*N/V has different dimensions. This checks units, not numerical conversion.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/29",
+      "source_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+      "source_locator": "Newton’s force balance; researcher coordinate projection",
+      "passage_en": "For a stationary object on a plane inclined at angle theta, the normal force balances the component of gravity perpendicular to the plane: mg cos(theta).",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The cosine dependence decreases nonlinearly as the angle rises while the object remains at rest.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/84",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_04.html",
+      "source_locator": "equation 4.9",
+      "passage_en": "Coulomb’s force between fixed charges depends on the charges and their separation. The masses of the charged bodies do not appear in this electrostatic relation.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Doubling only one mass leaves the electric force unchanged at 50 microNewtons.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/42",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_04.html",
+      "source_locator": "conservation of energy; researcher symmetric-gravity application",
+      "passage_en": "When only conservative gravity acts, mechanical energy is conserved. A body released from rest can regain its initial gravitational potential at an equal-height turning point.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "For an ideal evacuated tunnel through a nonrotating, symmetric Earth, the object passes the center and turns at the opposite opening, repeatedly. Real-Earth complications are excluded by the question’s idealization.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/12",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_39.html",
+      "source_locator": "equilibrium and average kinetic-energy discussion, equations 39.19–39.22",
+      "passage_en": "Collisions exchange molecular kinetic energy. At thermal equilibrium, the mean translational kinetic energy is determined by temperature rather than molecular species.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The kinetic-theory source is an idealized model; applying energy exchange to the liquid mixture is a researcher interpretation of the same thermal-equilibrium principle. No equality of individual molecular energies is claimed.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/61",
+      "source_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/falling-object-with-air-resistance/",
+      "source_locator": "F=W-D and a=(W-D)/m",
+      "passage_en": "A downward-falling object experiences gravity downward and drag upward. Its downward acceleration is the net downward force divided by mass and falls toward zero as drag grows.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "For the question’s linear drag, a=g-bv/m: while below terminal speed, v increases and a decreases. NASA illustrates quadratic drag; the linear-drag formula is a researcher adaptation explicitly stipulated by the question.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/40",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_49.html",
+      "source_locator": "mode wavelengths; researcher acoustic-pipe boundary-condition derivation",
+      "passage_en": "Standing-wave resonances satisfy boundary conditions. Adjacent resonant lengths of a pipe with the same end conditions differ by half a wavelength.",
+      "passage_kind": "researcher_paraphrase",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Researcher extension of standing-wave mode quantization to a pipe: compare consecutive resonances rather than the vibrating guitar-string wavelength. End correction cancels approximately in the length difference.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/34",
+      "source_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/falling-object-with-air-resistance/",
+      "evidence_status": "hold",
+      "issue_category": "answer_key_conflict",
+      "review_note": "Published key C includes statement II, but at the apex the speed-dependent drag vanishes while gravity remains, so acceleration is not zero. Under the standard model only statement I is true, corresponding to option A. Exclude or independently adjudicate; do not silently relabel.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/92",
+      "source_url": null,
+      "evidence_status": "hold",
+      "issue_category": "underspecified_power",
+      "review_note": "AC voltage times current is apparent power. Real input power also depends on power factor, which is not specified for the motor. The key assumes unity power factor. Hold for a clearly specified replacement rather than importing this assumption.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_physics/test/4",
+      "source_url": "https://www.feynmanlectures.caltech.edu/II_10.html",
+      "evidence_status": "hold",
+      "issue_category": "option_label_artifact",
+      "review_note": "Option D contains an extra literal (E) label. The intended physics is consistent, but this competing label could cause parsing artifacts in a four-option study. Prefer a replacement or an explicitly documented display repair.",
+      "approved_for_experiment": false
+    }
+  ],
+  "note": "Facts are researcher paraphrases; derivations and assumptions are disclosed. No final approval."
+}

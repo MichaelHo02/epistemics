@@ -1,0 +1,88 @@
+{
+  "review_date": "2026-11-15",
+  "reviewer": "assistant_source_check",
+  "rows": [
+    {
+      "sample_id": "high_school_biology/test/201",
+      "source_url": "https://www.genome.gov/genetics-glossary/Evolution",
+      "source_locator": "adjudication note",
+      "passage_en": "",
+      "passage_kind": "not_prepared",
+      "evidence_status": "hold",
+      "support_review": "pending",
+      "review_note": "D is the intended ecological-opportunity explanation, but the question asserts a particular historical cause across all South American finches and rules out similar adaptations without source evidence. Need a direct Darwin-finch ecological-opportunity source and a check of the factual mainland comparison; general evolution definitions do not establish it. Hold for sourcing, not a proven key error.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "college_biology/test/135",
+      "source_url": "https://fenix.isa.ulisboa.pt/downloadFile/281547991157118/Sucessoes%202019.pdf",
+      "source_locator": "adjudication note",
+      "passage_en": "",
+      "passage_kind": "not_prepared",
+      "evidence_status": "hold",
+      "support_review": "pending",
+      "review_note": "The quoted unnamed natural-resources text suggests fewer species and weaker density-dependent regulation, but a disturbance does not necessarily imply immediately large populations. The source and intended model need identification. Hold for quote provenance and interpretation, not a proven answer-key error.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "college_biology/test/131",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6186196/",
+      "source_locator": "renal medullary architecture and urine concentration",
+      "passage_en": "Juxtamedullary nephrons have loops extending deeply into the renal medulla. Their participation in the medullary countercurrent system helps mammals produce urine more concentrated than body fluids.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "source_access": "indexed_excerpt_only_full_page_access_pending",
+      "review_note": "Indexed physiological review establishes renal medulla, loops and collecting ducts; full source passage identifying juxtamedullary nephrons still needs access. The question asks can, not every mammal always concentrates urine.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "college_biology/test/9",
+      "source_url": "https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-12-influenza.html",
+      "source_locator": "Influenza Virus and Pathogenesis",
+      "passage_en": "Influenza is an RNA virus that replicates its genetic material and makes viral proteins after entry and uncoating in a host cell. It does not use a DNA intermediate produced by reverse transcriptase.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "source_access": "relevant_source_passage_accessed",
+      "review_note": "CDC replication and host-cell entry passages directly read. “Immediately” in prompt compresses entry/uncoating/nuclear import; none of the other offered retroviral/destructive alternatives correctly describes its replication program. Need inspect RNA-virus classification passage in final pass.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "college_biology/test/60",
+      "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK9943/",
+      "source_locator": "Summary: The Origin and Evolution of Cells",
+      "passage_en": "A common model of early cell origins begins with self-replicating molecules enclosed by a lipid membrane. Nuclei and mitochondria are later features of eukaryotic cells.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "source_access": "indexed_excerpt_only_full_page_access_pending",
+      "review_note": "Indexed author textbook summary explicitly states enclosure ofRNAinphospholipid membrane; full page blocked. This supports a model-based most-likely ordering, not direct observation of the first cell.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "college_biology/test/54",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6028242/",
+      "source_locator": "historical random mating/recombination recurrence",
+      "passage_en": "In an ideal randomly mating population without forces maintaining associations, recombination reduces linkage disequilibrium across generations. Clonal reproduction and selection favoring particular allele combinations can preserve or create such associations.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "source_access": "indexed_excerpt_only_full_page_access_pending",
+      "review_note": "Indexed review gives D_next=(1-c)D; this does not mean random mating instantly eliminates LD or forbids drift/selection from generating it. Epistasis alone without selection does not necessarily generate LD: final option-interpretation review needed.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "college_biology/test/25",
+      "source_url": "https://www.adfg.alaska.gov/static/education/educators/curricula/alaskawildlifecurriculum/pdfs/alaskas_forests_wildlife_curriculum.pdf",
+      "source_locator": "Forest Succession: Primary Succession",
+      "passage_en": "Primary succession begins on a newly exposed substrate that lacks an established soil community, such as bare rock or glacial deposits. Secondary succession begins where a previous community has been disturbed but soil remains.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "source_access": "relevant_source_passage_accessed",
+      "review_note": "Official curriculum source explicitly defines primary succession as removal of soil/organisms leaving bare rock,gravel,silt,sand. No claim all bare substrates necessarily follow one fixed sequence.",
+      "approved_for_experiment": false
+    }
+  ]
+}

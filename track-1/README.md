@@ -1,3 +1,52 @@
+# OpenAI model evaluation
+
+The four-option evaluator uses the official OpenAI SDK. Add your existing `OPENAI_API_KEY` to the ignored `track-1/.env`. The key is never included in prompts, saved manifests or logs. Run the zero-network readiness check:
+
+```sh
+track-1/.venv/bin/python -m epistemics_dataset.openai_eval check
+```
+
+Model selection, reviewed evidence and reviewed instruction/peer templates are still pending. Live evaluation uses the existing tracked entry point and remains disabled during preparation. Setup and output details: `research/openai-evaluator.md`; model/settings: `configs/openai-eval.json`.
+
+---
+
+# Main experiment preparation
+
+The main candidate set contains 300 distinct published Global-MMLU questions, each in English, Chinese and Vietnamese (900 question rows), across ten subjects. The earlier 20 development IDs are excluded. Source passages, translations and the model evaluator are still pending; these are not 300 approved experiment cases. See `research/main-experiment-plan.md` for the planned paired conditions and readiness checks.
+
+Reproduce selection from the previously downloaded, checksum-verified snapshot:
+
+```sh
+track-1/.venv/bin/python -m epistemics_dataset.main_dataset --snapshot /path/to/project-artifacts/track-1/global-mmlu-pilot/upstream --output /path/to/project-artifacts/track-1/global-mmlu-main
+```
+
+This writes original question rows, review tasks, a fixed replacement queue, a condition plan and a provenance manifest. It makes no model or generation calls. Configuration: `configs/global-mmlu-main.json`.
+
+---
+
+# Current dataset: published Global-MMLU questions
+
+The study now starts from **CohereLabs/Global-MMLU**, a benchmark used by the multilingual-pressure paper in `research/idea.md`. Synthetic examples and service-generated similar rows below are historical engineering checks, not the research benchmark. Automatic generation through the fixed runner is disabled while published evidence is being prepared (`workflow: published_data`).
+
+`configs/global-mmlu.json` pins the upstream revision and file checksums. The read-only importer keeps original question IDs, wording, four answer choices, answer keys and metadata in English/Chinese/Vietnamese. It never fills missing translations or repairs upstream labels silently.
+
+```sh
+track-1/.venv/bin/python -m pip install -r track-1/requirements.lock
+track-1/.venv/bin/python -m epistemics_dataset.global_mmlu --output /path/to/project-artifacts/track-1/global-mmlu-pilot
+```
+
+The public dataset can be downloaded without a key. If configured, supported HF token environment variables are read from the process or private `track-1/.env`; tokens are not logged or saved in manifests.
+
+The pilot selects five complete, answer-consistent questions from each of four subjects, using a fixed hash ranking and the upstream culturally-agnostic label. This is a documented narrow development slice, not the exact 100-question sample from the pressure paper, nor a representative Global-MMLU score. Import reports record upstream answer-letter disagreements and incomplete rows excluded from selection. Different letters do not by themselves prove that a translated answer is factually wrong; these rows need separate review.
+
+Outputs: `pilot-cases.jsonl` (20 aligned cases), `question-preview.md` (all three language versions), `evidence-tasks.jsonl` (unfilled source passage collection tasks), and `import-manifest.json` (checksums, selection, exclusions, licensing declaration). Dataset cards declare Apache-2.0; keep upstream attribution. **Supporting passages are still missing.** A `reference` metadata field is not a verified source excerpt. Existing translations and labels still need review.
+
+Every pilot ID is development material and must be excluded from a later held-out evaluation. The study's future runner must support four choices, actual first answers, uncertainty and explicit evidence; the older two-option fixture builder is not a Global-MMLU evaluator.
+
+Paper: *Global MMLU: Understanding and Addressing Cultural and Linguistic Biases in Multilingual Evaluation*, Singh et al., arXiv:2412.03304. Dataset: https://huggingface.co/datasets/CohereLabs/Global-MMLU
+
+---
+
 # Track 1 dataset preparation
 
 ## Current workflow: Adaption Adaptive Data

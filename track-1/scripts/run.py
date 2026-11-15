@@ -30,9 +30,26 @@ def main():
     destination = args.output_root/run_id
     import shutil
     succeeded = False
+    workflow = None
     try:
-        subprocess.run(cli+["doctor"], env=env, check=True)
         workflow = json.loads((root/"configs/pilot.json").read_text()).get("workflow", "responses")
+        if workflow == "evidence_translation":
+            subprocess.run([python, "-u", "-m", "epistemics_dataset.evidence_translation",
+                            "--config", str(root/"configs/evidence-translation.json"),
+                            "--env-file", str(args.env_file), "--output-root", str(args.output_root)],
+                           env=env, check=True)
+            succeeded = True
+            destination = args.output_root/"evidence-translation"
+            return
+        if workflow == "openai_evaluation":
+            subprocess.run([python, "-u", "-m", "epistemics_dataset.openai_eval", "run",
+                            "--env-file", str(args.env_file)], env=env, check=True)
+            succeeded = True
+            destination = Path(json.loads((root/"configs/openai-eval.json").read_text())["output_directory"])
+            return
+        subprocess.run(cli+["doctor"], env=env, check=True)
+        if workflow == "published_data":
+            raise RuntimeError("Published-data study is in preparation; use the read-only Global-MMLU importer. No generation launched.")
         if workflow == "adaptive_data":
             env["TRACK1_OUTPUT_ROOT"] = str(args.output_root)
             subprocess.run(cli+["adaptive-data"], env=env, check=True)
@@ -45,12 +62,12 @@ def main():
         succeeded = True
     finally:
         # Preserve partial successful caches and safe failure details after an interrupted run.
-        if generated.exists():
+        if generated.exists() and workflow not in ("openai_evaluation", "evidence_translation"):
             destination.mkdir(parents=True, exist_ok=True)
             shutil.copytree(generated, destination, dirs_exist_ok=True)
-        print(json.dumps({"status": "preparation_complete" if succeeded else "generation_failed",
+        print(json.dumps({"status": ("evaluation_process_completed" if succeeded else "evaluation_process_failed") if workflow == "openai_evaluation" else ("preparation_complete" if succeeded else "generation_failed"),
                           "output_path": str(destination), "review_status": "pending",
-                          "model_evaluation_calls": 0}), flush=True)
+                          "model_evaluation_calls": "see evaluator output" if workflow == "openai_evaluation" else 0}), flush=True)
 
 
 
