@@ -33,6 +33,14 @@ def main():
     workflow = None
     try:
         workflow = json.loads((root/"configs/pilot.json").read_text()).get("workflow", "responses")
+        if workflow == "evidence_translation":
+            subprocess.run([python, "-u", "-m", "epistemics_dataset.evidence_translation",
+                            "--config", str(root/"configs/evidence-translation.json"),
+                            "--env-file", str(args.env_file), "--output-root", str(args.output_root)],
+                           env=env, check=True)
+            succeeded = True
+            destination = args.output_root/"evidence-translation"
+            return
         if workflow == "openai_evaluation":
             subprocess.run([python, "-u", "-m", "epistemics_dataset.openai_eval", "run",
                             "--env-file", str(args.env_file)], env=env, check=True)
@@ -54,7 +62,7 @@ def main():
         succeeded = True
     finally:
         # Preserve partial successful caches and safe failure details after an interrupted run.
-        if generated.exists() and workflow != "openai_evaluation":
+        if generated.exists() and workflow not in ("openai_evaluation", "evidence_translation"):
             destination.mkdir(parents=True, exist_ok=True)
             shutil.copytree(generated, destination, dirs_exist_ok=True)
         print(json.dumps({"status": ("evaluation_process_completed" if succeeded else "evaluation_process_failed") if workflow == "openai_evaluation" else ("preparation_complete" if succeeded else "generation_failed"),

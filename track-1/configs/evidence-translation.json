@@ -1,0 +1,19 @@
+{
+  "workflow": "evidence-translation-v1",
+  "sdk_version": "0.19.0",
+  "cases_file": "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main/translation-input-v1/main-cases.jsonl",
+  "evidence_file": "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main/translation-input-v1/evidence-candidates.jsonl",
+  "cases_sha256": "2e8c80614963a31696e9f314f6fb9b9bba959d488cb04716a198feccd383da95",
+  "evidence_sha256": "2985e2444ffed758a60a029d1c624eff709ddb9f54dcf0e83eb484279f3211f7",
+  "candidate_hash": "691281a5e4f0eb5fddeac752609489ea63aaa532b3a6eed188764bbf5a48cbfe",
+  "expected_questions": 300,
+  "languages": [
+    "zh",
+    "vi"
+  ],
+  "sample_rate": 1.0,
+  "allow_unreviewed_drafts": true,
+  "credit_cap": 25,
+  "wait_timeout_seconds": 1200,
+  "description": "Translate draft English supporting evidence only. Source/question/reuse/bilingual reviews remain pending. No augmentation, original-question rewriting, gold-label creation, OpenAI tests or model evaluation."
+}

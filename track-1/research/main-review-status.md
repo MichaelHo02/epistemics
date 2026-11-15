@@ -31,10 +31,24 @@ It writes a separate review bundle containing all 172 reserves and the first
 approve any question. Review candidates in order and log each decision before
 applying changes to a new selection version.
 
+## Candidate selection v2
+
+A separate version now replaces the 38 original holds with 38 provisionally
+retained reserves. The first 53 reserve questions were triaged in fixed order;
+15 were excluded with recorded reasons. The new set still has 30 questions in
+each of the ten subjects. No original question, option, or answer key was edited.
+All 300 remain unapproved pending the final source and multilingual checks.
+
+The first 300 draft English explanations have been pinned for translation-only
+preparation through Adaption. Source and language review continue alongside this
+step; changed English content requires a matching new translation. See
+[evidence-translation.md](evidence-translation.md) for the exact safeguards.
+
 ## Remaining work
 
-1. Adjudicate holds and review enough same-subject reserves to retain 30 eligible
-   questions per subject. Log all exclusions before seeing model outcomes.
+1. Finish adjudication of the provisional selection and review additional reserves
+   if source or language checks uncover further problems. Preserve30per subject
+   and log every exclusion before seeing model outcomes.
 2. Complete source and answer checks for retained English passages. Replace weak
    references; separate direct factual support from independent formal proofs.
 3. Review original English, Chinese, and Vietnamese question meaning and answer
