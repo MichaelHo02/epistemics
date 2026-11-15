@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://www.egyankosh.ac.in/bitstream/123456789/71734/1/Block-2.pdf",
+    "key": "63965ee9477d30d6",
+    "status": "failed",
+    "error": "[Errno 54] Connection reset by peer"
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK482117/",
+    "key": "2dbc59e0a8c8b77e",
+    "characters": 17332,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.biology-pages.info/C/CellularRespiration.html",
+    "key": "1d337f6596e3e7b1",
+    "characters": 11944,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  }
+]

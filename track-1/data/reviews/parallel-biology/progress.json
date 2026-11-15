@@ -1,0 +1,29 @@
+{
+  "reviewer": "assistant_biology_source_and_multilingual_review",
+  "review_date": "2026-11-15",
+  "original_families_reviewed": 60,
+  "original_exclusions": 11,
+  "new_reserves_selected": 11,
+  "proposed_families": 60,
+  "subject_counts": {
+    "high_school_biology": 30,
+    "college_biology": 30
+  },
+  "source_approved_families": 60,
+  "approved_trilingual_families": 39,
+  "pending_families": 21,
+  "translation_needed": 21,
+  "translation_ready_with_verified_support": 21,
+  "support_pending_ids": [],
+  "all_source_or_evidence_changes_retranslation_pending": true,
+  "experiment_ready": false,
+  "candidate_hash": "a6490e0edf1b003e5dcb8bb0602eab16da3c652ad04699e258bf09f86ef01feb",
+  "original_case_hashes_preserved": true,
+  "no_model_outcomes_seen": true,
+  "human_review": false,
+  "independent_or_blinded_review": false,
+  "saved_prefix_through": {
+    "high_school_biology": 44,
+    "college_biology": 44
+  }
+}

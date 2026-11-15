@@ -1,0 +1,443 @@
+{
+  "date": "2026-11-15",
+  "rows": [
+    {
+      "sample_id": "astronomy/test/107",
+      "source_locator": "NASA Moon facts, surface gravity one-sixth Earth; own W=mg mass ordering with pounds converted tokg.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "4702b9c9372f50b2ff0f3d94493efae96bd813685026e42c5ecf828f50aaaa51"
+    },
+    {
+      "sample_id": "astronomy/test/132",
+      "source_locator": "NASA Mars facts, Water on Mars: ancient river valleys/deltas/lakebeds and liquid-water mineral formation.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "256444f3a1a9b4b5bb91808cc19a9b3b27bc7fb8a41ffb692af9ccb4af2f5727"
+    },
+    {
+      "sample_id": "astronomy/test/123",
+      "source_locator": "NASA Space Place, short answer and molecular scattering explanation.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "40f7367b63ae307d8117bb570dd33e6d13eccf64a22dccf2a828a174ce8a0353"
+    },
+    {
+      "sample_id": "astronomy/test/100",
+      "source_locator": "DLMF4.14trigonometricdefinitions; own small-angle approximation and degree-to-radian conversion.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "0a4550bb502338571b9335ad6dfbb1ea6cf6612e02a46a692a106d810d26ca2c"
+    },
+    {
+      "sample_id": "astronomy/test/102",
+      "source_locator": "NASA Moon phases27.322sidereal vs29.5new-to-new, synchronous rotation; own same Sun-relative phase/day periodicity.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "52b6d1e310f9d0220d9e0e32ea8c0d5edc677c375a5dffd02ee664765d3d3758"
+    },
+    {
+      "sample_id": "astronomy/test/19",
+      "source_locator": "NASA Webb Doppler shift of stellar spectrum, towardobserver shorter/bluer wavelengths.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "9544fc98e16a37866f3b0026c87f8f5f196a7e0db2a4589fb3cbb565052e2c56"
+    },
+    {
+      "sample_id": "astronomy/test/8",
+      "source_locator": "OpenStax15.1Table15.2 solar abundances plus NASA Sun facts99.8percent solar-system mass; own whole-system dominance inference.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "ac41f08efdca451a8656f584f54b08558c87a778ba63ac4461269c60fb95e4ea"
+    },
+    {
+      "sample_id": "astronomy/test/42",
+      "source_locator": "LASP Planetary Size and Density: stack-of-pillows compression, Jupiter highermass compressesinterior/density vsSaturn.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "cc65f7eb51495bcbe523d618556aa970af9377449423db5344aeaf17747d1eac"
+    },
+    {
+      "sample_id": "astronomy/test/104",
+      "source_locator": "NASA10Things, section10 Yet We Are Pushing It Away; long-term directional extrapolation, not an exact20,000year forecast.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "7142973341b411b2d46d227467d4b9ce20992fe091bd57945c75449fb59cbb72"
+    },
+    {
+      "sample_id": "astronomy/test/51",
+      "source_locator": "NASA JPL solar-power lesson Background, inverse-square1/d² and power calculation; own distance ratio squared.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "fe673adb9f74def8d378675f0989082460608fb78eafb64190481f56b9092006"
+    },
+    {
+      "sample_id": "astronomy/test/73",
+      "source_locator": "NASA blackholes10questions, question10 shrinkage/Hawking energy loss, explicitly proposed quantum mechanism.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "7e7db67a05ded315974269ffdaa3f9199aebd60e05f0a037a35d9c72c280166c"
+    },
+    {
+      "sample_id": "astronomy/test/133",
+      "source_locator": "LASP Internal Heat, Jupiter still slowlycontracting and radiates almosttwice absorbedsolar energy; own gravitational-energy interpretation.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "dc506fdbd2527fb795d40d91909db7f7306b57429e018b8f8cd71a042ce4b799"
+    },
+    {
+      "sample_id": "astronomy/test/66",
+      "source_locator": "NASA JPL solar-power lesson Background, explicit inverse-square law andJuno example; own5AU squared luminosity multiplier.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "7f0a588b9a9e1fa426da178decc98e76d1b32a54c14144e023d196ca03881a7a"
+    },
+    {
+      "sample_id": "astronomy/test/125",
+      "source_locator": "NASA Trojan discovery account,60degree position andL4/L5, ahead/behind orbit visualization.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "a9636763c3ea6fd8fe949370376828f985c0db46b44a1c38638250a698d9c0dc"
+    },
+    {
+      "sample_id": "astronomy/test/46",
+      "source_locator": "NIST radioactive-age article, uranium238/235 and Earth/Moon/meteorite age4.54Gyr discussion.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "fce919d6a967dfba007c51b98080004c6d15b1c740f3c4b98851d0d3437619c9"
+    },
+    {
+      "sample_id": "astronomy/test/12",
+      "source_locator": "NASA LMC article, satellitegalaxy ofMilkyWay and gascloud starforming regions.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "e9834e6b0dc1f810c64c0cc53620d10b4a583b13dfef59f11fc08f19286991dc"
+    },
+    {
+      "sample_id": "astronomy/test/103",
+      "source_locator": "SETI Institute Drake equation page, At a Glance purpose and number-of-communicative-civilizations definition.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "8779443f4c9f34b7511ab8e6ca056e1cf422acc9a0b791f1825ed06d005e36dc"
+    },
+    {
+      "sample_id": "astronomy/test/36",
+      "source_locator": "NASA Plane of Ecliptic body: Earth orbitalplane and Sun apparent annual sky path.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "4a4d8b29e6bb5dbc4310341c7899d184ea7134ccc439c6691712d50cb95b675c"
+    },
+    {
+      "sample_id": "astronomy/test/56",
+      "source_locator": "NASA JupiterfactsMoons: Io/Europa/Ganymede/Callisto specifically Galileans.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "262135a69873e55717458434b66b905565f43494f3364820e641003457e8587a"
+    },
+    {
+      "sample_id": "astronomy/test/67",
+      "source_locator": "NASA Hubble Messier45, Seven Sisters name and over1000 actual members.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "b5c826154d9645b409fd412a0a73abc580b1de2dde4a3557d5229b187c469d34"
+    },
+    {
+      "sample_id": "astronomy/test/82",
+      "source_locator": "NASA climatecauses: humanactivities since mid20thcentury and greenhousegas heat trapping.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "a97b823214c49801efa2a39139db350e54c140ac7892fa3ed68db26244e6b515"
+    },
+    {
+      "sample_id": "astronomy/test/135",
+      "source_locator": "NASA Imagine the Universe electromagnetic-spectrum ordered chart and band descriptions.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "95cb6f6c94abbdc4b512a6ec4701929a3d72b118f9e6edd30e5e05aa363e5285"
+    },
+    {
+      "sample_id": "astronomy/test/147",
+      "source_locator": "NASA Sunfacts photosphere5500C; own5773.15K and nearest6000K.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "3977f06148bd31cb53388eb18858f50c0467a0c8aa07a53be6b0618428718d8a"
+    },
+    {
+      "sample_id": "astronomy/test/98",
+      "source_locator": "FeynmanI18 angularvelocity/angle definitions; own common rigid-body angle andv=rω derivation.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "9ef9b4164ae63e47d5769217266f9f29e212a06a2931ac9750700b7180cf7085"
+    },
+    {
+      "sample_id": "astronomy/test/41",
+      "source_locator": "NASA SagittariusA*imagearticle explicitly MilkyWay central supermassiveblackhole.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "4c34d1571bd341cdea15720c126f0bd9e5755ead75be53d40a1aa372648be9a1"
+    },
+    {
+      "sample_id": "astronomy/test/136",
+      "source_locator": "NASA StarChildPlutofacts revolutionperiod248Earthyears; nearest250.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "a8873fa8047295940b0e9f0877a2f0548378add850bc3838642c810e8d20638f"
+    },
+    {
+      "sample_id": "astronomy/test/148",
+      "source_locator": "NASA FourLittlePlanets discoveryalert: Barnard nextstellar system afterAlphaCentauri, nearestsingle star. Sun excluded by question context.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "c950addcd079a829451ca860fb631d098f01924108ce1cb686180609f30ccd96"
+    },
+    {
+      "sample_id": "astronomy/test/5",
+      "source_locator": "FeynmanI13section13-2 Eqs13.11/13.12 energyconstant0.5mv²-GMm/r; own unbound two-body limiting speed/energy with m<<M.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "e416e4401520ccba15533851764d63b6f8bf8c3b97ae1a669fcda4f6aa472173"
+    },
+    {
+      "sample_id": "astronomy/test/96",
+      "source_locator": "NASA MarsfactsMoons:PhobosandDeimos.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "4983746a3f6c20201f249b268b7e6894068b9f5500e0f4b642d596e9b31567bd"
+    },
+    {
+      "sample_id": "astronomy/test/68",
+      "source_locator": "NASA SolarSystemfacts formationfrom rotatingdisk gas/dust; own model-structure inference: no equality-count rule. Debris/impact record supports other options; not a theorem fixing planetcounts.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_astronomy_source_and_multilingual_review",
+      "reviewed_question_hash": "007748fbe01c321f6f0e0bdcc1cd655ece24e5db1b5f8588be60bf2f252cb43d"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/111",
+      "source_locator": "Strong acid v weak base, acid into alkali: ammonia/ammonium buffer and acidic equivalence, with steep near-equivalence drop. Very first additions may drop faster; broad initial-buffer wording is approximate.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "31ebc315c3ce343cc03d3b483a5f9d4f85ffcc22f22309160a300cfa008ea4f5"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/63",
+      "source_locator": "Raoult law paragraph defining component mole-fraction vapor pressure and total=sum of partial pressures.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "34799ec0dd59b03d15d6afaf1c915e85f421744f12eb0bd07feb1b6f089a8411"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/151",
+      "source_locator": "Entropy changes during physical changes: gas/solid state differences; qualitative gas-mole heuristic applied to offered balanced reactions.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "eb208745e10c6de72238d52fb5d6148dafe6478f45d9b2526aabd2a59db41da5"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/64",
+      "source_locator": "OpenStax14.3 molecular structure/oxyacid section and oxidation-state acidity trend; own Br oxidation states+1,+3,+5,+7.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "5002b601cb870fb52348f7bd442556bd5cb130bafeff0f0cd3eb533b042344ad"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/167",
+      "source_locator": "CIAAW silver107.8682,chlorine35.446..35.457; own AgCl mass fraction and sample-percent calculation.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "2fcd6ca579ccc24bdae18245ecf1f45d47bc88175e7fa3835a24f2da2b67565d"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/44",
+      "source_locator": "NIST compound106-46-7 synonym list identifies para-/p-dichlorobenzene as1,4-dichlorobenzene.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "8a0f51e7af90313dccf1c93c0d5baca9da50be5cdedfe6e57c55c3d9519452ed"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/11",
+      "source_locator": "TAMU VSEPR rules p6, geometries p7 and SF4 lone-pair placement p9; own seesaw/dipole-balance interpretation of colloquial asymmetrical, not no point-group symmetry.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "f3bac84b68f6a8fe64e2857ce9ee2b35ea09a41157c8c5ed9cea72d015ee00f9"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/172",
+      "source_locator": "Chemguide temporary-dipole mechanism and larger-molecule/more-electron boiling-point explanation.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "d45ab2c91e6164b413d3746b26707f0b939ed3be77bfe4012a55303fbea592aa"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/41",
+      "source_locator": "Chemguide ideal-gas equation R units J/(mol K); own equivalent dimensions PVenergy,volt*coulomb=joule.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "1704985e1ae3792c956655f6a1ca451172d22aa8524023228ba1434d282aa10a"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/113",
+      "source_locator": "Chemguide changing concentrations/pressure facts: constant unaffected except temperature.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "5dfe6ea06922528eb46437fb29073e11024ab49c8dc98b05705c2dc9823672b4"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/122",
+      "source_locator": "VSEPR electron-pair rules p6 and geometry chart p7, plus own removal of one octahedral vertex.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "f5758edd11d31d79ad45f7e5f8615c698673ac1e66bcc47028e6aacfe331caf1"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/125",
+      "source_locator": "Section6.4, Pauli discussion below hydrogen/helium orbital diagrams; not Hund filling rule.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "296668556b93e3021cb5a7e5e91d7d08c23a2218df10e67f509de9a2babd88a6"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/4",
+      "source_locator": "Standard atomic weights table, Z51/Sb/antimony row.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "a23bf4a236d9538340bef13164285ce3a22c9b2d8bc6a6e4fe1f4c074841b22d"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/155",
+      "source_locator": "NIST CO2 Henry law data in water, kH approximately0.034..0.035mol/(kg bar) at298.15K; own gas-collection loss inference.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "070a2cc92f937260b15ba4b09131cd9a82eda193bf4cb3f7b92846580f14b8d5"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/92",
+      "source_locator": "CIAAW Z24 chromium and own neutral electron/neutron count for mass52.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "84cbb41e41197fd7446dfa3bf5dbaea30fac6a9508bd8559b08fc9c7d24a4c87"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/14",
+      "source_locator": "Chemguide ammonia hydrogen bonding discussion and boiling-point/intermolecular explanation; distinguish covalent internal bonds.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "d31f8392a418f0f2be89f3d6e785894ac517e6ccbca50abb6988e282f885172d"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/123",
+      "source_locator": "Chemguide copper(II) sulfate and oxidation-state naming discussion; own application to CuCl2 and fixed-charge conventional alternatives.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "db87302de1bfc63204d18a5f2cf113fd2eae0fbb9d387188971b237f53a920bb"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/126",
+      "source_locator": "Chemguide acidic manganate(VII)/iron(II) reaction and Mn+7to+2 electron acceptance.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "ffe3afdcfe83ec5071f1a2fdcd5011d96a82f85cc438e8c2611f68f6b8540d95"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/19",
+      "source_locator": "NIST radioactive age article, half-life definition; own logarithm and minimum whole-half-life calculation.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "f3b4806e4979a815edc7f9e315bb2eb789c8c9099a29e829e3762c997ff06de0"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/2",
+      "source_locator": "Chemguide diamond: very strong3D covalent bonds, high sublimation temperature, no electrical conduction, insoluble; graphite explicitly contrasts as exception.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "7fedfba8e08b586828b90e12cb7d09f1832796c1263b892e162ce39136018940"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/8",
+      "source_locator": "CIAAW atomic-number rows Rb37,Se34,As33,Sr38 plus electron charge-count arithmetic; explicit formula correction.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "180828cb414903f38bcc7613bf53b0a9f5f0cd7a3d7965b099b216af7684cb72"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/143",
+      "source_locator": "Chemguide redox oxidation-state decrease= reduction and electron-transfer balance; own reading of3given halfreactions.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "0974a26e1bb23deec859b70fdf0d66291ca76e2a79e681f0304273c1aa9df025"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/26",
+      "source_locator": "TAMU VSEPR rules/geometry chart p6/7; own bond-domain count for listed molecules.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "4e9ee2d28ac6c3c270177d363032a2336c8f7e970fb85ed8801a8d7b3dba70f1"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/197",
+      "source_locator": "Chemguide surface-area reaction-rate page: same mass powdered solid faster than lump; own application to gas/solid oxidation.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "eef2a68726e3f65dd5ad342218610da9bcd557f1faefa660682fde92839bff03"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/176",
+      "source_locator": "Purdue Graham page, diffusion/effusion relation and effusion-hole discussion; own molarmass=He molarmass*(5.33)^2.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "34a17d02a9746fb8133329967d890218ff671486f91d97504e4a15df43515818"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/185",
+      "source_locator": "Washington author demo sodium-acetate hydrolysis; OpenStax14.3 conjugate KaKb relation for own numerical calculation under25C convention.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "263299671c5f6945890255bd8958514eb99e964343287b25c8141a3b10597875"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/137",
+      "source_locator": "NIST constants table exact Avogadro6.02214076e23; own molar-mass divided by entities.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "45e407d4e8e4cbcd000db2441d1d1baa2b2d3a06303c0a6a863c822941cdd318"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/7",
+      "source_locator": "Chemguide electron filling singly for same-energy p/d orbitals before pairing, plus ground-state qualification.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "a2f89e4a418fbade19827872a4539162b0d3e139847012a8052405cb3115da3a"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/78",
+      "source_locator": "Oxidation-state increases/decreases and electron-balance rules, own6electron balancing for the supplied reaction.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "ebfb638e2ddbfe7cf35ddaadd898b0afd203f2404ae76fdc272ec6390d290174"
+    },
+    {
+      "sample_id": "high_school_chemistry/test/46",
+      "source_locator": "Chemguide ethene end-on sigma and sideways pi bonding, TAMU resonance/octet principles pp3,6; own24valence-electron nitrate Lewis contributor count.",
+      "access_review": "Source rule read from original author/agency text or explicitly documented independent derivation with background source.",
+      "reviewer": "assistant_chemistry_source_and_multilingual_review",
+      "reviewed_question_hash": "7f24d85ae3ce9dc92f52c5acf9eabced50bf268c1beddba489caf27c248b39e5"
+    }
+  ],
+  "access_notes": [
+    "NASA/NIST/Chemguide/LASP/Purdue/Washington originals read through standard HTTP; source excerpts inspected before adjudication.",
+    "Caltech and JPL direct HTTP403 resolved by original-page web reader; failures alone not counted as support.",
+    "OpenStax original author textbook sections read in web reader, including oxyacid trend, conjugateKaKb,Pauli and solar abundance table.",
+    "TAMU VSEPRPDF downloaded, text read, geometry chart page7 rendered and inspected."
+  ],
+  "tamu_pdf_sha256": "c13e2b666c5906ed687aaba86254e39ed0e7d3c7db0921162c8e47a4241cdce4",
+  "tamu_pages_used": [
+    3,
+    6,
+    7,
+    9
+  ],
+  "limits": [
+    "General rules are not published solutions to specific benchmark questions.",
+    "All reviews are assistant reviews, not independent blinded human bilingual review."
+  ],
+  "model_evaluation_calls": 0
+}

@@ -37,3 +37,29 @@ Use paired comparisons and uncertainty intervals that resample whole question ID
 - Save a committed, immutable dataset manifest and protocol with the run.
 
 Preparation artifacts live under `track-1/global-mmlu-main/` in project artifacts. The earlier development set and its evidence review remain separate.
+
+
+### Pre-outcome eligibility amendment: quality-review exhaustion
+
+The fixed CA-labelled astronomy pool has44complete, answer-aligned candidates
+after development exclusions. Source/language review leaves29suitable distinct
+families if the blue-methane-cloud false premise is excluded. We keep the target
+of30astronomy families using a minimal deterministic fallback: only after
+exhausting the saved CA ranking, review unannotated (`-`, `is_annotated=false`)
+published astronomy questions in the same SHA-256 salt order. Retain the first
+that passes source, answer, all-three-language and context-neutrality review.
+Explicitly culturally sensitive (`CS`) rows remain ineligible.
+
+This amendment is made before any model outcomes. It does not relabel upstream
+records as CA. The final manifest must identify every fallback, its unchanged
+upstream label, and the reviewer context assessment. The resulting300-question
+slice may therefore be described as predominantly upstream-CA with explicitly
+listed manually reviewed unannotated additions, never as entirely upstream-CA.
+A CA-only sensitivity analysis can exclude those additions after evaluation.
+
+For astronomy, the first unannotated candidate in the fallback order is /85;
+its Chinese parsec definition confuses an angular subtense with a distance
+statement, so it is excluded with a recorded language-quality reason. The next
+candidate /135 preserves all electromagnetic-spectrum categories and their
+order in en/zh/vi, and is selected subject to final material review. Its original
+label remains unannotated. No published question or answer is rewritten.

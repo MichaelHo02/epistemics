@@ -130,3 +130,30 @@ The local evaluator readiness check now recognizes 41 reviewed families and 259
 pending families in candidate v2. It still refuses a full run. This check makes
 zero network calls, leaves the model unset, and does not change the production
 evaluation configuration to point at an unfinished candidate selection.
+
+
+## Parallel review handoff: all300English families
+
+The combined candidate version3has300unique published question families,
+30per subject, with all original English/Chinese/Vietnamese rows checked against
+the pinned upstream snapshot. There is no overlap with20development questions.
+Every English supporting passage has a source/answer/reuse review. The combined
+local readiness check recognizes213approved trilingual families;87need matching
+supplemental translations and review. No model evaluation has occurred.
+
+The final candidate hash is
+`b4b43ea7568d67ba1d57f7bf5bf25fbb59fff193d1015078f7af8442fddb7fe0`.
+The manifest records299upstream-CA questions and one manually assessed unannotated
+astronomy addition, `/135`. The eligibility amendment and skipped fallback `/85`
+are logged before outcomes in the experiment plan and replacement ledger.
+Do not describe this slice as entirely upstream-CA.
+
+The topic handoffs are under the four `data/reviews/parallel-*` folders and matching
+artifact folders. The supplemental87English passages are frozen separately in
+`global-mmlu-main/translation-input-v3`; their checksums and candidate hash are
+bound by the translation configuration. The earlier66-row input-v2was prepared
+but superseded before any service request, when biology completed its21rows.
+
+Only after the supplemental Chinese and Vietnamese passages have been reviewed
+can all300materials be finalized. The OpenAI model remains unset, and no key test
+or evaluation request is authorized in this preparation goal.

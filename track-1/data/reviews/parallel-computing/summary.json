@@ -1,0 +1,23 @@
+{
+  "status": "90_proposed_cases_not_all_materials_ready",
+  "counts": {
+    "high_school_computer_science": 30,
+    "college_computer_science": 30,
+    "computer_security": 30
+  },
+  "replacements": 19,
+  "excluded_current_questions": 19,
+  "approved_trilingual_evidence": 63,
+  "translation_needed": 27,
+  "pending_source_support": 0,
+  "question_strings_modified": 0,
+  "model_calls": 0,
+  "reserve_prefix_last_rank": {
+    "high_school_computer_science": 44,
+    "college_computer_science": 40,
+    "computer_security": 49
+  },
+  "remaining_shortage": 0,
+  "reviewer": "assistant_computing_final_material_review",
+  "review_limitations": "Assistant review, not independent human or blinded review. Pending translated evidence blocks final use of affected rows."
+}

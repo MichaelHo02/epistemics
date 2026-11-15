@@ -1,0 +1,13 @@
+{
+  "sample_id": "astronomy/test/130",
+  "reviewer": "assistant_parallel_physics_math_review",
+  "role": "read_only_advisory_to_parent_not_selection_edit",
+  "recommendation": "exclude_for_clean_scientific_premise",
+  "reason": "LASP supports methane condensation in colder upper tropospheres and therefore intended key A. NASA distinguishes the blue planet caused by gaseous methane absorption from white high clouds. The unchanged stem asks why blue methane clouds exist; temperature explains condensation, not the asserted cloud color. Approving would require treating the color adjective as scientifically misleading but disposable, rather than merely awkward language. This is a substantive premise defect even though A is clearly the intended/closest choice in all three languages. Recommend exclusion under a source-checked clean-question standard irrespective of any quota shortage.",
+  "qualifier": "Not a claim that every cloud at every depth must appear white through methane-rich overlying gas; the concern is the stem's unsupported general category blue methane clouds and its conflation of color and condensation mechanisms.",
+  "sources_read": [
+    {"url": "https://lasp.colorado.edu/outerplanets/giantplanets_atmospheres.php", "locator": "Atmospheric Structure and Clouds; lines65-67 methane clouds75K and temperature-dependent condensation"},
+    {"url": "https://science.nasa.gov/asset/hubble/neptune-cloud-cover-over-three-decades/", "locator": "Body paragraph on Voyager2 bright high clouds reflecting all colors; related figure alt description contrasts blue methane-absorption planet and white high clouds"}
+  ],
+  "quota_used_in_decision": false
+}

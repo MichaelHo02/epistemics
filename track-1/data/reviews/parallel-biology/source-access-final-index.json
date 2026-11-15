@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://www.biology-pages.info/M/Meiosis.html",
+    "key": "587afdfefa147965",
+    "characters": 10120,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.biology-pages.info/M/Mitosis.html",
+    "key": "1474a6a82b5f5224",
+    "characters": 5168,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/mesh/68015544",
+    "key": "325007d5fe1d0a50",
+    "characters": 3389,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis",
+    "key": "25cbad48c2210ec1",
+    "characters": 28618,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK26837/",
+    "key": "2466a95914bc327d",
+    "characters": 58843,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK21054/",
+    "key": "ec3480cb61e398de",
+    "characters": 94626,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK21593/",
+    "key": "606d056d0a88fc25",
+    "status": "failed",
+    "error": "HTTP Error 410: Gone"
+  }
+]

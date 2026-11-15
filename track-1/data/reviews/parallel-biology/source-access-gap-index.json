@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK26828/",
+    "key": "4e492210cbd8b1f6",
+    "characters": 26957,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4880555/",
+    "key": "e364ddf0a704e932",
+    "characters": 34785,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9580387/",
+    "key": "69c55f074c908d52",
+    "characters": 99941,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4703725/",
+    "key": "5e2d46ee868b3167",
+    "characters": 64983,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.sciencedirect.com/science/article/am/pii/S0176161722000190",
+    "key": "64b3ccccca2a2b0c",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5619879/",
+    "key": "a252e7309d201d9c",
+    "characters": 65931,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.biology-pages.info/I/Influenza.html",
+    "key": "3037f6012c0e81d4",
+    "characters": 21562,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  }
+]

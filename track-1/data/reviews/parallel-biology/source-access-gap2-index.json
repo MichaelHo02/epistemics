@@ -1,0 +1,35 @@
+[
+  {
+    "url": "https://openstax.org/books/biology-2e/pages/28-6-superphylum-ecdysozoa-arthropods",
+    "key": "f86bc765e8bcc186",
+    "characters": 27211,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.worthington-biochem.com/products/trypsin/manual",
+    "key": "6435d439b8c4ac8c",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2141304/",
+    "key": "bb73cc821045d0d4",
+    "characters": 5976,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  },
+  {
+    "url": "https://www.worthington-biochem.com/products/trypsin",
+    "key": "dbb99c664b9023b3",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK8611/",
+    "key": "619444442b66e9e1",
+    "characters": 26992,
+    "status": "downloaded_requires_reading",
+    "challenge": false
+  }
+]
