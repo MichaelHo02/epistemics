@@ -1,0 +1,15 @@
+{
+  "subjects": [
+    "astronomy",
+    "high_school_chemistry"
+  ],
+  "owner": "parent",
+  "parallel_agents": {
+    "biology": "chat_801bbf08-b700-efd2-aed6-84f9c65f6df9",
+    "computing_security": "chat_a164bf72-1eb6-8e82-80d5-431425069214",
+    "physics_math": "chat_18efe684-584a-bbb7-f7e4-18d4dc491cb4"
+  },
+  "compute_launches_authorized": false,
+  "openai_calls_authorized": false,
+  "status": "parallel_review_active"
+}

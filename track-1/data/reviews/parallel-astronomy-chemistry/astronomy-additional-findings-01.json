@@ -1,0 +1,38 @@
+{
+  "scope": "Supplement to original30question-language comparisons; direct reading of all90astronomy supporting passages. Final source adjudication remains pending.",
+  "reviewer": "assistant_multilingual_and_source_review",
+  "rows": [
+    {
+      "sample_id": "astronomy/test/51",
+      "decision": "source_rebinding_required",
+      "reason": "Coulomb inverse-square chapter is background, not a radiation-flux reference. Use direct radiative-flux source, e.g. NASA/JPL solar-power lesson after verification.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/150",
+      "decision": "exclude_candidate",
+      "reason": "Published Vietnamese question already held. Additionally Chinese evidence lighter terrain is translated较浅(shallow), rather than brighter; no need repair evidence for excluded question.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/130",
+      "decision": "hold_false_premise_adjudication",
+      "reason": "Condensation-temperature answer supported by LASP, but blue methane clouds mixes atmospheric-gas color with cloud color; NASA distinguishes blue planet from white high-altitude clouds. Need decide exclusion before outcomes, not silently fix original question.",
+      "sources_read": [
+        "https://lasp.colorado.edu/outerplanets/giantplanets_atmospheres.php",
+        "https://science.nasa.gov/asset/hubble/neptune-cloud-cover-over-three-decades/"
+      ],
+      "source_locator": "LASP Atmospheric Structure and Clouds: methane condenses around75K in ice giants but not warmer Jupiter/Saturn tropospheres. NASA image description contrasts planet methane absorption color and white clouds.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/9",
+      "decision": "exclude_candidate",
+      "reason": "Unqualified shower-origin question can admit asteroid-origin material as well as comet-origin; NASA Geminids source explicitly identifies asteroid3200Phaethon.",
+      "source_url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/",
+      "approved_for_experiment": false
+    }
+  ],
+  "remaining": "Read final source passages, resolve fixed-order replacements, and review new passages. Do not infer complete approval from evidence translation agreement.",
+  "model_outcomes_seen": false
+}
