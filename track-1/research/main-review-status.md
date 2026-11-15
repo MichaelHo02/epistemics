@@ -61,3 +61,43 @@ step; changed English content requires a matching new translation. See
 Do not launch an OpenAI key test or a model evaluation during this preparation
 work. The existing OpenAI model setting remains unset; choosing the model is
 separate from making the data ready.
+
+
+## Direct multilingual review checkpoint (15 November 2026)
+
+The original questions and all four options have now been read side by side in
+English, Chinese and Vietnamese for 180 candidate families: astronomy,
+high-school mathematics, high-school physics, high-school computing,
+college computing and computer security. The supporting passages in all three
+languages have also been compared for the latter five subjects (150 families).
+Astronomy supporting-passage review remains unfinished. These counts describe
+assistant review, not an independent blinded human bilingual review.
+
+Detailed findings are versioned under `data/reviews/material-review-*-01.json`
+and `question-language-astronomy-*.json`. They bind the original question hashes
+and, for material reviews, the translated-content hashes. They distinguish
+question holds, evidence edits, unresolved terminology, source assumptions and
+actual final approvals. A language pass does not automatically approve a source.
+Only the separately recorded 22 mathematics families currently have complete
+material approval; the full 300-family dataset remains blocked from evaluation.
+
+New defects include changed convex/concave lens labels, flux translated as
+current, heads-and-tails translated as heads-and-heads, a stack translated as a
+haystack, and inconsistent code identifiers. A near duplicate physics family
+is also excluded. Further holds include ambiguous original questions; they are
+not all proven translation mistakes or wrong answer keys. Published question
+text and labels remain unchanged. The next candidate version must incorporate
+these findings in the saved within-subject reserve order before final readiness.
+
+The peer/instruction templates have been compared across the three languages.
+Participant labels now use the same neutral role, avoiding the Vietnamese
+in-group role previously introduced by the wording. The protocol review records
+its exact template hash and assistant-review limitation. Eight evaluator tests
+passed after the wording change. No OpenAI request or key test was made.
+
+Remaining direct multilingual subjects are conceptual physics, chemistry,
+high-school biology and college biology (120 families), followed by replacement
+review and final source adjudication. Existing draft translations can be reused
+only when their bound question, English passage and source remain unchanged.
+Changed English or new replacement passages need matching supplemental
+translations through the authorized dataset workflow.
