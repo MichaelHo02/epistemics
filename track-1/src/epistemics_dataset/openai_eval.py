@@ -207,6 +207,7 @@ def evaluate(cases, evidence_rows, config, api, output):
          'sdk_version':version('openai'),'run_id':os.environ.get('ORX_RUN_ID'),
          'commit':os.environ.get('ORX_COMMIT'),'status':'running'})
     save(directory/'materials.json',{'cases':cases,'evidence':evidence_rows,'templates':TEXT})
+    print(json.dumps({'stage':'evaluation_started','config':config,'session_hash':session,'planned_requests':len(cases)*39}),flush=True)
     count=0
     failures=0
     # Rebuild derived rows on resume using cached answers; never append duplicate measurements.
@@ -235,6 +236,7 @@ def evaluate(cases, evidence_rows, config, api, output):
                             peer_answer=None if advice=='neutral' else c['answer'] if advice=='correct'
                             else wrong_option(c,config['wrong_option_salt'])),ensure_ascii=False)+'\n');file.flush()
                         count+=1
+            print(json.dumps({'stage':'evaluation_progress','completed_question_families':cases.index(c)+1,'measurement_rows':count,'failed_responses':failures,'new_network_attempts':api.calls}),flush=True)
     save(directory/'execution-summary.json',{'status':'finished_with_failures' if failures else 'finished',
          'failed_responses':failures,'measurement_rows':count,
          'new_network_attempts':api.calls,'note':'Failures and UNKNOWN are retained; no scientific conclusion computed.'})

@@ -14,7 +14,7 @@
     "status": "pending",
     "reviewer": null
   },
-  "workflow": "evidence_translation",
+  "workflow": "openai_evaluation",
   "adaptive_data": {
     "seed_ids": [
       "closing-01",

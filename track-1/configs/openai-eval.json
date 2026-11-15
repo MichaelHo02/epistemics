@@ -1,16 +1,18 @@
 {
   "sdk_version": "2.48.0",
-  "model": null,
+  "model": "gpt-5.4-mini-2026-03-17",
   "expected_questions": 300,
   "candidate_hash": "b4b43ea7568d67ba1d57f7bf5bf25fbb59fff193d1015078f7af8442fddb7fe0",
   "dataset_directory": "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main/final-v1",
   "evidence_file": "evidence-reviewed.jsonl",
-  "output_directory": "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/openai-evaluation",
+  "output_directory": "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/openai-evaluation/gpt-5.4-mini-2026-03-17-main-v1",
   "max_output_tokens": 2048,
   "max_new_requests": 11700,
   "timeout_seconds": 90,
   "temperature": null,
-  "reasoning": null,
+  "reasoning": {
+    "effort": "none"
+  },
   "wrong_option_salt": "global-mmlu-main-wrong-v1",
   "protocol_review": {
     "status": "approved",
