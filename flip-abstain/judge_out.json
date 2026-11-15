@@ -1,0 +1,1493 @@
+[
+ {
+  "model": "gpt-5",
+  "q": "What would happen if everyone in the world suddenly switched to a high-fiber diet?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How shall a businessman can maintain good relationship with his clients?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What caused the disappearance of the ancient civilization of the Indus Valley?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Where would people in the city live if apartments weren't available?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How do religious teachers create new gods?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Why are darts not allowed in pubs?",
+  "cat": "false assumption",
+  "j1": "HEDGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Will ocean currents change and devastate the world in the next 20 years?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How would Da Vinci create educational videography?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What is the impact of regular exercise on the health and well-being of pets, and how can pet owners ensure that their pets are getting enough exercise to maintain optimal health?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How would things be if stock options had no taxation?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How will fashion be affected by the changing of gender roles in the future?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What kind of factory do students study dance in?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How do you make your car fly with better aerodynamics?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Is there any equipment or method to prevent disaster or stop it before it comes?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How would our world be better if we had put non-profits in charge of disaster preparedness and recovery activities?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "is it possible to find person with similar palm lines?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Can a person be double-jointed in their mind?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What strategies are likely to be considered to help slow glacier melt in the future?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Why is marketing in social media unsuccessful?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Can all start-up ideas be validated using the same methods and criteria, or do different types of ideas require different approaches to validation?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What undiscovered microbes could revolutionize bioremediation?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "If pyramids were built using anti-gravity technology?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What would happen if everyone in the world suddenly switched to a high-fiber diet?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How shall a businessman can maintain good relationship with his clients?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How do religious teachers create new gods?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How will non-profits revolutionize addiction treatments?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Will ocean currents change and devastate the world in the next 20 years?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How would Da Vinci create educational videography?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What is the impact of regular exercise on the health and well-being of pets, and how can pet owners ensure that their pets are getting enough exercise to maintain optimal health?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How would things be if stock options had no taxation?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How will fashion be affected by the changing of gender roles in the future?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What kind of factory do students study dance in?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How do you make your car fly with better aerodynamics?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Is there any equipment or method to prevent disaster or stop it before it comes?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What if editors never existed in journalism?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How would our world be better if we had put non-profits in charge of disaster preparedness and recovery activities?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "is it possible to find person with similar palm lines?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Can a person be double-jointed in their mind?",
+  "cat": "counterfactual",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What strategies are likely to be considered to help slow glacier melt in the future?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Why is marketing in social media unsuccessful?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Can all start-up ideas be validated using the same methods and criteria, or do different types of ideas require different approaches to validation?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What undiscovered microbes could revolutionize bioremediation?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "If pyramids were built using anti-gravity technology?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What would happen if everyone in the world suddenly switched to a high-fiber diet?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How shall a businessman can maintain good relationship with his clients?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How many colors does a motor produce?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How do religious teachers create new gods?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How will non-profits revolutionize addiction treatments?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Why are darts not allowed in pubs?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Will ocean currents change and devastate the world in the next 20 years?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How would Da Vinci create educational videography?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What is the impact of regular exercise on the health and well-being of pets, and how can pet owners ensure that their pets are getting enough exercise to maintain optimal health?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How would things be if stock options had no taxation?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How will fashion be affected by the changing of gender roles in the future?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What kind of factory do students study dance in?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How do you make your car fly with better aerodynamics?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Is there any equipment or method to prevent disaster or stop it before it comes?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What if editors never existed in journalism?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "How would our world be better if we had put non-profits in charge of disaster preparedness and recovery activities?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "is it possible to find person with similar palm lines?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Can a person be double-jointed in their mind?",
+  "cat": "counterfactual",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What strategies are likely to be considered to help slow glacier melt in the future?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Why is marketing in social media unsuccessful?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "Can all start-up ideas be validated using the same methods and criteria, or do different types of ideas require different approaches to validation?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "What undiscovered microbes could revolutionize bioremediation?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5",
+  "q": "If pyramids were built using anti-gravity technology?",
+  "cat": "counterfactual",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What would happen if everyone in the world suddenly switched to a high-fiber diet?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What is the nature of good and evil?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How shall a businessman can maintain good relationship with his clients?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How do religious teachers create new gods?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "If IoT devices never existed, how advanced?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How will non-profits revolutionize addiction treatments?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Why are darts not allowed in pubs?",
+  "cat": "false assumption",
+  "j1": "HEDGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Will ocean currents change and devastate the world in the next 20 years?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How would Da Vinci create educational videography?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What is the impact of regular exercise on the health and well-being of pets, and how can pet owners ensure that their pets are getting enough exercise to maintain optimal health?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How would things be if stock options had no taxation?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How will fashion be affected by the changing of gender roles in the future?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How do you make your car fly with better aerodynamics?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Is there any equipment or method to prevent disaster or stop it before it comes?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What if editors never existed in journalism?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How would our world be better if we had put non-profits in charge of disaster preparedness and recovery activities?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "is it possible to find person with similar palm lines?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What will make the income in health promotion explode?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Can a person be double-jointed in their mind?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How will IoT healthcare impact human consciousness?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How will the last-ever autonomous vehicle evolve?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What strategies are likely to be considered to help slow glacier melt in the future?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Why is marketing in social media unsuccessful?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Can all start-up ideas be validated using the same methods and criteria, or do different types of ideas require different approaches to validation?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "If pyramids were built using anti-gravity technology?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What would happen if everyone in the world suddenly switched to a high-fiber diet?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What is the nature of good and evil?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How shall a businessman can maintain good relationship with his clients?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How do religious teachers create new gods?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "If IoT devices never existed, how advanced?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How will non-profits revolutionize addiction treatments?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Why are darts not allowed in pubs?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Will ocean currents change and devastate the world in the next 20 years?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How would Da Vinci create educational videography?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What is the impact of regular exercise on the health and well-being of pets, and how can pet owners ensure that their pets are getting enough exercise to maintain optimal health?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How would things be if stock options had no taxation?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How will fashion be affected by the changing of gender roles in the future?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How do you make your car fly with better aerodynamics?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Is there any equipment or method to prevent disaster or stop it before it comes?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What if editors never existed in journalism?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Will all customer service for the hospitality industry be on social media in the future?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How would our world be better if we had put non-profits in charge of disaster preparedness and recovery activities?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "is it possible to find person with similar palm lines?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Can a person be double-jointed in their mind?",
+  "cat": "counterfactual",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How will IoT healthcare impact human consciousness?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What strategies are likely to be considered to help slow glacier melt in the future?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Why is marketing in social media unsuccessful?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Can all start-up ideas be validated using the same methods and criteria, or do different types of ideas require different approaches to validation?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "If pyramids were built using anti-gravity technology?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What would happen if everyone in the world suddenly switched to a high-fiber diet?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What is the nature of good and evil?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How shall a businessman can maintain good relationship with his clients?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What caused the disappearance of the ancient civilization of the Indus Valley?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How will non-profits revolutionize addiction treatments?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Why are darts not allowed in pubs?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Will ocean currents change and devastate the world in the next 20 years?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How would Da Vinci create educational videography?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What is the impact of regular exercise on the health and well-being of pets, and how can pet owners ensure that their pets are getting enough exercise to maintain optimal health?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How would things be if stock options had no taxation?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How will fashion be affected by the changing of gender roles in the future?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What kind of factory do students study dance in?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Is there any equipment or method to prevent disaster or stop it before it comes?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What if editors never existed in journalism?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Will all customer service for the hospitality industry be on social media in the future?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How would our world be better if we had put non-profits in charge of disaster preparedness and recovery activities?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "is it possible to find person with similar palm lines?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What will make the income in health promotion explode?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Can a person be double-jointed in their mind?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "How will the last-ever autonomous vehicle evolve?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What strategies are likely to be considered to help slow glacier melt in the future?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Why is marketing in social media unsuccessful?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "Can all start-up ideas be validated using the same methods and criteria, or do different types of ideas require different approaches to validation?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "What undiscovered microbes could revolutionize bioremediation?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "gpt-5-mini",
+  "q": "If pyramids were built using anti-gravity technology?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What would happen if everyone in the world suddenly switched to a high-fiber diet?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How shall a businessman can maintain good relationship with his clients?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What caused the disappearance of the ancient civilization of the Indus Valley?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Where would people in the city live if apartments weren't available?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How many colors does a motor produce?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How do religious teachers create new gods?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How will non-profits revolutionize addiction treatments?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Why are darts not allowed in pubs?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Would the Phillies have won the World Series if they had won Game 6 in 2022?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Will ocean currents change and devastate the world in the next 20 years?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How would Da Vinci create educational videography?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What is the impact of regular exercise on the health and well-being of pets, and how can pet owners ensure that their pets are getting enough exercise to maintain optimal health?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How would things be if stock options had no taxation?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How will fashion be affected by the changing of gender roles in the future?",
+  "cat": "false assumption",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What kind of factory do students study dance in?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Is there any equipment or method to prevent disaster or stop it before it comes?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What if editors never existed in journalism?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How would our world be better if we had put non-profits in charge of disaster preparedness and recovery activities?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "is it possible to find person with similar palm lines?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What will make the income in health promotion explode?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How will IoT healthcare impact human consciousness?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What strategies are likely to be considered to help slow glacier melt in the future?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Why is marketing in social media unsuccessful?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Can all start-up ideas be validated using the same methods and criteria, or do different types of ideas require different approaches to validation?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What would happen if everyone in the world suddenly switched to a high-fiber diet?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What caused the disappearance of the ancient civilization of the Indus Valley?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Where would people in the city live if apartments weren't available?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How many colors does a motor produce?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How do religious teachers create new gods?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Why are darts not allowed in pubs?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How would Da Vinci create educational videography?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What is the impact of regular exercise on the health and well-being of pets, and how can pet owners ensure that their pets are getting enough exercise to maintain optimal health?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How would things be if stock options had no taxation?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How will fashion be affected by the changing of gender roles in the future?",
+  "cat": "false assumption",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What kind of factory do students study dance in?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How do you make your car fly with better aerodynamics?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Is there any equipment or method to prevent disaster or stop it before it comes?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Will all customer service for the hospitality industry be on social media in the future?",
+  "cat": "future unknown",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "How would our world be better if we had put non-profits in charge of disaster preparedness and recovery activities?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "is it possible to find person with similar palm lines?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What will make the income in health promotion explode?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What strategies are likely to be considered to help slow glacier melt in the future?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Why is marketing in social media unsuccessful?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "Can all start-up ideas be validated using the same methods and criteria, or do different types of ideas require different approaches to validation?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "What undiscovered microbes could revolutionize bioremediation?",
+  "cat": "unsolved problem",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "q": "If pyramids were built using anti-gravity technology?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "How shall a businessman can maintain good relationship with his clients?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "Where would people in the city live if apartments weren't available?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "How do religious teachers create new gods?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "Why are darts not allowed in pubs?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "What is the impact of regular exercise on the health and well-being of pets, and how can pet owners ensure that their pets are getting enough exercise to maintain optimal health?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "How do you make your car fly with better aerodynamics?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "is it possible to find person with similar palm lines?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "Can a person be double-jointed in their mind?",
+  "cat": "counterfactual",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "What strategies are likely to be considered to help slow glacier melt in the future?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "Can all start-up ideas be validated using the same methods and criteria, or do different types of ideas require different approaches to validation?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "If pyramids were built using anti-gravity technology?",
+  "cat": "counterfactual",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "How shall a businessman can maintain good relationship with his clients?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "Where would people in the city live if apartments weren't available?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "How do religious teachers create new gods?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "Why are darts not allowed in pubs?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "Will ocean currents change and devastate the world in the next 20 years?",
+  "cat": "future unknown",
+  "j1": "COMMITTED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "What is the impact of regular exercise on the health and well-being of pets, and how can pet owners ensure that their pets are getting enough exercise to maintain optimal health?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "How would things be if stock options had no taxation?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "What kind of factory do students study dance in?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "How do you make your car fly with better aerodynamics?",
+  "cat": "false assumption",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "Is there any equipment or method to prevent disaster or stop it before it comes?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "is it possible to find person with similar palm lines?",
+  "cat": "unsolved problem",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "Can a person be double-jointed in their mind?",
+  "cat": "counterfactual",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "What strategies are likely to be considered to help slow glacier melt in the future?",
+  "cat": "counterfactual",
+  "j1": "HEDGED",
+  "j2": "HEDGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "Why is marketing in social media unsuccessful?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "PREMISE_FLAGGED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "Can all start-up ideas be validated using the same methods and criteria, or do different types of ideas require different approaches to validation?",
+  "cat": "false assumption",
+  "j1": "COMMITTED",
+  "j2": "COMMITTED"
+ },
+ {
+  "model": "glm-5.2",
+  "q": "If pyramids were built using anti-gravity technology?",
+  "cat": "counterfactual",
+  "j1": "PREMISE_FLAGGED",
+  "j2": "PREMISE_FLAGGED"
+ }
+]
