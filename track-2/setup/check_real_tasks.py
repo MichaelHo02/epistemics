@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 import hashlib
 import importlib.util
 import json
+import re
 from pathlib import Path
 import subprocess
 import tempfile
@@ -66,7 +67,15 @@ for row in rows:
                         text=tested.stdout+'\n'+tested.stderr
                         record['exit_code']=tested.returncode
                         try: record['counts']=parser.validated_test_counts(text,{})
-                        except ValueError as exc: record['unscorable']=str(exc)
+                        except ValueError as exc:
+                            # This older pytest prints 'seconds', whereas upstream fallback expects 's'.
+                            matches = re.findall(r'^=+ ([^\n]+) in [0-9.]+ seconds =+$',text,re.MULTILINE)
+                            if matches:
+                                names={'passed':'PASSED','failed':'FAILED','errors':'ERROR','error':'ERROR','skipped':'SKIPPED','xfailed':'XFAIL','xpassed':'XPASS'}
+                                counts={names[k]:int(n) for n,k in re.findall(r'(\d+) (passed|failed|errors?|skipped|xfailed|xpassed)\b',matches[-1])}
+                                record['counts']=parser.validated_test_counts(text,counts)
+                                record['parser_adapter']='legacy pytest seconds summary'
+                            else: record['unscorable']=str(exc)
                     except subprocess.TimeoutExpired as exc:
                         text=str(exc.stdout or '')+'\n'+str(exc.stderr or '')
                         record['timeout']=True
