@@ -9,12 +9,12 @@
   "sdk_version": "0.19.0",
   "peer_count": 3,
   "seed_count": 20,
-  "description": "Synthetic closed-world pilot; Chinese is Simplified; standard Vietnamese with diacritics. Generator model is configurable and is not an evaluation-model choice.",
+  "description": "Published Global-MMLU supporting-evidence translation only; selected questions and answer keys are not sent for rewriting. All outputs remain drafts pending final source and bilingual review.",
   "shared_prompt_review": {
     "status": "pending",
     "reviewer": null
   },
-  "workflow": "published_data",
+  "workflow": "evidence_translation",
   "adaptive_data": {
     "seed_ids": [
       "closing-01",
