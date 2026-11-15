@@ -596,3 +596,5 @@ def astute_query_gpt(top_ks, questions, llm):
         final_answers.append(llm.query(i))
 
     return final_answers
+
+    
