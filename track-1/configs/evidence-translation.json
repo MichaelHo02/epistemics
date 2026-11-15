@@ -1,19 +1,19 @@
 {
   "workflow": "evidence-translation-v1",
   "sdk_version": "0.19.0",
-  "cases_file": "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main/translation-input-v1/main-cases.jsonl",
-  "evidence_file": "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main/translation-input-v1/evidence-candidates.jsonl",
-  "cases_sha256": "2e8c80614963a31696e9f314f6fb9b9bba959d488cb04716a198feccd383da95",
-  "evidence_sha256": "2985e2444ffed758a60a029d1c624eff709ddb9f54dcf0e83eb484279f3211f7",
-  "candidate_hash": "691281a5e4f0eb5fddeac752609489ea63aaa532b3a6eed188764bbf5a48cbfe",
-  "expected_questions": 300,
+  "cases_file": "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main/translation-input-v3/main-cases.jsonl",
+  "evidence_file": "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main/translation-input-v3/evidence-candidates.jsonl",
+  "cases_sha256": "5da6f941fc588dc511dd435eda0fbbed518c010e7715cafe7177cbcff518ac21",
+  "evidence_sha256": "67c7b48ecb0529d31b24b60757d0eb01e61a962bf4a4d156792c640c0df23645",
+  "candidate_hash": "40e69f78c3feefe74d92e49a252fdd6191f958aaf08591309180fb819c3b68d5",
+  "expected_questions": 87,
   "languages": [
     "zh",
     "vi"
   ],
   "sample_rate": 1.0,
-  "allow_unreviewed_drafts": true,
+  "allow_unreviewed_drafts": false,
   "credit_cap": 25,
   "wait_timeout_seconds": 1200,
-  "description": "Translate draft English supporting evidence only. Source/question/reuse/bilingual reviews remain pending. No augmentation, original-question rewriting, gold-label creation, OpenAI tests or model evaluation."
+  "description": "Supplemental translation of87source-reviewed supporting passages: replacements, corrected wording and source bindings. No question generation, augmentation or model evaluation."
 }
