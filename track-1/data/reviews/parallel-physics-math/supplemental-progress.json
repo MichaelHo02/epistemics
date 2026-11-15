@@ -1,0 +1,18 @@
+{
+  "scope": 19,
+  "approved": 19,
+  "held": 0,
+  "corrected_rows": 4,
+  "unchanged_generated_rows": 15,
+  "approved_by_subject": {
+    "high_school_physics": 5,
+    "conceptual_physics": 6,
+    "high_school_mathematics": 8
+  },
+  "all_frozen_english_and_source_and_question_bindings_exact": true,
+  "all_content_hashes_valid": true,
+  "original_question_and_english_edits": 0,
+  "new_api_compute_service_calls": 0,
+  "reviewer": "assistant_parallel_physics_math_supplemental_review",
+  "limitations": "Assistant review, not independent human or blinded."
+}

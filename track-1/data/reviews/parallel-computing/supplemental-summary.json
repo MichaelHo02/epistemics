@@ -1,0 +1,14 @@
+{
+  "reviewed": 27,
+  "approved": 27,
+  "held": 0,
+  "corrected_rows": 15,
+  "individual_corrections": 22,
+  "unchanged_rows": 12,
+  "frozen_question_hashes_verified": 27,
+  "source_url_and_english_exact_matches": 27,
+  "frozen_global_candidate_hash": "b4b43ea7568d67ba1d57f7bf5bf25fbb59fff193d1015078f7af8442fddb7fe0",
+  "source_english_edits": 0,
+  "original_question_edits": 0,
+  "reviewer": "assistant_computing_supplemental_language_review"
+}

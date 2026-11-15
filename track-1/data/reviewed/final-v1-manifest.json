@@ -1,0 +1,35 @@
+{
+  "candidate_hash": "b4b43ea7568d67ba1d57f7bf5bf25fbb59fff193d1015078f7af8442fddb7fe0",
+  "questions": 300,
+  "subject_counts": {
+    "astronomy": 30,
+    "conceptual_physics": 30,
+    "high_school_computer_science": 30,
+    "college_computer_science": 30,
+    "computer_security": 30,
+    "high_school_biology": 30,
+    "college_biology": 30,
+    "high_school_chemistry": 30,
+    "high_school_physics": 30,
+    "high_school_mathematics": 30
+  },
+  "upstream_label_counts": {
+    "CA": 299,
+    "-": 1
+  },
+  "approved_questions": 300,
+  "question_language_rows": 900,
+  "evidence_language_rows": 900,
+  "review_type": "assistant_source_and_multilingual_review_not_blinded_independent_human_review",
+  "model_evaluation_calls": 0,
+  "network_calls_during_finalization": 0,
+  "files": {
+    "README.md": "c99bf6293f869a6d16e4d63637c3e0bb3acd0d7a629ed480a1f0c21d7d382cb3",
+    "data-readiness.json": "b4db7b671323514bf031ac254f8b356f329cfc48197d071edec4526c2c8f7538",
+    "evaluation-config.json": "e00ef896a1932defcded450af91122bfbfe73d897b4d9bad8508eeff6e8cd182",
+    "evidence-reviewed.jsonl": "d21dff045c09f98408a39c51317cd0b3965e7f5135d6e6133b1e314a7a1929f6",
+    "integrity-audit.json": "7e19ccd3fe3ef512e489e4e6bcba01f78f96caec41c7756ca09c70646797ce33",
+    "main-cases.jsonl": "6b3ea1f9035f816a0a2dd2417faaffc4923732e52e4716f6be3e9f00bed148d4",
+    "supplemental-translation-provenance.jsonl": "c17e6ff178db9ef3a76094768a47484416e45120e9ee221af0a292e25e7545f2"
+  }
+}

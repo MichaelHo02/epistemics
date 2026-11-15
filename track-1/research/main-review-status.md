@@ -1,5 +1,15 @@
 # Main dataset preparation status
 
+Completed: 300 question families, 30 in each of ten subjects. Every family has reviewed original English, Chinese and Vietnamese questions and reviewed supporting passages in all three languages. Original questions, options and answers match the pinned upstream snapshot exactly; none of the 20 development questions is included.
+
+The final immutable snapshot is `artifacts/track-1/global-mmlu-main/final-v1/`. Its manifest, integrity audit, translation provenance and data-readiness report record the checks. The evaluator configuration now points to this snapshot. No OpenAI evaluation was run; model selection remains unset.
+
+Review was performed by assistants, not independent human or blinded bilingual reviewers. Supporting translations include explicitly logged assistant corrections. The final selection contains 299 upstream CA-labelled questions and one unannotated astronomy question (astronomy/test/135), selected through the documented pre-outcome fallback. Report a CA-only sensitivity analysis when evaluating.
+
+The following notes preserve preparation history; their earlier pending counts are superseded by the final snapshot.
+
+## Earlier preparation history
+
 The first English triage pass covers all 300 original candidates. The cumulative
 v11 review has 262 draft evidence explanations and 38 holds. None is approved
 for model evaluation. These are preparation counts, not model results.
