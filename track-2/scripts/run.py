@@ -41,7 +41,7 @@ for model in ('gpt-4.1-mini-2025-04-14','gpt-4.1-2025-04-14'):
             print('ENDPOINT_FAILURE ' + type(exc).__name__, flush=True)
             raise SystemExit(1)
         (out / (model + '-' + instance.instance_id + '.json')).write_text(json.dumps({'prompt':prompt,'raw':completion.raw,'completion_error':completion.error},indent=2))
-        record = {'instance_id':instance.instance_id,'model':model,'condition':metadata[instance.instance_id]['condition'],'clarity':metadata[instance.instance_id]['clarity'],'target_name':metadata[instance.instance_id]['target_name'],'gold_positive':bool(instance.obligations),'usage':completion.raw.get('usage',{})}
+        record = {'instance_id':instance.instance_id,'model':model,'condition':metadata[instance.instance_id]['condition'],'clarity':metadata[instance.instance_id]['clarity'],'noise_actions':metadata[instance.instance_id]['noise_actions'],'target_name':metadata[instance.instance_id]['target_name'],'gold_positive':bool(instance.obligations),'usage':completion.raw.get('usage',{})}
         try:
             if completion.error:
                 raise ValueError('incomplete response')
@@ -52,11 +52,11 @@ for model in ('gpt-4.1-mini-2025-04-14','gpt-4.1-2025-04-14'):
         records.append(record)
         (out / 'records.json').write_text(json.dumps(records,indent=2))
         print('RESULT ' + json.dumps(record), flush=True)
-summary = {'n':len(records),'valid':sum(r['valid'] for r in records),'by_model_and_clarity':{}}
+summary = {'n':len(records),'valid':sum(r['valid'] for r in records),'by_model_and_noise':{}}
 for model in sorted({r['model'] for r in records}):
-    for clarity in ('compact','explicit'):
-        subset = [r for r in records if r['model']==model and r['clarity']==clarity]
-        summary['by_model_and_clarity'][model + '/' + clarity] = {condition: {'correct':sum(r['correct'] for r in subset if r['condition']==condition),'n':sum(r['condition']==condition for r in subset)} for condition in ('succeeded','wrong_target')}
+    for noise_count in (0,12):
+        subset = [r for r in records if r['model']==model and r['noise_actions']==noise_count]
+        summary['by_model_and_noise'][model + '/noise-' + str(noise_count)] = {condition: {'correct':sum(r['correct'] for r in subset if r['condition']==condition),'n':sum(r['condition']==condition for r in subset)} for condition in ('succeeded','wrong_target')}
 (out / 'summary.json').write_text(json.dumps(summary,indent=2))
 print('FINAL ' + json.dumps(summary), flush=True)
 print('ARTIFACT ' + str(out / 'summary.json'), flush=True)

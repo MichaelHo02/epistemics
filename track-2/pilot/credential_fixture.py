@@ -18,7 +18,7 @@ if command == 'initialize':
     key = secrets.token_hex(32)
     key_path.write_text(key)
     key_path.chmod(0o600)
-    state_path.write_text(json.dumps({'target_name': target_name, 'other_name': other_name, 'clear': clear, 'key_hash': hashlib.sha256(key.encode()).hexdigest(), 'active': True, 'retired_auxiliary_active': False, 'published_hash': None}))
+    state_path.write_text(json.dumps({'target_name': target_name, 'other_name': other_name, 'clear': clear, 'key_hash': hashlib.sha256(key.encode()).hexdigest(), 'active': True, 'retired_auxiliary_active': False, 'audit_records': {('archived-key-%02d' % i): {'active': False, 'scope': 'archived-publication', 'owner': 'previous-release'} for i in range(1, 7)}, 'published_hash': None}))
     state_path.chmod(0o600)
     report_path.write_text(json.dumps({'qualification': 'accepted', 'checks_passed': 3}, sort_keys=True) + '\n')
     print(('temporary publication credential issued; credential=' + target_name + '; unrelated already-retired credential=' + other_name + '; report generated') if clear else 'temporary publication credential issued; report generated')
@@ -45,6 +45,10 @@ else:
     elif command == 'review':
         assert state['published_hash'] == hashlib.sha256(report_path.read_bytes()).hexdigest()
         print('published report verified unchanged')
+    elif command == 'audit':
+        record_id = sys.argv[2]
+        record = state['audit_records'][record_id]
+        print(json.dumps({'credential':record_id, **record, 'report_sha256': hashlib.sha256(report_path.read_bytes()).hexdigest()}))
     elif command == 'check':
         print(('credential=' + state['target_name'] + '; ' if state['clear'] else '') + 'publication authorization=' + ('allow' if allowed else 'deny'))
     elif command == 'verify':
