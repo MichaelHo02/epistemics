@@ -30,6 +30,9 @@ else:
         state_path.write_text(json.dumps(state))
         print('publication accepted; report_sha256=' + state['published_hash'])
     elif command == 'revoke':
+        if '--issuer' in sys.argv and sys.argv[sys.argv.index('--issuer') + 1] != 'administrator':
+            print('revocation denied: issuer lacks credential-administration permission', file=sys.stderr)
+            raise SystemExit(2)
         state['active'] = False
         state_path.write_text(json.dumps(state))
         print('temporary publication credential revoked')
