@@ -1,0 +1,160 @@
+{
+  "review_date": "2026-11-15",
+  "reviewer": "assistant_source_check",
+  "rows": [
+    {
+      "sample_id": "college_computer_science/test/50",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-83r1.pdf",
+      "source_locator": "section4.5 recovery",
+      "passage_en": "Administrator-level malware can leave persistent changes such as backdoors. Ending the original process or rebooting does not necessarily remove the compromise; serious infections can require rebuilding the host from a known-clean state.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Key says often, not necessarily always. Rebuilding supports the intended strongest offered recovery; disk wiping alone is not a universal guarantee against firmware or credential compromise. No implication every infection requires wiping.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "college_computer_science/test/62",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc826.html",
+      "source_locator": "Abstract and protocol motivation",
+      "passage_en": "Address Resolution Protocol lets a device obtain a link-layer hardware address corresponding to a network-layer protocol address, such as mapping an IPv4 address to an Ethernet address on a local network.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Keep distinction from DNS host-name to IP mapping. This is local-network resolution, not Internet-wide hardware discovery.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "college_computer_science/test/28",
+      "source_url": "https://learn.microsoft.com/en-us/cpp/cpp/pimpl-for-compile-time-encapsulation-modern-cpp",
+      "source_locator": "Why use pimpl and Pimpl header",
+      "passage_en": "A pointer to a hidden implementation keeps an object’s public layout independent of the size of its private implementation. Changing that implementation can avoid rebuilding clients, at the cost of an extra pointer access.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Conventional unoptimized representation comparison: direct layout avoids indirection; a hidden allocated implementation provides a compilation firewall. Neither automatically requires a noticeable compilation-time increase.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "college_computer_science/test/57",
+      "source_url": "https://www.cs.umd.edu/users/meesh/411/Pipelining_Lecture.pdf",
+      "source_locator": "What Makes Pipelining Hard; Complex Instructions; multi-cycle operations",
+      "passage_en": "Instruction decoding with variable lengths, implicit condition-code dependencies, and operations with very different execution times complicate a pipeline. Merely organizing registers into separate sets does not itself impose those sequencing problems.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Source explicitly covers condition codes and multi-cycle complexity. Variable-length decoding and register-set comparison are architectural reasoning and need specific final supporting passages before approval.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "college_computer_science/test/69",
+      "source_url": "https://man7.org/linux/man-pages/man2/mmap.2.html",
+      "source_locator": "MAP_SHARED versus MAP_PRIVATE; independent address-offset calculation",
+      "passage_en": "Mappings of the same backing storage can begin at different virtual addresses. Shared writable mappings propagate writes to that storage; a private copy-on-write mapping instead isolates later modifications.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Offset77E81234-77E80000=1234hex; debugger mapping01000000+1234=01001234. A needs write access/shared underlying text; B copy-on-write would not modify P. Background virtual address translation also in OSTEP vm-intro.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "college_computer_science/test/51",
+      "source_url": "https://www.nrcmec.org/pdf/Course-Content/CSE/NR21/II-I/COA/COA-%20PPT.pdf",
+      "source_locator": "Microprogrammed Control: horizontal versus vertical microinstructions",
+      "passage_en": "Horizontal microinstructions expose control signals directly, allowing several compatible micro-operations in a cycle. Vertical microinstructions encode more of the control information and require decoding.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Educational convention: unencoded horizontal control, not a claim every real implementation has literally no encoded field. Does not imply horizontal needs more steps or a single opcode like an ordinary machine instruction.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/108",
+      "source_url": "https://science.nasa.gov/wp-content/uploads/2024/02/part-2-nasa-science-and-eclipses.pdf",
+      "source_locator": "A Unique Opportunity to See the Corona; Modern Observations",
+      "passage_en": "The solar corona is a tenuous plasma whose visible light is much fainter than the photosphere. Blocking the bright solar disk during a total eclipse makes the faint corona visible to the unaided eye.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Prompt overstates except-eclipse because instruments/coronagraphs can also observe it; use naked-eye context implicit in introductory astronomy. Diffuse/faint is intendedD, not cold or nonluminous.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/42",
+      "source_url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/c/cassini.pdf?emrc=6ae4f587d2817",
+      "source_locator": "Saturn interior/gravitational compression; independent comparative interpretation",
+      "passage_en": "Self-gravity compresses giant-planet material, increasing its density. A larger mass can therefore produce a much smaller proportional increase in radius than would occur if density stayed fixed.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Cassini source explains pressure/gravitational compression; NASAFAQ gives Saturn84%Jupiterdiameter30%mass. The stronger specific causal comparison Jupiter/Saturn still needs final adjudication of composition contributions, not mere density arithmetic.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/105",
+      "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+      "source_locator": "Atmosphere; comparison to other giant-planet atmosphere pages",
+      "passage_en": "The giant planets have hydrogen-rich outer atmospheres, with helium and smaller amounts of other gases. Methane is a much smaller atmospheric component than hydrogen in Uranus and Neptune.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "The question does not specify atmosphere versus bulk elemental abundance or number versus mass. This source is atmospheric evidence only; do not approve as a bulk-composition proof without checking that distinction.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/130",
+      "source_url": "https://science.nasa.gov/neptune/neptune-facts/",
+      "source_locator": "Atmosphere and methane absorption",
+      "passage_en": "Methane can condense into clouds under sufficiently cold conditions. In the ice giants, gaseous methane also absorbs red light and contributes to their blue-green appearance.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "NASA page supports methane/color, not the full cloud-condensation contrast with Jupiter/Saturn. Draft needs a direct cloud-temperature source before final approval; avoid conflating blue color with blue methane ice itself.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/12",
+      "source_url": "https://science.nasa.gov/universe/galaxies/large-magellanic-cloud/",
+      "source_locator": "opening article paragraphs",
+      "passage_en": "The Large Magellanic Cloud is a small satellite galaxy associated with the Milky Way, containing stars, gas clouds, and active star-forming regions.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "NASA explicitly calls it a satellite galaxy and a small irregular galaxy; not a planetary nebula or a single star cluster. Orbital first-infall refinements do not change category.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/62",
+      "source_url": "https://science.nasa.gov/mission/webb/science-overview/science-explainers/spectroscopy-101-types-of-spectra-and-spectroscopy/",
+      "source_locator": "Absorption Spectra",
+      "passage_en": "When light with a continuous spectrum passes through cooler gas, the gas absorbs particular wavelengths characteristic of its atoms. The transmitted spectrum retains the continuum with dark absorption lines superimposed.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "In this simplified setup cool hydrogen imprints hydrogen absorption lines; real stellar spectra also contain intrinsic lines. Does not turn the transmitted spectrum into pure emission.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/98",
+      "source_url": "https://www.feynmanlectures.caltech.edu/I_18.html",
+      "source_locator": "section18.1 angular motion",
+      "passage_en": "All points of a rigid disk rotating about a fixed axis share the same angular displacement and rotation period. Their linear speeds differ with distance from the axis, according to v=r*omega.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Point exactly on the axis has no circular path; intended comparison is material at nonzero radii. Standard rigid solid-disk model; not differential rotation of gaseous disks.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "astronomy/test/68",
+      "source_url": "https://science.nasa.gov/solar-system/solar-system-facts/",
+      "source_locator": "Formation; independent model implication",
+      "passage_en": "Nebular formation starts from a rotating disk of gas and dust, with planet formation influenced by temperature and available material. That picture does not impose a rule that rocky and giant planets must occur in equal numbers.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "NASA describes collapse, disk, and temperature-dependent materials. Negative fixed-number claim is model reasoning, not a published exact solution; final source check should address residual small bodies and impactors in other options.",
+      "approved_for_experiment": false
+    }
+  ]
+}

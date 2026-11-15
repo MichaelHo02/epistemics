@@ -1,0 +1,281 @@
+{
+  "review_date": "2026-11-15",
+  "reviewer": "assistant_source_check",
+  "rows": [
+    {
+      "sample_id": "high_school_chemistry/test/111",
+      "source_url": "https://www.chemguide.co.uk/physical/acidbaseeqia/phcurves.html",
+      "source_locator": "weak base/strong acid curves",
+      "passage_en": "During a weak-base/strong-acid titration, a buffer region gives way to a steeper pH drop near equivalence. At equivalence the conjugate acid of the base makes the solution acidic.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Standard aqueous titration at ordinary laboratory concentrations and temperature. Source example ammonia/HCl explicitly acidic equivalence point; graph language must be checked before final approval.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/63",
+      "source_url": "https://www.chemguide.co.uk/physical/phaseeqia/idealpd.html",
+      "source_locator": "Raoult law and total vapor pressure",
+      "passage_en": "For an ideal mixture of two volatile liquids, the total vapor pressure is x_A P_A* + x_B P_B*, where the liquid mole fractions add to one.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Independent calculation .285*345+.715*213=250.62torr, rounds251. Source rule not an exact quoted answer.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/151",
+      "source_url": "https://www.chemguide.co.uk/physical/entropy/introduction.html",
+      "source_locator": "gas molecule count and entropy change",
+      "passage_en": "Converting gaseous reactants into solid products generally causes a large entropy decrease. Increasing the amount of gas generally increases entropy; no change in gas amount alone gives no reliable large decrease.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Among supplied options B consumes a mole of O2 gas and produces only solid. A and D create more gas; C retains3gas molecules and is not the greatest decrease under standard conditions.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/167",
+      "source_url": "https://ciaaw.org/atomic-weights.htm",
+      "source_locator": "Ag and Cl atomic weights; independent gravimetry",
+      "passage_en": "Silver chloride contains one chlorine atom for every silver atom. Its chlorine mass fraction is the chlorine molar mass divided by the sum of the silver and chlorine molar masses.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Using35.45 and107.8682: .435*35.45/(35.45+107.8682)/2.35*100=4.5785%, closest4.60. Assumes all precipitate AgCl, complete precipitation and no interfering ions as prompt specifies.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/44",
+      "source_url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C106467&Mask=4&Units=CAL",
+      "source_locator": "compound heading and other names",
+      "passage_en": "Para-dichlorobenzene has its two chlorine substituents at opposite positions on a benzene ring, conventionally numbered 1 and 4.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "NIST lists both para-dichlorobenzene and1,4-dichlorobenzene as names of the same compound. No toxicology guidance used.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/11",
+      "source_url": "https://www.chem.tamu.edu/rgroup/marcetta/chem362/lectures/Lectures%2010%20and%2011.pdf",
+      "source_locator": "VSEPR table SF4/PCl5/CO2",
+      "passage_en": "Sulfur tetrafluoride has four bonding pairs and one lone pair at sulfur, giving a seesaw molecular shape. By contrast, ideal BF3, PCl5, and CO2 have balanced arrangements of identical surrounding atoms.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Asymmetrical interpreted in customary educational polarity/shape sense; SF4 is not devoid of all symmetry operations (C2v). No claim that it has no symmetry at all.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/172",
+      "source_url": "https://www.chemguide.co.uk/atoms/bonding/vdw.html",
+      "source_locator": "dispersion forces and size/electron count",
+      "passage_en": "Nonpolar molecules can attract through fluctuating electron distributions. Larger, more easily distorted electron clouds generally give stronger London dispersion forces and require more energy to separate.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "F2 andCl2 both homonuclear nonpolar; Cl2 larger/morepolarizable, explaining intermolecular attraction rather than a permanent dipole or weaker intramolecular bond.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/41",
+      "source_url": "https://www.chemguide.co.uk/physical/kt/idealgases.html",
+      "source_locator": "ideal gas equation units; dimensional derivation",
+      "passage_en": "From PV=nRT, the gas constant has units of energy per mole per kelvin. Pressure times volume is energy; a volt times a coulomb is also a joule.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "L atm is an energy unit with a different numerical conversion; all three offered units are valid. Electrical identity independently derived from voltage as energy/charge; source only gas-law units.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/113",
+      "source_url": "https://www.chemguide.co.uk/physical/equilibria/change.html",
+      "source_locator": "Changing concentrations and temperature",
+      "passage_en": "For a specified reaction, the thermodynamic equilibrium constant depends on temperature. Changing the amounts or pressures at fixed temperature can shift composition without changing that constant.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Textbook ideal/activity-based interpretation; apparent concentration constants in nonideal mixtures require care. Do not imply K depends on total starting mass.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/198",
+      "source_url": "https://www.chemguide.co.uk/inorganic/period3/chlorides.html",
+      "source_locator": "adjudication note",
+      "passage_en": "",
+      "passage_kind": "not_prepared",
+      "evidence_status": "hold",
+      "support_review": "pending",
+      "review_note": "HBr is the intended strong acid, but PCl5 also reacts vigorously with water to produce HCl and phosphoric acid. Wording “strong electrolyte when dissolved” does not clearly exclude reactive dissolution, and two options duplicate acetic acid. Needs explicit adjudication or replacement; do not silently treat PCl5 as inert.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/62",
+      "source_url": "https://www.chemguide.co.uk/physical/acidbaseeqia/acids.html",
+      "source_locator": "Ka definition and pH",
+      "passage_en": "For a monoprotic acid HA in an ideal aqueous solution, Ka=[H+][A-]/[HA]. If the acid supplies the hydrogen ions, then [A-]=[H+] and the undissociated concentration is the starting concentration minus [H+].",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "pH2 gives x=.010M;Ka=.010²/(.060-.010)=.0020. Here using .060 without subtracting x would be a poor approximation. Ignore water contribution atpH2.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/155",
+      "source_url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C124389&Mask=10",
+      "source_locator": "Henry law solubility data in water",
+      "passage_en": "Carbon dioxide dissolves in water. When gas is collected over water, part of the produced carbon dioxide can remain dissolved, so the collected gas volume can underestimate production even after a water-vapor correction.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "NIST provides nonzero aqueous Henry constants near298K; no exact solubility assumed at295K. Limestone disappearing excludes insufficient acid in the described procedure.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/92",
+      "source_url": "https://ciaaw.org/atomic-weights.htm",
+      "source_locator": "chromium atomic number24; independent isotope count",
+      "passage_en": "An element’s atomic number counts its protons. A neutral atom has equally many electrons, while its mass number equals protons plus neutrons.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "52Cr:Z24=>24protons24electrons28neutrons. Source table supplies Z; neutral atom and isotope bookkeeping are independently applied standard definitions.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/123",
+      "source_url": "https://www.chemguide.co.uk/inorganic/redox/oxidnstates.html",
+      "source_locator": "Roman oxidation-state naming",
+      "passage_en": "A Roman numeral in a name specifies the metal’s oxidation state. This distinguishes compounds of metals that commonly form more than one cation charge; CuCl2 contains copper in oxidation state +2.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "CuCl2=copper(II)chloride;Ca2+,Al3+,K+ have conventional fixed cation charges. Dichromate does not change the K cation naming requirement.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/126",
+      "source_url": "https://www.chemguide.co.uk/inorganic/redox/oxidnstates.html",
+      "source_locator": "manganate(VII) oxidizing iron(II)",
+      "passage_en": "Permanganate ions can accept electrons from other substances, so potassium permanganate acts as an oxidizing agent. In acidic solution manganese can be reduced from oxidation state +7 to +2.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Among listed substances this is the conventional alternative oxidizer; Al,Zn,H2S ordinarily act as reducing agents in this comparison.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/19",
+      "source_url": "https://www.cdc.gov/radiation-health/about/radioactive-isotopes.html",
+      "source_locator": "Half-Life section",
+      "passage_en": "After n half-lives the amount remaining is its initial amount multiplied by 2^(-n). The number of half-lives for a target ratio is log2(initial amount / target amount).",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "10kg=10^10micrograms;log2(10^10)=33.2193. At33half-lives1.164micrograms remains;34 leaves.582micrograms. Closest listed34. CDC half-life definition accessed; numerical calculation independently derived.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/8",
+      "source_url": "https://ciaaw.org/atomic-weights.htm",
+      "source_locator": "atomic numbers Rb37 Se34 As33 Sr38",
+      "passage_en": "A positive ion has lost electrons, and a negative ion has gained electrons. Subtract the positive charge from atomic number, or add the magnitude of a negative charge, to count electrons.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Rb+36,Se2-36,As5+28,Sr2+36. The36-electron ions have krypton configuration; As5+ does not. Standard ground-state interpretation.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/26",
+      "source_url": "https://www.chem.tamu.edu/rgroup/marcetta/chem362/lectures/Lectures%2010%20and%2011.pdf",
+      "source_locator": "VSEPR tetrahedron/linear/trigonal planar table",
+      "passage_en": "A central carbon with four single bonds and no lone pairs has tetrahedral molecular geometry. Two bonding domains give a linear arrangement, while three give a trigonal planar arrangement.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "CBr4 has four bondedBr aroundC;PCl4F has5bonds;BF3has3;CO2has2domains. Molecular state and conventional VSEPR model intended.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/197",
+      "source_url": "https://www.chemguide.co.uk/physical/basicrates/surfacearea.html",
+      "source_locator": "surface area and solid reaction rate",
+      "passage_en": "Finely dividing a solid exposes more surface to a surrounding gas. For the same mass, this greater accessible surface can make oxidation much faster than for a single intact piece.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "Supports conceptual choice of dust-sized copper, not instructions for conducting a powder-flame experiment. Not a claim that dissolving and precipitating gives direct combustion of the original penny.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/176",
+      "source_url": "https://chemed.chem.purdue.edu/genchem/history/graham.html",
+      "source_locator": "Graham effusion law",
+      "passage_en": "At the same temperature, effusion rate is inversely proportional to the square root of molar mass. Therefore a rate ratio determines the inverse square-root mass ratio.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "M_unknown=M_He*(r_He/r_unknown)^2≈4.0026*5.33²=113.71g/mol, closest octaneC8H18≈114.23. Other gases44,16,72g/mol.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/185",
+      "source_url": "https://chem.washington.edu/lecture-demos/ph-salts-water",
+      "source_locator": "acetate hydrolysis; independent equilibrium calculation",
+      "passage_en": "Acetate reacts with water to produce acetic acid and hydroxide. For this conjugate acid-base pair, Kb=Kw/Ka; at ordinary temperature, [OH-] is approximately the square root of Kb times the acetate concentration.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "c=.0300/.050=.600M,Kw1e-14,Ka1.8e-5=>OH1.8257e-5,pH9.2614. Assumes25C/idealconcentration convention, not stated explicitly; final review should retain only if temperature convention acceptable. Kw source https://www.chemguide.co.uk/physical/acidbaseeqia/kw.html .",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/47",
+      "source_url": "https://www.chemguide.co.uk/atoms/bonding/hbond.html",
+      "source_locator": "adjudication note",
+      "passage_en": "",
+      "passage_kind": "not_prepared",
+      "evidence_status": "hold",
+      "support_review": "pending",
+      "review_note": "Intended methylamine self-hydrogen-bonding under elementary N/O/F donor rule. But “can form hydrogen bonds” does not specify self-association versus bonding with water; both ethers can accept hydrogen bonds from water. HCN also admits weak hydrogen bonding under broader definitions. Replace unless context resolves ambiguity.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/142",
+      "source_url": "https://www.chemguide.co.uk/physical/acidbaseeqia/acids.html",
+      "source_locator": "adjudication note",
+      "passage_en": "",
+      "passage_kind": "not_prepared",
+      "evidence_status": "hold",
+      "support_review": "pending",
+      "review_note": "Question calls H2SO3 an ion and gives no analytical concentration or pH. Relative undissociated acid versus bisulfite depends on concentration/pH; asserted H2SO3>HSO3- is not universal for a weak diprotic acid. Do not approve from “weak acid” label alone.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/25",
+      "source_url": "https://periodic-table.rsc.org/element/35/bromine",
+      "source_locator": "fact box melting/boiling points and appearance",
+      "passage_en": "Bromine is a dark red-brown liquid at room temperature and is a nonmetal. Mercury is metallic, while iodine and bismuth are solids at ordinary room temperature.",
+      "passage_kind": "researcher_paraphrase_or_derived_rule",
+      "evidence_status": "draft_supported",
+      "support_review": "draft_checked",
+      "review_note": "RSC table melting-7.2C boiling58.8C supports liquid state. Description and comparative properties require final check of relevant appearance/other element tables.",
+      "approved_for_experiment": false
+    },
+    {
+      "sample_id": "high_school_chemistry/test/165",
+      "source_url": "https://www.chemguide.co.uk/physical/entropy/introduction.html",
+      "source_locator": "adjudication note",
+      "passage_en": "",
+      "passage_kind": "not_prepared",
+      "evidence_status": "hold",
+      "support_review": "pending",
+      "review_note": "D is intended: similar molecular masses are unnecessary. However C says the sum of three energies indicates whether solution forms, omitting entropy and Gibbs free energy. Multiple statements can be false as written. Needs adjudication/replacement.",
+      "approved_for_experiment": false
+    }
+  ]
+}
