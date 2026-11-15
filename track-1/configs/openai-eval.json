@@ -13,8 +13,8 @@
   "reasoning": null,
   "wrong_option_salt": "global-mmlu-main-wrong-v1",
   "protocol_review": {
-    "status": "pending",
-    "reviewer": null,
-    "templates_hash": null
+    "status": "approved",
+    "reviewer": "assistant_trilingual_protocol_review",
+    "templates_hash": "434a4c659bb2fb3490a123120c883970b10b9dd1d338e8948be600ae3bd1fee2"
   }
 }
