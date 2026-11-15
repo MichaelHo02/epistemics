@@ -78,7 +78,7 @@ and `question-language-astronomy-*.json`. They bind the original question hashes
 and, for material reviews, the translated-content hashes. They distinguish
 question holds, evidence edits, unresolved terminology, source assumptions and
 actual final approvals. A language pass does not automatically approve a source.
-Only the separately recorded 22 mathematics families currently have complete
+The separately recorded 22 mathematics and 19 physics families currently have complete
 material approval; the full 300-family dataset remains blocked from evaluation.
 
 New defects include changed convex/concave lens labels, flux translated as
@@ -101,3 +101,32 @@ review and final source adjudication. Existing draft translations can be reused
 only when their bound question, English passage and source remain unchanged.
 Changed English or new replacement passages need matching supplemental
 translations through the authorized dataset workflow.
+
+
+## Source adjudication follow-up
+
+The conceptual-physics comparison adds 30 families, bringing direct question
+language comparison to 210 families and three-language evidence comparison to 180.
+Three conceptual-physics questions have material terminology errors; two
+additional supporting passages need terminology edits. Their findings are in
+`data/reviews/material-review-conceptual-physics-01.json`. Chemistry and the two
+biology subjects remain to be compared (90 families).
+
+`material-review-physics-02.json` finalizes 19 of the 30 high-school-physics families
+using the cited primary rules and independent calculations. It supersedes the
+pending-support fields only for those 19 rows in review01. The remaining 11
+include four question-language holds, one near duplicate, and six cases requiring
+further source/assumption decisions. In particular, the liquid-mixture question's
+unqualified kinetic-energy wording was not automatically approved from a gas
+translational-energy rule.
+
+A fresh HTTP access attempt returned 403 for the Caltech lectures. Their displayed
+original equations were then read using the web reader. NASA and NIST source
+passages were read directly. Failed requests are not source verification. The
+review locators identify the actual equations/sections used, and distinguish
+those general rules from our own solutions to particular benchmark questions.
+
+The local evaluator readiness check now recognizes 41 reviewed families and 259
+pending families in candidate v2. It still refuses a full run. This check makes
+zero network calls, leaves the model unset, and does not change the production
+evaluation configuration to point at an unfinished candidate selection.
