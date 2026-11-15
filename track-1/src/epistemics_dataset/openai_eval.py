@@ -3,6 +3,8 @@ import argparse
 import hashlib
 import json
 import os
+import threading
+from concurrent.futures import ThreadPoolExecutor
 from importlib.metadata import version
 from pathlib import Path
 from .pipeline import read_jsonl
@@ -163,21 +165,23 @@ class CachedAPI:
         self.directory=directory
         self.max_calls=max_calls
         self.calls=0
+        self.lock=threading.Lock()
 
     def call(self, config, messages, identity=None):
         params=request(config,messages)
         key=digest({'sdk_version':version('openai'),'parameters':params,'identity':identity})
         path=self.directory/(key+'.json')
-        if path.exists():
-            result=json.loads(path.read_text())
-            if result['status']=='attempt_started':
-                raise RuntimeError('Interrupted request has unknown billing state; inspect cache before retrying')
-            return result
-        if self.calls>=self.max_calls:
-            raise RuntimeError('Configured request limit reached')
-        # Persist intent before network I/O, so interrupted requests are not duplicated.
-        save(path,{'request_hash':key,'status':'attempt_started'})
-        self.calls+=1
+        with self.lock:
+            if path.exists():
+                result=json.loads(path.read_text())
+                if result['status']=='attempt_started':
+                    raise RuntimeError('Interrupted request has unknown billing state; inspect cache before retrying')
+                return result
+            if self.calls>=self.max_calls:
+                raise RuntimeError('Configured request limit reached')
+            # Persist intent before network I/O, so interrupted requests are not duplicated.
+            save(path,{'request_hash':key,'status':'attempt_started'})
+            self.calls+=1
         try:
             response=self.client.responses.create(**params)
         except Exception as exc:
@@ -210,33 +214,57 @@ def evaluate(cases, evidence_rows, config, api, output):
     print(json.dumps({'stage':'evaluation_started','config':config,'session_hash':session,'planned_requests':len(cases)*39}),flush=True)
     count=0
     failures=0
-    # Rebuild derived rows on resume using cached answers; never append duplicate measurements.
+    # Parallelize independent families; revisions within each family reuse exact initial text.
+    workers = config.get('workers', 1)
+    if not isinstance(workers, int) or not 1 <= workers <= 16:
+        raise ValueError('workers must be between 1 and 16')
+    lock = threading.Lock()
+    stop = threading.Event()
+    completed = 0
     with (directory/'measurements.jsonl').open('w') as file:
-        for c in cases:
+        def emit(row):
+            nonlocal count, failures
+            with lock:
+                file.write(json.dumps(row,ensure_ascii=False)+'\n');file.flush()
+                count += 1
+                status = row['initial_status'] if row['stage']=='initial' else row['final_status']
+                failures += int(status != 'completed')
+        def process(c):
+            nonlocal completed
+            try:
+                process_family(c)
+            except Exception:
+                stop.set()
+                raise
+        def process_family(c):
+            nonlocal completed
             for language in LANGUAGES:
+                if stop.is_set(): return
                 initial=api.call(config,initial_messages(c,language),identity=[c['sample_id'],language,'initial'])
                 base={'sample_id':c['sample_id'],'conversation_language':language,'gold':c['answer'],
                       'initial_request_hash':initial['request_hash'],'initial':initial.get('answer'),
                       'initial_status':initial['status']}
-                file.write(json.dumps(dict(base,stage='initial'),ensure_ascii=False)+'\n');file.flush()
-                count+=1
+                emit(dict(base,stage='initial'))
                 if initial['status']!='completed':
-                    failures+=1
                     # Do not fabricate an assistant answer or condition on a regenerated answer.
                     continue
                 for advice in ('neutral','correct','wrong'):
                     for source_language in (None,)+LANGUAGES:
                         messages=revision_messages(c,language,initial['text'],advice,source_language,
                                                    evidence[c['sample_id']],config['wrong_option_salt'])
+                        if stop.is_set(): return
                         result=api.call(config,messages,identity=[c['sample_id'],language,advice,source_language])
-                        if result['status']!='completed': failures+=1
-                        file.write(json.dumps(dict(base,stage='revision',advice=advice,
+                        emit(dict(base,stage='revision',advice=advice,
                             evidence_language=source_language,final=result.get('answer'),
                             final_status=result['status'],request_hash=result['request_hash'],
                             peer_answer=None if advice=='neutral' else c['answer'] if advice=='correct'
-                            else wrong_option(c,config['wrong_option_salt'])),ensure_ascii=False)+'\n');file.flush()
-                        count+=1
-            print(json.dumps({'stage':'evaluation_progress','completed_question_families':cases.index(c)+1,'measurement_rows':count,'failed_responses':failures,'new_network_attempts':api.calls}),flush=True)
+                            else wrong_option(c,config['wrong_option_salt'])))
+            if stop.is_set(): return
+            with lock:
+                completed += 1
+                print(json.dumps({'stage':'evaluation_progress','completed_question_families':completed,'measurement_rows':count,'failed_responses':failures,'new_network_attempts':api.calls}),flush=True)
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            list(executor.map(process, cases))
     save(directory/'execution-summary.json',{'status':'finished_with_failures' if failures else 'finished',
          'failed_responses':failures,'measurement_rows':count,
          'new_network_attempts':api.calls,'note':'Failures and UNKNOWN are retained; no scientific conclusion computed.'})

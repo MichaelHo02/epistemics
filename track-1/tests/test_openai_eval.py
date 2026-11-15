@@ -148,3 +148,37 @@ class EvaluationTests(unittest.TestCase):
             self.assertEqual(group['correct_to_unknown'],1)
             self.assertEqual(group['missing_or_invalid'],1)
             self.assertEqual(group['initially_correct'],3)
+
+    def test_parallel_families_keep_unique_requests_and_resume(self):
+        import threading, time
+        case,e,c=fixtures()
+        cases=[]; evidence=[]
+        for i in range(4):
+            item=copy.deepcopy(case);item['sample_id']='fixture/'+str(i)
+            ev=copy.deepcopy(e);ev['sample_id']=item['sample_id']
+            ev['reviewed_question_hash']=digest(item)
+            ev['reviewed_content_hash']=digest({k:ev[k] for k in ('sample_id','source_url','passage_en','passage_zh','passage_vi')})
+            cases.append(item);evidence.append(ev)
+        c.update(expected_questions=4,candidate_hash=digest(cases),workers=4)
+        lock=threading.Lock();active=0;peak=0
+        def handler(req):
+            nonlocal active,peak
+            with lock:
+                active+=1;peak=max(peak,active)
+            time.sleep(0.003)
+            with lock: active-=1
+            return httpx.Response(200,json=body())
+        with tempfile.TemporaryDirectory() as temp:
+            p=Path(temp)
+            with OpenAI(api_key='fake-test-key',max_retries=0,http_client=httpx.Client(transport=httpx.MockTransport(handler))) as client:
+                api=CachedAPI(client,p/'cache',156)
+                result=evaluate(cases,evidence,c,api,p/'results')
+                self.assertEqual(api.calls,156)
+                self.assertGreater(peak,1)
+                rows=[json.loads(x) for x in (result/'measurements.jsonl').read_text().splitlines()]
+                self.assertEqual(len(rows),156)
+                hashes=[r.get('request_hash',r['initial_request_hash']) for r in rows]
+                self.assertEqual(len(set(hashes)),156)
+                api=CachedAPI(client,p/'cache',0)
+                evaluate(cases,evidence,c,api,p/'results')
+                self.assertEqual(api.calls,0)

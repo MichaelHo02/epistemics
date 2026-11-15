@@ -18,5 +18,6 @@
     "status": "approved",
     "reviewer": "assistant_trilingual_protocol_review",
     "templates_hash": "434a4c659bb2fb3490a123120c883970b10b9dd1d338e8948be600ae3bd1fee2"
-  }
+  },
+  "workers": 8
 }
