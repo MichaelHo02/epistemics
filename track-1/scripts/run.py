@@ -32,6 +32,13 @@ def main():
     succeeded = False
     try:
         subprocess.run(cli+["doctor"], env=env, check=True)
+        workflow = json.loads((root/"configs/pilot.json").read_text()).get("workflow", "responses")
+        if workflow == "adaptive_data":
+            env["TRACK1_OUTPUT_ROOT"] = str(args.output_root)
+            subprocess.run(cli+["adaptive-data"], env=env, check=True)
+            succeeded = True
+            destination = args.output_root/"adaptive-data"
+            return
         subprocess.run(cli+["adaption"], env=env, check=True)
         subprocess.run(cli+["validate", "--output", str(generated/"quality-report.json")], env=env, check=True)
         subprocess.run(cli+["build"], env=env, check=True)
@@ -41,7 +48,7 @@ def main():
         if generated.exists():
             destination.mkdir(parents=True, exist_ok=True)
             shutil.copytree(generated, destination, dirs_exist_ok=True)
-        print(json.dumps({"status": "draft_generation_complete" if succeeded else "generation_failed",
+        print(json.dumps({"status": "preparation_complete" if succeeded else "generation_failed",
                           "output_path": str(destination), "review_status": "pending",
                           "model_evaluation_calls": 0}), flush=True)
 

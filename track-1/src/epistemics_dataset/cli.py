@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 def main():
     parser = argparse.ArgumentParser(description="Build draft Track 1 materials; no evaluation model calls.")
-    parser.add_argument("command", choices=("doctor", "seeds", "templates", "adaption", "validate", "build"))
+    parser.add_argument("command", choices=("doctor", "seeds", "templates", "adaption", "adaptive-data", "validate", "build"))
     parser.add_argument("--seeds", type=Path, default=ROOT/"data/seeds/pilot.jsonl")
     parser.add_argument("--translations", type=Path, default=ROOT/"data/generated/translations.jsonl")
     parser.add_argument("--output", type=Path)
@@ -43,6 +43,14 @@ def main():
                 raise ValueError("Configured seed count does not match pilot")
             write_jsonl(args.output or args.seeds, seeds)
             print(f"Wrote {len(seeds)} deterministic seed cases")
+            return
+        if args.command == "adaptive-data":
+            if not os.environ.get("ORX_RUN_ID"):
+                raise ValueError("Dataset-service jobs must use the tracked generation entry point")
+            if not os.environ.get("ADAPTION_API_KEY"):
+                raise ValueError("ADAPTION_API_KEY is not configured")
+            from .adaptive_data import run
+            run(config, ROOT, Path(os.environ["TRACK1_OUTPUT_ROOT"]))
             return
         seeds = read_jsonl(args.seeds)
         if args.command in ("templates", "adaption"):

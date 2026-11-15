@@ -1,4 +1,26 @@
-# Track 1: multilingual evidence under peer advice
+# Track 1 dataset preparation
+
+## Current workflow: Adaption Adaptive Data
+
+The default tracked job now uses **dedicated dataset services**, not individual model responses:
+
+1. Upload four representative seed prompt/completion pairs using raw ingestion, preserving our input.
+2. Estimate and request four generated **similar rows** with `datasets.augment(similar_rows=4)`.
+3. Download the expanded English candidate pool.
+4. Estimate and translate the whole pool into Chinese and Vietnamese with `datasets.translate(sample_rate=1.0)`.
+5. Download raw rows, dataset/job IDs and a review queue. Never promote service-generated completions to trusted answer keys automatically.
+
+If all rows are retained, four seeds + four new examples yield eight English rows and sixteen translated rows (24 total). These are expected counts, not verified output. New case identity, JSON structure and exact cross-language alignment are **checked after export**, not assumed from a service status. The SDK does not promise that similar rows preserve original case IDs; reused IDs or changed facts remain pending review.
+
+A 25-credit cap applies to combined expansion/translation estimates. Unknown estimates stop launch. Requests use saved operation IDs and idempotency keys; state lives durably under the run output root's `adaptive-data/<operation-hash>/`. Restarting resumes saved IDs instead of creating replacement jobs. An ambiguous file-upload result requires recovering its ID rather than automatic re-upload. Provider polling timeout does not cancel provider processing.
+
+The configuration is in `configs/pilot.json`. The fixed tracked runner remains `scripts/run.py`; it dispatches on the config's `workflow`. Credentials are read from the private .env path supplied to the runner and are never copied into the snapshot. No training job is launched. The previous Responses implementation remains below for reproducibility and offline checks, but is not the default service workflow.
+
+Official documentation: [Generate similar rows](https://docs.adaptionlabs.ai/adaptive-data/expand-data/), [Translate dataset](https://docs.adaptionlabs.ai/api/resources/datasets/methods/translate). This pilot uses Expand and Translate. It does **not** call Invent, because we are extending our existing seeds.
+
+---
+
+# Earlier local/Responses workflow (retained)
 
 Build controlled English (`en`), Simplified Chinese (`zh`) and Vietnamese (`vi`) dataset materials. Correct answers come from explicit seed facts and arithmetic, not model-generated labels. No evaluation model has been selected or run.
 

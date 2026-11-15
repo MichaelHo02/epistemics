@@ -13,5 +13,21 @@
   "shared_prompt_review": {
     "status": "pending",
     "reviewer": null
+  },
+  "workflow": "adaptive_data",
+  "adaptive_data": {
+    "seed_ids": [
+      "closing-01",
+      "arrival-01",
+      "fee-01",
+      "capacity-01"
+    ],
+    "similar_rows": 4,
+    "languages": [
+      "zh",
+      "vi"
+    ],
+    "credit_cap": 25,
+    "wait_timeout_seconds": 1200
   }
 }
