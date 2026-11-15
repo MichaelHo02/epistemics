@@ -24,11 +24,11 @@ data = root / 'track-2/pilot/data/credential-pair.jsonl'
 manifest = json.loads(data.with_name('credential-pair-manifest.json').read_text())
 assert hashlib.sha256(data.read_bytes()).hexdigest() == manifest['dataset_sha256']
 instances = [Instance.from_dict(json.loads(line)) for line in data.read_text().splitlines()]
-assert len(instances) == 3 and len({x.task for x in instances}) == 1
+assert len(instances) == 2 and len({x.task for x in instances}) == 1
 out = Path('/Users/michaelho/.local/share/openresearch/files/epistemics/sprint-review/track-2-systematic-review/paired-model-pilot') / os.environ['ORX_RUN_ID']
 out.mkdir(parents=True, exist_ok=True)
 config = {'model':'gpt-4.1-mini-2025-04-14','max_output_tokens':1024,'max_context_length':32768,'timeout':90,'parameters':{'temperature':0}}
-print('CONFIG ' + json.dumps({'model':config,'dataset_sha256':manifest['dataset_sha256'],'commit':os.environ.get('ORX_COMMIT'),'call_limit':3}), flush=True)
+print('CONFIG ' + json.dumps({'model':config,'dataset_sha256':manifest['dataset_sha256'],'commit':os.environ.get('ORX_COMMIT'),'call_limit':2}), flush=True)
 backend = ResponsesBackend(config)
 records = []
 conditions = {x['instance_id']:x['condition'] for x in manifest['state_assertions']}
@@ -51,7 +51,7 @@ for instance in instances:
     records.append(record)
     (out / 'records.json').write_text(json.dumps(records,indent=2))
     print('RESULT ' + json.dumps(record), flush=True)
-summary = {'n':3,'valid':sum(r['valid'] for r in records),'binary_correct':sum(r['correct'] for r in records),'both_binary_correct':all(r['correct'] for r in records),'limitations':['One controlled three-state family; explicit policy and visible denial.','Not the trained ObligationGuard model.','Binary score does not verify semantic obligation-set correctness.']}
+summary = {'n':2,'valid':sum(r['valid'] for r in records),'binary_correct':sum(r['correct'] for r in records),'both_binary_correct':all(r['correct'] for r in records),'limitations':['One controlled wrong-target pair; explicit policy and final authorization check.','Not the trained ObligationGuard model.','Binary score does not verify semantic obligation-set correctness.']}
 (out / 'summary.json').write_text(json.dumps(summary,indent=2))
 print('FINAL ' + json.dumps(summary), flush=True)
 print('ARTIFACT ' + str(out / 'summary.json'), flush=True)
