@@ -26,17 +26,25 @@ def main():
     # Run directly from this immutable snapshot without sharing the worktree venv.
     env = dict(os.environ, PYTHONPATH=str(root/"src"), TRACK1_ENV_FILE=str(args.env_file))
     cli = [python, "-u", "-m", "epistemics_dataset.cli"]
-    subprocess.run(cli+["doctor"], env=env, check=True)
-    subprocess.run(cli+["adaption"], env=env, check=True)
     generated = root/"data/generated"
-    subprocess.run(cli+["validate", "--output", str(generated/"quality-report.json")], env=env, check=True)
-    subprocess.run(cli+["build"], env=env, check=True)
     destination = args.output_root/run_id
-    destination.mkdir(parents=True, exist_ok=True)
     import shutil
-    shutil.copytree(generated, destination, dirs_exist_ok=True)
-    print(json.dumps({"status": "draft_generation_complete", "output_path": str(destination),
-                      "review_status": "pending", "model_evaluation_calls": 0}), flush=True)
+    succeeded = False
+    try:
+        subprocess.run(cli+["doctor"], env=env, check=True)
+        subprocess.run(cli+["adaption"], env=env, check=True)
+        subprocess.run(cli+["validate", "--output", str(generated/"quality-report.json")], env=env, check=True)
+        subprocess.run(cli+["build"], env=env, check=True)
+        succeeded = True
+    finally:
+        # Preserve partial successful caches and safe failure details after an interrupted run.
+        if generated.exists():
+            destination.mkdir(parents=True, exist_ok=True)
+            shutil.copytree(generated, destination, dirs_exist_ok=True)
+        print(json.dumps({"status": "draft_generation_complete" if succeeded else "generation_failed",
+                          "output_path": str(destination), "review_status": "pending",
+                          "model_evaluation_calls": 0}), flush=True)
+
 
 
 if __name__ == "__main__":

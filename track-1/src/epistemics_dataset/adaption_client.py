@@ -6,7 +6,8 @@ from pathlib import Path
 from .pipeline import numbers
 from .seeds import digest, render
 
-PROMPT_VERSION = "translate-v1"
+PROMPT_VERSION = "translate-v2"
+MAX_OUTPUT_TOKENS = 4096
 INSTRUCTIONS = """Translate a controlled research example. Return only a JSON object with exactly
 these keys: question, source. Translate the English text faithfully into the requested
 language. Do not solve the question, add facts, change quantities or times, or localize
@@ -22,7 +23,7 @@ def translate(seed, language, model, cache_dir, client=None):
     request = {"language": language, "question": english["question"], "source": english["source"]}
     spec = {"seed_hash": seed["seed_hash"], "model": model, "request": request,
             "instructions": INSTRUCTIONS, "prompt_version": PROMPT_VERSION,
-            "sdk_version": "0.19.0", "temperature": 0, "max_output_tokens": 1200}
+            "sdk_version": "0.19.0", "temperature": 0, "max_output_tokens": MAX_OUTPUT_TOKENS}
     key = digest(spec)
     path = Path(cache_dir)/f"{key}.json"
     if path.exists():
@@ -34,11 +35,23 @@ def translate(seed, language, model, cache_dir, client=None):
             raise ValueError("ADAPTION_API_KEY is not configured; no API call was made")
         from adaption import Adaption
         # No automatic retry of a possibly billable generation request.
-        client = Adaption(max_retries=0, timeout=60.0)
+        client = Adaption(max_retries=0, timeout=120.0)
     response = client.responses.create(model=model, instructions=INSTRUCTIONS,
                                        input=json.dumps(request, ensure_ascii=False),
-                                       temperature=0, max_output_tokens=1200, store=False)
-    if getattr(response, "status", "completed") != "completed":
+                                       temperature=0, max_output_tokens=MAX_OUTPUT_TOKENS, store=False)
+    status = getattr(response, "status", "completed")
+    if status != "completed":
+        details = getattr(response, "incomplete_details", None)
+        error = getattr(response, "error", None)
+        reason = getattr(details, "reason", None)
+        failure = {"case_id": seed["case_id"], "language": language, "request_hash": key,
+                   "response_id": getattr(response, "id", None), "status": status,
+                   "incomplete_reason": reason, "error_code": getattr(error, "code", None),
+                   "max_output_tokens": MAX_OUTPUT_TOKENS}
+        failure_dir = Path(cache_dir)/"failures"
+        failure_dir.mkdir(parents=True, exist_ok=True)
+        (failure_dir/f"{key}.json").write_text(json.dumps(failure, indent=2))
+        print(json.dumps({"generation_failure": failure}), flush=True)
         raise ValueError("Adaption generation was not completed; no translation accepted")
     try:
         text = json.loads(response.output_text)

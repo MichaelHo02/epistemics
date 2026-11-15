@@ -63,6 +63,19 @@ class DatasetChecks(unittest.TestCase):
                 if v["stage"] == "initial":
                     self.assertNotIn("initial_answer", v)
 
+    def test_incomplete_response_is_rejected_and_diagnosed(self):
+        seed = self.seeds[0]
+        client = SimpleNamespace(responses=SimpleNamespace(create=lambda **kw: SimpleNamespace(
+            status="incomplete", incomplete_details=SimpleNamespace(reason="max_output_tokens"),
+            id="mock-incomplete", error=None)))
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertRaises(ValueError, translate, seed, "vi", "test-model", tmp, client)
+            failures = list((Path(tmp)/"failures").glob("*.json"))
+            self.assertEqual(len(failures), 1)
+            self.assertEqual(json.loads(failures[0].read_text())["incomplete_reason"], "max_output_tokens")
+            self.assertFalse(list(Path(tmp).glob("*.json")))
+
     def test_sdk_cache_and_rejects_changed_facts(self):
         seed = self.seeds[0]
         responses = SimpleNamespace(create=lambda **kwargs: SimpleNamespace(
