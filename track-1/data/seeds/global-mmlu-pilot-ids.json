@@ -1,0 +1,28 @@
+{
+  "dataset": "CohereLabs/Global-MMLU",
+  "revision": "0e619dbeb34206cd48705a1a0ea7fb21cae09993",
+  "pilot_hash": "6478af91a26a37f05fc8fbdf1e1561eb877326f904e31a1ab7c8df6e9dba5e2c",
+  "sample_ids": [
+    "astronomy/test/18",
+    "astronomy/test/21",
+    "astronomy/test/61",
+    "astronomy/test/79",
+    "astronomy/test/124",
+    "conceptual_physics/test/214",
+    "conceptual_physics/test/59",
+    "conceptual_physics/test/185",
+    "conceptual_physics/test/63",
+    "conceptual_physics/test/216",
+    "high_school_geography/test/57",
+    "high_school_geography/test/88",
+    "high_school_geography/test/149",
+    "high_school_geography/test/92",
+    "high_school_geography/test/29",
+    "high_school_computer_science/test/36",
+    "high_school_computer_science/test/43",
+    "high_school_computer_science/test/37",
+    "high_school_computer_science/test/44",
+    "high_school_computer_science/test/72"
+  ],
+  "note": "Development pilot only. Original unchanged questions live in the project artifacts; source passages pending."
+}

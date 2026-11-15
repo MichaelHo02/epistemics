@@ -1,0 +1,33 @@
+{
+  "dataset": "CohereLabs/Global-MMLU",
+  "revision": "0e619dbeb34206cd48705a1a0ea7fb21cae09993",
+  "split": "test",
+  "languages": [
+    "en",
+    "zh",
+    "vi"
+  ],
+  "subjects": [
+    "astronomy",
+    "conceptual_physics",
+    "high_school_computer_science",
+    "college_computer_science",
+    "computer_security",
+    "high_school_biology",
+    "college_biology",
+    "high_school_chemistry",
+    "high_school_physics",
+    "high_school_mathematics"
+  ],
+  "cultural_sensitivity_label": "CA",
+  "per_subject": 30,
+  "selection_salt": "global-mmlu-main-v1",
+  "sha256": {
+    "README.md": "80e44287371de876f7b1dbe613494649ace41082e9a7caff8deb96b9b26421d3",
+    "en/test-00000-of-00001.parquet": "5baec81ba97243728cc9557b2cba2f03aaeedf8232473db9f20cf995c6b0a1a9",
+    "zh/test-00000-of-00001.parquet": "e1ba0c287b650043b8686fa5c506d1f2718b098a7f88f724ade55a76f0062ae7",
+    "vi/test-00000-of-00001.parquet": "5cd0840972e32c99d86cf287c7f9b1a8f594dd24fc2800169cce1ec0724abfba"
+  },
+  "purpose": "main_evaluation_candidate",
+  "exclude_ids_file": "data/seeds/global-mmlu-pilot-ids.json"
+}

@@ -1,0 +1,20 @@
+{
+  "sdk_version": "2.48.0",
+  "model": null,
+  "expected_questions": 300,
+  "candidate_hash": "6e096b3a01cc348521ed08787aaf9584a291af0445c194c707c894df37b8d01b",
+  "dataset_directory": "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/global-mmlu-main",
+  "evidence_file": "evidence-reviewed.jsonl",
+  "output_directory": "/Users/michaelho/.local/share/openresearch/files/epistemics/track-1/openai-evaluation",
+  "max_output_tokens": 2048,
+  "max_new_requests": 11700,
+  "timeout_seconds": 90,
+  "temperature": null,
+  "reasoning": null,
+  "wrong_option_salt": "global-mmlu-main-wrong-v1",
+  "protocol_review": {
+    "status": "pending",
+    "reviewer": null,
+    "templates_hash": null
+  }
+}
