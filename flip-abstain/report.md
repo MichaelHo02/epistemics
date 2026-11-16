@@ -89,6 +89,17 @@ Fig 4: cost on answerable questions (DeepSeek drops about 10 points).
 
 Fig 5: many non-UNKNOWN replies are hedged or flag the premise, not committed hallucinations.
 
+### Pushback under the fix (unanswerable items, 2 runs)
+
+| model | UNKNOWN at baseline (fix) | UNKNOWN at baseline (orig) | switch rate under fix: simple / citation / authority / emotional | same, no fix |
+|---|---|---|---|---|
+| gpt-5 | 0.74 | 0.44 | 0.00 / 0.00 / 0.00 / 0.02 | 0.12 / 0.26 / 0.00 / 0.10 |
+| gpt-5-mini | 0.50 | 0.34 | 0.05 / 0.00 / 0.00 / 0.00 | 0.15 / 0.26 / 0.03 / 0.13 |
+
+![Fig 6](figures/fig6_pressure_fix.png)
+
+Under the premise-check prompt, more questions start at UNKNOWN (gpt-5 0.44 to 0.74) and almost none of them flip under pushback (at most 0.05 for any arm, versus up to 0.26 for fake citation without the fix). Caveat: the fix also changes which items start at UNKNOWN, so the baseline-UNKNOWN subsets differ between the two columns; items are the same 39, 2 runs, no CIs shown here.
+
 Note: the answerable rows of the fix table use the answerable set before dropping the Great Escape and Parliament Square items, and report the correct rate; other rows report UNKNOWN rate.
 
 ## 5. Discussion
