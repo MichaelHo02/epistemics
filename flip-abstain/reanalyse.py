@@ -68,6 +68,8 @@ import glob
 ab = [o for f in glob.glob("ablate_out_*.json") for o in json.load(open(f))]
 rnd = random.Random(0)
 ABL = []
+_ans_order = [k["question"] for k in json.load(open("items3.json")) if k["kind"] == "ans" and not any(b in k["question"].lower() for b in ("what date is father", "at what age are taxis", "ansel adams"))]
+_drop_pos = {i for i, q in enumerate(_ans_order) if any(e in q.lower() for e in ("great escape", "parliament square"))}
 for m in ["gpt-5", "gpt-5-mini", "glm-5.2", "deepseek-v4-flash"]:
     for c in ["answerable", "future unknown", "unsolved problem", "counterfactual", "false assumption"]:
         per = collections.defaultdict(lambda: {"orig": [], "fix": []})
@@ -79,6 +81,7 @@ for m in ["gpt-5", "gpt-5-mini", "glm-5.2", "deepseek-v4-flash"]:
             for o in seq: byrun[o["run"]].append(o)
             for run, os_ in byrun.items():
                 for i, o in enumerate(os_):
+                    if c == "answerable" and i in _drop_pos: continue
                     if not o["err"] and o["label"] != "unparsed":
                         per[i][v].append(1.0 if o["label"] == "correct" else 0.0)
         items = [i for i, d in per.items() if d["orig"] and d["fix"]]
@@ -93,6 +96,19 @@ for m in ["gpt-5", "gpt-5-mini", "glm-5.2", "deepseek-v4-flash"]:
         lines.append(f"| {m} | {c} | {mo:.2f} | {mf:.2f} | {mf-mo:+.2f} [{lo:+.2f},{hi:+.2f}] |")
         ABL.append({"model": m, "cat": c, "orig": mo, "fix": mf, "lo": lo, "hi": hi})
 res["ablation"] = ABL
+J = json.load(open("judge_out.json"))
+lines.append("\n## Judge: classification of non-UNKNOWN replies on unanswerable items (judge 1 = gpt-5-mini, judge 2 = gpt-5; Qwen not judged)\n")
+n = len(J); agree = sum(o["j1"] == o["j2"] for o in J) / n
+c1 = collections.Counter(o["j1"] for o in J); c2 = collections.Counter(o["j2"] for o in J)
+pe = sum(c1[k] * c2[k] for k in set(c1) | set(c2)) / n / n
+lines.append(f"Agreement {agree:.2f}, Cohen's kappa {(agree-pe)/(1-pe):.2f}, n={n} replies.\n")
+lines.append("| model | replies judged | committed | hedged | premise flagged | committed, both judges, as share of ALL unanswerable trials |\n|---|---|---|---|---|---|")
+for m in ["gpt-5", "gpt-5-mini", "deepseek-v4-flash", "glm-5.2"]:
+    jm = [o for o in J if o["model"] == m]; ntr = len([r for r in load(m) if r["kind"] == "unans" and r["b"] != "unparsed"])
+    cnt = collections.Counter(o["j1"] for o in jm)
+    both = sum(o["j1"] == "COMMITTED" and o["j2"] == "COMMITTED" for o in jm)
+    lines.append(f"| {m} | {len(jm)} | {cnt['COMMITTED']} | {cnt['HEDGED']} | {cnt['PREMISE_FLAGGED']} | {both/ntr:.2f} |")
+res["judge"] = {"agreement": agree, "n": n}
 json.dump(res, open("results_final.json", "w"), indent=1)
 open("results_final.md", "w").write("\n".join(lines))
 print("\n".join(lines))

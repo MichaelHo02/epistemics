@@ -32,23 +32,34 @@
 
 | model | category | orig | fix | diff [CI] |
 |---|---|---|---|---|
-| gpt-5 | answerable | 0.96 | 0.96 | +0.00 [+0.00,+0.00] |
+| gpt-5 | answerable | 0.95 | 0.95 | +0.00 [+0.00,+0.00] |
 | gpt-5 | future unknown | 0.87 | 1.00 | +0.13 [+0.00,+0.30] |
 | gpt-5 | unsolved problem | 0.56 | 0.67 | +0.11 [+0.00,+0.26] |
 | gpt-5 | counterfactual | 0.20 | 0.77 | +0.57 [+0.30,+0.80] |
 | gpt-5 | false assumption | 0.23 | 0.67 | +0.43 [+0.20,+0.67] |
-| gpt-5-mini | answerable | 0.81 | 0.76 | -0.04 [-0.14,+0.03] |
-| gpt-5-mini | future unknown | 0.53 | 0.77 | +0.23 [+0.07,+0.43] |
-| gpt-5-mini | unsolved problem | 0.30 | 0.48 | +0.19 [+0.00,+0.41] |
-| gpt-5-mini | counterfactual | 0.10 | 0.32 | +0.22 [+0.02,+0.43] |
+| gpt-5-mini | answerable | 0.83 | 0.79 | -0.05 [-0.15,+0.03] |
+| gpt-5-mini | future unknown | 0.53 | 0.77 | +0.23 [+0.03,+0.43] |
+| gpt-5-mini | unsolved problem | 0.30 | 0.48 | +0.19 [+0.00,+0.44] |
+| gpt-5-mini | counterfactual | 0.10 | 0.32 | +0.22 [+0.00,+0.45] |
 | gpt-5-mini | false assumption | 0.33 | 0.43 | +0.10 [-0.13,+0.37] |
-| glm-5.2 | answerable | 0.94 | 0.93 | -0.01 [-0.10,+0.08] |
+| glm-5.2 | answerable | 0.94 | 0.92 | -0.02 [-0.12,+0.09] |
 | glm-5.2 | future unknown | 0.97 | 1.00 | +0.03 [+0.00,+0.10] |
 | glm-5.2 | unsolved problem | 0.67 | 0.67 | +0.00 [+0.00,+0.00] |
-| glm-5.2 | counterfactual | 0.67 | 0.90 | +0.23 [+0.03,+0.47] |
+| glm-5.2 | counterfactual | 0.67 | 0.90 | +0.23 [+0.07,+0.47] |
 | glm-5.2 | false assumption | 0.43 | 0.80 | +0.37 [+0.20,+0.53] |
-| deepseek-v4-flash | answerable | 0.96 | 0.86 | -0.10 [-0.21,-0.01] |
-| deepseek-v4-flash | future unknown | 0.88 | 1.00 | +0.12 [+0.00,+0.25] |
-| deepseek-v4-flash | unsolved problem | 0.44 | 0.67 | +0.22 [-0.04,+0.52] |
+| deepseek-v4-flash | answerable | 0.95 | 0.86 | -0.09 [-0.21,+0.00] |
+| deepseek-v4-flash | future unknown | 0.88 | 1.00 | +0.12 [+0.03,+0.25] |
+| deepseek-v4-flash | unsolved problem | 0.44 | 0.67 | +0.22 [+0.00,+0.52] |
 | deepseek-v4-flash | counterfactual | 0.20 | 0.73 | +0.53 [+0.30,+0.77] |
 | deepseek-v4-flash | false assumption | 0.20 | 0.70 | +0.50 [+0.30,+0.70] |
+
+## Judge: classification of non-UNKNOWN replies on unanswerable items (judge 1 = gpt-5-mini, judge 2 = gpt-5; Qwen not judged)
+
+Agreement 0.77, Cohen's kappa 0.62, n=213 replies.
+
+| model | replies judged | committed | hedged | premise flagged | committed, both judges, as share of ALL unanswerable trials |
+|---|---|---|---|---|---|
+| gpt-5 | 66 | 45 | 13 | 8 | 0.27 |
+| gpt-5-mini | 74 | 44 | 27 | 3 | 0.27 |
+| deepseek-v4-flash | 46 | 22 | 17 | 7 | 0.23 |
+| glm-5.2 | 27 | 17 | 3 | 7 | 0.16 |
