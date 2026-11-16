@@ -25,3 +25,6 @@ Track4 → Open Track → Do their numbers match? The controlled compatibility c
 
 ## Status before launch
 Independent exact-reference and boundary checks passed for all 54 cells; no model outcome observed.
+
+## Engineering repair before any scientific result
+Initial run d947f119-4a60-4047-8e8d-86f66c82f134 failed before model calls because the copied runner referenced a missing validate.py entry point. Added the entry point and verified the full preflight locally. Hypothesis, materials and contrasts unchanged; repair same provisional node.
