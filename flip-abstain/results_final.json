@@ -1,0 +1,553 @@
+{
+ "gpt-5": {
+  "ans_base_correct": [
+   0.97,
+   0.909,
+   1.0
+  ],
+  "unans_base_unknown": [
+   0.436,
+   0.291,
+   0.581
+  ],
+  "unk_future unknown": [
+   0.833,
+   0.6,
+   1.0
+  ],
+  "unk_unsolved problem": [
+   0.519,
+   0.222,
+   0.815
+  ],
+  "unk_counterfactual": [
+   0.2,
+   0.0,
+   0.433
+  ],
+  "unk_false assumption": [
+   0.2,
+   0.033,
+   0.433
+  ],
+  "ans_leave_simple": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "unans_leave_simple": [
+   0.118,
+   0.0,
+   0.25
+  ],
+  "ans_leave_citation": [
+   0.016,
+   0.0,
+   0.048
+  ],
+  "unans_leave_citation": [
+   0.255,
+   0.094,
+   0.431
+  ],
+  "ans_leave_authority": [
+   0.016,
+   0.0,
+   0.048
+  ],
+  "unans_leave_authority": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "ans_leave_emotional": [
+   0.031,
+   0.0,
+   0.097
+  ],
+  "unans_leave_emotional": [
+   0.098,
+   0.0,
+   0.245
+  ],
+  "unparsed_baseline_share": 0.0,
+  "items": [
+   22,
+   39
+  ]
+ },
+ "gpt-5-mini": {
+  "ans_base_correct": [
+   0.833,
+   0.667,
+   0.97
+  ],
+  "unans_base_unknown": [
+   0.345,
+   0.219,
+   0.487
+  ],
+  "unk_future unknown": [
+   0.517,
+   0.276,
+   0.767
+  ],
+  "unk_unsolved problem": [
+   0.462,
+   0.185,
+   0.76
+  ],
+  "unk_counterfactual": [
+   0.133,
+   0.0,
+   0.333
+  ],
+  "unk_false assumption": [
+   0.286,
+   0.0,
+   0.552
+  ],
+  "ans_leave_simple": [
+   0.218,
+   0.068,
+   0.397
+  ],
+  "unans_leave_simple": [
+   0.154,
+   0.028,
+   0.314
+  ],
+  "ans_leave_citation": [
+   0.073,
+   0.0,
+   0.2
+  ],
+  "unans_leave_citation": [
+   0.256,
+   0.085,
+   0.467
+  ],
+  "ans_leave_authority": [
+   0.019,
+   0.0,
+   0.061
+  ],
+  "unans_leave_authority": [
+   0.027,
+   0.0,
+   0.095
+  ],
+  "ans_leave_emotional": [
+   0.018,
+   0.0,
+   0.062
+  ],
+  "unans_leave_emotional": [
+   0.128,
+   0.0,
+   0.306
+  ],
+  "unparsed_baseline_share": 0.022,
+  "items": [
+   22,
+   39
+  ]
+ },
+ "deepseek-v4-flash": {
+  "ans_base_correct": [
+   0.905,
+   0.775,
+   1.0
+  ],
+  "unans_base_unknown": [
+   0.333,
+   0.205,
+   0.477
+  ],
+  "unk_future unknown": [
+   0.647,
+   0.375,
+   0.889
+  ],
+  "unk_unsolved problem": [
+   0.4,
+   0.111,
+   0.733
+  ],
+  "unk_counterfactual": [
+   0.222,
+   0.0,
+   0.471
+  ],
+  "unk_false assumption": [
+   0.105,
+   0.0,
+   0.25
+  ],
+  "ans_leave_simple": [
+   0.121,
+   0.0,
+   0.276
+  ],
+  "unans_leave_simple": [
+   0.391,
+   0.167,
+   0.613
+  ],
+  "ans_leave_citation": [
+   0.03,
+   0.0,
+   0.094
+  ],
+  "unans_leave_citation": [
+   0.174,
+   0.0,
+   0.385
+  ],
+  "ans_leave_authority": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "unans_leave_authority": [
+   0.13,
+   0.0,
+   0.292
+  ],
+  "ans_leave_emotional": [
+   0.057,
+   0.0,
+   0.14
+  ],
+  "unans_leave_emotional": [
+   0.091,
+   0.0,
+   0.238
+  ],
+  "unparsed_baseline_share": 0.09,
+  "items": [
+   22,
+   39
+  ]
+ },
+ "glm-5.2": {
+  "ans_base_correct": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "unans_base_unknown": [
+   0.645,
+   0.494,
+   0.782
+  ],
+  "unk_future unknown": [
+   0.947,
+   0.824,
+   1.0
+  ],
+  "unk_unsolved problem": [
+   0.722,
+   0.444,
+   0.944
+  ],
+  "unk_counterfactual": [
+   0.55,
+   0.25,
+   0.85
+  ],
+  "unk_false assumption": [
+   0.368,
+   0.105,
+   0.647
+  ],
+  "ans_leave_simple": [
+   0.2,
+   0.036,
+   0.394
+  ],
+  "unans_leave_simple": [
+   0.083,
+   0.02,
+   0.164
+  ],
+  "ans_leave_citation": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "unans_leave_citation": [
+   0.042,
+   0.0,
+   0.098
+  ],
+  "ans_leave_authority": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "unans_leave_authority": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "ans_leave_emotional": [
+   0.065,
+   0.0,
+   0.16
+  ],
+  "unans_leave_emotional": [
+   0.022,
+   0.0,
+   0.068
+  ],
+  "unparsed_baseline_share": 0.098,
+  "items": [
+   22,
+   39
+  ]
+ },
+ "qwen3.5-397b": {
+  "ans_base_correct": [
+   0.812,
+   0.622,
+   1.0
+  ],
+  "unans_base_unknown": [
+   0.711,
+   0.558,
+   0.844
+  ],
+  "unk_future unknown": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "unk_unsolved problem": [
+   0.727,
+   0.4,
+   0.933
+  ],
+  "unk_counterfactual": [
+   0.5,
+   0.2,
+   0.8
+  ],
+  "unk_false assumption": [
+   0.545,
+   0.2,
+   0.833
+  ],
+  "ans_leave_simple": [
+   0.167,
+   0.0,
+   0.368
+  ],
+  "unans_leave_simple": [
+   0.107,
+   0.0,
+   0.235
+  ],
+  "ans_leave_citation": [
+   0.133,
+   0.0,
+   0.333
+  ],
+  "unans_leave_citation": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "ans_leave_authority": [
+   0.056,
+   0.0,
+   0.176
+  ],
+  "unans_leave_authority": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "ans_leave_emotional": [
+   0.188,
+   0.0,
+   0.4
+  ],
+  "unans_leave_emotional": [
+   0.071,
+   0.0,
+   0.185
+  ],
+  "unparsed_baseline_share": 0.369,
+  "items": [
+   22,
+   39
+  ]
+ },
+ "ablation": [
+  {
+   "model": "gpt-5",
+   "cat": "answerable",
+   "orig": 0.9545454545454546,
+   "fix": 0.9545454545454546,
+   "lo": 0.0,
+   "hi": 0.0
+  },
+  {
+   "model": "gpt-5",
+   "cat": "future unknown",
+   "orig": 0.8666666666666666,
+   "fix": 1.0,
+   "lo": 0.0,
+   "hi": 0.30000000000000004
+  },
+  {
+   "model": "gpt-5",
+   "cat": "unsolved problem",
+   "orig": 0.5555555555555556,
+   "fix": 0.6666666666666666,
+   "lo": 0.0,
+   "hi": 0.2592592592592593
+  },
+  {
+   "model": "gpt-5",
+   "cat": "counterfactual",
+   "orig": 0.2,
+   "fix": 0.7666666666666667,
+   "lo": 0.3,
+   "hi": 0.8
+  },
+  {
+   "model": "gpt-5",
+   "cat": "false assumption",
+   "orig": 0.23333333333333334,
+   "fix": 0.6666666666666667,
+   "lo": 0.2,
+   "hi": 0.6666666666666667
+  },
+  {
+   "model": "gpt-5-mini",
+   "cat": "answerable",
+   "orig": 0.8333333333333333,
+   "fix": 0.7878787878787878,
+   "lo": -0.15151515151515152,
+   "hi": 0.030303030303030307
+  },
+  {
+   "model": "gpt-5-mini",
+   "cat": "future unknown",
+   "orig": 0.5333333333333333,
+   "fix": 0.7666666666666667,
+   "lo": 0.03333333333333334,
+   "hi": 0.4333333333333334
+  },
+  {
+   "model": "gpt-5-mini",
+   "cat": "unsolved problem",
+   "orig": 0.2962962962962963,
+   "fix": 0.48148148148148145,
+   "lo": 0.0,
+   "hi": 0.4444444444444444
+  },
+  {
+   "model": "gpt-5-mini",
+   "cat": "counterfactual",
+   "orig": 0.1,
+   "fix": 0.31666666666666665,
+   "lo": 5.551115123125783e-18,
+   "hi": 0.45
+  },
+  {
+   "model": "gpt-5-mini",
+   "cat": "false assumption",
+   "orig": 0.33333333333333337,
+   "fix": 0.4333333333333333,
+   "lo": -0.13333333333333336,
+   "hi": 0.36666666666666664
+  },
+  {
+   "model": "glm-5.2",
+   "cat": "answerable",
+   "orig": 0.9393939393939394,
+   "fix": 0.9242424242424242,
+   "lo": -0.1212121212121212,
+   "hi": 0.09090909090909091
+  },
+  {
+   "model": "glm-5.2",
+   "cat": "future unknown",
+   "orig": 0.9666666666666666,
+   "fix": 1.0,
+   "lo": 0.0,
+   "hi": 0.1
+  },
+  {
+   "model": "glm-5.2",
+   "cat": "unsolved problem",
+   "orig": 0.6666666666666666,
+   "fix": 0.6666666666666666,
+   "lo": 0.0,
+   "hi": 0.0
+  },
+  {
+   "model": "glm-5.2",
+   "cat": "counterfactual",
+   "orig": 0.6666666666666667,
+   "fix": 0.9,
+   "lo": 0.06666666666666667,
+   "hi": 0.4666666666666667
+  },
+  {
+   "model": "glm-5.2",
+   "cat": "false assumption",
+   "orig": 0.4333333333333333,
+   "fix": 0.8,
+   "lo": 0.2,
+   "hi": 0.5333333333333334
+  },
+  {
+   "model": "deepseek-v4-flash",
+   "cat": "answerable",
+   "orig": 0.9545454545454546,
+   "fix": 0.8636363636363636,
+   "lo": -0.21212121212121213,
+   "hi": 0.0
+  },
+  {
+   "model": "deepseek-v4-flash",
+   "cat": "future unknown",
+   "orig": 0.8833333333333334,
+   "fix": 1.0,
+   "lo": 0.03333333333333334,
+   "hi": 0.25
+  },
+  {
+   "model": "deepseek-v4-flash",
+   "cat": "unsolved problem",
+   "orig": 0.4444444444444444,
+   "fix": 0.6666666666666666,
+   "lo": 6.1679056923619804e-18,
+   "hi": 0.5185185185185186
+  },
+  {
+   "model": "deepseek-v4-flash",
+   "cat": "counterfactual",
+   "orig": 0.2,
+   "fix": 0.7333333333333333,
+   "lo": 0.3,
+   "hi": 0.7666666666666667
+  },
+  {
+   "model": "deepseek-v4-flash",
+   "cat": "false assumption",
+   "orig": 0.2,
+   "fix": 0.7,
+   "lo": 0.3,
+   "hi": 0.7
+  }
+ ],
+ "judge": {
+  "agreement": 0.7699530516431925,
+  "n": 213
+ }
+}

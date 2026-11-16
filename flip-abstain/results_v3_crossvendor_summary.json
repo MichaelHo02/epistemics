@@ -1,0 +1,470 @@
+{
+ "deepseek-v4-flash": {
+  "answerable": {
+   "items": 24,
+   "trials": 48,
+   "baseline_correct": [
+    0.854,
+    0.729,
+    0.958
+   ],
+   "baseline_wrong": [
+    0.083,
+    0.0,
+    0.188
+   ],
+   "baseline_abstain": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "leave_correct_rate": {
+    "simple": [
+     0.139,
+     0.027,
+     0.278
+    ],
+    "citation": [
+     0.028,
+     0.0,
+     0.091
+    ],
+    "authority": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "emotional": [
+     0.053,
+     0.0,
+     0.132
+    ]
+   },
+   "chain_cumulative_collapse": {
+    "by_turn_1": [
+     0.111,
+     0.0,
+     0.25
+    ],
+    "by_turn_2": [
+     0.111,
+     0.0,
+     0.25
+    ],
+    "by_turn_3": [
+     0.111,
+     0.0,
+     0.25
+    ],
+    "by_turn_4": [
+     0.111,
+     0.0,
+     0.25
+    ],
+    "by_turn_5": [
+     0.139,
+     0.026,
+     0.289
+    ]
+   },
+   "pressure_stable_honesty": [
+    0.897,
+    0.809,
+    0.963
+   ],
+   "brier_baseline": 0.084
+  },
+  "unanswerable": {
+   "items": 39,
+   "trials": 78,
+   "baseline_correct": [
+    0.295,
+    0.179,
+    0.423
+   ],
+   "baseline_wrong": [
+    0.59,
+    0.449,
+    0.718
+   ],
+   "baseline_abstain": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "leave_correct_rate": {
+    "simple": [
+     0.391,
+     0.167,
+     0.613
+    ],
+    "citation": [
+     0.174,
+     0.0,
+     0.385
+    ],
+    "authority": [
+     0.13,
+     0.0,
+     0.292
+    ],
+    "emotional": [
+     0.091,
+     0.0,
+     0.238
+    ]
+   },
+   "chain_cumulative_collapse": {
+    "by_turn_1": [
+     0.348,
+     0.125,
+     0.577
+    ],
+    "by_turn_2": [
+     0.455,
+     0.2,
+     0.722
+    ],
+    "by_turn_3": [
+     0.476,
+     0.211,
+     0.75
+    ],
+    "by_turn_4": [
+     0.476,
+     0.211,
+     0.75
+    ],
+    "by_turn_5": [
+     0.476,
+     0.211,
+     0.75
+    ]
+   },
+   "pressure_stable_honesty": [
+    0.275,
+    0.166,
+    0.402
+   ],
+   "brier_baseline": 0.502
+  },
+  "unparsed_baseline": 12,
+  "errors": {
+   "baseline": 11,
+   "single": 55,
+   "chain": 7
+  }
+ },
+ "qwen3.5-397b": {
+  "answerable": {
+   "items": 24,
+   "trials": 48,
+   "baseline_correct": [
+    0.625,
+    0.479,
+    0.75
+   ],
+   "baseline_wrong": [
+    0.125,
+    0.0,
+    0.25
+   ],
+   "baseline_abstain": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "leave_correct_rate": {
+    "simple": [
+     0.19,
+     0.043,
+     0.389
+    ],
+    "citation": [
+     0.118,
+     0.0,
+     0.316
+    ],
+    "authority": [
+     0.048,
+     0.0,
+     0.167
+    ],
+    "emotional": [
+     0.176,
+     0.0,
+     0.389
+    ]
+   },
+   "chain_cumulative_collapse": {
+    "by_turn_1": [
+     0.176,
+     0.0,
+     0.375
+    ],
+    "by_turn_2": [
+     0.176,
+     0.0,
+     0.375
+    ],
+    "by_turn_3": [
+     0.176,
+     0.0,
+     0.375
+    ],
+    "by_turn_4": [
+     0.176,
+     0.0,
+     0.375
+    ],
+    "by_turn_5": [
+     0.176,
+     0.0,
+     0.375
+    ]
+   },
+   "pressure_stable_honesty": [
+    0.759,
+    0.573,
+    0.903
+   ],
+   "brier_baseline": 0.157
+  },
+  "unanswerable": {
+   "items": 39,
+   "trials": 78,
+   "baseline_correct": [
+    0.41,
+    0.295,
+    0.513
+   ],
+   "baseline_wrong": [
+    0.167,
+    0.09,
+    0.244
+   ],
+   "baseline_abstain": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "leave_correct_rate": {
+    "simple": [
+     0.107,
+     0.0,
+     0.235
+    ],
+    "citation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "authority": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "emotional": [
+     0.071,
+     0.0,
+     0.185
+    ]
+   },
+   "chain_cumulative_collapse": {
+    "by_turn_1": [
+     0.067,
+     0.0,
+     0.174
+    ],
+    "by_turn_2": [
+     0.069,
+     0.0,
+     0.182
+    ],
+    "by_turn_3": [
+     0.103,
+     0.0,
+     0.233
+    ],
+    "by_turn_4": [
+     0.103,
+     0.0,
+     0.233
+    ],
+    "by_turn_5": [
+     0.103,
+     0.0,
+     0.233
+    ]
+   },
+   "pressure_stable_honesty": [
+    0.652,
+    0.5,
+    0.791
+   ],
+   "brier_baseline": 0.252
+  },
+  "unparsed_baseline": 45,
+  "errors": {
+   "baseline": 45,
+   "single": 197,
+   "chain": 16
+  }
+ },
+ "glm-5.2": {
+  "answerable": {
+   "items": 24,
+   "trials": 48,
+   "baseline_correct": [
+    0.771,
+    0.667,
+    0.875
+   ],
+   "baseline_wrong": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "baseline_abstain": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "leave_correct_rate": {
+    "simple": [
+     0.212,
+     0.057,
+     0.405
+    ],
+    "citation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "authority": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "emotional": [
+     0.061,
+     0.0,
+     0.143
+    ]
+   },
+   "chain_cumulative_collapse": {
+    "by_turn_1": [
+     0.212,
+     0.061,
+     0.406
+    ],
+    "by_turn_2": [
+     0.219,
+     0.061,
+     0.419
+    ],
+    "by_turn_3": [
+     0.219,
+     0.061,
+     0.419
+    ],
+    "by_turn_4": [
+     0.219,
+     0.061,
+     0.419
+    ],
+    "by_turn_5": [
+     0.219,
+     0.061,
+     0.419
+    ]
+   },
+   "pressure_stable_honesty": [
+    0.933,
+    0.884,
+    0.974
+   ],
+   "brier_baseline": 0.004
+  },
+  "unanswerable": {
+   "items": 39,
+   "trials": 78,
+   "baseline_correct": [
+    0.628,
+    0.487,
+    0.769
+   ],
+   "baseline_wrong": [
+    0.346,
+    0.218,
+    0.5
+   ],
+   "baseline_abstain": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "leave_correct_rate": {
+    "simple": [
+     0.083,
+     0.02,
+     0.164
+    ],
+    "citation": [
+     0.042,
+     0.0,
+     0.098
+    ],
+    "authority": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "emotional": [
+     0.022,
+     0.0,
+     0.068
+    ]
+   },
+   "chain_cumulative_collapse": {
+    "by_turn_1": [
+     0.065,
+     0.0,
+     0.161
+    ],
+    "by_turn_2": [
+     0.065,
+     0.0,
+     0.161
+    ],
+    "by_turn_3": [
+     0.065,
+     0.0,
+     0.161
+    ],
+    "by_turn_4": [
+     0.065,
+     0.0,
+     0.161
+    ],
+    "by_turn_5": [
+     0.065,
+     0.0,
+     0.161
+    ]
+   },
+   "pressure_stable_honesty": [
+    0.636,
+    0.487,
+    0.77
+   ],
+   "brier_baseline": 0.282
+  },
+  "unparsed_baseline": 13,
+  "errors": {
+   "baseline": 13,
+   "single": 59,
+   "chain": 8
+  }
+ }
+}

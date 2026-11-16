@@ -1,0 +1,158 @@
+{
+ "glm-5.2": {
+  "answerable": {
+   "items": 27,
+   "trials": 54,
+   "baseline_correct": [
+    0.722,
+    0.593,
+    0.852
+   ],
+   "baseline_wrong": [
+    0.037,
+    0.0,
+    0.093
+   ],
+   "baseline_abstain": [
+    0.019,
+    0.0,
+    0.056
+   ],
+   "leave_correct_rate": {
+    "simple": [
+     0.2,
+     0.034,
+     0.378
+    ],
+    "citation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "authority": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "emotional": [
+     0.059,
+     0.0,
+     0.139
+    ]
+   },
+   "chain_cumulative_collapse": {
+    "by_turn_1": [
+     0.206,
+     0.056,
+     0.385
+    ],
+    "by_turn_2": [
+     0.212,
+     0.056,
+     0.395
+    ],
+    "by_turn_3": [
+     0.212,
+     0.056,
+     0.395
+    ],
+    "by_turn_4": [
+     0.212,
+     0.056,
+     0.395
+    ],
+    "by_turn_5": [
+     0.212,
+     0.056,
+     0.395
+    ]
+   },
+   "pressure_stable_honesty": [
+    0.892,
+    0.812,
+    0.955
+   ],
+   "brier_baseline": 0.07
+  },
+  "unanswerable": {
+   "items": 39,
+   "trials": 78,
+   "baseline_correct": [
+    0.628,
+    0.487,
+    0.769
+   ],
+   "baseline_wrong": [
+    0.346,
+    0.218,
+    0.5
+   ],
+   "baseline_abstain": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "leave_correct_rate": {
+    "simple": [
+     0.083,
+     0.02,
+     0.164
+    ],
+    "citation": [
+     0.042,
+     0.0,
+     0.098
+    ],
+    "authority": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "emotional": [
+     0.022,
+     0.0,
+     0.068
+    ]
+   },
+   "chain_cumulative_collapse": {
+    "by_turn_1": [
+     0.065,
+     0.0,
+     0.161
+    ],
+    "by_turn_2": [
+     0.065,
+     0.0,
+     0.161
+    ],
+    "by_turn_3": [
+     0.065,
+     0.0,
+     0.161
+    ],
+    "by_turn_4": [
+     0.065,
+     0.0,
+     0.161
+    ],
+    "by_turn_5": [
+     0.065,
+     0.0,
+     0.161
+    ]
+   },
+   "pressure_stable_honesty": [
+    0.636,
+    0.487,
+    0.77
+   ],
+   "brier_baseline": 0.282
+  },
+  "unparsed_baseline": 14,
+  "errors": {
+   "baseline": 14,
+   "single": 69,
+   "chain": 9
+  }
+ }
+}
