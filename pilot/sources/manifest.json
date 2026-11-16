@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/jan-2025",
+    "raw_sha256": "b8457143056a2fd18d202a359b0f4fd0ca887c62634b07ad6871534d7c0cea26",
+    "table_sha256": "2836b47269ac08c45c89734811da3ac6bacd2f7147eb7a0926e075f3257dbf74",
+    "retrieved": "2026-11-16",
+    "note": "Historical release page retrieved now; not a verified original-publication web snapshot. Read within each release, do not mix vintages."
+  },
+  {
+    "url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/feb-2025",
+    "raw_sha256": "a36c33082221fd8fc05ca70379e9a3088bef5991c17589eb229622112b11dcf3",
+    "table_sha256": "97db918bd10dcd0864bfeba991af369a92e3d62f0d98734ba703dad645688585",
+    "retrieved": "2026-11-16",
+    "note": "Historical release page retrieved now; not a verified original-publication web snapshot. Read within each release, do not mix vintages."
+  },
+  {
+    "url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/mar-2025",
+    "raw_sha256": "c9ed99e7cf30d8c137b6e4918d285dbc24d17ef2b0662ec640346405a66f04db",
+    "table_sha256": "98ffb952764b3baa040b76b6cbce2eef0e995ea536f7121bc0ccf6da2986255a",
+    "retrieved": "2026-11-16",
+    "note": "Historical release page retrieved now; not a verified original-publication web snapshot. Read within each release, do not mix vintages."
+  }
+]

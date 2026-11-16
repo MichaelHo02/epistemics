@@ -1,0 +1,12 @@
+{
+  "study": "precision_aware_verifier_diagnostic_v1",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "env_file": "/Users/michaelho/.local/share/openresearch/worktrees/08a83207-22c3-4b7f-b392-563ac40777a5/chat_ae7ae662-8003-4660-926c-921b795d0e48/track-1/.env",
+  "artifact_root": "/Users/michaelho/.local/share/openresearch/files/epistemics/pilots/numerical-precision",
+  "max_calls": 160,
+  "output_tokens": 1024,
+  "methods": ["direct", "interval_reminder"],
+  "precision_modes": ["exact_levels", "rounded_levels"],
+  "claim_variants": ["published", "nearby", "far"],
+  "scope": "Nine selected natural table rows, three historical release pages, declared synthetic precision and claim interventions; interval compatibility is not source verification or truth."
+}

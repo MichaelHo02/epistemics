@@ -1,0 +1,164 @@
+[
+  {
+    "id": "jan-unemployment-rate",
+    "month": "jan",
+    "metric": "Unemployment rate",
+    "before": "4.0",
+    "after": "4.1",
+    "published_change": "0.1",
+    "source": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/jan-2025",
+    "source_row": [
+      "Unemployment rate",
+      "4.0%",
+      "4.1%",
+      "0.1 pts",
+      "na",
+      "0.0 pts",
+      "na"
+    ]
+  },
+  {
+    "id": "jan-underemployment-rate",
+    "month": "jan",
+    "metric": "Underemployment rate",
+    "before": "6.0",
+    "after": "6.0",
+    "published_change": "0.0",
+    "source": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/jan-2025",
+    "source_row": [
+      "Underemployment rate",
+      "6.0%",
+      "6.0%",
+      "0.0 pts",
+      "na",
+      "-0.7 pts",
+      "na"
+    ]
+  },
+  {
+    "id": "jan-participation-rate",
+    "month": "jan",
+    "metric": "Participation rate",
+    "before": "67.2",
+    "after": "67.3",
+    "published_change": "0.2",
+    "source": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/jan-2025",
+    "source_row": [
+      "Participation rate",
+      "67.2%",
+      "67.3%",
+      "0.2 pts",
+      "na",
+      "0.8 pts",
+      "na"
+    ]
+  },
+  {
+    "id": "feb-unemployment-rate",
+    "month": "feb",
+    "metric": "Unemployment rate",
+    "before": "4.1",
+    "after": "4.1",
+    "published_change": "-0.1",
+    "source": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/feb-2025",
+    "source_row": [
+      "Unemployment rate",
+      "4.1%",
+      "4.1%",
+      "-0.1 pts",
+      "na",
+      "0.3 pts",
+      "na"
+    ]
+  },
+  {
+    "id": "feb-underemployment-rate",
+    "month": "feb",
+    "metric": "Underemployment rate",
+    "before": "6.0",
+    "after": "5.9",
+    "published_change": "-0.1",
+    "source": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/feb-2025",
+    "source_row": [
+      "Underemployment rate",
+      "6.0%",
+      "5.9%",
+      "-0.1 pts",
+      "na",
+      "-0.7 pts",
+      "na"
+    ]
+  },
+  {
+    "id": "feb-participation-rate",
+    "month": "feb",
+    "metric": "Participation rate",
+    "before": "67.2",
+    "after": "66.8",
+    "published_change": "-0.4",
+    "source": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/feb-2025",
+    "source_row": [
+      "Participation rate",
+      "67.2%",
+      "66.8%",
+      "-0.4 pts",
+      "na",
+      "0.1 pts",
+      "na"
+    ]
+  },
+  {
+    "id": "mar-unemployment-rate",
+    "month": "mar",
+    "metric": "Unemployment rate",
+    "before": "4.0",
+    "after": "4.1",
+    "published_change": "0.0",
+    "source": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/mar-2025",
+    "source_row": [
+      "Unemployment rate",
+      "4.0%",
+      "4.1%",
+      "0.0 pts",
+      "na",
+      "0.2 pts",
+      "na"
+    ]
+  },
+  {
+    "id": "mar-underemployment-rate",
+    "month": "mar",
+    "metric": "Underemployment rate",
+    "before": "5.9",
+    "after": "5.9",
+    "published_change": "0.0",
+    "source": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/mar-2025",
+    "source_row": [
+      "Underemployment rate",
+      "5.9%",
+      "5.9%",
+      "0.0 pts",
+      "na",
+      "-0.6 pts",
+      "na"
+    ]
+  },
+  {
+    "id": "mar-participation-rate",
+    "month": "mar",
+    "metric": "Participation rate",
+    "before": "66.7",
+    "after": "66.8",
+    "published_change": "0.0",
+    "source": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/mar-2025",
+    "source_row": [
+      "Participation rate",
+      "66.7%",
+      "66.8%",
+      "0.0 pts",
+      "na",
+      "0.2 pts",
+      "na"
+    ]
+  }
+]
