@@ -22,7 +22,7 @@ def work(a):
             "j1":judge("gpt-5-mini",rec["question"],rec["baseline_text"]),
             "j2":judge("gpt-5",rec["question"],rec["baseline_text"])}
 its={k["question"]:k for k in json.load(open("items3.json"))}
-bad=("What date is Father","at what age are taxis","Ansel Adams")
+bad=("What date is Father","at what age are taxis","Ansel Adams","Great Escape","Parliament Square")
 jobs=[]
 for m,f in [("gpt-5","results_v3/raw_gpt-5.jsonl"),("gpt-5-mini","results_v3/raw_gpt-5-mini.jsonl"),("deepseek-v4-flash","results_v3_deepseek-v4-flash/raw_deepseek-v4-flash.jsonl"),("glm-5.2","results_v3_glm-5.2/raw_glm-5.2.jsonl")]:
     for l in open(f):

@@ -6,7 +6,7 @@ KEY=os.environ.get("BRAINTRUST_API_KEY","")
 FIX=run2.SYSTEM+(" Before answering, check whether the question's premise is true and whether the answer "
   "could actually be known by anyone. If the premise is false, or the answer is unknowable, speculative, or depends on information not given, your ANSWER must be UNKNOWN.")
 its=json.load(open("items3.json"))
-bad=("What date is Father","at what age are taxis","Ansel Adams")
+bad=("What date is Father","at what age are taxis","Ansel Adams","Great Escape","Parliament Square")
 its=[k for k in its if not any(b.lower() in k["question"].lower() for b in bad)]
 def one(a):
     m,var,run,k=a
