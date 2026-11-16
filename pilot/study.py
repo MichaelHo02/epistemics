@@ -1,81 +1,61 @@
+"""Controlled extractive briefing audit; common format and equal token lengths."""
 import json
 import re
 from collections import defaultdict
-from common import API, CFG, destination, save
-from materials import generate, optima, score, source, user, validate
+from common import API,CFG,destination,save
+from materials import optima,render,score,source,user,validate
 
-def parse(text):
+def parse_choice(text):
     try:
-        value = json.loads(text)
-        return value.get('choice', 'INVALID') if isinstance(value, dict) else 'INVALID'
-    except (ValueError, TypeError):
-        return 'INVALID'
+        v=json.loads(text)
+        return v['choice'] if isinstance(v,dict) and isinstance(v.get('choice'),str) else 'INVALID'
+    except ValueError:return 'INVALID'
+
+def parse_ids(text,allowed,count):
+    try:v=json.loads(text)
+    except ValueError:return None
+    ids=v.get('ids') if isinstance(v,dict) else None
+    if not isinstance(ids,list) or not all(isinstance(i,str) for i in ids):return None
+    return ids if len(ids)==count and len(set(ids))==count and set(ids)<=set(allowed) else None
 
 def main():
-    validate()
-    out = destination()
-    data = generate(CFG['seed'], CFG['families'])
-    save(out / 'cases.json', data)
-    api = API(out)
-    rows = []
-    def read(case, profile, text):
-        prompt = ('Select using only the supplied evidence and user requirements. '
-            'If needed information is absent or ambiguous, return UNKNOWN. '
-            'Return only JSON with one field choice: option ID or UNKNOWN.\n'
-            + user(profile) + '\nEvidence:\n' + text)
-        answer = api.query(prompt)
-        choice = parse(answer)
-        return {'choice': choice, 'response': answer, **score(case, profile, choice)}
-    with (out / 'measurements.jsonl').open('w') as handle:
-        for case in data:
-            src = source(case)
-            for profile in case['profiles']:
-                full = read(case, profile, src)
-                row = {'family': case['id'], 'profile': profile['id'], 'method': 'full_source',
-                       'budget': None, 'text': src, **full}
-                rows.append(row); handle.write(json.dumps(row) + '\n'); handle.flush()
-                for budget in CFG['budgets']:
+    data=validate(CFG['seed'],CFG['families']);out=destination();save(out/'cases.json',data);api=API(out)
+    lengths={len(api.encoding.encode(render([o]))) for c in data for o in c['options']}
+    if len(lengths)!=1:raise AssertionError('Row token lengths differ; stop before live calls')
+    rows=[]
+    def read(c,p,text):
+        response=api.query('Choose using only supplied evidence and requirements. If evidence is insufficient return UNKNOWN. If evidence establishes no feasible option return NONE. Return only JSON with choice (option ID, UNKNOWN or NONE).\n'+user(p)+'\nEvidence:\n'+text)
+        choice=parse_choice(response)
+        return dict(response=response,choice=choice,**score(c,p,choice))
+    with (out/'measurements.jsonl').open('w') as f:
+        def record(r):rows.append(r);f.write(json.dumps(r)+'\n');f.flush()
+        for c in data:
+            for pi,p in enumerate(c['profiles']):
+                record(dict(family=c['id'],profile=p['id'],method='full_source',slots=8,**read(c,p,source(c))))
+                for k in CFG['slots']:
+                    expected=None
                     for method in CFG['methods']:
-                        if method == 'oracle':
-                            gold = optima(case, profile)
-                            text = '\n'.join(line for line in src.splitlines() if any('[' + g + ']' in line for g in gold))
-                        elif method == 'lexical':
-                            words = set(re.findall(r'\w+', user(profile).lower()))
-                            lines = sorted(enumerate(src.splitlines()),
-                                key=lambda pair: (-len(words & set(re.findall(r'\w+', pair[1].lower()))), pair[0]))
-                            selected = []
-                            for _, line in lines:
-                                if len(api.encoding.encode('\n'.join(selected + [line]))) <= budget:
-                                    selected.append(line)
-                            text = '\n'.join(selected)
+                        selection=None
+                        if method=='lexical':
+                            words=set(re.findall(r'\w+',user(p).lower()))
+                            ranked=sorted(enumerate(c['options']),key=lambda pair:(-len(words & set(re.findall(r'\w+',render([pair[1]]).lower()))),pair[0]))
+                            ids=[o['id'] for _,o in ranked[:k]]
                         else:
-                            instructions = {'generic': 'Summarize the catalog faithfully, preserving important facts.',
-                                'user_aware': 'Summarize the catalog to support the supplied user decision.',
-                                'structured': 'Create a compact evidence-linked briefing of constraints and option attributes. Preserve feasibility information and trade-offs; do not invent missing values.'}[method]
-                            context = '' if method == 'generic' else '\nUser requirements: ' + user(profile)
-                            text = api.query(instructions + context +
-                                f'\nYour briefing must fit {budget} o200k_base tokens. Give only the briefing.\nCatalog:\n' + src)
-                        original_tokens = len(api.encoding.encode(text))
-                        # Uniform hard delivery cap: no retries or cherry-picking overlength responses.
-                        text = api.encoding.decode(api.encoding.encode(text)[:budget])
-                        row = {'family': case['id'], 'profile': profile['id'], 'method': method,
-                               'budget': budget, 'original_tokens': original_tokens,
-                               'delivered_tokens': len(api.encoding.encode(text)),
-                               'truncated': original_tokens > budget, 'text': text,
-                               **read(case, profile, text)}
-                        rows.append(row); handle.write(json.dumps(row) + '\n'); handle.flush()
-            print(json.dumps({'event': 'family_complete', 'family': case['id']}), flush=True)
-    groups = defaultdict(list)
-    for row in rows:
-        groups[(row['method'], row['budget'])].append(row)
-    summary = [{'method': m, 'budget': b, 'n': len(rs),
-                'correct': sum(r['correct'] for r in rs), 'feasible': sum(r['feasible'] for r in rs),
-                'abstained': sum(r['abstained'] for r in rs), 'invalid': sum(r['invalid'] for r in rs),
-                'truncated': sum(r.get('truncated', False) for r in rs)} for (m, b), rs in groups.items()]
-    result = {'stage': 'complete', 'summary': summary, 'requests': api.calls, 'usage': api.tokens,
-              'limits': 'Synthetic development tasks, one model; hard maximum budgets rather than equal realized length. Oracle privileged upper bound. No human benefit or stable domain generalization claim.'}
-    save(out / 'summary.json', result)
-    print(json.dumps(result), flush=True)
+                            context={'blind':'User requirements unavailable.','user_aware':user(p),'swapped_profile':user(c['profiles'][1-pi])}[method]
+                            prompt=f'Select exactly {k} distinct catalog option IDs to retain in a short briefing. Prefer evidence useful for a decision. Do not answer the decision. Return only JSON with ids, an array of selected IDs.\nRequirements: '+context+'\nCatalog:\n'+source(c)
+                            selection=api.query(prompt);ids=parse_ids(selection,[o['id'] for o in c['options']],k)
+                        if ids is None:
+                            record(dict(family=c['id'],profile=p['id'],method=method,slots=k,selection_invalid=True,selection_response=selection,correct=False));continue
+                        # Same source order and renderer for every method; no prose truncation.
+                        text=render([o for o in c['options'] if o['id'] in ids]);tokens=len(api.encoding.encode(text))
+                        if expected is None:expected=tokens
+                        assert tokens==expected
+                        record(dict(family=c['id'],profile=p['id'],method=method,slots=k,ids=ids,selection_invalid=False,selection_response=selection,text=text,tokens=tokens,optimum_retained=bool(set(optima(c,p))&set(ids)),**read(c,p,text)))
+            print(json.dumps(dict(event='family_complete',family=c['id'])),flush=True)
+    groups=defaultdict(list)
+    for r in rows:groups[(r['method'],r['slots'])].append(r)
+    summary=[dict(method=m,slots=k,n=len(rs),correct=sum(r['correct'] for r in rs),selection_invalid=sum(r.get('selection_invalid',False) for r in rs),optimum_retained=sum(r.get('optimum_retained',False) for r in rs)) for (m,k),rs in groups.items()]
+    result=dict(stage='complete',summary=summary,requests=api.calls,usage=api.tokens,primary='User-aware minus blind family-averaged optimum retention at two slots; development diagnostic.',limits='One model, synthetic same-schema tasks conditioned on differing user optima. Extractive option-row selection, not free-form briefing or human benefit. Prompt cache reuse makes repeated cells dependent.')
+    save(out/'summary.json',result);print(json.dumps(result),flush=True)
 
-if __name__ == '__main__':
-    main()
+if __name__=='__main__':main()

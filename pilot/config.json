@@ -1,13 +1,21 @@
 {
-  "study": "independent_decision_briefing_development_pilot",
+  "study": "user_conditioned_equal_format_selection_v2",
   "model": "gpt-5.4-mini-2026-03-17",
   "env_file": "/Users/michaelho/.local/share/openresearch/worktrees/08a83207-22c3-4b7f-b392-563ac40777a5/chat_ae7ae662-8003-4660-926c-921b795d0e48/track-1/.env",
-  "artifact_root": "/Users/michaelho/.local/share/openresearch/files/epistemics/pilots/decision-briefing",
-  "max_calls": 450,
+  "artifact_root": "/Users/michaelho/.local/share/openresearch/files/epistemics/pilots/decision-briefing-v2",
+  "max_calls": 500,
   "output_tokens": 1024,
-  "families": 12,
-  "seed": 82641,
-  "budgets": [120, 240],
-  "methods": ["generic", "user_aware", "structured", "lexical", "oracle"],
-  "scope": "Synthetic feasibility and decision-quality pilot; no human-benefit claim"
+  "families": 16,
+  "seed": 270416,
+  "methods": [
+    "blind",
+    "user_aware",
+    "swapped_profile",
+    "lexical"
+  ],
+  "scope": "Fresh synthetic development tasks, common extractive row format, equal same-slot token lengths. No truncation or human-benefit claim.",
+  "slots": [
+    2,
+    4
+  ]
 }

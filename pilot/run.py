@@ -13,4 +13,5 @@ env = root / '.venv'
 venv.EnvBuilder(with_pip=True).create(env)
 python = str(env / 'bin/python')
 subprocess.run([python, '-m', 'pip', 'install', '-r', str(root / 'requirements.txt')], check=True)
+subprocess.run([python, '-u', str(root / 'validate.py')], check=True)
 subprocess.run([python, '-u', str(root / 'study.py')], check=True)
