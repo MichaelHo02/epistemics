@@ -67,6 +67,7 @@ lines.append("| model | category | orig | fix | diff [CI] |\n|---|---|---|---|--
 import glob
 ab = [o for f in glob.glob("ablate_out_*.json") for o in json.load(open(f))]
 rnd = random.Random(0)
+ABL = []
 for m in ["gpt-5", "gpt-5-mini", "glm-5.2", "deepseek-v4-flash"]:
     for c in ["answerable", "future unknown", "unsolved problem", "counterfactual", "false assumption"]:
         per = collections.defaultdict(lambda: {"orig": [], "fix": []})
@@ -90,5 +91,8 @@ for m in ["gpt-5", "gpt-5-mini", "glm-5.2", "deepseek-v4-flash"]:
             diffs.append(sum(sum(per[i]["fix"]) / len(per[i]["fix"]) - sum(per[i]["orig"]) / len(per[i]["orig"]) for i in s) / len(s))
         diffs.sort(); lo, hi = diffs[50], diffs[1949]
         lines.append(f"| {m} | {c} | {mo:.2f} | {mf:.2f} | {mf-mo:+.2f} [{lo:+.2f},{hi:+.2f}] |")
+        ABL.append({"model": m, "cat": c, "orig": mo, "fix": mf, "lo": lo, "hi": hi})
+res["ablation"] = ABL
+json.dump(res, open("results_final.json", "w"), indent=1)
 open("results_final.md", "w").write("\n".join(lines))
 print("\n".join(lines))

@@ -68,6 +68,27 @@ Items: 22 answerable questions (TriviaQA-style, accepted aliases) and 39 unanswe
 | deepseek-v4-flash | counterfactual | 0.20 | 0.73 | +0.53 [+0.30,+0.77] |
 | deepseek-v4-flash | false assumption | 0.20 | 0.70 | +0.50 [+0.30,+0.70] |
 
+
+![Fig 1](figures/fig1_unknown_by_category.png)
+
+Fig 1: models abstain well on future-unknown questions and poorly on counterfactual and false-assumption ones.
+
+![Fig 2](figures/fig2_pushback.png)
+
+Fig 2: plain denial is the strongest pushback for weaker models; fake citations mostly flip OpenAI models' UNKNOWN answers.
+
+![Fig 3](figures/fig3_fix.png)
+
+Fig 3: one added sentence raises UNKNOWN on counterfactual and false-assumption questions for gpt-5, GLM and DeepSeek.
+
+![Fig 4](figures/fig4_cost_answerable.png)
+
+Fig 4: cost on answerable questions (DeepSeek drops about 10 points).
+
+![Fig 5](figures/fig5_judge.png)
+
+Fig 5: many non-UNKNOWN replies are hedged or flag the premise, not committed hallucinations.
+
 Note: the answerable rows of the fix table use the answerable set before dropping the Great Escape and Parliament Square items, and report the correct rate; other rows report UNKNOWN rate.
 
 ## 5. Discussion
