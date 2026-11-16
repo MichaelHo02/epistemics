@@ -1,14 +1,25 @@
 {
   "model": "gpt-5.4-mini-2026-03-17",
-  "reasoning": "none",
-  "max_calls": 76,
+  "max_calls": 200,
   "max_smoke_calls": 4,
-  "max_assay_calls": 72,
-  "input_tokens": 6000,
-  "output_tokens": 1024,
-  "concurrency": 4,
-  "seed": 20261117,
+  "max_assay_calls": 192,
+  "input_tokens": 32000,
+  "output_tokens": 8192,
+  "concurrency": 2,
+  "seed": 20261116,
   "env_file": "/Users/michaelho/.local/share/openresearch/worktrees/08a83207-22c3-4b7f-b392-563ac40777a5/chat_ae7ae662-8003-4660-926c-921b795d0e48/track-1/.env",
-  "artifact_root": "/Users/michaelho/.local/share/openresearch/files/epistemics/pilots/obligation-output-order"
+  "artifact_root": "/Users/michaelho/.local/share/openresearch/files/epistemics/pilots/obligation-natural-order",
+  "study": "natural_obligation_order_validation",
+  "reasoning_efforts": [
+    "none",
+    "low"
+  ],
+  "planned_calls": 196,
+  "input_margin_tokens": 512,
+  "context_tokens": 400000,
+  "model_max_output_tokens": 128000,
+  "source_file": "/private/tmp/epistemics-track2-review/obligation/obligationbench.jsonl",
+  "published_prompt_file": "/private/tmp/epistemics-track2-review/obligation/src_obligationguard_prompts_obligation_identification.txt",
+  "model_limits_source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+  "stage": "natural_order"
 }
-
