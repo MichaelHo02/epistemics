@@ -1,6 +1,6 @@
 {
-  "study": "heterogeneous_truth_copy_readiness",
-  "stage": "readiness",
+  "study": "bounded_heterogeneous_truth_copy_full_pipeline",
+  "stage": "reader",
   "model": "gpt-5.4-mini-2026-03-17",
   "env_file": "/Users/michaelho/.local/share/openresearch/worktrees/08a83207-22c3-4b7f-b392-563ac40777a5/chat_ae7ae662-8003-4660-926c-921b795d0e48/track-1/.env",
   "artifact_root": "/Users/michaelho/.local/share/openresearch/files/epistemics/pilots/truth-preservation-diversity",
@@ -8,11 +8,28 @@
   "output_tokens": 1024,
   "families": 12,
   "seed": 981273,
-  "conditions": ["clean", "true_copies", "distractor_copies", "false_copies"],
-  "policies": ["no_filter", "published_filter", "dedup_before_filter"],
-  "reader_case_ids": ["diversity-00", "diversity-01", "diversity-02", "diversity-03", "diversity-04"],
+  "conditions": [
+    "clean",
+    "true_copies",
+    "distractor_copies",
+    "false_copies"
+  ],
+  "policies": [
+    "no_filter",
+    "published_filter",
+    "dedup_before_filter"
+  ],
+  "reader_case_ids": [
+    "diversity-00",
+    "diversity-01",
+    "diversity-02",
+    "diversity-03",
+    "diversity-04"
+  ],
   "embedding_model": "princeton-nlp/sup-simcse-bert-base-uncased",
   "embedding_revision": "2d82fab19ac3a73a20dd20333d27eb8a52d6e97f",
   "upstream_sha256": "9c3e79600525756c1938f64f14cb1cfae3961c0a108d04ff6eec1a487634832d",
-  "scope": "All twelve fixed author-written fictional case sets. Zero API readiness before separately frozen reader child. Original filter unchanged, exact dedup established baseline."
+  "scope": "All twelve fixed author-written fictional case sets. Zero API readiness before separately frozen reader child. Original filter unchanged, exact dedup established baseline.",
+  "readiness_cases_sha256": "67b7f01b8c3bfa73624b33ee666093eb37de68e219f3bc80322d4e70ac7afed3",
+  "readiness_run": "90a23391-3191-4770-963a-aeb2130d7d3a"
 }
