@@ -170,14 +170,14 @@ def self_tests(cfg, encoding, material):
     class Response(io.StringIO):
         pass
     seen = []
-    def result(resp_id, status='completed', output_text=None):
-        return {'id': resp_id, 'model': cfg['model'], 'status': status,
+    def result(resp_id, status='completed', output_text=None, effort='none'):
+        return {'id': resp_id, 'model': cfg['model'], 'status': status, 'reasoning': {'effort': effort},
                 'incomplete_details': {'reason': 'max_output_tokens'} if status != 'completed' else None,
                 'usage': {'input_tokens': 100, 'output_tokens': 20, 'output_tokens_details': {'reasoning_tokens': 5}, 'input_tokens_details': {'cached_tokens': 10}},
                 'output': [{'type': 'message', 'content': [{'type': 'output_text', 'text': output_text or json.dumps(empty)}]}]}
     def transport(req, timeout):
         seen.append((req.data, req.get_header('X-client-request-id')))
-        return Response(json.dumps(result('resp-offline-' + str(len(seen)))))
+        return Response(json.dumps(result('resp-offline-' + str(len(seen)), effort=json.loads(req.data)['reasoning']['effort'])))
     secret = 'OFFLINE_FAKE_CREDENTIAL_DO_NOT_LOG'
     with tempfile.TemporaryDirectory(prefix='natural-order-offline-') as directory:
         with patch('urllib.request.urlopen', side_effect=AssertionError('Network forbidden in offline checks')):
@@ -209,6 +209,68 @@ def self_tests(cfg, encoding, material):
             n_calls = len(calls)
             rejects(lambda: api.query(body, repeat2), 'No further network after fatal')
             check(len(calls) == n_calls, 'No retry/resubmission after fatal')
+    # Echo verification must fail for both assigned effort levels; missing is not a default.
+    for effort in EFFORTS:
+        assigned = next(t for t in plans[1] if t['case_id'] == case['instance_id'] and t['arm'] == ARMS[0] and t['reasoning'] == effort and t['repeat'] == 1)
+        assigned_body = request_body(case, assigned['arm'], effort, cfg, source_prompt)
+        for variant in ['wrong_effort', 'missing_reasoning', 'missing_effort']:
+            calls = []
+            def echo_failure(req, timeout, variant=variant, effort=effort):
+                calls.append(1)
+                r = result('echo-test-response', effort=effort)
+                if variant == 'wrong_effort':
+                    r['reasoning']['effort'] = 'low' if effort == 'none' else 'none'
+                elif variant == 'missing_reasoning':
+                    del r['reasoning']
+                else:
+                    r['reasoning'] = {}
+                return Response(json.dumps(r))
+            with tempfile.TemporaryDirectory(prefix='natural-echo-failure-') as directory:
+                api = API(directory, cfg, encoding, plans[0] + plans[1], transport=echo_failure, key=secret)
+                rejects(lambda: api.query(assigned_body, assigned), 'Wrong/missing reasoning echo must be fatal')
+                check(api.budget.aborted and api.budget.counts == {'smoke': 0, 'assay': 1}, 'Echo failure consumes one actual attempt and aborts')
+                records = [json.loads(p.read_text()) for p in (Path(directory) / 'requests').glob('*.json')]
+                check(len(records) == 1 and 'acceptance_error_class' in records[0] and 'response' in records[0], 'Preserve mismatched/missing echo raw response')
+                rejects(lambda: api.query(assigned_body, assigned), 'No retry after echo mismatch')
+                check(len(calls) == 1, 'No second transport after echo failure')
+    # Full main-path regression: every smoke abort finalizes all192 unavailable assay slots.
+    import natural_study
+    for variant in ['reasoning_echo', 'invalid_structure', 'wrong_order']:
+        calls = []
+        def smoke_transport(req, timeout, variant=variant):
+            calls.append(1)
+            b = json.loads(req.data)
+            v = copy.deepcopy(empty)
+            if variant == 'invalid_structure':
+                v['remaining']['obligation_count'] = 1
+            elif variant == 'wrong_order':
+                v = {'remaining': v['remaining'], 'ledger': v['ledger']}
+            r = result('smoke-abort-response', effort=b['reasoning']['effort'], output_text=json.dumps(v))
+            if variant == 'reasoning_echo':
+                r.pop('reasoning')
+            return Response(json.dumps(r))
+        with tempfile.TemporaryDirectory(prefix='natural-smoke-abort-') as directory:
+            def factory(output, config, enc, tasks):
+                return API(output, config, enc, tasks, transport=smoke_transport, key=secret)
+            with patch('natural_study.destination', return_value=Path(directory)), patch('natural_study.API', side_effect=factory), patch('urllib.request.urlopen', side_effect=AssertionError('Network forbidden in main-path smoke regression')):
+                try:
+                    natural_study.main()
+                except SystemExit:
+                    pass
+                else:
+                    raise AssertionError('Failed smoke must stop main')
+            check(len(calls) == 1, 'Exactly one failed smoke transport; no assay/retry')
+            final = json.loads((Path(directory) / 'summary.json').read_text())
+            slots = json.loads((Path(directory) / 'all-assay-predictions.json').read_text())
+            check(final['aborted_pre_assay'] and final['analysis_status'] == 'aborted_before_assay_no_effect_estimates', 'Explicit pre-assay acceptance-abort status')
+            check(final['attempts'] == {'smoke': 1, 'assay': 0} and final['actual_attempts'] == 1, 'Actual attempted phases remain honest')
+            check(len(slots) == 192 and all(not r['valid'] and r['error']['kind'] == 'unavailable_after_smoke_abort' for r in slots), 'All192 unavailable slots must be materialized')
+            check(len({r['task']['logical_call_id'] for r in slots}) == 192, 'Unavailable slots retain every frozen logical association')
+            check(final['casewise_assigned_order_differences'] is None and final['task_cluster_means'] is None, 'No effect estimates before assay')
+            for efforts in final['by_reasoning_and_order'].values():
+                for group in efforts.values():
+                    check(group['planned'] == 48 and group['valid'] == 0 and group['agreement_with_dataset_unfinished_obligation_label']['rate'] is None, 'Keep planned denominator without fake zero efficacy estimate')
+                    check(group['benchmark_positive_empty_clearance']['invalid_or_unavailable'] == 24 and group['benchmark_negative_nonempty_warning']['invalid_or_unavailable'] == 24, 'Every sign-specific slot unavailable on smoke abort')
     # Planned denominators remain even if outputs are unavailable; no invalid negative award.
     from natural_study import summarize
     all_missing = [score(None, next(c for c in cases if c['instance_id'] == t['case_id']), t) | {'task': t} for t in plans[1]]

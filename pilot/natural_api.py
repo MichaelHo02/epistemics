@@ -119,6 +119,9 @@ class API:
                 self.tokens['reasoning'] += rt; self.tokens['cached_input'] += ct
             if result.get('model') != self.cfg['model']:
                 raise ValueError('Unexpected model')
+            reported_reasoning = result.get('reasoning')
+            if type(reported_reasoning) is not dict or reported_reasoning.get('effort') != body['reasoning']['effort']:
+                raise ValueError('Missing or mismatched reasoning effort echo')
             if result.get('status') != 'completed' or result.get('incomplete_details'):
                 raise ValueError('Incomplete provider response')
             if usage['input_tokens'] > self.cfg['input_tokens'] or usage['output_tokens'] > self.cfg['output_tokens'] or usage['input_tokens'] + usage['output_tokens'] > self.cfg['context_tokens']:

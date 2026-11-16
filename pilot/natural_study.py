@@ -65,6 +65,42 @@ def summarize(rows, manifest):
             'caveat': 'Nonempty wrong/nonsense duty lists can agree with positive labels. No semantic duty correctness, full ledger truth, trained guard accuracy or unseen benchmark claim.'}
 
 
+def finalize(output, rows, by_id, assay_plan, manifest, api, abort_phase=None):
+    """Shared planned-denominator finalizer, including acceptance abort before any assay."""
+    present = {r['task']['logical_call_id'] for r in rows}
+    if len(present) != len(rows):
+        raise ValueError('Duplicate returned assay logical call')
+    finalized = list(rows)
+    for task in assay_plan:
+        if task['logical_call_id'] not in present:
+            row = score(None, by_id[task['case_id']], task)
+            row.update(task=task, error={'kind': 'unavailable_after_smoke_abort' if abort_phase == 'smoke' else 'unavailable_after_dispatch_stop'},
+                       raw_text=None, parsed=None, body_sha256=task['body_sha256'], provider_response_id=None)
+            finalized.append(row)
+    finalized.sort(key=lambda r: r['task']['logical_call_id'])
+    save(output / 'all-assay-predictions.json', finalized)
+    result = summarize(finalized, manifest)
+    pre_assay_abort = abort_phase == 'smoke'
+    result.update(attempts=dict(api.budget.counts), actual_attempts=sum(api.budget.counts.values()),
+                  actual_unique_provider_response_ids=len(api.response_ids), token_usage=api.tokens,
+                  dispatch_stopped=api.budget.aborted, planned_assay_calls=192, planned_smoke_calls=4,
+                  assay_dispatch_complete=api.budget.counts['assay'] == 192,
+                  complete_valid_assay_responses=sum(r['valid'] for r in finalized),
+                  aborted_pre_assay=pre_assay_abort, abort_phase=abort_phase,
+                  analysis_status='aborted_before_assay_no_effect_estimates' if pre_assay_abort else 'assay_outputs_with_planned_denominators')
+    if pre_assay_abort:
+        # Planned counts/missingness remain explicit, but zero model outputs are not efficacy estimates.
+        result['casewise_assigned_order_differences'] = None
+        result['task_cluster_means'] = None
+        result['repeat_binary_concordance'] = None
+        for efforts in result['by_reasoning_and_order'].values():
+            for group in efforts.values():
+                group['agreement_with_dataset_unfinished_obligation_label']['rate'] = None
+    save(output / 'summary.json', result)
+    print(json.dumps({'event': 'natural_final_summary', **result}), flush=True)
+    return result
+
+
 def main():
     import tiktoken
     output = destination()
@@ -113,7 +149,8 @@ def main():
             api.budget.abort()
             save(output / 'stopped.json', {'phase': 'smoke', 'attempts': dict(api.budget.counts),
                 'reason': 'Provider/full-structure/assigned-order smoke failed; no retry or assay'})
-            raise SystemExit('Natural-order smoke acceptance failed')
+            finalize(output, [], by_id, assay_plan, manifest, api, abort_phase='smoke')
+            raise SystemExit('Natural-order smoke acceptance failed; all assay slots finalized unavailable')
     rows = []
     iterator = iter(assay_plan)
     with ThreadPoolExecutor(max_workers=CFG['concurrency']) as pool:
@@ -132,23 +169,8 @@ def main():
                         pending[pool.submit(evaluate, task)] = True
             save(output / 'progress.json', {'returned_assay': len(rows), 'attempts': dict(api.budget.counts),
                                            'new_dispatch_stopped': api.budget.aborted})
-    present = {r['task']['logical_call_id'] for r in rows}
-    for task in assay_plan:
-        if task['logical_call_id'] not in present:
-            row = score(None, by_id[task['case_id']], task)
-            row.update(task=task, error={'kind': 'unavailable_after_dispatch_stop'}, raw_text=None,
-                       parsed=None, body_sha256=task['body_sha256'], provider_response_id=None)
-            rows.append(row)
-    rows.sort(key=lambda r: r['task']['logical_call_id'])
-    save(output / 'all-assay-predictions.json', rows)
-    result = summarize(rows, manifest)
-    result.update(attempts=dict(api.budget.counts), actual_attempts=sum(api.budget.counts.values()),
-                  actual_unique_provider_response_ids=len(api.response_ids), token_usage=api.tokens,
-                  dispatch_stopped=api.budget.aborted, planned_assay_calls=192, planned_smoke_calls=4,
-                  assay_dispatch_complete=api.budget.counts['assay'] == 192,
-                  complete_valid_assay_responses=sum(r['valid'] for r in rows))
-    save(output / 'summary.json', result)
-    print(json.dumps({'event': 'natural_final_summary', **result}), flush=True)
+    finalize(output, rows, by_id, assay_plan, manifest, api,
+             abort_phase='assay' if api.budget.aborted else None)
     if api.budget.aborted:
         raise SystemExit('Stopped new dispatch; partial planned denominators retained; no retry')
 
