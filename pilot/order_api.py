@@ -28,7 +28,7 @@ class API:
     def __init__(self, output, cfg, encoding):
         self.output, self.cfg, self.encoding = output, cfg, encoding
         self.budget = Budget(cfg['max_calls'], cfg['max_smoke_calls'], cfg['max_assay_calls'])
-        self.tokens = {'input': 0, 'output': 0}
+        self.tokens = {'input': 0, 'output': 0, 'reasoning': 0}
         self.lock = threading.Lock()
         self.key = ''
         for line in Path(cfg['env_file']).read_text().splitlines():
@@ -63,12 +63,15 @@ class API:
         save(path, {**record, 'transport': 'received', 'response': result})
         usage = result.get('usage', {})
         with self.lock:
-            for key in self.tokens:
+            for key in ['input', 'output']:
                 self.tokens[key] += usage.get(key + '_tokens', 0)
+            self.tokens['reasoning'] += usage.get('output_tokens_details', {}).get('reasoning_tokens', 0)
         if result.get('status') != 'completed':
             raise RuntimeError('Incomplete response; no retry')
         if result.get('model') != self.cfg['model']:
             raise RuntimeError('Unexpected model in response')
+        if result.get('reasoning', {}).get('effort') != body['reasoning']['effort']:
+            raise RuntimeError('Unexpected reasoning configuration in response')
         if usage.get('input_tokens', 0) > self.cfg['input_tokens'] or usage.get('output_tokens', 0) > self.cfg['output_tokens']:
             raise RuntimeError('Billed token budget violated; stop dispatch')
         text = ''.join(p.get('text', '') for item in result.get('output', []) if item.get('type') == 'message'
@@ -76,6 +79,8 @@ class API:
         if not text:
             raise RuntimeError('Empty output or refusal; no retry')
         print(json.dumps({'event': 'api_response', 'attempt': attempt, 'phase': task['phase'],
-                          'case_id': task['case_id'], 'arm': task['arm'], 'usage': usage}), flush=True)
+                          'case_id': task['case_id'], 'arm': task['arm'],
+                          'reasoning': body['reasoning']['effort'],
+                          'logical_call_id': task.get('logical_call_id'), 'usage': usage}), flush=True)
         return text, str(path.relative_to(self.output))
 

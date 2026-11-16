@@ -45,9 +45,9 @@ def schema(case, arm):
             'required': list(FIELDS), 'additionalProperties': False}
 
 
-def request_body(case, arm, cfg):
+def request_body(case, arm, cfg, reasoning='none'):
     return {'model': cfg['model'], 'input': COMMON_PROMPT + '\nINPUT\n' + case['observations'],
-            'store': False, 'reasoning': {'effort': 'none'}, 'max_output_tokens': cfg['output_tokens'],
+            'store': False, 'reasoning': {'effort': reasoning}, 'max_output_tokens': cfg['output_tokens'],
             'text': {'format': {'type': 'json_schema', 'name': 'obligation_audit',
                                 'strict': True, 'schema': schema(case, arm)}}}
 
